@@ -1,0 +1,26 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Printing Lists",
+    "stars": 1
+  },
+  {
+    "id": "ex1",
+    "prelude": "",
+    "template": "let rec print_int_list l =\n  \"Replace this string with your implementation.\" ;;\n\nlet print_every_other k l =\n  \"Replace this string with your implementation.\" ;;\n\nlet rec print_list print l =\n  \"Replace this string with your implementation.\" ;;\n",
+    "descr": [
+      [
+        "",
+        "<ol>\n  <li>\n    Write a function <code>print_int_list : int list -> unit</code>\n    that takes a list of integers as input, and prints all the\n    elements of the list, each on its own line.\n  </li>\n  <li>\n    Write a function <code>print_every_other : int -> int list ->\n    unit</code> that takes a value k and a list of integers as input,\n    and prints the elements of the list that are in positions multiple\n    of k, each on its own line. Note: the first element of a list is\n    at the position 0, not 1.\n  </li>\n  <li>\n    Write a function <code>print_list : ('a -> unit) -> 'a list ->\n    unit</code> that takes a printer of values of some\n    type <code>'a</code> and a list of such values as input, and\n    prints all the elements of the list, each on its own line.\n  </li>\n</ol>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "qnLkum+120pJkD7VWUOIM81bAQVCTR9E+VZEWkPsxY2k9EEcCWC5IyNktfnkdt95oG7UNzNxdKLmXcQPxyqFcpo74R5tRIZC9qQqqdkOMIlaCdID7PlUqDR1D25SpjqKFOSTthQpWqWDYDrBZRtEqfSIk5PCClXeeQMYcx4HwjymNaPzKxljxVyAJJVO+I5mLWsNTElZYzRwHQdVGLDCnDqzQXRV3tF4IX75tujutWzKYJQj3HKfdO5R8Wet0tDnCi6HUWxZyQqZw8+8lHdxrnI+/RbTb6axPA1dd5eU2xQQnZOm6DBTfwVzYvpAZQCaxx8PRtlLCIO9TQXO61Gz3N/yx+c9lVukCsJayUJp6QMqBAtYOo9ZGW9QERUYaejGOa9O+Btljoxa3KCn/aq8IMQl/Hc81ruugkaRUrkbj3wC3llVY/rPCgTl0d3EAGTn1UfVTdGmB4RgGo++BcZun9DL7LS3GjykyzAe/5MvSKv7p1xSa9VQar5EAtmL6qlzdi+6f7v2HLoZ6yH0DTmB4GMEARcUGVwWPFgFH5Gppt5er9EcVWDLXmco6p==",
+    "max-score": 200,
+    "depend": null,
+    "dependencies": []
+  },
+  null
+]

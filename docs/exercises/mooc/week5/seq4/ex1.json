@@ -1,0 +1,26 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Rotating the Contents of an Array",
+    "stars": 1.5
+  },
+  {
+    "id": "ex1",
+    "prelude": "",
+    "template": "let rotate a =\n  let n = Array.length a in \n  let v = a.(0) in\n  for i = 0 to n-2 do\n    a.(i) <- a.(i+1)\n  done;\n  a.(n-1)<-v ;;\n\nlet rotate_by a n =\n  \"Replace this string with your implementation.\" ;;\n",
+    "descr": [
+      [
+        "",
+        "<p>\n  In this exercise, you will improve the code shown in the course (and\n  given in the template) for rotating arrays.\n</p>\n\n<ol>\n  <li>\n    There is something perfectible with the code of <code>rotate</code>.\n\n    <br/>\n\n    Find what, and fix the function!.\n  </li>  \n  <li>\n    Define <code>rotate_by: 'a array -> int -> unit</code> adding\n    a parameter that allows to rotate by <code>n</code> positions.\n\n    <br/>\n    \n    For instance, <code>rotate_by [|1;2;3;4|] 3</code> should yield\n    <code>[|4;1;2;3|]</code>.\n  </li>\n</ol>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "qnLkum+WYqlNpiG+DSHu4GMNCB5RVo9E+XFDRkH5gxRbcAZwHWC+XmxjuY+cbfwzoHvUYWN8fq0wGw1R7CrXq9JfRpV7RxYW70VogZQJZLtaZJVPp0MXdjgVXc649TKEFNT+tck2Fq74H8qTTmFIbuGG8AbICpz9wAoC5YKFgTTZZfGqZJkgd6n2WctNPMEc0U9DQQAQBRQaEAxOOwP5p8qwCHEZO2tMPDThbPSluSmEYNtuI8fzbfEW/kT902ecCiNMBWJHm9eHcDHsmVN9tD5JzWXBtkHb+QEW8AuQ2xMTzgCx5otWbwczOh1KY6nmqtbEEt/OF4q6H6yFycihP0ptx0VwlD+jUKpcy/9d9mMiAB9J0/sAGS5QXoUN9b8I2adVPR9//Vcr3MmbeevfLx6oj85iOru8xR+XEY5u/a1EN9hULBCYCg8lKfXBTzTY1UfVThijB0orG9KZFsRsn5W0zaiNZR+dlDQelpNlHPvz7J/GpAU2r+kNB1468qQcdj36fSrLNqVZziHLDW7O4CdEAlEDGVkWQoARFRCgfM5ebldkHGy0QigheKKktr5omRfU4jNnfvL/EJ2UrQGXq9IjA/E8HxgHmLwnaIl1++RoBcs/p0NRqHAQQs5QkGGEDs+Vr2ABFvHfNDqTTmFIte+In9+2CpWwdAUJodqArXKiZfy6ZNIjdBmI3PENPMFdYlEIAEJ1GVAqEFdVDvTx6HelQW92JZV4PX75uPGbuQuENJRaYiKqeqI+jVb7YszUQ8YCUSR4kAqAcGLs/QApqXEAjACFtobd3BxW75iFYcAFkJShlAhWbJcf4sNUKzI=",
+    "max-score": 22,
+    "depend": null,
+    "dependencies": []
+  },
+  null
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Simple Functions over Integers",
+    "stars": 1
+  },
+  {
+    "id": "ex1",
+    "prelude": "\n",
+    "template": "let multiple_of n d =\n  \"Replace this string by your implementation.\" ;;\n\nlet integer_square_root n =\n  \"Replace this string by your implementation.\" ;;\n",
+    "descr": [
+      [
+        "",
+        "<p>\n  Let's define two functions working with integers:\n</p>\n\n<ol>\n  <li>\n  <code>multiple_of</code> that takes two integer\n   parameters, <code>n</code> and <code>d</code>, and determines\n   whether <code>n</code> is a multiple of <code>d</code>.  The\n   function must return a boolean value.  This function can be written\n   without recursion. Look at the operators defined on integers in\n   sequence 1.\n </li>\n  <li>\n  <code>integer_square_root</code> that calculates the <em>integer\n   square root</em> of a positive integer <code>n</code>, that is the largest\n   integer <code>r</code> such that <code>r * r &lt;= n</code>.\n\n   <strong>Hint:</strong> you may use floating point arithmetic, but\n   don't forget that you have to convert explicitely\n   between <code>float</code> and <code>int</code>.\n  </li>\n</ol>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "2cTf0sCouNY4O8M2Sn9VGWMkCBcFZ/VQKmxeWVXsfJsfcoFoEDL0ViwhtKmPrvk97iz+N7lzfuOoTd9B7AH0boYjC/67D+pL7+1fr4sSI+E9AtFPx2NeqDpURYpcpzPKC1bD5wMHUab0NH71CiQirfP16C06CkPdf9kE5MrDf61h6MQ5xh+vl69yKT1MA/A8J69ZTBNdQVpeUk6GV0ygl8zfW8ljLgd+1iu5b4GqvyCI13tpJXDvifkkjRG7Kg3bQ8YCUWIQ6/aMwnrSp/UvtSUHj5GbxSec3oR4/6HFX21PkhbwzQBY/sAlOcNPMU8fdI7ERxELF2K6GRWTnd3f+T7JxSCZ80jGXXZy2UtjHCw8QpAZXUkQSSVV0/wWrdLIOewBPVV5jkcm3Kjtq4rYINAh/Gk8+3vfuUmZCvIf6LJCJAJKY5GUBhy54gCNAHaY1UfVTeLjEr6kG/8YSrx7dAXD8qiSK9eg5y2n5AxoWrDn7JcGh9RReKRPB134neNh+qqt1YWCrdMqO76hUHsQKzcuTUpRGR9Z+RARFRCgfJobfRVCEmWVHC1ohrLCfwo65iX2MTAz/4HrEhoFfjTZq6o/QopnXMNZxaRaeYQAZPJoTwVPp0NRqE2QQxFY9WqKFJqXhcAGWO7sNDz+AWUNq0X+boXQX/TehTI3oxT+c61h6Ld5lMPw6/BxZm1E3VAtYkNNVoEIDo/nEAABBLymnCO8QUB1YKZk",
+    "solution": "qnLkunzM3r5Qk8j31yOH4CkBCUpMGV1ZJFcVFVSgc15uxVxXGSWPXmxjb3yfquF4/jXBP8Ei/4DrEIlReCrKq5shV7hsVq/No0tbrYQINfM8GwVH6ad3aW5vWZhcjGmQQNXTcMsUPJY=",
+    "max-score": 20,
+    "depend": null,
+    "dependencies": []
+  },
+  null
+]

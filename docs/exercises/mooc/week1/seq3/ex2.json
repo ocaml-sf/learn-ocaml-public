@@ -1,0 +1,26 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "String Identifiers",
+    "stars": 1
+  },
+  {
+    "id": "ex2",
+    "prelude": "",
+    "template": "",
+    "descr": [
+      [
+        "",
+        "<p>\n  Suppose that a variable <code>word</code> exists and is a string.\n</p>\n\n<p>\n  Define a variable <code>sentence</code> that uses 5 string\n  concatenations to create a string containing 9\n  times <code>word</code>, separated by commas (<code>','</code>).\n</p>\n\n<p>\n   This time, experiment with defining local <code>let</code> ... <code>in</code>s\n   to store the partial results.\n</p>\n"
+      ]
+    ],
+    "prepare": "Ba0q43HwNqVAfCfMiB9qg7VBXWZ2XElZYRBqFRzgtM67r/pcHCfYDXMjebans+BmoCbUJjMMfqrLEgoFxymYeAYjHkEZTIYJoutlehQ0ZPA6Asx4peNKqDhXQhxS9nK4QJzYtZEHFLmLNDzRDzMDbPDUbU7J3VTyhAIB6hLAxDk3rwE=",
+    "test": "GRov6QXEba+xS3DU2CwZfGMkCBcFZ/VQKmxeWVXsfMAnr/pcGnKYEDleavnygrM67y0XMClor+KtXdpRv7GXeQkfVpUuXd5L5akacwdvTuhlGwVHnLNM/8oVRZlWeyDBEdfWv2Aq2w0QNEDTIyQ0v0HPpU+J1BX2hRUY71yfqHQFTHrCSPOnwrU0uagYNV88YlM+AlN2Go/nEGVQSOixn8qmE8kXYMBk1i7suLiehnDENJRaYiLvp3h0yBGvWdXiDGJEXmFAkELHxDys65UXdHEZj6jFr/GyPCFT5B+RIIwCgs0crQJGdhJ53wl0OE7HdO7rRxFKRqi0H5iH5svsQ6UE+x6OsqiwxkeLqj5rHMYDQQtZXo9REG92DmdQr+SN0exS4Btw8pYMKr8ddvziIN93/Hc81vqocSC+W32xiMERY/AEIUTTW1m34bjEAGTnLpH0MJHnB36gBk8CSs2in5PP9eK3ZR+dlDQelldoSPvt7PcDlUwBsvRFTP4L6h9cWkIqtAX0baWlWqOeOiJyw61EFR5RGikWJo2FFULduIkcdpchVWL0RHM0hr8hbbExr8jW4i6nyr4gCc9TuCqyd52iURRrEMJEoaMuhhYAG4goKNQG83YDbTUxPN6C9SKEQJq+a2ATFtPQOSXTNEoBlPCI6E+BClqzf8IDjYeAe8UQAijJTPLBc0gVhLc836ewMpQDT65mGR/wEBEVTq+zsiLlAyEAJJgF3me7aqbnwkbX02xuI7uvxO5Rz/ii0cKdSopCUWIQ65qXrmGSp/UvtSUHj5GbdBDp1Ed3y644IxpFphvqiEcws2AgJ2M22BrrxtHHEqgOT4yjTUePytCi+RdDY19Fm0e2h/etuz/fFKY2QUQoEWQZXDFAQopfr38IOewB46x9y7AnKazth3X8TIkypHEpP08jxRnWXPJvo4sC4loeY6DPTYzyM+zECB+iIQHHGda6FOcwGULYE2BtmRTCw+bVHkyr6Dle6p2lBsDp7IRGl9w0hPAUMcrOiusqAzYqnlDfe3PNGeTbOngZcT1bGpkDUF60JVVrVF4hxYZxe8grG7nOCmxihfmGau2gi8THKmEewOX1XcsCgjXDbpokRkN71KpL74Ra/xRsI+E7DcIKp0tvqE5QTxoC9k0BEdbTtg2PXqOHNH+SAW6IuuyFpRWBU/udwAhDoh8PxH5YDXrOQ07djbt0i0BcNUeuI6UEG/QQGWRw1DtVELyxyHewFUIHJZk4CHigc+4evzfQSZQoITG/eOIMjQSI",
+    "solution": "jJC8elRsJoMtB41uK4DULzMNCB5RT/xZ2BBGW9LcfLYerElaVSzV2XNhh3ywbeQnoCzUKCBn/KLjHN/YeAGXq5gmV/EkBIYW7+Nse4xAMbBoBcs/p0M2bW6VQ1BC8CLTVJr9aY20FqW3H8qTGC/I6PD4noTFIQ==",
+    "max-score": 2,
+    "depend": null,
+    "dependencies": []
+  },
+  null
+]

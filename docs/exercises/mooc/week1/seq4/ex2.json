@@ -1,0 +1,26 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Simple Functions over Strings",
+    "stars": 1
+  },
+  {
+    "id": "ex2",
+    "prelude": "",
+    "template": "let last_character str =\n  \"Replace this string by your implementation.\" ;;\n\nlet string_of_bool truth =\n  \"Replace this string by your implementation.\" ;;\n",
+    "descr": [
+      [
+        "",
+        "<p>\n  Let's define two functions working with strings:\n</p>\n\n<ol>\n  <li>\n    <code>last_character</code> that returns the last character of a\n    string, assuming that the string argument is not empty;\n  </li>\n  <li>\n    <code>string_of_bool</code> that converts a boolean value to its\n    string representation.\n  </li>\n</ol>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "GRov6QXEba+xS3DU2CwZfGMkCBcFZ/VQKmxeWVXsfJsfcoFoEBbICnEohbrcgt95oH8RKjM6vbaoEgoreWXSq/djURAqQMwOcu1bqtFTZI/oTO1ApeNKqDhyVcwC77KGO2uYa1sPFNrC1TyTVDFKz0GK6FjBCX4tf51N7dqmcHQYZ7aLS4PvwuR+b+giPjPnNAgNURFKWFQgXFRvUa7e8W7fO8kXIwhNJm3quK0ehWnCNwR9YiC9eKN4p6G50N8iEHMAUX9Q6EmNsSmq6Bs9dDpHjliBm/Hk1ydWjATE0IRI9supm9cFaZk92gYp45+adICNRqdLRr8wHQDMsNv81/ZEJrEqbqqngoOca7ZQHKYpBB9mQkoKTCVEEXVp9b8I3r9VQ5Y6/RYyI2Lqc0f5+dRijmtzD+qocVbg1+JspqBCP5sR0pftChzP4geBQmCeP5CVRevmJ4/9AR0+Jd/yk5PS708QX5nblCdetABkD4unoMUVkXRWh3U4D1v4nfYaV8E8hQWjqv0yGeTbOix1wzMVCBcFZ/cMJkNFXFai/c/EbpZdHCfICppuhrDxufwq76fU4jNnfvK6Xc9Rx7rXq9JNBpUeCxZYi+YjxdMA+3ooD2lO9dgRqyAURYpclzuFEsvZvZU2FJ0QNDqTTmFIbqCI6E+BCoXSjURM9rGOcDkWPjvIU4aofO1TmagPPlTnYlMxFFRLW/AfVREHCuqxlmqZDy9QYN9MJnu9hqvEuG+e2stpLiDvifkkjRG7Kg3bQ8YCUWIQ6/aMwnrSp/UvtSUHj5GbxyrdPFUWjEKRIxRAzcuclEcsrYRsI2MN453jdIW+RsJ4RbDvC8GJn2j50odC+LRKdMH9vFThaBFfHKZ8QUkMER9ZGW9QERVur0n+0qcNPV1l7Qxj3vGtqayqIMYj/GR8NKqrd6uVE+BskqIR1pB2Y6KEBhyj4ZCNAByY",
+    "solution": "jJC8ekswO6MWCPpq3fnc37YTTRdRBB/vPUJYWk3iuhkqr6IcXW7xCnEohbrmsfZr5jD14mBefvb6TsAKrQH0boYjUQUpW16Mcutg9tZPKegoDJVSp4xXqHgVQwAHinKGFMzPrNJPUaCD1TqRCXAEv0WKykju",
+    "max-score": 12,
+    "depend": null,
+    "dependencies": []
+  },
+  null
+]

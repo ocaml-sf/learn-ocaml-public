@@ -1,0 +1,26 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Using First Class Functions",
+    "stars": 1
+  },
+  {
+    "id": "ex1",
+    "prelude": "type int_ff = int -> int\n",
+    "template": "let rec compose = function _ ->\n  \"Replace this string with your implementation.\" ;;\n\nlet rec fixedpoint f start delta =\n  \"Replace this string with your implementation.\" ;;\n",
+    "descr": [
+      [
+        "",
+        "<ol>\n  <li>\n    Write a function <code>compose : ('a -> 'a) list -> ('a ->\n    'a)</code> that takes as argument a list <code>l</code> of\n    functions, and that returns the function that is the composition\n    of the functions in <code>l</code>. For instance, <code>compose\n    [f;g;h] x = f (g (h x))</code>. Or with concrete\n    functions, <code>compose [(fun x -> x+1);(fun x -> 3*x);(fun x ->\n    x-1)] 2 = 4</code>.\n  </li>\n  <li>\n    Write a function <code>fixedpoint : (float -> float) -> float ->\n    float -> float</code> that takes a function <code>f</code> of\n    type <code>float -> float</code> and two floating-point\n    arguments <code>start</code> and <code>delta</code>. The\n    function <code>fixedpoint</code> applies\n    repetitively <code>f</code> to the result of its previous\n    application, starting from <code>start</code>, until it reaches a\n    value <code>y</code> where the difference between <code>y</code>\n    and <code>(f y)</code> is smaller than delta. In that case it\n    returns the value of <code>y</code>.  For\n    instance, <code>fixedpoint cos 0. 0.001</code> yields\n    approximately <code>0.739</code>\n    (<a href=\"http://mathworld.wolfram.com/DottieNumber.html\">ref</a>).\n  </li>\n</ol>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "2cTf0sCouNY4O8M2Sn9VGWMkCBcFZ/VQKmxeQUywu16ncBVCEn00QyMoha7ccql58XuAVSdiqvLnHwRBezexcpo74R19EJt674QtuM/QKL1OD2Q16OBeqDoVFvNCpXDNDtb0qgpK+4vF38qRRm/DdaCZ/EbDCoj6ulRMzNrHcCYS6Ld5lMPwk5I6KWNFOopSHA1YA6E0ERF9GRECG0qxpDOiSDkC+2sEWX7suLiehiCW42xuI8CzgchZ8Fb7KZbjTTdCRWtS65OBbi0s9A/98ks9pR+Rc/Hq+A24/5XrZMJA6svr6Bk4dw1lNtkPY6nxr10D0MkOQ+yiDAHZ6drL0zmWczfXqKaAUHVNNpQvERxmDQ5mU/6KXDxfERUQrZPI+b5I1pE6zRMjBbqgdaq6KMoKyXd41Iu3xk00E+x8f02CNGJT+oC2IYyl4bjEADS5OADBDxPaFMNfAF8YQJ/9lQf074i2UR0qlExe5EYmSPKji1wGl5tYsfQ3TP4Li4lcIffaINDDfYYAO7ggUD5SGnYbCo/4GRsvPUJYWk3iqZ6uaoNbFDO3XXNpiq8qtvkynzHELnY5v3PnGsARipGcd527A6QfV2RIpK1f9wUA326oTtYK/1pBeyMSRJlRp7KGJdz0rZ9BU0nV0HfBDH50qaCZ79SBEDbwwDhJnwaHriMh8MQ5wI+ol/BvAzcBKoM3MARNXQtZGo/nEHJ+VPmxny8kDGl+Mgg21pW66uiehnDENJRaYiLvcrQM8We94sycFycNHolCbUuOsT+8kkQ0xThCpBrIaBbdY6JT//7RNfgAzcuclEdWqNAlOcNPS9jrvZKEDdc4+ra7TQDAzNulMC+EczfEpbSYUCEwYi/gU6QtDBlDQ/p0Mj9QERUQr38IOewBPVU0w/dTUvjtq4q8IMQl/Hc8JvaocSC4ROoxpa1N3HkDHVHBStCfLLyeUnrbJBu1AIbmDasgGpmYVet76EC0jqiQTo+dlDQevEw/E3DpjcAUnEVSkrILTMWCi+AcNZva1hSRxM5X+GxwBCxEBSxPC8ERGkwWJEB3R/Wept5er9EcVWD0XiNhu+mG6rxKezDNLnZnuOerHxkrgGjXxlJpT6h8RIYG/aQgx1sBMN5cCdFP9qI1eHAQ+ZhOizPQPcj1a1k/FunD2X+DAiQir0H0pRWuCoWwwDZMjZyHrz/goqN/uhWdnFBvJH6X3kAULBJNVmtZGR/wEBFFQqCzyHuhDX5vJxhR1iubg4PghiON3wR9SXLvxvF4jUHpYsyvAiROFBkWllWJcy3ulUg98XFD7laQxkbkP/U3y644IqsA/tTcpVdYs2AqE2NPMU8fdN8WDdc4VOqxCDPPytDlPmCMsSeZpazIQWF/NpooUFksQURMAR1IEG/sOmcEhL7NOahE1QE6jlJmPrH8aKaJ0IF5/Cp7PeurgCC2VOgakugKPpJMYzLHR1jeMrPCTCrmJUfFQ2GvU01nVQ0WUxAIu5m38qjVFkPr9ikx/8A8SO4+7IQVoFcvb4YCCcrOi+1cOrPsYZSKwdFQLTcnV8xZBCZBXlITGQIm+RB7UFPsxY2kr9/GVRS3Bn2hudy/quF88W4R4iFxfvC6RN/neWaSq9BpSp9yVNZEpLxuehRc+N6oTwVPp0NRqDoVFxpHpy0eBtfUqxQGW4KqJlSSCHABsKP1boXORlDceQICxdrOcDlh6Ld5lMPw6/ATYzN2YkARLphMGGg4Xo/9D6FTXP+wyDriXmlRJZ1LMy75tujcujbFYJQCYiCtfa9+yUHsYsyvQBpCUWIQ65rJcHas6AB97QoHqjWNc5WdNFpWoW7RIs1FmfWq/RoDdIQlWeN/MU7excmeF1BFXPicM5aB8tjaPXqLbjWq5uuSUA5HNlItH/2uSEkBDmMZGRIQVEkVffrB+PdbLFVejoxuP4aqcK7zXcYlfVU=",
+    "solution": "qnLkum+120p+nTnLQzbE4HgBCo/4W9kQJ/heFRD/fLNGr9p8VS+OEXM5u+G8betKoDTI4nVxdPC6Ut1RgHeZq6xjDlc7VxYDnutnq1sTI4I8TtkGjv6e/yAQQs5QkGGEBsKCrJQ4W4W3YDrVTjI1rfL16ALERlHxwFBz71qCtWymK3TiMN9uqBbGIxcM0wVdK5cyTBFQXo9xU9JvVqWy7WbfSWhBIY9L4y08f3Wqf7DYNNAfLn+uxqUXyFbIKg3bQzVWEDBEuArJtTObpSw9dyFOlp+Zc6Xt1ooY8ELXItxFphec/Aw+fJEqIP9=",
+    "max-score": 20,
+    "depend": null,
+    "dependencies": []
+  },
+  null
+]
