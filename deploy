@@ -1,0 +1,145 @@
+#!/usr/bin/env bash
+# -*- coding: utf-8 -*-
+#
+# Copyright (c) 2018, 2020  Érik Martin-Dorel
+#
+# This script is contributed under the terms of the MIT license,
+# cf. <https://spdx.org/licenses/MIT.html>
+
+if [ "$1" = "--help" ]; then
+    cat <<EOF
+Usage: $ ./deploy /path/to/repository
+
+       $ ./deploy  # defaults to:
+       $ ./deploy ./build/learn-ocaml/demo-repository
+
+       $ ./deploy --help  # print this help
+EOF
+    exit 0
+fi
+
+set -e # exit on failure
+srcdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null && pwd )
+
+# TODO: make this value configurable?
+# image="ocamlsf/learn-ocaml:master"
+# image="pfitaxel/staging-learn-ocaml-editor:fix-static-deploy-docker"
+image="pfitaxel/staging-learn-ocaml-editor:learn-ocaml-editor-docker"
+
+pause() {
+    read -r -s -n 1 -p "Press any key to ${1:-continue} (or ^C to exit)... "
+    echo
+}
+
+get_url() {
+    # if origin = git@github.com:pfitaxel/pfitaxel-demo.git
+    # or origin = https://github.com/pfitaxel/pfitaxel-demo.git
+    # will return: https://pfitaxel.github.io/pfitaxel-demo
+    local remote
+    remote=$(git remote get-url origin)
+    remote=${remote#https://*/}
+    remote=${remote##*:}
+    orga=${remote%/*}
+    repo=${remote##*/}
+    repo=${repo%.git}
+    echo "https://$orga.github.io/$repo"
+}
+# test: get_url git@github.com:pfitaxel/pfitaxel-demo.git
+# test: get_url https://github.com/pfitaxel/pfitaxel-demo.git
+
+clone_subdir() {
+    local repo="learn-ocaml"
+    if test -d "${srcdir}/.build/$repo"; then
+        pushd "${srcdir}/.build/$repo"
+        git fetch --depth=1 origin
+        git reset --hard "@{u}"
+    else
+        # git clone https://github.com/pfitaxel/learn-ocaml.git -b fix-static-deploy --depth=1 "${srcdir}/.build/$repo"
+        git clone https://github.com/ocaml-sf/learn-ocaml.git -b master --depth=1 "${srcdir}/.build/$repo"
+        pushd "${srcdir}/.build/$repo"
+    fi
+    popd
+}
+
+# deprecated function
+make_gen() {
+    local target_url="$1"
+    local repo="learn-ocaml"
+    pushd "${srcdir}/.build/$repo"
+    if [ "$2" = "-B" ]; then
+        make clean
+    fi
+    if [ "$2" != "-B" ]; then
+        cat >&2 <<EOF
+Usage: make_gen URL [-B]  # where -B runs 'make clean' beforehand
+EOF
+    fi
+    # REMARK: needs an opam switch (opam install, etc.)
+    export PS4='+ \e[36;1m(${0##*/} @ line $LINENO) \$\e[0m '
+    set -x # trace for debug
+    # make build
+    # make process-repo
+    make
+    make opaminstall
+    learn-ocaml build --base-url "$target_url" --repo=demo-repository
+    rsync -av --delete-delay www/ "${srcdir}/docs"
+    git describe --long --always > "${srcdir}/VERSION"
+    popd
+}
+
+function failtemp () {
+    echo "Failed to create a temporary directory. Please report." >&2
+    exit 1
+}
+
+docker_gen() {
+    local target_url="$1"
+    local repo="learn-ocaml"
+    local repository="${2:-${srcdir}/.build/$repo/demo-repository}"
+    export PS4='+ \e[36;1m(${0##*/} @ line $LINENO) \$\e[0m '
+    set -x # trace for debug
+    : Create temporary directory...
+    T=$(mktemp -d /tmp/learn-ocaml-www.XXX) || failtemp
+    : Generate www using Docker...
+    sudo docker pull "$image"
+    sudo docker run --rm -i -v "$repository:/repository" -v "$T:/home/learn-ocaml/tmp" --entrypoint="" "$image" sh -c "learn-ocaml build --repo=/repository --base-url $target_url && mv -v www tmp/"
+    # : Replace docs folder...
+    # rm -fr docs/
+    # mv -v -T "$T/www" ./docs
+    # rmdir "$T"
+    # : Mostly equivalent to:
+    rsync -av --delete-delay "$T/www/" "${srcdir}/docs"
+    : Remove temporary directory...
+    rm -fr "$T"
+
+    echo "$image" > "${srcdir}/VERSION"
+}
+
+deploy_locally() {
+    clone_subdir
+    port="8080"
+    target_url="http://localhost:$port"
+    docker_gen "$target_url"
+    cp -pv "${srcdir}/.nojekyll" "${srcdir}/docs/"
+
+    python3 -m http.server -d "${srcdir}/docs" "$port"
+}
+
+deploy() {
+    repository="$1"  # can be the empty string, see docker_gen
+    clone_subdir
+    target_url=$(get_url)
+    docker_gen "$target_url" "$repository"
+    cp -pv "${srcdir}/.nojekyll" "${srcdir}/docs/"
+
+    cd "${srcdir}"
+    git add VERSION
+    git add -v -A docs
+    repo="learn-ocaml"
+    # TODO: replace previous commit?
+    git commit -m "Build $repo ($(<VERSION))" -e
+    pause "git push" && git push
+}
+
+# deploy_locally "$@"
+deploy "$@"
