@@ -5,30 +5,30 @@
   <title>
    Learn OCaml by OCamlPro - Exercise
   </title>
-  <link href="https://ocaml-sf.github.io/learn-ocaml-public/css/learnocaml_common.css" rel="stylesheet">
-  <link href="https://ocaml-sf.github.io/learn-ocaml-public/css/learnocaml_exercise.css" rel="stylesheet">
-  <link href="https://ocaml-sf.github.io/learn-ocaml-public/css/learnocaml_report.css" rel="stylesheet">
-  <link href="https://ocaml-sf.github.io/learn-ocaml-public/css/learnocaml_tryocaml.css" rel="stylesheet">
-  <script src="https://ocaml-sf.github.io/learn-ocaml-public/js/ace/ace.js" type="text/javascript" charset="utf-8" defer=""></script>
+  <link href="https://ocaml-sf.org/learn-ocaml-public/css/learnocaml_common.css" rel="stylesheet">
+  <link href="https://ocaml-sf.org/learn-ocaml-public/css/learnocaml_exercise.css" rel="stylesheet">
+  <link href="https://ocaml-sf.org/learn-ocaml-public/css/learnocaml_report.css" rel="stylesheet">
+  <link href="https://ocaml-sf.org/learn-ocaml-public/css/learnocaml_tryocaml.css" rel="stylesheet">
+  <script src="https://ocaml-sf.org/learn-ocaml-public/js/ace/ace.js" type="text/javascript" charset="utf-8" defer=""></script>
 <!-- var editor = ace.edit("learnocaml-exo-editor-pane"); -->  
     
-<!-- editor.setOptions({ fontFamily: 'Inconsolata', fontSize: "18px" }); -->  <script src="https://ocaml-sf.github.io/learn-ocaml-public/js/learnocaml-config.js" language="JavaScript"></script>
-  <script src="https://ocaml-sf.github.io/learn-ocaml-public/js/learnocaml-exercise.js" language="JavaScript" defer=""></script>
+<!-- editor.setOptions({ fontFamily: 'Inconsolata', fontSize: "18px" }); -->  <script src="https://ocaml-sf.org/learn-ocaml-public/js/learnocaml-config.js" language="JavaScript"></script>
+  <script src="https://ocaml-sf.org/learn-ocaml-public/js/learnocaml-exercise.js" language="JavaScript" defer=""></script>
  </head>
  <body>
 <!-- Should be kept untouched. -->  <div style="display:none">
 <!-- (Weakly) preload images. -->   
-      <img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_1.gif"><img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_2.gif">
-      <img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_3.gif"><img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_4.gif">
-      <img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_5.gif"><img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_6.gif">
-      <img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_7.gif"><img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_8.gif">
-      <img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_9.gif">
+      <img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_1.gif"><img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_2.gif">
+      <img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_3.gif"><img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_4.gif">
+      <img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_5.gif"><img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_6.gif">
+      <img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_7.gif"><img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_8.gif">
+      <img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_9.gif">
   </div>
 <!-- Three states: .initial, .loading and .loaded.
          Set to .loaded when initial loading finished.
          Set to .loading while loading, then to .loaded. -->  <div id="learnocaml-exo-loading" class="loading-layer initial">
    <div id="chamo">
-    <img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/tryocaml_loading_5.gif" id="chamo-img">
+    <img src="https://ocaml-sf.org/learn-ocaml-public/icons/tryocaml_loading_5.gif" id="chamo-img">
    </div>
    <div class="messages">
     <ul>
@@ -43,13 +43,13 @@
       document.getElementById('chamo-img').src = learnocaml_config.baseUrl + '/icons/tryocaml_loading_' + n + '.gif';
   </script>
 <!-- Anything below could be recreated dynamically, but IDs must be kept. -->  <div id="learnocaml-exo-toolbar">
-   <a href="https://ocaml-sf.github.io/learn-ocaml-public/">
+   <a href="https://ocaml-sf.org/learn-ocaml-public/">
       
    <div class="logo">
     
-        <img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/logo_ocaml.svg">
+        <img src="https://ocaml-sf.org/learn-ocaml-public/icons/logo_ocaml.svg">
         <span>Learn OCaml</span>
-        <img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/logo_ocp.svg">
+        <img src="https://ocaml-sf.org/learn-ocaml-public/icons/logo_ocp.svg">
       
    </div>
    
@@ -169,7 +169,7 @@
 <!-- Using an iframe is the easiest way to isolate the CSSs. -->   
         
 <!-- <iframe src="/mockup_report.html"></iframe> -->   
-        <img src="https://ocaml-sf.github.io/learn-ocaml-public/icons/icon_reload_dark.svg" style="position: absolute; top: 50%; left: 50%;
+        <img src="https://ocaml-sf.org/learn-ocaml-public/icons/icon_reload_dark.svg" style="position: absolute; top: 50%; left: 50%;
                     margin: -100px 0 0 -100px; width: 200px;
                     opacity: 0.2">
         <span id="txt_grade_report" style="position: absolute; top: 50%; margin: -12px 0 0 0;
