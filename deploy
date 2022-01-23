@@ -6,13 +6,13 @@
 # This script is contributed under the terms of the MIT license,
 # cf. <https://spdx.org/licenses/MIT.html>
 #
-_version="1.0.2"
+_version="1.0.5"
 #
 # The args parser was generated from:
 #
 # ARG_OPTIONAL_SINGLE([image],[],[Learn-OCaml Docker image],[ocamlsf/learn-ocaml:master])
 # ARG_OPTIONAL_SINGLE([base-url],[],[Base URL of the website without trailing slash])
-# ARG_POSITIONAL_SINGLE([repo],[Path to Learn-OCaml repository],[./build/learn-ocaml/demo-repository])
+# ARG_POSITIONAL_SINGLE([repo],[Absolute path to Learn-OCaml repository],[$PWD/.build/learn-ocaml/demo-repository])
 # ARG_HELP([Deploy Learn-OCaml statically])
 # ARG_VERSION([echo "$0 version $_version"])
 # ARGBASH_GO()
@@ -40,7 +40,7 @@ begins_with_short_option()
 
 # THE DEFAULTS INITIALIZATION - POSITIONALS
 _positionals=()
-_arg_repo="./build/learn-ocaml/demo-repository"
+_arg_repo="$PWD/.build/learn-ocaml/demo-repository"
 # THE DEFAULTS INITIALIZATION - OPTIONALS
 _arg_image="ocamlsf/learn-ocaml:master"
 _arg_base_url=
@@ -50,7 +50,7 @@ print_help()
 {
 	printf '%s\n' "Deploy Learn-OCaml statically"
 	printf 'Usage: %s [--image <arg>] [--base-url <arg>] [-h|--help] [-v|--version] [<repo>]\n' "$0"
-	printf '\t%s\n' "<repo>: Path to Learn-OCaml repository (default: './build/learn-ocaml/demo-repository')"
+	printf '\t%s\n' "<repo>: Absolute path to Learn-OCaml repository (default: '$PWD/.build/learn-ocaml/demo-repository')"
 	printf '\t%s\n' "--image: Learn-OCaml Docker image (default: 'ocamlsf/learn-ocaml:master')"
 	printf '\t%s\n' "--base-url: Base URL of the website without trailing slash (no default)"
 	printf '\t%s\n' "-h, --help: Prints help"
@@ -275,7 +275,7 @@ deploy() {
     pause "git push" && git push
 }
 
-# deploy_locally "$@"
+# deploy_locally "$_arg_repo"
 deploy "$_arg_repo"
 
 # ] <-- needed because of Argbash
