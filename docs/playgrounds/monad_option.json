@@ -1,0 +1,5 @@
+{
+  "id": "monad_option",
+  "prelude": "",
+  "template": "let return x = Some x;;\n\nlet map f = function\n  | None -> None\n  | Some x -> Some (f x);;\n\nlet bind x f =\n  match x with\n  | None -> None\n  | Some x -> f x;;\n"
+}

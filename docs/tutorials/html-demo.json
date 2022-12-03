@@ -1,0 +1,119 @@
+{
+  "learnocaml_version": "2",
+  "title": [
+    "Demo tutorial written in",
+    {
+      "code": "HTML"
+    },
+    "syntax"
+  ],
+  "steps": [
+    {
+      "title": "This is a first step",
+      "contents": [
+        {
+          "paragraph": [
+            "In this",
+            {
+              "emph": "first"
+            },
+            "step, we have this first paragraph of text that contains an emphasized part."
+          ]
+        },
+        {
+          "paragraph": "Then this second paragraph is just plain text."
+        },
+        {
+          "code": "(* then we have a\n   block of OCaml code *)\n2 + 2 ;;"
+        },
+        {
+          "paragraph": [
+            "Finally, this paragraph contains some",
+            {
+              "code": "code"
+            },
+            "."
+          ]
+        }
+      ]
+    },
+    {
+      "title": [
+        "This is step number",
+        {
+          "code": "0x02"
+        }
+      ],
+      "contents": [
+        {
+          "paragraph": [
+            "Now we show how to make some code",
+            {
+              "code": "clickable ()",
+              "runnable": true
+            },
+            "."
+          ]
+        },
+        {
+          "code": "(* then we have a clickable\n   block of OCaml code *)\n2 + 2 ;;",
+          "runnable": true
+        }
+      ]
+    },
+    {
+      "title": [
+        "This is a",
+        {
+          "math": "3^rd"
+        },
+        "step"
+      ],
+      "contents": [
+        {
+          "paragraph": "Here we have an enumeration:"
+        },
+        {
+          "enum": [
+            [
+              {
+                "paragraph": [
+                  "This is point number",
+                  {
+                    "code": "let one = 1",
+                    "runnable": true
+                  },
+                  "."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "This is point number",
+                  {
+                    "code": "let second = succ one",
+                    "runnable": true
+                  },
+                  "."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "This is point number",
+                  {
+                    "code": "succ second",
+                    "runnable": true
+                  },
+                  "."
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    }
+  ]
+}

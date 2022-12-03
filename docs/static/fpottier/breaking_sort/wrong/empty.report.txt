@@ -1,2 +1,0 @@
-Found [inputs] with compatible type.
-Failure: The length of the list [inputs] is 0, whereas it should be 74.

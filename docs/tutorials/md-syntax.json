@@ -1,0 +1,168 @@
+{
+  "learnocaml_version": "2",
+  "title": "Markdown syntax tutorial for Learn OCaml tutorials",
+  "steps": [
+    {
+      "title": "Each tutorial starts with a main title",
+      "contents": [
+        {
+          "paragraph": "The main title must be a level 1 title, which in markdown syntax is either of the following syntaxes."
+        },
+        {
+          "code": "# Main Title"
+        },
+        {
+          "paragraph": "Or:"
+        },
+        {
+          "code": "Main Title\n=========="
+        },
+        {
+          "paragraph": "It must be the very first element of the file. Tutorial written in this syntax are valid Markdown documents, but they must respect some strict structure. Not all Markdown files are valid tutorials)."
+        }
+      ]
+    },
+    {
+      "title": "Tutorials are split into a series of steps",
+      "contents": [
+        {
+          "paragraph": "Each section must start with alevel 2 title, which in markdown syntax is either of the following syntaxes."
+        },
+        {
+          "code": "## Step Title"
+        },
+        {
+          "paragraph": "Or:"
+        },
+        {
+          "code": "Step Title\n----------"
+        },
+        {
+          "paragraph": "The first section (and thus the first level 2 title) must directly follow the main title."
+        },
+        {
+          "paragraph": "Titles can contain enriched text."
+        }
+      ]
+    },
+    {
+      "title": "Steps are split into paragraphs",
+      "contents": [
+        {
+          "paragraph": "In markdown, two paragraphs are simply separated by an empty line. There are three kinds of toplevel paragraph kinds allowed in tutorials."
+        },
+        {
+          "enum": [
+            [
+              {
+                "paragraph": "Simple paragraphs of enriched text."
+              }
+            ],
+            [
+              {
+                "paragraph": "Code blocks."
+              }
+            ],
+            [
+              {
+                "paragraph": "Enumerations (one level only) using the standard bulleted syntax  of Markdown."
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Enriched text",
+      "contents": [
+        {
+          "paragraph": [
+            "The assumed character encoding is ",
+            {
+              "code": "UTF-8"
+            },
+            ". The supported markdown escapes are the following."
+          ]
+        },
+        {
+          "enum": [
+            [
+              {
+                "paragraph": [
+                  "Code using ",
+                  {
+                    "code": "`this syntax`"
+                  },
+                  ". Any newline will be ignored when  using this code notation."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "Runnable code using ",
+                  {
+                    "code": "`| this syntax |`"
+                  },
+                  "."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "Math formulas using ",
+                  {
+                    "code": "`$ this syntax $`"
+                  },
+                  ". The contents have to  be formatted in the ascii variant of Mathjax.js."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "Emphasized parts ",
+                  {
+                    "code": "*like this*"
+                  },
+                  "."
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Code blocks",
+      "contents": [
+        {
+          "paragraph": "Code that span on several lines must be put at the top level of the tutorial, in a code block. You just have to put your code verbatim with an indentation of at least 4 characters."
+        },
+        {
+          "paragraph": [
+            "To make the code block runnable, use a vertical bar (",
+            {
+              "code": "|"
+            },
+            ") at the beginning of each line, just after the margin, as in the following example (the quotes hilight the beginning and end of each line and are not part of the syntax)."
+          ]
+        },
+        {
+          "code": "`    | this text`\n`    |   is clickable`"
+        },
+        {
+          "paragraph": "Wish is displayed as follows:"
+        },
+        {
+          "code": "this text\n  is clickable",
+          "runnable": true
+        },
+        {
+          "paragraph": "The four margin spaces, the vertical line and any optional margin on the right of the vertical bar will be dropped."
+        }
+      ]
+    }
+  ]
+}

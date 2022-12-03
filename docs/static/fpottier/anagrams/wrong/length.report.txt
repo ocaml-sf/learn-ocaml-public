@@ -1,8 +1,0 @@
-Question 1
-  Found [anagrams] with compatible type.
-  Failure: [anagrams] is incorrect.
-    The following expression:
-    
-     | anagrams "bee" "ebb"
-    produces the following result: [true] This is invalid. Producing the
-    following result is valid: [false]

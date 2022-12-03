@@ -1,0 +1,37 @@
+{
+  "learnocaml_version": "1",
+  "series": {
+    "demo-tutorials": {
+      "title": "Tutorial Examples",
+      "tutorials": [
+        [
+          "html-demo",
+          [
+            "Demo tutorial written in",
+            {
+              "code": "HTML"
+            },
+            "syntax"
+          ]
+        ],
+        [
+          "md-demo",
+          "Demo tutorial written in Markdown syntax"
+        ]
+      ]
+    },
+    "tutorials-doc": {
+      "title": "Tutorial Syntaxes Documentation",
+      "tutorials": [
+        [
+          "html-syntax",
+          "HTML syntax tutorial for Learn OCaml tutorials"
+        ],
+        [
+          "md-syntax",
+          "Markdown syntax tutorial for Learn OCaml tutorials"
+        ]
+      ]
+    }
+  }
+}

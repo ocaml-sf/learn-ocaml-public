@@ -1,0 +1,189 @@
+{
+  "learnocaml_version": "2",
+  "title": "HTML syntax tutorial for Learn OCaml tutorials",
+  "steps": [
+    {
+      "title": "Main HTML structure",
+      "contents": [
+        {
+          "paragraph": "Tutorials written in the HTML syntax are valid HTML files that can be viewed in any Web browser (but not all HTML files are valid tutorials)."
+        },
+        {
+          "paragraph": "Here is an example HTML 5 stub that you can copy and past."
+        },
+        {
+          "code": "<html>\n  <head>\n     <meta charset='UTF-8'>\n     <title>This title is ignored.</title>\n     <!-- Anything here is ignored, you can add some\n          CSS of JS is you want your files to be readable\n          outside of Learn OCaml. -->\n  </head>\n  <body>\n     <!-- Here goes the tutorial contents -->\n  </body>\n</html>"
+        }
+      ]
+    },
+    {
+      "title": "Each tutorial starts with a main title",
+      "contents": [
+        {
+          "paragraph": [
+            "The main title must be a level 1 title (",
+            {
+              "code": "<h1>title</h1>"
+            },
+            "). It must be the very first element of the html ",
+            {
+              "code": "<body>"
+            },
+            ".  Title can contain enriched text."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Tutorials are split into a series of steps",
+      "contents": [
+        {
+          "paragraph": [
+            "Each section must start with alevel 2 title (",
+            {
+              "code": "<h2>title</h2>"
+            },
+            "). The first section (and thus the first level 2 title) must directly follow the main title."
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Steps are split into paragraphs",
+      "contents": [
+        {
+          "paragraph": "There are three kinds of toplevel paragraph kinds allowed in tutorials."
+        },
+        {
+          "enum": [
+            [
+              {
+                "paragraph": [
+                  "Simple paragraphs of enriched text in a ",
+                  {
+                    "code": "<p></p>"
+                  },
+                  " markup."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "Code blocks in a ",
+                  {
+                    "code": "<pre></pre>"
+                  },
+                  " markup."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "Enumerations in a ",
+                  {
+                    "code": "<ul></ul>"
+                  },
+                  " block of ",
+                  {
+                    "code": "<li></li>"
+                  },
+                  " items."
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Enriched text",
+      "contents": [
+        {
+          "paragraph": [
+            "The assumed character encoding is ",
+            {
+              "code": "UTF-8"
+            },
+            ". The supported markdown escapes are the following."
+          ]
+        },
+        {
+          "enum": [
+            [
+              {
+                "paragraph": [
+                  "Code using a ",
+                  {
+                    "code": "<code></code>"
+                  },
+                  " markup.  Any newline will be ignored when using this code notation."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "Runnable code by setting the ",
+                  {
+                    "code": "data-run"
+                  },
+                  " attribute (",
+                  {
+                    "code": "<code data-run></code>"
+                  },
+                  ")."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "Math formulas by setting ",
+                  {
+                    "code": "data-math"
+                  },
+                  " attribute (",
+                  {
+                    "code": "<code data-math></code>"
+                  },
+                  ").  The contents have to be formatted in the ascii variant of Mathjax.js."
+                ]
+              }
+            ],
+            [
+              {
+                "paragraph": [
+                  "Emphasized parts ",
+                  {
+                    "code": "<em>like this</em>"
+                  },
+                  "."
+                ]
+              }
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Code blocks",
+      "contents": [
+        {
+          "paragraph": [
+            "Code that span on several lines must be put at the top level of the tutorial, in a ",
+            {
+              "code": "<pre>"
+            },
+            " block. Unlike in plain HTML, any whitespace margin on the left of the code will be dropped. As for blocks, the",
+            {
+              "code": "data-run"
+            },
+            " attribute makes code blocks runnable."
+          ]
+        }
+      ]
+    }
+  ]
+}
