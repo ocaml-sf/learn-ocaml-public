@@ -1,8 +1,8 @@
 var learnocaml_config = {
-  enableTutorials: true,
-  enablePlayground: true,
-  enableLessons: true,
+  enableTutorials: false,
+  enablePlayground: false,
+  enableLessons: false,
   enableExercises: true,
   enableToplevel: true,
-  baseUrl: "https://ocaml-sf.github.io/learn-ocaml-public"
+  baseUrl: "https://ocaml-sf.org/learn-ocaml-public"
 }

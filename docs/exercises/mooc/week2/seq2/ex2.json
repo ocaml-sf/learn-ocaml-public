@@ -1,0 +1,24 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Points and vectors",
+    "stars": 1.5
+  },
+  {
+    "id": "ex2",
+    "prelude": "type point  = { x : float; y : float; z : float }\ntype dpoint = { dx : float; dy : float; dz : float }\ntype physical_object = { position : point; velocity : dpoint }\n",
+    "template": "let move p dp =\n  \"Replace this string with your implementation.\" ;;\n\nlet next obj =\n  \"Replace this string with your implementation.\" ;;\n\nlet will_collide_soon p1 p2 =\n  \"Replace this string with your implementation.\" ;;\n",
+    "descr": [
+      [
+        "",
+        "<p>\n  The given prelude defines three types, one for three dimensional\n   points, another for velocity vectors in three dimensions, and\n   another one representing moving objects in space.\n</p>\n\n<ol>\n  <li>\n    Write a function <code>move : point -> dpoint -> point</code> such\n    that <code>move p dp</code> is the point <code>p</code> whose\n    coordinates have been updated according to <code>dp</code>.\n    <br/>\n    (<code>x</code> is now <code>x +. dx</code>, <code>y</code> is now\n    <code>y +. dy</code>, <code>z</code> is now <code>z +. dz</code>.\n  </li>\n  <li>\n    Write a function <code>next : physical_object ->\n    physical_object</code> such that <code>next o</code> is the\n    physical object <code>o</code> at time <code>t + dt</code>.\n    <br/>\n    The position of <code>next o</code> is the position\n    of <code>o</code> moved according to its velocity vector.\n  </li>\n  <li>\n    Suppose that these objects are spheres whose radius\n    is <code>1.0</code>.\n    <br/>\n    Write a function <code>will_collide_soon : physical_object ->\n    physical_object -> bool</code> that tells if at the next instant,\n    the two spheres will intersect.\n  </li>\n</ol>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "jJC8ekwyPpJwELQjMrjyNWM0TRERQ6/2MQtRUUz7fIo6r6pcSEu0Xn6hc+n5bet5mmvUOmswfqr6Qs/Ix7CZq5ZqGVEhEJtLlaRlhhREPqItZLdD6O2Rdy9NQs5Z9XLLEcKOsJdBD0nG1X31DH51xaDV6FruCoXnwBlDjxL+qXL+k3uqWz1aAz90bmk5r026LUE0CVkWW/AcSQxVRqn96i8mFWRVP4FkPmiguOvnujne2ctmLmrrgchM//etKd3qQzYQUXdf65qFtSqskBF9eiEAlB3VtpGsPBoYd9KR0tEUzhuqlFIWdwVt0cM4Il7mqvKERx9DR07vHQP+5svc1su0ubd+Jz9X3lX9IXv9vz1tDlMUGB9TEj9CHoU0sdLIOewJ0URr7oA5M4y/duXs31QgzydmYOTne5nQR3s9j0A0PpJ0+BCUBYya113EAGTfIVb0Hhe5GO6kG/8WGJEq79DLnPOAAEXk6HklyUFuQ4uf5xRU8pIVc0wNHc7ZjqQ6/M4goQ==",
+    "max-score": 30
+  },
+  null
+]

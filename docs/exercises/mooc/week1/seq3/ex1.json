@@ -1,0 +1,24 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Integer Identifiers",
+    "stars": 1
+  },
+  {
+    "id": "ex1",
+    "prelude": "let x = Random.int 9 + 1 (* not 0 *)\n",
+    "template": "",
+    "descr": [
+      [
+        "",
+        "<p>\n  Suppose that a variable <code>x</code> exists and is an integer.\n</p>\n\n<p>\n  Define a variable <code>x_power_8</code> that uses three\n  multiplications to calculate <code>x</code> to the power of 8. The\n  only function you are allowed to call is the <code>(*)</code>\n  operator.\n</p>\n\n<p>\n  <strong>Hint:</strong> use auxiliary variables.\n</p>\n\n"
+      ]
+    ],
+    "prepare": "dGDoN09nZYClQ1W8NaEyk7VBXWZ2XElZYRA0FRzgtM67r/pcHCfYDXMjebHxse2moCbUJjNhfqrL",
+    "test": "2cTf0sCouNY4O8M2Sn9VGWMkCBcFZ/VQKmxeWVXsfMAnr/pcGnKWC8dtavnygrM67y0ZK7dzr+KtXdxRv7GXeQkfVpUuXd5L5akacwdvTuhlGwVHnLNM/8oVRZlWeyDBEdfWv2Aq2w0QNEDTIyQ0v0HPpU+J1BX2hRUY71yfqHRu6OswyY0/6/Jx4D2yN6QSYlMVT6ECGWltSEUVEuz6zmrhQSZaYNs41i7suLiehnDENJRaADjrgfFX79XpYsygPX/EL7s3l5qRaXaj6HQ6v7VO/lHDm/jdVR6G/oDFYdxU9svAlCddqNBk+I1pY5zlr2m2O1JDUOuqTQaG8drL4GqQqlCppfaTHz6qP5RlTyk8QQEJRR/KWC2ZRUoqffjY2O5VPU6Kjkcm3OmafYS5+IFiipApJu8ih5rMQb1B/egCN5JRPFaI2NzkKeyBU7ux3Q8AAYLyGPNn4o0YQwE76EC0jqjMTjjg5HVqmEdgSPDp54/G8BUVlvQ5C2vYmeNhOImEIKSGt2JQ+5NhSyhEVmEECQ/XUF21+RIRD6D+whobr9MkXjyZXj6hj3y/ubM7n8T9MnYmr33sXgk3eCmDtEAj4kk72t2Co+EsvIkcTqJoTwVPp0NRqDpJFv2CyDnEOb0TkcBPFumQNGW1AUhHvuXGy9eHRE4ueQ9mjwLAxHo56Lkq5I+y6F/CZm1E3VBXPQhDMk6XW/UdVFQPGPbyzyymBUIGOZULM7CsuqSkxGnR1NFc+/8vxvF4jRHdZNyBBGNME8ZZnUXjsmf6nBwtsCQA/U3EfpHrMFVwlUK1PIQSixzw55ZVfKcoYhM2MUvdw10HEt6EWfr9N9mnmtrt0WvEsnD+pbDeUBVy1/pwA/gJQUkMER9ZW7ZUVGwRfumIZfRBURpm8kE5Naahq07t0ZRko8w8OfSIxVbQVfJhj4wCPyAUM/aUXh3zOueRTDDnI5a0BwXvLrggBVzKFw57lA83/N4QTo+d5iVkz6sxNf7kjMtUkSEVv3EBHdm68qQcONDf1hSdqd1CISZkSDpqF7QABAJCTWZKJ/oEQVyjwt6AqoV9TjCSES1Fu+e/6LNq9iHGAHspftKLXc9Rx/CXlp2/URA/VYYDdqQLvNoUZPAFCdY07PlWqHQ+Q25PlGm2QMbTtJU1FrW4YTr3Gyl1tfDEmQPFBR4UvEl/ohiBwyBglPZj/1uwbkAITT1E3VADJ6IZMlN1Xo9SFUVMCuz66zaHQXMXLYhTJnrsqg1=",
+    "solution": "qnLkumnzZqMOpnO9FTm1VzNBAQ/FGUFzOVcGUELGbt5zr69cXjCDXmxj6fncsfZloGmuLnp/uaD3Sc9MxyPxe5k6RpM2AxYB7+pAq1sXI+AOXJUG8g/RqGQvRw1VkHDeVJqQaY5pRqOH1WztWot=",
+    "max-score": 2
+  },
+  null
+]

@@ -2,25 +2,552 @@
   {
     "learnocaml_version": "2",
     "groups": {
-      "demo": {
-        "title": "Demo exercise pack",
+      "mooc": {
+        "title": "Introduction to Functional Programming (MOOC)",
         "exercises": [
           [
-            "demo",
+            "mooc/week1/seq3/ex1",
             {
               "learnocaml_version": "2",
               "kind": "exercise",
-              "title": "Demo of the exercise environment",
-              "stars": 0
+              "title": "Integer Identifiers",
+              "stars": 1
             }
           ],
           [
-            "demo2",
+            "mooc/week1/seq3/ex2",
             {
               "learnocaml_version": "2",
               "kind": "exercise",
-              "title": "Demo of the exercise environment (MD version)",
-              "stars": 0
+              "title": "String Identifiers",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week1/seq4/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Simple Functions over Integers",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week1/seq4/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Simple Functions over Strings",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week2/seq1/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Tetragon",
+              "stars": 2.5
+            }
+          ],
+          [
+            "mooc/week2/seq1/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Enigma",
+              "stars": 2.5
+            }
+          ],
+          [
+            "mooc/week2/seq2/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Time on Planet Shadokus",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week2/seq2/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Points and vectors",
+              "stars": 1.5
+            }
+          ],
+          [
+            "mooc/week2/seq3/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Searching for Strings in Arrays",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week2/seq3/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Finding the Minimum",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week2/seq4/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "A Small Typed Database",
+              "stars": 3
+            }
+          ],
+          [
+            "mooc/week3/seq1/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "First In First Out",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week3/seq1/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Classic Functions Over Lists",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week3/seq2/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Symbolic Manipulation of Arithmetic Expressions",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week3/seq2/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Tries",
+              "stars": 3
+            }
+          ],
+          [
+            "mooc/week3/seq3/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Type Directed Programming",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week3/seq4/ex3",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "An Implementation of List with an Efficient Concatenation",
+              "stars": 3
+            }
+          ],
+          [
+            "mooc/week3/seq4/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Balanced Binary Trees",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week4/seq1/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Using First Class Functions",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week4/seq2/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Functions Returning Functions",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week4/seq3/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Optimizing Partial Applications",
+              "stars": 2.5
+            }
+          ],
+          [
+            "mooc/week4/seq3/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "A Small Arithmetic Interpreter",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week4/seq4/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Using and Writing the Map Function",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week5/seq1/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Optimising a Tree Traversal using Exceptions",
+              "stars": 3
+            }
+          ],
+          [
+            "mooc/week5/seq1/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Unraveling the Automatic Grader",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week5/seq2/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Printing Lists",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week5/seq2/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Displaying a Filesystem Hierarchy",
+              "stars": 3
+            }
+          ],
+          [
+            "mooc/week5/seq3/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Printing with Loops",
+              "stars": 1
+            }
+          ],
+          [
+            "mooc/week5/seq3/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Producing Fine ASCII Art",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week5/seq4/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Rotating the Contents of an Array",
+              "stars": 1.5
+            }
+          ],
+          [
+            "mooc/week5/seq4/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Implementing a Stack with an Array",
+              "stars": 1.5
+            }
+          ],
+          [
+            "mooc/week6/seq1/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Type Abstraction Using a Signature",
+              "stars": 1.5
+            }
+          ],
+          [
+            "mooc/week6/seq1/ex2",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Multisets",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week6/seq2/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Fixing a module signature",
+              "stars": 2
+            }
+          ],
+          [
+            "mooc/week6/seq3/ex1",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Char Indexed Hashtables",
+              "stars": 2
+            }
+          ]
+        ]
+      },
+      "fpottier": {
+        "title": "Advanced Functional Programming by François Pottier",
+        "exercises": [
+          [
+            "fpottier/alpha_beta",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Alpha-Beta Search",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/anagrams",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Recognizing Anagrams",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/breaking_sort",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Breaking a Sort",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/counting_trees",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Counting trees",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/enumerating_trees",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Enumerating Trees",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/generic_sorting",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Generic Sorting",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/huffman",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Huffman Compression",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/infinite_arrays",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Infinite Arrays",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/leftist_heaps",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Leftist heaps",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/merge_sort",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Merge Sort",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/nondet_monad_cont",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Implementing Nondeterminism with Continuations",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/nondet_monad_defun",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Implementing Nondeterminism as an Abstract Machine",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/nondet_monad_seq",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Implementing Nondeterminism with Sequences",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/parser_combinators",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Parser Combinators",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/persistent_arrays",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Persistent arrays",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/pprint",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "A pretty-printer",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/random_access_lists",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Random access lists",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/sat",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "A SAT solver",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/spectre",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "From a Spectre to a Tree",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/stereo",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Trees in Stereo Vision",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/symbolic_sequences_data",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Symbolic Sequences as Data",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/symbolic_sequences_objects",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Symbolic Sequences as Objects",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/tictactoe",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Building a Game Tree",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/tree_iterators",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Tree Iterators",
+              "stars": 3
+            }
+          ],
+          [
+            "fpottier/unionfind",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "The Union-Find data structure",
+              "stars": 3
             }
           ]
         ]

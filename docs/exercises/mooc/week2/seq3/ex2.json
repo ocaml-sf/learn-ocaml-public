@@ -1,0 +1,24 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Finding the Minimum",
+    "stars": 1
+  },
+  {
+    "id": "ex2",
+    "prelude": "",
+    "template": "let min a =\n  \"Replace this string with your implementation.\" ;;\n\nlet min_index a =\n  \"Replace this string with your implementation.\" ;;\n\nlet it_scales =\n  \"Replace this string with your answer.\" ;;\n",
+    "descr": [
+      [
+        "",
+        "<p>\n   Consider a non empty array of integers <code>a</code>.\n</p>\n\n<ol>\n  <li>\n    Write a function <code>min : int array -> int</code> that returns\n    the minimal element of <code>a</code>.\n  </li>\n  <li>\n    Write a function <code>min_index : int array -> int</code> that\n    returns the index of the minimal element of <code>a</code>.\n  </li>\n</ol>\n\n<p>\n  Do you think these functions work well on large arrays ?\n</p>\n\n<ol start=\"3\">\n  <li>\n    Define a variable <code>it_scales</code> and set it\n    to <code>\"yes\"</code> or <code>\"no\"</code>.\n  </li>\n</ol>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "GRov6QXEba+xS3DU2CwZfGMkCBcFZ/VQKmxeWVXsfJsfcoFoEBbSES2hw+Wcgt95oE0VMS1cwfmxEYlRtTrXtlIyFisIXMN47+1bxNRMIYlpHM1OzLMCaXEFWwkC8A7EQM70tIADUdORZzzSF8EWseyGboXIUVCmwFcMkh0PuEIFBXWOHe+qsO2FdKsuKQ+zJQABHkQZRlxzQ9VQVKPx8yujEy6VMgxSImTx6w3iwyTEPJka4/8vxqI+8Wep0tTuDzICMQIf65qIwnrSklEvrnUXf5nJc6LiPBZZyA4rYc1Uzev2lA/DdsAdMsNCLjLfdPOEN1RIQ3DuAlnBtIfA3AhYLd/5eqqlwFLyrmsuBvZ6QVZM1/Z2XG9SXFo3rb7kNgBBPVV5jkcm3Kjtq4q82IFypAA/JfT6cR+WXclffPdF2lt4MUTgWM+hKuyNTnuY1UfVTdGmU0pdVR0YQwE7alXP5b4QB/8xlHVw5QgxSP4r7MlIkXYVvb9EAxq68qQcV9pqnpWjqv0yGeTbQHxUuGMAGB63GVg1JoA0HBDEh1559EEcVWCxG8AtgOPmbbs0oEDRJm2nfM4gGxsSfi8Sq/AtA/N7ChZxouAfeYZNL0pOBctL6OsTqEFZPN6C9SKEQJq+a2BPFunE1W7HMH12sLP1mQyP2ATWgQxNpIX2xEIFAjO3U4aofMl0sPhe36nzYlFNTBEZGR9SFUVMCuz66zbfAGdHIYJ44z+sg4Oqy7DG32loHDr9grQHjmr7Kg3bQ8YCUWIQ65rJcHbW6A6rd8A0pQDBcBTnPFd4jDbYIq/AbaDclBsTehRL0ZI23AzhqMieFsNER3mjGRW8nhelPSkJ3gI4srinsVLfrUZfHrdiP6hPUFV1SztfERUQr3CO0qRB0/VsoVdbO4yqc4rQ2JZcj86sJu8ueFbKE4V7paZxN5JRY6CGCcXl40TBUj0nLUfXNvTAUeo5VRSBQJFb6EL7jPjMToTF/W1gllIqYqup7IRG5QtVv+RNNhzznf2rFpsvnpiNqsK7QbDbORM1d7tIAp1RQFZM09JUFU4uwhZdsEMcKGm0N8lbhqepru2w9yG24i6YfvK6Xc9Rx7rXq9IjA8pyQcVKmuFag4dAEL1wGwVNu4YFrjcVRZlH9WqKQMbSrNABUbSENHfLCzMLtfPN690dBoXAfRlDjgaPrz/4TFL6B0+bwr10sKIe3FLwYUERTBNi26swTBEXXuqx/DrhLmcVPNs2HT3quLijaQuENJRaYiLvxvF4jWv7RsLsEX2FFGIYaQqctS3g6AI2qSRJopuBhpPm46RU/BrR1MlHlheml9cutNB22ZUAYpWewMHSAh5LDxO9TUnJnhelPVZMLdtFjaqksFumrmsnZfYXBBUYERskXDlXQ6VHffG14uxD3AEl8ox63Pe8d+fi+Ysf/DYs1uevgFbXVPwa/at+1kASKlPDCYzJ1bisTTScIouUAZWfU1EWVR0YQwE76Bn0w4i2UTndlDQelldoSPup7PcGeEgGbrUKCYyDc4RJEoRenp44qrKrXeSp2Ch1dnlFCBgCTV6XLRBIW9XufI/kfRZhBjeZXpglu1udtvck/yG24ogepA==",
+    "solution": "jJC8ekw6Jl1xSf/EK3jn+m2BHp/SGV6MMRB+FVjgc3Ier9EcHC00FHN/u1iqv+Jgny8RMSQzxvL5XhkZgjWXdj5jA/F7V1wYmPQjvhRB+qxfRgVTp4gRfHQQWN5DoHvESM7PqwNPX0XQ2TX0BD67bqCI6APNWFCwgR5U71P2xXeXk0mzFjVDRj9Cb9Qwe0ceOlF1TFAXEQ/5O8sZV3ix6XLlPyQ0JJhH1mzstZ4ehjnBYJQsJ8HvhaQHjVv7YNuiDDZPUXdf65rJcD+u6Es9eiEqoojAf/ap3RsR8AvRYhQUlgbmlAR0cZh3OcNPMQjjxdjEDd1LVK3tB9WJkhfgP1C2tvEX+Tp4+UPyOjvrazVvQQZMUB1RUzAfERUQr+jE+PcB4AAhjk15L3eqq0DvIIcgiTF8PdC7xR+XOfIukrt+N6NR16DHBYH92t3rTCGz1Q4BMJLpEPBgB60FQwNMflKo",
+    "max-score": 20
+  },
+  null
+]

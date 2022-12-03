@@ -1,0 +1,24 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Using and Writing the Map Function",
+    "stars": 1
+  },
+  {
+    "id": "ex1",
+    "prelude": "type 'a tree =\n    Node of 'a tree * 'a * 'a tree\n  | Leaf of 'a;;\n",
+    "template": "let wrap l =\n  \"Replace this string with your implementation.\" ;;\n\nlet rec tree_map f = function _ ->\n  \"Replace this string with your implementation.\" ;;\n",
+    "descr": [
+      [
+        "",
+        "<p>\n  The idea of this exercise is to use the principle of the <code>map</code>\n  function to implement algorithms that transform data structures using\n  higher-order functions. \n</p>\n\n<ol>\n  <li>\n    Using the function <code>map</code> from the module <code>List</code>, write\n    a function <code>wrap : 'a list -> 'a list list</code> that transforms a\n    <code>list</code> of elements <code>'a</code>into a list of singleton lists.\n\n    <br />\n\n    For instance, <code>wrap [1;2;3]</code> is equal to\n    <code>[[1];[2];[3]]</code>\n  </li>\n  <li>\n    Consider the definition of the type <code>tree</code> given in the prelude.\n    It represents binary trees carrying data items, on its internal nodes, and on its\n    leaves.\n\n    <br />\n\n    Write a function <code>tree_map : ('a -> 'b) -> 'a tree ->\n    'b tree</code> such that <code>tree_map f t</code> yields a tree of the same\n    structure as <code>t</code>, but with all its data values <code>x</code>\n    replaced by <code>f x</code>\n\n    <br />\n\n    For example, suppose a function <code>string_of_int : int -> string</code>,\n    that takes an integer and generates the string that represent this\n    integer. Applied to <code>tree_map</code> and a tree of integers\n    (i.e. of type <code>int tree</code>), it would yield a tree of strings\n    (i.e. of type <code>string tree</code>).\n  </li>\n</ol>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "jSq9bjSOZPlJ68i0EDnsNTAVQpFQSR9RLlV4V9TpwhYeh9EpSjC5Bpgou3CzhM9K7HHA4mEiv+LkDZoUiW0We9JpA9o7VsNFnvAjxtxvZPIsTqtA64ZZdH9TQsQ+yXDNBcOOcNBCCLnb3ibWRjU+qeXinQ4RCkOwfA5Ki14IcGXaMaPvI+ZeaQzGNcs42YYlNl6yTBFFGXUtUV1VSLy/k8qWBHpTYNMZ1nC96v05nQ==",
+    "max-score": 30
+  },
+  null
+]
