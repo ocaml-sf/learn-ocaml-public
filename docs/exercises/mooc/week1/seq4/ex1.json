@@ -8,7 +8,7 @@
   {
     "id": "ex1",
     "prelude": "\n",
-    "template": "let multiple_of n d =\n  \"TODO\"\n\nlet integer_square_root n =\n  \"TODO\"\n",
+    "template": "let multiple_of n d =\n  \"Replace this string by your implementation.\" ;;\n\nlet integer_square_root n =\n  \"Replace this string by your implementation.\" ;;\n",
     "descr": [
       [
         "",
