@@ -4,5 +4,5 @@ var learnocaml_config = {
   enableLessons: false,
   enableExercises: true,
   enableToplevel: true,
-  baseUrl: "https://ocaml-sf.org"
+  baseUrl: "https://ocaml-sf.org/learn-ocaml-public"
 }
