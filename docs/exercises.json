@@ -318,6 +318,24 @@
             "title": "Char Indexed Hashtables",
             "stars": 2
           }
+        ],
+        [
+          "mooc/projects/klotski",
+          {
+            "learnocaml_version": "2",
+            "kind": "project",
+            "title": "A Solver for Klotski",
+            "stars": 3
+          }
+        ],
+        [
+          "mooc/projects/markov",
+          {
+            "learnocaml_version": "2",
+            "kind": "project",
+            "title": "Random Text Generation",
+            "stars": 2
+          }
         ]
       ]
     },
