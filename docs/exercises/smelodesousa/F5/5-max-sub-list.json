@@ -1,0 +1,37 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "The maximum sublist problem",
+    "stars": 2,
+    "identifier": "5.15",
+    "authors": [
+      [
+        "Gonçalo Domingos",
+        "goncalogdomingos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-gray-codes"
+    ]
+  },
+  {
+    "id": "5-max-sub-list",
+    "prelude": "",
+    "template": "let max_kadane l = failwith \"Unanswered\"\nlet kadane l = failwith \"Unanswered\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>The maximum sublist problem consists of, given a list of integers, finding the contiguous sublist with the largest sum of all existing contiguous sublists.</p>\n<p>For example, looking at the list <code>[ -3; 6; -3; 4; -1; 2; 2; -5; 4 ]</code>, the sublist with the largest sum is <code>[6; -3; 4; -1; 2; 2]</code>, which sum is 10. This sublist might not be unique, however. The list <code>[ -3; 7; -11; 4; -1; 2; 2; -5; 4 ]</code> has two sublists with a sum of 7. The maximum sublist might not be unique, but the largest sum is.</p>\n<p>To efficiently solve this problem, in 1984, Jay Kadane (from Carnegie Mellon University) presented an algorithm that solves this problem by going through the list just once.</p>\n<p>The algorithm is defined recursively in the following manner:</p>\n<ul><li><p>If the list l is empty, then the sum is $0$.</p>\n</li><li><p>If the list l is $[v_1; v_2; \\ldots ; v_ {i−1}; v_i; \\ldots ; v_n]$ and $m$ is the largest possible sum for the sublist that ends in $i-1$, then the biggest sum of $[v_1; v_2; \\ldots ; v_ {i−1}; v_i]$ is $max(v_i, m+v_i)$.</p>\n<p>Note: The empty list will be considered the leftmost sublist of any list. Its sum is also 0.</p>\n</li></ul>\n\n<h1 id=\"Objectives\">Objectives</h1>\n\n<ol><li><p>Implement a function <code>max_kadane : int list -&gt; int</code> that incorporates the previously shown Kadene&#39;s algorithm and returns the largest possible sum of a contiguous sublist from the original list. If necessary, you may use an extra list to memoize the previously found largest sums.</p>\n</li><li><p>Implement a function <code>kadane : int list -&gt; int list</code> that returns the sublist which has the largest sum. In case there are multiple sublists, you may return the leftmost one.</p>\n</li></ol>"
+      ]
+    ],
+    "prepare": "",
+    "test": "3ic2NMNogM6Eig1tir2dACYPTTgUSVZLPTw3RVXifKRnfRUXG8C3EXMKeOLgsKhKey8RKjMavau3FJ6VhjXSmlIuKFF7YdNIi0lpxfhAZPJoRwUlp11UgG6VFKpHpy0NDsm+rhUBV37Z3iXRVDEus0TN6ETMS9iWeppInIXLc8kJImJfppW6zoDly80ItyUFLQIZBVgXZ55WUVZUW43eyETwDyEANJIQPX8Wv3z7bSCN3tBaLmrgcvFSooHuZ1PDQ8RPEDwqmUuNsTGx67w9dyFO/UaBtpaq4R6G/A4DOKgAzcuclEdWqNAlMhAO4B7js44IDcJ4F44wBALjzM3r3ChfGCSORPy9QbzBII04IkAcBR51Q5NNSmoVERkWeK0IMeNBMEsKjkcm3Kjtq4q8IMQl/Hc8AKqtgRCUHbs/pegTJ5J1Y5WPAvPl4bjEAGTn1RDSCxbwQKpWVR0YQwE76ED5dPiQTo+dlDQellcKSP489hRQz5tYrucNWJLL5bUzNDlD3sE3xZYFrcsoyLAx3zNBTUpRGR9Z+RBvFRjvdd5txUEpRHHAXj28u+GthOMnimSGZGNaaez6Sc/trQGXq9IjA/F7EIYLdqRnaJdA2PIMV0cPp0NRqDoVFs6Cf7KJUxD+dMFUFuHDNE0IZTFIbqCI6E+B26W58z1AmJbOqiop0/Yat5WdtRC57CDItzMCLAY4CUJKGRtOQ/BRW43qnHe7BGdWKY5+1WOHuLjIwzOQ42toSXLvxvFXjWv7XcLzF8YAJS2Dl9LHtibulUhyw85Bjli+tmLm3BAWj5yQZtUOis8cuUMdqNAlOcNPZQjwwP4CEdcIQ3DuAmOYsMbm4Hk6SnfdVreXR4SSKsLNSFUiGF2MWF2NGSVZQ9EQsP0I1qQVPR9w7AtO3KayaLb70xEjqyc81rv7xVaZTaFvjrhO1kBLSBCGChyl4bjEAGTfI5aYHhijLqBkB9LYHNoun8aI9f3VVQOd8y/f7mB7A+Ck9wZW5VVRaPQ3VsjZjeEcPG/NNMMNvJt2qqF/yMlmUGNBTUpRGR9Z+RB2UESghMEewlFPFCf4EDgjaryoqZow7yiA4jsefrqq229Rx7rXq9IjA/F7EIYL7YYbxdBPK4phAMFPlKNRtToAHcFx9SKEQJq+a2ARU4z3L7uDZTFIbqCI6E+B1DbwwEkM71rOcDllVB6ilBf68Qr5ky+HmS2LYlo1VoELA6/eCoEYB+LxiDqHW62VYNs41i7suLiezCDJJhca2GyvueBOp6GjMJ3mUnlCQi9Q/BCJbWuj6BR98jw9/UaBtkGdPFUWjDzRLgV0zducuVQdqNAlOcNPMU8fdPOESgMQF+SkV9nEjIfJJ6hqGHuDB+G0ENi00L0y4oUiQUVFEQQmGW/DVEFqffj00qYVPTUAjoh5LNLaaLWv2JkLkm1zM+G7h6C2VNkvoOwCVzJRJEXIChHc4bC+ABanPAaNMIunF4knEG4DQsw8pAHVyhmQM8p=",
+    "solution": "6KiTFxj6oUTxEmo/+cGIJS5ACQk4XB/V+QleFRDkuZpefARbVSGOBiMubOGcv+ZloCzUOTYdv40xEJ1ex7rXq6hjS/FhCxZ474/6ohQAZPJoTwVP84YFqHdARK1PlHvEXZrXqI6PHrbF3TqYTi/Bbu7ImQ7uCoWwwEkM71qPxWWMgIZVdr+NNvR3JSRb9JMPMThADU9ZSkpcGRFBOuyxnDqzQUYxYNZB1nuxbJ4ehjzKHwRaL8Obh3/4/RHkYtPj+DYCDWJubprEfyacu5B9uyEG/VX0tpWdMUtdjEKRIxRAkgbwlBkTehVh0cNSMQzqvI8MRt9LQ+ysAj+JnhelPYmr/Q44ewdefAJx3S+AlAhuBANMAR/1VTwVEU2VfujE0gBuNVc5nVcg1Y45bKa8+hVpkTEz1v+7qHXZE3grpehQ1lFRIlX3Ccv6MriJQTnEMAKVHYTyU4AdSDmYQwE7mQ+07+72TprdyXV8wQgcSKfhm1wGllgB5fRNTIzOpv2hwv4TBhjumCP/A7tsJsmQDSxVBWYRGR9Z+RBNFV7gdsIee9EpSlu0XiNhu+ncbbM58XKULDYafvz6Fc9NxzOXf5wmTFE8R2hLp4QnuNojJ0goNZUHp1gRfBZVFs6C9SKEQJq+rJp1UenRYWPTRjI2saCD6AfICk8xaDtNo1rGqDjWq2NVnPaF0qBd+GUz9NB+PlEjMREUBo9eVUUaELz666GfQXAUNJ5X1mSsbaSqvpuENM6aKiLprKELjRndAZ3bQ8YCUSgVl5qEsS4szQAwtn9oi5fFd6agPB9W9QneIxRAzcuczQ9WdZFtOdgPIU7rrMiKRqwjF3mxH5zJwd3y+YLk//GNxhleaFY5ZWqR7FxYQQVM0B/NEEMQEU9QpwXINvRBR76KdV2g3MLbcLnv0xVh/C9zILyue6HDOfIu/eZIN6NR+BztChylMf8QAD+iM9eYDwyMH4VqAVPYDwEau9C0jqiQA/4x9ipeylczA+fhxxRG5QtVc+QjMYyG9PRdiaSWV2zu77axBSkPJwDQWzM2TT2JZB9U2oBJPoCgfM5eg9F/VXuBXnBhxLKcsvJhoGnU2nhmtsisFxwFgnqEsj51A/F7XMN4709bs4sLJ0YpANBP80NM/8oVFs6CiW4QQMz4qsAEVa7qZyfQTikIsaCVu9+BCoWwfQpYnxOOrDGMfsNQoPbERKRW+GUzmNA6H9kNMoEUBo99UU/vXPCeyHffDB2VYNs41nSscLi6bSCWOJQzYj8pxsg4kAbIKg3bQ8YCUWIQn9e2cCXszQAwtn/OmUaJfku/NVV4/z7RIxRAzcuclEc2aZRL+ZYMMRufbNK3XMpCPfz9TUnJ/hfLPYGgll03bI9ddFYrJGuD/XB8QUkMEVBXMj9QERUQdvzMRO5E4/UtjnR8BY3Gq4q8KMhl6ycw3dC7xVbVVPYuo4tBN9h3LUCGWNng4fGEUnG81QPUFgLzHLooFEfLBdA7zWv0jqiQTkqc6H2mlpMoHeO9pKgG5QtVv46NNaTL5bxchOfAUhPg7T79Gn9c22WB1GNBTUpRRR/B1pwJR6ClcrIer9EcVWD0XiMlfP7cvLZsoCzULDYafvz6Bc/QeGbXeQ2yA9o7SIYR9aQtvNUAL0o0TwVPp0NRqDoVFs5LknLXF20+h2B4Fr7Y1XXgTmFIbqCI6E+BCoWwwAEDowrOgDiUcNNddKrBLapFPS5ziZECMAQ1Z6EZGR/wEBEVELyx8X4wBDl1JstMJ8Wstujjxy7XY2/aNmvqeIs4jRG7Kg3bQ8YCUWIQn9TGwHbblUk9v7JOo5vQtpLw1VVFyROeIxRAzcuclEdWqNBo2hAKGl8fdI7ERxELF+z9TUmF6MG9P2any54VbMpchQ2xKG4I5pdrQQANSUw1SEMfOoUQr+SN0exK4BE6/RwmNKjo/aq8IMQl/HdqP+XnxUaZX+JQfugSNy9tY6vPIQ==",
+    "max-score": 28
+  },
+  null
+]

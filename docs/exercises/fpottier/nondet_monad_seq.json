@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Implementing Nondeterminism with Sequences",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "fpottier/nondet_monad_defun"
+    ]
   },
   {
     "id": "nondet_monad_seq",

@@ -1,0 +1,42 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Lotto",
+    "stars": 1,
+    "identifier": "5.3",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "List manipulation",
+      "types"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-shine-in-society"
+    ]
+  },
+  {
+    "id": "5-lotto",
+    "prelude": "",
+    "template": "let make_grid n = failwith \"Replace with your solution\"\n\ntype grids = Replace_with_your_solution\n\nlet grid = failwith \"Replace with your solution\"\n\nlet fill l = failwith \"Replace with your solution\"\n\nlet prize_draw g l c = failwith \"Replace with your solution\"\n",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<p>In this exercise, we&#39;ll simulate a lotto prize draw.</p>\n<ol><li><p>Define the <code>make_grid</code> function that, given an integer <code>n</code>, returns a grid (matrix) of size $n\\times n$ initialized with <code>false</code> values.</p>\n</li><li><p>Specify the type of the grid that the function defined above creates.</p>\n</li><li><p>Define the <code>grid</code> global variable using the function above and with size $7 \\times 7$.</p>\n</li><li><p>Define the <code>fill: int list -&gt; grids</code> function that, given a list with $7$ distinct integers comprised between $1$ and $49$, creates and fills a grid that is returned in the end. On the created grid, a position from the prize draw (from the list parameter) has a <code>true</code> value. It is important to note that the grid positions correspond to the number of the prize draw. <br />\nFor example, the 7th position on the grid, grids.(0).(6), is the number $7$ of the prize draw.</p>\n</li><li><p>Define the <code>prize_draw : grids -&gt; int list -&gt; int -&gt; (int list * bool)</code> that given a draw (list of $6$ integers, plus another integer -- the complementary) returns the correct guesses.</p>\n</li></ol>\n\n<p>For example if the draw is $1$, $5$, $23$, $30$, $31$ and $45$ and the complementary number is $17$, and if the <code>grid</code> with the complementary is $1$, $17$ and $30$, then the answer to <code>prize_draw grid [1; 5; 23; 30; 31; 45] 17</code> should be <code>([1; 30], true)</code>, meaning &quot;you got $1$ and $30$ right, and were also right on the complementary&quot;.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "7hwbzHPXzox7CnToeufrPBpGHpVVGV1Z2BBpRlLht1ZjbpwhK7j+CnEoc+mmbfl55yXYLCZYpKvuXdtRvCKcf6szRkE/QtcPjqR7e1ZPKegoDd125OwRaWhHVhFxrnvOQI8+cc//WqzENHnBByVIgaDFoQiE2FLeeQ/Mytr9cDjD5FSB32jGMGRHWuizvbUaK5lBTFlZAo9rQ/6RQeyknBGfQXEQNNtYITHwuKDeuzGP13thMTrrxuZ49FbIKg4nBjICAn2T69mG7nr/k9dosT9ojQ+SgkHpPE5Wd9KRIxQNjxfbzEc+qI2c0gsPGl8fdI8YRqwjF+z9TUnEkYedNKzA4x/m5ZJh0/Rvd44afG28DQ5YEVAZBG9YWRU2r4yBOeVBK/Uw/VdlKrTxtaOvK1xdyD284bvmvFaUE+w7/eRCIQsYY5nLCcjzKv74ACOcD6u2HYezFqRDGVbLFwFj6AyVdPiQCFyD6HowyBwjAIWdp21S5U1O5fRNCcrCnshX7hwbyHPXzox7CnTodfjtInYbCRgQT69RL6ALFV4uxYoxtlFoVSP0QyNSu+moqu155iHAADUmwq49Xg1Rqnrcq9IjA6lyRIZC73/ag1xA+4J5RgVAp+RRcXJaFs6C9WWKSNLTdc6HWLm2NCu+TmoIduzI89+WA6nweQNz71qCtWzDl8qK1guXZBEBJ+XmvuFgJEEBTApZMo/wEBFYU3ju5DqjQWx1NJNk1i7suOHezFiENJRaYialxsx7doG7Kg47QyhCSi5Ql5rEfyb9p5A8snUoppfNg6Sd2FVC9A44ItoA51DcjA6TfKce0x14ZBmfsh8QThFOW4u6TQqMyaGe+N4QKckmzwJ9051bjfPaeThzFTIDREkJTDlQV6V1s37P4rhb+oQt86wmOfQ=",
+    "max-score": 76
+  },
+  null
+]

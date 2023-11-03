@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Using and Writing the Map Function",
-    "stars": 1
+    "stars": 1,
+    "backward_exercises": [
+      "mooc/week4/seq3/ex2"
+    ]
   },
   {
     "id": "ex1",

@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Persistent arrays",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "fpottier/parser_combinators"
+    ]
   },
   {
     "id": "persistent_arrays",

@@ -1,0 +1,45 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Stars in the form of textual fractals",
+    "stars": 2,
+    "identifier": "3.18",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Print functions"
+    ],
+    "backward_exercises": [
+      "hferee/6_sierpinsky_ascii"
+    ]
+  },
+  {
+    "id": "3-stars-in-the-form-of-textual-fractals",
+    "prelude": "",
+    "template": "let rec fractals n = failwith \"Unanswered\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Consider the following pattern composed of empty spaces and asterisks:</p>\n<pre class='pseudocode'><code class='pseudocode'>*\n* *\n  *\n* * * *\n    *\n    * *\n      *\n* * * * * * * *\n        *\n        * *\n          *\n        * * * *\n            *\n            * *\n              *</code></pre>\n\n<h1 id=\"Objectives\">Objectives</h1>\n\n<p>Discover the construction rules that create the pattern and implement a recursive function <code>fractals : int -&gt; unit</code> that, given an integer $n$, which is a power of $2$ contained in the interval $[1\\ldots 100]$, produces this type of pattern in the <code>std_out</code> where $n$ is the number of asterisks the longest line will have.</p>\n<p>For instance, <code>fractals 8</code> prints the pattern shown above.</p>\n<p>In the case of an invalid argument, the exception <code>Invalid_argument &quot;fractals&quot;</code> is thrown.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "9T8R6Ae41W0rfYeTgc2LeSYPTTgUSVZLPTxeWVXsfJobfRVCEmK+HC1gh4bcgt95oG4RKop7rOizDZoCdSrVjRBiR65tVhZOl0EsutkTI4BvZJVPtqYSfHU+WPJC9SKESJr6a+QKTr8QN9bWHGUBsL3Ip6PPSEH5fpNO9tqsriz0+J+MXOwiY4q+9Z7/5A7XYlFNTBEZTVpfRGgTR43uyHLkDlJEHgxYM8H8abzEtGbIY1AjLDmvj+QL5Ar7YsyvQ8t1UT23mkalcHjuk9Eyw8ACo9iutkGdPFUWjELP2tETmfWr6AsZfYQr1wppZQjwwP4BFcRKW4vOTUnJnhelP2hjohsDbi6pfImKiPCmBLVvQUBSOo9ZGW9QERUQr37E4rgBNVo5o/dBO3Pxdu0s1hFhl5AvPKPjxV4QE3s/q0gCN5JRY6CGChzcM0yeTnKNNpL+DwWmW+hnVRmSQs2rnpHPw0KWMFan6DQmxQgaDLWc6tlIkQtCxKkEZxyL8qQciz7U/Eyr37bqqMK+w4lEqWNBN9pJA69J16A1BArgg2x5r/IzVXHLTj6hqLnthOMok7nUAzNepI8sGxlRv7KXxlJ/RpU2QtNYiL5ue3R5ZLM7Grx15PlYfGUvVZAHlzzEAcS3rKdOR38QVFqTCWQGbq7B6Er4CjfwdA54i0TIwyn2PNWGX+sJHp==",
+    "solution": "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",
+    "max-score": 43
+  },
+  null
+]

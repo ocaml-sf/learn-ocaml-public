@@ -1,0 +1,37 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Subsequence of lists",
+    "stars": 3,
+    "identifier": "5.5",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-max-sub-list"
+    ]
+  },
+  {
+    "id": "5-subsequence-of-lists",
+    "prelude": "",
+    "template": "let subseq w1 w2 = failwith \"Unanswered\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<p>Implement a function <code>subseq : &#39;a list -&gt; &#39;a list -&gt; bool</code> that determines if a list <code>w1</code> is a subsequence of another list <code>w2</code>. A list <code>l1</code> is a subsequence of a list <code>l2</code> if we can obtain <code>l1</code> from <code>l2</code> by removing $0$ or more elements from the latter. For example, <code>[4;7;5;1]</code> is a subsequence of <code>[4;5;4;6;2;7;5;6;8;1;0]</code>.\n​</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "AAHH35xLohe2O1MRunGZmCYPTTgUSVZLPTxeHRvgwsIecpB/HCjOEyMugP0hbfozoHPRMSY5va09Gc/2fi8Dq95aKBlyRIZMmLxfqdVUIYlcBdY0p4kRxRZVFwQHoSLXGwqHa+IOWP743TW+AWVIsPCD6F3BQ/rDwElAmJbOrDkSU2BoTHagxI9PpXLsCgDTMUEETApZCR9cXoFGSuy/nCvfBXJaYNs41mSssvDefkKF3sApLyn8ePV4lQO7IZ3yWnd0WGI266KQeW096BwbdyACqlaBcoen3UhdjEKZId6MzhzyjWUdsNxl4JYB2BvewMiXRtALRqmzAQX+yhfe3ld288RFOYKOpBmKWLgRjwplCB9EEV5ZVC6IWF6FcO701rAEPRxzjoFm1vSGd0fiIJZokid9NfTydofNVNkhpqpO4kEFY/nGFvPl4fHBVGS7OAi3MIazHPggBo0QSgEa6DL+/Lz4A68kyzAep/d6SOTpyJRGnEUav+QAD2jIoqRoTp0LYEJV5siVRqQ/eQ0IyB5dZlpRRR/R+QxLFUSgg2YRr9EcVWD0F8Vha3XbtJor9XyWO8Fnhvr6CgFUeCq4q/5tA6YyXtNZnKAf9s2VJuhhH1FP/0MUdGdQFwdHij4WA1b45xM+VPCZZjaTGos7suX16BXAR9X/hRdmjweMwi53UYxcCzKxiY9Lm5nrQc0rI5dJAkpXUF1cEAAFALza5Wan+mkVPNt51mybuOXesG7B3wQyYjmixuJPjRndAZ3bQ8YCUSgVl5qFgXPskkw9eiEJlAGEhRDx3Sw+9RHFIwZVzgOmb9dWqNAlOgdKZU7jhx7ZRtZOWbmjDB8MsNj64pMYlWAKMgP2pA7/WOlLkwo8SQF3HR/VCGAfERVMrZ4INvRuPVV5jkcmNO8hq04nLMRL/GJ8N+atgAjYR32Uja1RY5JD2oDPR+Pl4bjEAGSbNBvVAcOaU1MdSB+4Bccyk5HPyhK1B9XxlCUwlpZaYqup7IRG5QNZrf6NAJ8CwNgoC5WCYEdtkvL3DctQ9/7ZlDYVBAN4GQQm+RBCUETGrJwlaRNhB8P0XRQveO8ls+Q55WmRLSAer338RPMRx/8SaRZaTRcIEIYL74oa/xRlI+x/Tw1e6OAFcXISFwhXijHQC2SUadsP24OU1TqRHGQKv0XZ690dBmbwwEkM71q+tWh0LtR6RDmW/MYIdEvSSwH2K5d3GGgKV/UdRF6+XuzTmWa8Wml1Lxc4PmHbbLijaSCN3tBaLmrgcvFSooH5ZN8nPopCUWIQ65rJcHjblUIisnBM/RGGc6bzLUpW66HQ0cQMix8y5pg0eJoo++p1ZAvws2zrRxELF+z9TUmnnh+PQENRbU9DZILVd9+0Qbl1mZojW9k2EWQVGRIQBQhQuPPILfFBKlg5nURm0e+tvOD8Nsdl8GR8YaG7tVb9GKJW/e2xHEhUN6COAxywV3jEUnGzD6mQHJTaB0o1NR+ZE1V2kpHV9fzJMFXl/X2plpobDLbPn21S5Wskv3IYAxyD6aQpUVHgNFhflYyjE1YMwXSFlndUGQV3Vo/9Qp==",
+    "solution": "fOSntB/CbRQIPQn4IwbiDGN1ZlpRVVoN+UJUV6DhqZAec/AcGXL0Q//hu+ncsvJl6inU2nc8gvLsT2ARcWLDcz5jA/F7TIZDzPR/chRU24goBx2Pjf/RfCgVGdZCjGSECIu+hNAHBLnE4Hf2TiA2xqD1/U0VGRXtfBhJ7Yu0uDixtO09WDjeRlktUM6MyaxEYmgBTGw9GRRiEF2UXOvsh8rfQTlJYKA74i8SuLD/hiSWY2FVYiK8eIs4jVDi1g4wUmZVQl5f85GJznj9pl9vtmkOppvThB8m19ddjEKR0tEUzhzx96oTe2BhKsMDIl8yjx7ERxELW3mpTReM7Ifc+3Hmz4pDROcHAXlM6CG4aTR8QUkMER9ZTTsJOoUQr38IOewBPR568ope3OGbq+nv2Ip3/Hc81rv7xVaZT+JQfugCN5cPY/nXIYyl4bjEAGTn1RKVBcrwB0poSmmYQwE76EC0jqiQTo+dzWBb5TBcA+z97IpPops2sKp6B2v45LogwOiirUwDdpID0AS93tnlED1NTQAAEB/1JUNUFVnxh16q9EEcVWD0XiMqgP8kbgp5nSvUMiJnxbnLXc9Rx7qtplIuA/9uRMNZcu5jqsAAKONoAx2Gp0/Y/5==",
+    "max-score": 21
+  },
+  null
+]

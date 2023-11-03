@@ -1,0 +1,37 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Correctly using parentheses",
+    "stars": 3,
+    "identifier": "5.20",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-subsequence-of-lists"
+    ]
+  },
+  {
+    "id": "5-brackets",
+    "prelude": "",
+    "template": "let verify text accumulator = \n  failwith \"Replace with your solution\"\n",
+    "descr": [
+      [
+        "",
+        "<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Having a text with well-placed parentheses, in other words, with the symbols &quot;(&quot; and &quot;)&quot; properly used, is a common necessity, and of great importance when these texts are subject to computer processing (think of a compiler, for example).</p>\n<p>In this exercise, we challenge you to check the proper use of parentheses in any text organized in the form of a list of characters.</p>\n<p>A text has well-placed parentheses if any occurrence of &#39;(&#39;:</p>\n<ul><li>is associated with an occurrence of &#39;)&#39; <em>at the right</em>;</li><li>also has well-placed parentheses in the text between itself and the corresponding &#39;)&#39;.</li></ul>\n\n<p>Note that, as a result, concatenating two texts with well-placed parentheses or putting a text with well-placed parentheses between parentheses also results in a text with correctly placed parentheses.</p>\n<h1 id=\"Goal\">Goal</h1>\n\n<p>Define a function <code>verify : char list -&gt; char list -&gt; bool</code> which checks if the text contained in the first parameter has well-placed parentheses. It is suggested that you use the second parameter (another <code>char list</code>, which we will define the accumulator) to <em>accumulate</em> the intermediate scan results. Therefore, the accumulator is empty at the beginning of the analysis, and if during the check the accumulator has a parenthesis &#39;(&#39; as its first element, then the current status of the analysis still waits for a parenthesis &#39;)&#39;  which corresponds to the closing of the parenthesis in the accumulator. A proper use of this accumulator makes checking much easier!</p>\n<p>For example:</p>\n<p><code>verify [&#39;a&#39;;&#39;(&#39;;&#39;a&#39;;&#39;b&#39;;&#39;(&#39;;&#39;b&#39;;&#39;)&#39;;&#39;c&#39;;&#39;(&#39;;&#39;o&#39;;&#39;k&#39;;&#39;a&#39;;&#39;)&#39;;&#39;n&#39;;&#39;)&#39;;&#39;h&#39;] [] = true</code></p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "OmtybfUzn7fXYDpH/bPhGnYPTTgUSVZLPTxeWVXsfJsfcoFoEBbNG7EofaXCv+wy8GCU2jwncfKLXc9ZjV+0q8/LCitrV2ILjuUnq16FGfQlHNpJzMpGeyM0U26KzCKZ+wq+c+tnGunuSTLgZXlNuqD0oQqRRkDWd553pIiXcDVc+ibk8kKPMYZL1E01n+wLEQADCFgUFlxtXF2vW436yDrnSDl1LqF41mHuuLWJxzfA3c/oK8nbxuNWjQn7OejbQzJKFCpQkUuEwDOxbkY6xD5ImDCTb60l+FU3lW7RItEMnJac5pg0eJooRIUKYpGdv44TFMgFUvztRG+86dr5PSIrMPm8CaocnoZpUaaJsodzE69mVloXW8kZX/sqvg3J4PtI1pYlwApdNP8hcLSsCtQleixiKaC7h63YQfJyirlWN5cPY/POSsqlMfTXVGTa0leXAIeaU1EWVR0+FNRpmQ0CjN4QTl8q9X/uypw8Uqv8n19WmUgvabE4B1bSwPQcK7pybecSyk4DHpsGutejTH6GRUtKH/53162TE5rbhMd5qQMfTz4SWG6aevrzaOtyimP03H6kx+WfWJ5WrSn3rV9oTFZgFhdM9qMifq9MZI9MRhgPn16WaTsOE2BF77XFRhD2qc2UE0TXLmnRSCwPda3T5pWGEBK6xkZLotnVdiZm1GXlx9zIMdQE2l4SluADZDoBTGw9EGRDO/kQRLy5pTry+mkVMghLDCuxab7isnDENJRaYiLvxvF4jRG7Kg43I6pCUSNDlyT+sTG9lF90tT9Lk5TBdBeh3SwX7o+RQrRAiYbmlE14qNlvE2NPZpjxr1e2NYEDHIM=",
+    "solution": "k+nZNQiMpPs83BpMU3CFxSICD6/1TFVYPVcDFQjTfM6iaoUcF7n3H8lHeOabuvgk7HXAMDFnvbH7XdQex7rXq5ciV6IvEM2InqQxwNBITqJoTwUTp4BAw7YWBMJYoSKJXwrTrcAMBemNNDm+SDFOaPDL/9+1CoK6xllYpYeAcGzZuIFzHxyTdWYLHF5UrIj6IFBXVzw9GRRiEFBWUgPxnDrfHTlrH2sS0X8teaeevzerNJQmJ70vdOQ1jU4y32ehGl/DBDxQl9eRxHbtolMoqnQCkBrOhVG6F/UWjEL1YcADlcvw/R2CqI2c0gsPGl8fdI8YRtIRDaj9G5TM6Yed4wylmTJT8wLr3SF4WAzhkv69SEkBDo/PXDsZVloqbLjQObgBNRYty6hcBbmqavfr2Y6kpDAo1rL6rlWYUrFbjrtO2kY3MBzPIYyl4biYAC4x+ovVGIyjHeplF60EXJE/8E306vHQDB+5m8Qdj95hSPuc/xQQoF/1ealnD2nT8vAcjKvOYB01iqNo09gnFL8RxTcBN8ERFA1ZKFNSQFitwI/qcRMcHCeoXiNpbbyqtvVgriXBJjMzuaukXg6ShXe+fpgiV6hpGYYW7YdC",
+    "max-score": 2
+  },
+  null
+]

@@ -3,7 +3,14 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Tries",
-    "stars": 3
+    "stars": 3,
+    "focus": [
+      "Option type",
+      "char and string manipulations"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-pizzaria"
+    ]
   },
   {
     "id": "ex2",

@@ -3,7 +3,14 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "A Small Typed Database",
-    "stars": 3
+    "stars": 3,
+    "focus": [
+      "Record manipulation",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "mooc/week2/seq2/ex1"
+    ]
   },
   {
     "id": "ex1",

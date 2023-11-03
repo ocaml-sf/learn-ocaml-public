@@ -1,0 +1,46 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "McCarthy 91 function",
+    "stars": 2,
+    "identifier": "3.15",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "mooc/week2/seq2/ex2"
+    ]
+  },
+  {
+    "id": "3-mccarthy-91-function",
+    "prelude": "",
+    "template": "let rec mccarthy n = failwith \"Replace with your solution\"\n\nlet f91 n = failwith \"Replace with your solution\"\n\nlet rec mccarthy_is_f91 i f = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>In the 70s, John McCarthy, one of the minds behind artificial intelligence, in partnership with Zohar Manna and Amir Pnueli, tried to define a recursive function that could be used as a test case for various algorithms.</p>\n<p>This function is the function $m : \\mathbb{N} \\to \\mathbb{N}$ and can be defined in the following manner:</p>\n<center>$m(n) = {(n-10, if n>100), (m(m(n+11)), if n\\leq 100):}$</center>\n\n<h1 id=\"Goals\">Goals</h1>\n\n<ol><li><p>Define the function <code>mccarthy : int -&gt; int</code> that implements this recursive definition. As an example, <code>maccarthy 200 = 190</code> and <code>mccarthy 24 = 91</code></p>\n</li><li><p>Write an implementation of the function <code>f91</code> using the following definition:\n<br /></p>\n<center>$f91(n) ={(n-10, if n>100\\), (91, if n\\leq 100):}$</center><p><br /></p>\n</li><li><p>Define a recursive function <code>mccarthy_is_f91 : int -&gt; int -&gt; bool</code> that verifies if, in the integer interval defined by the two <code>int</code> parameters, the functions return the same results, for example <code>mccarthy_is_f91 70 120 = mccarthy_is_f91 120 70 = true</code>.</p>\n</li></ol>"
+      ]
+    ],
+    "prepare": "",
+    "test": "0fOPM2Awr1dJ443gcr0u5SYPTTgUSVZLPTxeWVXsfJobfRVCFBbMF71plqanseZl8Xq+4ignpKK6LJoSczLYdEwN26QfRIYJa0Etr1kOIaBvTqYA64ZZqyEWVZ9QoWu2QwKyd4wPFumQNDqTTmFIuuX0lDyHX/qvdAQDoeS47ioytxMo5pzDmoJOevTc5bueYlFNTBEZGR/wEGxQRODnnHLlFTkY4stWPSmQuJ4ehnDENJRaYiLvxOp1z/Dp4cayQBpCUWIQ65rJcHasj/M/qnEClBi0tkyf+RtWlErRLgwA9f7dy5sZd2gc2Y2PIk8vbYGrRxELF+z9TUnJncCm3Gewjj0fX4n1XQKedLTMwKwoUVloOo9ZGW9ZOmc1aLmI0adS+Sx7wA5fLOXTeuSq2ZBcjmF80bvIxVbvVOFaiqEMPy9/Jl8SChrAOueQSSvk1kWVLIeiFLQbEpaJQJ647Gv0jqiQTo+dlDQe6pw7HIWji1xFkUJ+gcs1Md7Mmekm1f3kLJdRv15UT4X+sMn9lWNBTUpRGWI1PU9LFVyiqM5jwEFlGmSz2XNhu+ncbbM5oDSWOXw8fI76Xc9Rx7rXq9IjXAI8X2ZHmKZ/eYoGM0ooRwoPmKkRsEhUWJpNiCmNDta+edB4HeXfNDqTTmFIbqCI6B8GT/rmsVwz71rOcDl5ddwalC0/6UYCvrC9kfTA1kApZ6EZGR/5O8sZV3ixyHewFUIWHhpWJmDSaaKisySN3cwa4yLAxvEtyFLjYs8pS9kjFDwE65yctSngmUh8dGwOc5CFc/zb1RZVzRDF+slalxzC//YHqs/JNa/PMU8fdI7ERxELQ3miGTPPytCi+Wzd6ADCIui0HEqkxbCmcghqFB9FX/1mGW9QERUQr38IOdFE+QofjoYcLKj6xarv0wAlzWF8MKXseSLmE+Iu/egCN5JRY6LLSMvkL0yMWRreI8HTVsCo3epdVR0YQwE76EDF70n2Hkug57hejp/9Bquh5YRLypsZePBNBYyW8xZd0u3FMshUtt62Efq5sIXvlWtIQUpZ+k6XLVc1GkyiqM5vv/ElVWq0Fywo6fncbbM5oDSU4jMtu34qR15G7CrXq9IjA/F7EIZp53NqhYQR2rJhMecPp0NRsRZaWwlW9SvNQI0pa2A1Ub7qZyfAGyl1bwDxu9+BS90cjohNohL+uUJ8rhddzkjalo/HoLHyzKSoAlELGVdZERBwHQdaELzTyHewFUIUHhpWJmDSaaKisySN3cw9Yn+qd4U5zjekYtPjPWVNHT2EmlTHeibgpVMp8TIop5+Vbneq1o/D8Aq30P9=",
+    "solution": "W7XMSRiU0kwIzV2kX0BfjGMPTVEeGR/QLoB4FQfgb25ur6VkECe0EXNku0jsbfZt/iGUM7AovaDkFhARvz0UaQN9V69eEIgF74caaJUJ0260AsA0p4VIuTp0FtVCjGSEDwqEa1F4BunE4Hf2TicIcaCZ/E0ERl0twFR2xbHCtW9WMslKTcoqGUSIQHoWziqSHA2UXRFQGVcwDTtVEPCrnHKfXmlTYIdXN8+sbObrw5uENNEmMD4vvrp1z/Dp4cayQydCTGJWyovJqX0s55Z9b8pNk5fTgoy/QooFwpSIMhRIlsHtjUcQs4x=",
+    "max-score": 58
+  },
+  null
+]

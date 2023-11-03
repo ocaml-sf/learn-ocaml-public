@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Optimizing Partial Applications",
-    "stars": 2.5
+    "stars": 2.5,
+    "backward_exercises": [
+      "mooc/week4/seq2/ex1"
+    ]
   },
   {
     "id": "ex1",

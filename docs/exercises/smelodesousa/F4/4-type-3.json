@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Check type III",
+    "stars": 1,
+    "identifier": "4.3",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "types"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F4/4-type-2"
+    ]
+  },
+  {
+    "id": "4-type-3",
+    "prelude": "",
+    "template": "let q1 = Unanswered\nlet q2 = Unanswered",
+    "descr": [
+      [
+        "",
+        "<p>Consider the following piece of code:</p>\n<pre class='ocaml'><code class='ocaml'>let rec f x y =\n    match x with\n    | 0 -&gt; y\n    | 2 -&gt; Printf.printf &quot;Case 2\\n&quot;; f y 2\n    | n -&gt; Printf.printf &quot;Case n\\n&quot;; f y 0</code></pre>\n\n<ol><li><p>Does the function always terminate?</p>\n<p>A) True<br />\nB) False<br /><br /></p>\n</li><li><p>The function is properly typified with which of the types?</p>\n<p>A) <code>int -&gt; int -&gt; int</code><br />\nB) <code>int -&gt; int -&gt; unit</code><br />\nC) <code>unit -&gt; unit -&gt; unit</code><br />\nD) <code>ERROR</code><br /><br /></p>\n</li></ol>"
+      ]
+    ],
+    "prepare": "gQoYeZSM0rQe+mfxbwd0+TcBLloNGXxZNRBkFUngyYZfcBJvEDK3Gk9=",
+    "test": "HBiuO+sUw2AQE/aFnjCmYSYPTTgUSVZLPTxeWVXsfIk8vlE54jD0DDYtlqmqsKRn5W4H4jEVrOP/Fw2WxzePboBkSpIyEJ1J9sgae42FJfYhA2s/p0NRqDRV025jkHuQQJzawZU2V4WD1TqCVTFKh4DunpLECo4ffpEZiYLBr8cTMKJ2vnD55lRsRdy+HxNyI6MEDVNVXGYxVkB1Xrvdsj8kDW5BKZQR1pOxbOT6hjOM3cldJ5avxPBOjoGuA0inBjICFDxC66+8cHbbpVQ0x7MBl6jEhAKdP8JEzQ0Y0MNAixKh55o4egUlK2FUGl8f5diHEt6EWhO9TUnJphfPPS1Ic7OuIxX0ATcQo2xPaCNgQUcXEXwWXSpQElZ4c0j11qUPPkU2kiVm3Kjtq4riZZ25fn97IKP8hoO10rNtkq1MZVYrMVaKXsjcMKOE3jGzKFSVDIydGPcgKB0+EhM56EzodLGVGo+ljTQzloolHIW7m21TmVdVn1RND2v4d+2dHQTfLsR8vMYHJ6PPo5fgT7ISGUoo3R/4PFhRHRzgg2YepUFhDXHAXmY5qfmAlQ==",
+    "solution": "f7oWgPW5crQoeifOYjB19TFBCBRQVE/VLAxRUoCufNxea5ghBzCVEC2hfbXmtuBxoDf2VU9bua+6DttRqnqj",
+    "max-score": 2
+  },
+  null
+]

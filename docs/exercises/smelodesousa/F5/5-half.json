@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "In case of litigation, split it in half",
+    "stars": 1,
+    "identifier": "5.5",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-salc"
+    ]
+  },
+  {
+    "id": "5-half",
+    "prelude": "",
+    "template": "let halve l =\n  failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<h1 id=\"Objective\">Objective</h1>\n\n<p>Define the function <code>halve : int list -&gt; (int list * int list)</code> that takes in a list as an argument and cuts it in half. In the case of an odd-length list, the middle element stays on the rightmost list.</p>\n<p>As an example, <code>halve [1;2;3;4;5;6;7;8;9] = ([1;2;3;4],[5;6;7;8;9])</code>.</p>\n<p>It is important to note that there is a solution that uses an auxiliary tail recursive function (with the same parameter configuration as <code>halve</code>), that only needs to run through the complete list and its first half once.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "+xSyR3pUP+tCl5LD3WnQJCYPTTgUSVZLPTxeWVXsfIBfc62hJzDTVyN/6fncufZm9EqSK7loqrqrE+YAiWuQapshUQU2Qd/HiKAjxtxvZPIKSdEWjeMYdz6VWwERoSKJXwqSsJh0FqCZZjaTRTEBsKSInAaSXomU89kM7hPPrGs5kt5LeDhurRqcAtcwXNcdMAAAHFk1Z/U5QlUVTqS669TwCG1Q3ssOYi8mh4n8yHON0sF/Yj4fxv9Z8Fb7IgfbTn5CHS2E65OAcGLsc9Evs8hDzonEao4D2Rs48EKZKhQJk2ucjDkXdwRe2slG4omfgZ7NTh56F+yfC5yHlYe/LQaUhyD9GpXoT+lkzlYecVhqBB/MGRAZBEMQEUZVeZ3+4r9U1QF5jkcm3Kjtq4q8IMQl/Hc8ExvIxVbYQqZUoPdM4kYIHVPOTtva4feLRCGNMBiBTfHTU4wwGo0QSgEqzzv0juWRAlDgxmQmjzU=",
+    "solution": "/BGTO6XpQNkAlN5kv+kJH7dEGUo2XF1Z2BBcXEPsgxRbcAZwHWCXXmxj6fncsfZloG0RPGMfvbeiGvZQciOXs5NkQVk7U1VIzakawIQ2ZLQ9ANY07Pp4/8oVFs539VygQJ0Ea25OV4aQ+CXTIi50uqe+pRCNCkTvgkcMk2WOzHSLAM/xGO1FxQXQ/DXx6oE33VsNFEIZFA2wWV1VW0ylnDPjBHNV0csN3y8ggP7khj7F3MIfHDOabvFXlUz7MYjbAiVBWGhQol8Kgy0s8E/9bXF4yEbZhHrdPFUWjEKRItEMnJaczAg+fwVL3xYXMUCetdrIRx/TF0ObTQiK7JmcNN6188wWtRjCBY8HHeSHAFBJQUlEUFVPXBZRRElQtZOkNexfQFo5nkdaU5==",
+    "max-score": 12
+  },
+  null
+]

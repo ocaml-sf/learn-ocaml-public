@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Recognizing Anagrams",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "fpottier/alpha_beta"
+    ]
   },
   {
     "id": "anagrams",

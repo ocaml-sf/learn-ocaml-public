@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Printing with Loops",
-    "stars": 1
+    "stars": 1,
+    "backward_exercises": [
+      "mooc/week5/seq2/ex2"
+    ]
   },
   {
     "id": "ex1",

@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Manhattan distance",
+    "stars": 1,
+    "identifier": "3.2",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-simple-math"
+    ]
+  },
+  {
+    "id": "3-manhattan-distance",
+    "prelude": "",
+    "template": "let manhattan_distance x y a b = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Consider the problem of optimizing taxi routes in modern cities like Manhattan, for example. Consider the following map where the roads are grayed out. Also consider that the buildings in the city, which are represented by the white squares, have dimension one.</p>\n<p><img src='https://i.imgur.com/A4UYbex.png' alt='' /></p>\n<p>What is the shortest taxi distance between the lower left point and the upper right point?</p>\n<p>If we could fly, the Euclidean distance would be the solution (the green route). For the distance traveled by car, however, the calculation must be different. Therefore, what is the length of the red route? Or the blue route? What about the yellow route?</p>\n<h1 id=\"Goals\">Goals</h1>\n\n<p>Based on the answer to these questions, propose the implementation in OCaml of the function <code>manhattan_distance : int -&gt; int -&gt; int -&gt; int -&gt; int</code> such that <code>manhattan_distance x y a b</code> calculates the Manhattan distance between the point <strong>(x,y)</strong> and the point <strong>(a,b)</strong>.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "2k4v8CrxLJUR8SLwEzbFEnYPTTgUSVZLPTxePkmdqM6xbposGSWJIDhghbTdue2678S12zNqpKK6EgoFxyOXxlJEQodzXdtFpLxueZYQ2PIhALcPp4dUfDpMFtVChjPKBNSXdg9BQumCJCqTByc7lPCI8EnBGQCtwA9J7Y8GsXNeQvbG0spoo/8nLfB+TOBDYplIGBFYGQRwWV1VGMrw6yakDDM1Lxc4Yz7cw0iyhmLRNMAiJ8mvbvE+/ULyKbXaDHJNHGoZnFbJgzac6E9vjHFOyUXBxUSgPBFTjAHZYdxDisvg/UcPqMll32NFOGLfdMTBExFJF0S9BAvJpank1ioIhto798iGVOJbvVBZn/FjQR9EVF1ZQG/VXUZVrZvJ24hO1Ftw/Qsm+ujdq0KsCtQlmHMf4vrrhiXmX32a/bxHZVYrNFHKQtjLKKTQSBr6P5LAGh8dHep6VTmYQrJyooTS/0PYNGLg7GAelT/pBLOl7NADl/cGvecNLd+Pnapa2U067zvIPY1L8SuwAoGLDSAETlVtFTMZ+RARFRCgfM5ee5RrARb2C8leb3XnsZplriXTP7xdr403DJZ2cia3dQp1A/F7EIYL74Rae4dFMKsuTspB/0N1x8p1WIoCyDnEC2WOa2kRFqW3YDq3UTEBsKTk6GnBCoWwwEkM71rOcyBgS33D4h5x7DvjJaMEBIQAJ9NyTBEZGR/wEBEVEO3e7X0vDX5H3ssXNSi8uLXnhni+NM1bL7KzgaM5/FDtYc0vFy2MUWxZ8nGJcHas6AB9dyFOnp7EaUrqJXdWjEKRIxRAzcucvl1GtMAhKcc4ODXQdI7ERx56PhPxCB7Jph4lIBIHugFr7B+UAKEeeARFv7NJQUlNQ9kzS763WEFJovrA4q9KPRYqyoxMO4ehqZrDIIJ6jycu3bvqqiXZE2/alrlWSVQQL/yC2NfcKfXeUnrbJBu1AIaO",
+    "solution": "CBmJtURtX2EC26JNhl2vSTAVDAJSXB/B+U9RVBDefNUe9EEcXSGZDHNpc+npbfIwmTS44jtmvPG6VhARunqVslt=",
+    "max-score": 40
+  },
+  null
+]

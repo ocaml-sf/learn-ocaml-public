@@ -3,7 +3,14 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Points and vectors",
-    "stars": 1.5
+    "stars": 1.5,
+    "focus": [
+      "Arithmetic operations",
+      "Record manipulation"
+    ],
+    "backward_exercises": [
+      "hferee/5.2_sierpinski_vg"
+    ]
   },
   {
     "id": "ex2",

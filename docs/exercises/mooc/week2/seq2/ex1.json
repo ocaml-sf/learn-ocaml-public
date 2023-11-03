@@ -3,7 +3,14 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Time on Planet Shadokus",
-    "stars": 2
+    "stars": 2,
+    "focus": [
+      "Record manipulation",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "hferee/4.2_coordinates"
+    ]
   },
   {
     "id": "ex1",

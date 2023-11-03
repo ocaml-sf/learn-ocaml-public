@@ -1,0 +1,37 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Lists and sub-lists III",
+    "stars": 2,
+    "identifier": "5.11",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-lists-sublists-2"
+    ]
+  },
+  {
+    "id": "5-lists-sublists-3",
+    "prelude": "",
+    "template": "let answer1 = replace_with_your_solution\n\nlet answer2 = replace_with_your_solution\n\nlet answer3 = replace_with_your_solution\n\nlet permutation e l =\n  failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<p>Let&#39;s now define the function <code>permutation</code> which returns the list containing all permutations of the parameter list <code>l</code>. For example, <code>permutation [&#39;a&#39;; &#39;b&#39;; &#39;c&#39;] = [[&#39;a&#39;; &#39;b&#39;; &#39;c&#39;]; [&#39;b&#39;; &#39;a&#39;; &#39;c&#39;]; [&#39;b&#39;; &#39;c&#39;; &#39;a&#39;]; [&#39;a&#39;; &#39;c&#39;; &#39;b&#39;]; [&#39;c&#39;; &#39;a&#39;; &#39;b&#39;]; [&#39;c&#39;; &#39;b&#39;; &#39;a&#39;]]</code>.</p>\n<ol><li>What is the expected result of <code>permutation []</code>?</li><li>What is the expected result of <code>permutation [&#39;c&#39;]</code>?</li><li>What is the expected result of <code>permutation [&#39;b&#39;; &#39;c&#39;]</code>?</li><li>What recursive pattern can we infer from these previous examples for the <code>permutation</code> function?<br>\nConsidering that pattern, define the function <code>permutation : char list -&gt; char list list</code>.</br></li></ol>"
+      ]
+    ],
+    "prepare": "IpgEvxY/TFsN8I7AIawoFopYA6/DZ9wWJUVFXFaifNUepTxaBnWLEmIefKmvtu2xoGi0K8Fnr3isCxkYeWWVpmd=",
+    "test": "QqmagJn3jl/E4o1MjI8UPSYPTTgUSVZLPTxeWVXsfJobfRV1GmOMG7Fwu0Gcl3M5/iHAADM5w3XmGxwCx7yldRB9RoIjW16M70EyvNZDL+ElTxRNp+6eqDpzUgtWjGiKQJO6a+QKTr8QN/fLCzMLtfPN6F30Co3wqllqoxaLcDdPuM3zsrv3G6AAWlW+xwssNpQ3GGgPWEt5UVNZV1+w8iumDjhBHh5QPnigg4KknSDENJRaYiLvxvF4jWvy4df9QyVKEDAQn9L+xHb6mVMp8iF9/UaBtkGdPFUWjEKRIMUOnIjh5/hUs4x32gY0MRnaxcm/CNJ1UPrjTVGJhYel098ho4uOw2/IVVMIRZ8BkDdoBAhYWF23GSoIVE2TdLrNOf6DPUgKjkdAP3ehcLSsIMoP/AtzKuf7xmvBVPBxirlHN6BLY6KGEIzXMKyBAG0p1TOZZ1GmU0pdVR0YQwE76BT37+zqGV4rzXVgypwOC0jop1xVkXRGgr5YGMCEpNhcD+nfvwmvy6xQAFtbya0C2jMCBQkDGVVQO9QRWVyvqLUe9EEcVWD0XiNhu+ncbbF67z4DO8F5fKrL2ZVUc7qDboF7YodoRdNZzqR7e+hAZKElGrx49apWey9GR26AdziWEsfZvZ9BU0nV0HfBDH50qaC069++IRWwkp5PiYLBr8lFkeu3j0LKG6J/ApDIh2IbJ9F3V6E0GQJw1kgRV0yvn8qHTR2VYNs41i7suLiehnCQ111uHCSudO53zkiyVN0gAicMA8ZqkUTFxSr9nlgOdyFO/UaBtkGdPFUWxl4F3ggAjJKd59c+cYN5OgdGY6nHdKKERxELF+z9TUnJnhej4EPae3aObZpTO7woC2ajzm9zE69dVEsUTDkRRVo4ceqIJuwuPVUmy5tMKPa8bvzz1g1l/6ptIL8yh5rQXbUulrYHZEEYMVWGHhqlZM3EAB3iM6u1AIbmWZYdVR0YQwE76EC0jqjuTjLg7GAelSwwD+7mp21D5RdPv+ZNVhzxp0BhD+fhvrHzsBxQAFsFzvK00WNBTR6US9kzLlV4V9TpwhZEvmgdE7GSESAtlqanseZl8Xq+VWNnfvK6Xc9Rx7rXq9Ij3VQjSZpLnupbqhRML+E/Tw6Rp4AZaWgVWwERoSLIC17O5NB/FumQNDqTTmFIbqCI6E+DWkDefR5YnJaHriMP6uvvyOv3G6AAWlW+xwssPRIMAUFVXEsmEB/GU4Sh6HeFDXQGNNtBP8H8lbfnrWX3NIZaPTbubshM9EqyMZ3vQzVDHDJ1piTKqDfa8Sw9dyFO/UaBtkGdPFUWjBmWZdw+zdiXlEdWqNAlOcNPMU8fdI8aOftLF+z9TUnJnhelNC3GcraIfwYTEBkoRZuoi891Ep54RFVNGQ/pOoUQbLr1RO9A1opl57ApMO8qcqr50hBofmhpJruCpVb4ROpuye2COooeY6DcCcjoLLy/T83/NBnETcvmB4/qAX3WE1Zyk/K0p4jEC9XxtXwx6Aw8Wauu7NADl/c/ePYAG2jKjuknQabfkeY=",
+    "solution": "aS67/UjK9avKNZBEPoiyJSlSG5/DCB9E+Wsv+GjTpxRbe9FdGmOMG7Fvu0Gc5J5y6mPwA9/Ywr4kXg64dXmSeFEjHkEZ+hFJ8rcaft1HG3/oNZIMov6RrigS+fVxrjeBFJrIrJNPXaKD1WzHByhGbuWInE+1Ck8xdAhE7Y3OxiTzMAi0T30+lvM4r56fRP/9GDxIMWpmGR9kEE9PCrGenD+9QTUQ3tET3y7isuimuzGUNJpgN8mver64kAb71hj9DydLUWwZnF8Mw7r9nlg9siEWo90IzXqp3QEW754SIsQFnZ3x6AgCcZcfOgcPLE7it2mHDxFHF4esGQS8nhelP19FJcsNgs3iizTB2Q28gjQaQRVWClFKGWQOERVWc+z10adPPVlsz5cm1OqgdarqIM9v/H1vPLyydprQXrpumehOPpsR+9DDW1S6KfmQSSrd1R0GRt7Z",
+    "max-score": 10
+  },
+  null
+]

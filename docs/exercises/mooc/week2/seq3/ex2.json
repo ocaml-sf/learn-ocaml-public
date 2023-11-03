@@ -3,7 +3,14 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Finding the Minimum",
-    "stars": 1
+    "stars": 1,
+    "focus": [
+      "Array manipulation",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "mooc/week2/seq3/ex1"
+    ]
   },
   {
     "id": "ex2",

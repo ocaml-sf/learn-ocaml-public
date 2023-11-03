@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Types 2",
+    "stars": 1,
+    "identifier": "1.10",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Types"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F1/1-what-type2"
+    ]
+  },
+  {
+    "id": "1-type2",
+    "prelude": "",
+    "template": "let q1 = Unanswered\n\nlet q2 = Unanswered",
+    "descr": [
+      [
+        "",
+        "<p>Consider the following definition: <code>let a,b = (10, &quot;hello&quot;)</code>.</p>\n<ol><li><p>What is the type and value of <code>a</code>?</p>\n<p>A) <code>int</code> and <code>10</code><br />\nB) <code>string</code> and <code>&quot;hello&quot;</code><br />\nC) <code>Syntax error</code><br /><br /></p>\n</li><li><p>What is the type and the value of <code>b</code>?</p>\n<p>A) <code>int</code> and <code>10</code><br />\nB) <code>string</code> and <code>&quot;hello&quot;</code><br />\nC) <code>Syntax error</code><br /><br /></p>\n</li></ol>\n\n<p><strong>Note:</strong> If you believe the correct option is <code>A</code>, then you should answer as follows: <code>let answer = A</code>.</p>\n"
+      ]
+    ],
+    "prepare": "oPVBYGnmqV9K/ZvgAS7xvTcBLEoNGXtZNRBnFUngyYZfcBJvEDK3Gp==",
+    "test": "OvvEd4EqSgfzfER2MddSTCYPTTgUSVZLPTxeWVXsfIk8vlE54jD0DDYtlqmqsKRn5W4H4jEVrOP/Fw2WxzePboBkSpIyEJ1J9sgae42FJfYhA2s/p0NRqDRV025jkHuQQJzawZU2V4WD1TqCVTFKh4DunpLECo4ffpEZiYLBr8ck6djVdVtOm4KXXFE7tSJKI6MEDVNVXGYxVkB1Xrvdsj8kDW5BKZQR1pOxbOT6hjOM3cldJ5avxPBOjoGuA0inBjICFDxC66+8cHbbpVQ0x7MBl6jEhAKdP8JEzQ0Y0MNAixKh55o4egUlK2FUGl8f5diHEt6EWhO9TUnJphfPPQGaz3qoWWrVsdVLXSK5XQggQUcXEXwWXSpQElZ4c0j11qUPPkU2kiVm3Kjtq4riZZ25fn97IKP8hoO10rNtkq1MZVYrMVaKXsjcMKOE3jGzKFSVDIydGPcgKB0+EhM56EzodLGVGo+ljTQzloolHIW7m21TmVdVn1RND2v4d+2dOeOVgxhYRx7oiA6XPvEYYnISGUoo3R/4PFhRHRzgg2YepUFhDXHAXmY5qfmAlQ==",
+    "solution": "Y8VOH3nVhlzyiilsr8foP8JTTVER3p==",
+    "max-score": 2
+  },
+  null
+]

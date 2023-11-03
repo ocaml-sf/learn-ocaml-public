@@ -1,0 +1,31 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Local declarations",
+    "stars": 1,
+    "focus": [
+      "Variable declaration",
+      "int operators"
+    ],
+    "backward_exercises": [
+      "mooc/week1/seq3/ex1"
+    ]
+  },
+  {
+    "id": "1.2_declarations",
+    "prelude": "",
+    "template": "(* Replace the -1 with your answers *)\n\nlet phrase0 = -1\n\nlet phrase1 = -1\n\nlet phrase2 = -1\n\nlet phrase3 = -1\n\nlet phrase4 = -1\n\n",
+    "descr": [
+      [
+        "",
+        "<p><strong>Question :</strong>  For each of the OCaml phrases below, predict the calculated\nresult value by OCaml for that phrase and indicate this value on the left\ninstead of the corresponding -1. Then, verify your answers using automatic\nnotation (click the &quot;Grade!&quot; button above).</p>\n<pre class='ocaml'><code class='ocaml'>\nlet phrase0 =\n    let x = 3\n    in x + 1\n\nlet phrase1 =\n  let x = 3 in\n  let y = x + 1\n  in x + y\n\nlet phrase2 =\n  let x = 2 in\n  let x = x + x\n  in x + x\n\n(* notice the &quot;and&quot; syntax and guess what it means *)\nlet phrase3 =\n  let x = 2 in\n  let x = 3 and y = x + 1\n  in x + y</code></pre>"
+      ]
+    ],
+    "prepare": "mQ==",
+    "test": "G0iybLPzSYenhekox/PL77YPTTgUSVZLPTxeWVXsfJobfRVlGmT0ETIkfKn5l3M5oE4RPD1ew3n6VfIRpWTTblJhQopyEPtH7+AfqsBaMuM8BcQN84YraXtUXgYRoViXDc3PvZ9AWLnuMWbKTnsItee1bU0PS/8tuW2z51GOsiUTury/tdZEyPK1wXC/31vPL5MIH6FWXo9zUkJAQrrs6y8aE8l+JstZJ80rbPSluSCCNNloYmG/grQ5zELjKcesQy5CWjtfn9e2cDn/pUMq8TIBpAGVmB4w1/VV/p0UX1UTmcvm9QJTqJYl22NSGl8fqMiQRtJEQO4pTVGJz1rnPU0sfa7Z95nRhd8o+vUwnh5iE9kREVcQVnkqUko3a+GG4LxC16E/wBh5LKi7aL+zIMokont1M+Lyh6SzVPweo0h13UprNFHUQt7jMf8eTn3oJBmQAYLjSgYdVR0YSs2in9DNjqDOTkaflGIem9ciSKfhm1wGnEVWbfQOAcnFjrdcLZCuqgzSDJTxsqEhvTbEjnAOGAJFGQUH+VhRQV8dwt6AkpRrB7G1GyNpks8hxe15mD0sMDZnxrPiGs/FeSqCeQ1jRp98UcJHlPRce4xANfY8BctIqqpXpiU0Qs5M9VnEQwrOsJlKR0mXN8rsTi2I6PCK5l7DAz7/wCtNpI40wy649I7jtc2A8rO17/W/Ks30JARNRGwsXEEcGBNjXbrf8X8rQXMALZ9+IX87fuidhSCfNNJaHXLxw+FFjRO7VZ4sFzRLHnVqnUijqTGg6Eg98HFMzliIm/jdTpBVzp4C1YRR9v4XbzV+bYQl0gY1ZQWqqNnECMBGUKzgZlnJnhfH3BWgfayc95Szo2Ok43AioZ1zPEFzER9ZGTkVQ9Fqefz+1qtD1RA4z65nM3PafYSp0h66pDYtPOuZwArAE05uiqAWSpI4IkiDCby34bjEAC3fNAi3MILdBPJxK/CNDJF6npT3w0nDGo0n9X/bllleSqu85+gtmUgBv4AIHcjKnuAcGKmqdeOPJsjzyPFLwTuQ9npPTURv3/Z2LBB4VFid/1QRr9EcVTS3DC1HbbiqtvJ77HHuP7QmxbmnCfZCeW4Cf5sgTFEZF2JS73gawMwUG4IaDc5Kp2NeqDoVFwtKkGHPPc7VvJh0+4vF38rQAHUN60H0lE0PS/8twEcH7dr3aR2dx347tc2UzPT4rGr/3ZypYlEjTEV1S9lxVFUVErz5zyuwBCkX3aF41i7sbP7xsjGA1JRcMmvhhaI+nBOgAZ3bQ8ZWFDFEolaNcHjcmFI/xTR1/kTutkGdPAFT7o0QZtBAzYvk55gFb1MjIP/PMU8fwMiXEto3W4j9TomBz1by3ELqignZi9zJwwThOPkT6NxpBB9mQkoKTCVEEXVp9b8I3r9VQ5Y6/RYyI2Lqc0f5+dRijmtzD+qocVbg1Y5u/a5X3AJZ+oCLF+Pl4f81RT+oOBiQZ3t=",
+    "solution": "gjW6mDKEXeBszyb8gZRD+ndEGUoBUUsYO/UAFQjgabJiaoUcBS7JH7Acqfn5batK7HHA4mMfrOPnGtxRqnrB/AgmV/EnWNRKjuFueZ9vZPIcCdFPz0NMqCsVHN6V9WqK+wq+tZU0FrTQKTrLTmsIxqDBnznBCljwu9lUxp==",
+    "max-score": 10
+  },
+  null
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Lists of lists",
+    "stars": 2,
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "hferee/10_run_length"
+    ]
+  },
+  {
+    "id": "11_lists_lists",
+    "prelude": "\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<p><strong>Question 1</strong>:</p>\n<p>Write a function <code>list_list_get: &#39;a list list -&gt; int -&gt; int -&gt; &#39;a option</code> such that <code>list_list_get l n m</code> represents the m-th element of the n-th list in l. If this element does not exist, return <code>None</code>.</p>\n<p><strong>Question 2</strong>:\nWrite a function <code>transpose: &#39;a list list -&gt; &#39;a list list</code> that transposes a list of lists. In other words, the i-th row of <code>transpose l</code> is composed of the i-th elements (in order) of the lists in l.</p>\n<p><strong>Note</strong>:\nIn which case do we have <code>transpose (transpose l) = l</code>?</p>\n<p><strong>Question 3</strong>:</p>\n<p>Here, we implement a particularly efficient sorting algorithm: merge sort.</p>\n<ol><li>Write a function <code>merge: int list -&gt; int list -&gt; int list</code> that merges two given sorted lists into a single sorted list.\n For example, <code>merge [1;2;3] [0;1;4;5;6]</code> should return <code>[0;1;1;2;3;4;5;6]</code>.</li><li>Write a function <code>wrap: int list -&gt; int list list</code> that takes a list as an argument and replaces each element in the list with a list containing that element.\n For example, <code>wrap [1;2;3]</code> should return <code>[[1];[2];[3]]</code>.</li><li>Write a function <code>flatten_merge: int list list -&gt; int list list</code> that, given a list of lists as an argument, merges the elements pairwise into sorted lists.\n For example, <code>flatten_merge [[2];[0];[5];[4];[3]]</code> should return <code>[[0;2];[4;5];[3]]</code>.</li><li>Using the previous functions, write a function <code>merge_sort: int list -&gt; int list</code> that sorts the given list.</li></ol>"
+      ]
+    ],
+    "prepare": "",
+    "test": "JH1HehWBJuFeB4crmypyAmMEAlo8XE/WOlQePkmdqM6bh5RqF7zIGyN/6fnc5M95oDSUDCYoqrqrE2Eex7rXq9Ij3TIsVMML7e5jqsBaKLt7GrxI6O2TpTBaFs6C9SKEFNfJv+dJQaKTYHK1AUg060HPoQaPWEHWcpIAiJaHriM9OF3vnhFScC5v6X03P62MK5dZTFkQS9kwXF6GRLy/k8qmDj/V01V4O80guLD/hjzKYJQpMn+8e3d7doG7Kg3bQ8YCDnVVnBGJgHaqnE9iw5hCiBnVmB0g+F1WxmytLxRQ/cusnlcsodFJRscPIUTfhZOEP4x++NSxTVjFngfJPWhSVfuL5VLl4BTT2q6hWAI5FQQDXjYKZ76XUFo3funi+PUN+AEw/BFZ3Kjtq4q8IMRP9Stf1qC7cBGQR+JyirlWN9hYMUSGBw4lNvPQAGyt1Q40GdGbTeowGkbMQsgnlAyU/IDfTo+dlDQellcqDebb9xRW5Q/ZhP1ZMdWCi+BCSXlDvMqfKYcVLIp7/8INXH6BN81ZEGR9ZRA1BBngbLURr9EcVWyA2V/hu+nc7KZ89Hi0MWsYfvK6Xc9RjU8Yb51jAAUpU16Yj0ttvIZc+N6oTwVPp0MFbWdB+ZhXijHQC2SU5tEpVarR4XWAGlh0s0m2lAaORRXSxR9V72GOqXN+OBq8zNVSrGECkCKKIAlFLRVNAF6KTR9/WUJB0ZPxnDrfQTlLJghR+X7cuLbqtWGKZdQpMD4xxsx9wAv7UOmDPnlCK69ByQr0eiabbRs97WUm89bfw9vdK75NjDytOYQe8MHcnFQWw1tlKtMnTDXQdI7ERx5QPhO9TUnJrMri+U2iG+L65VLlKFGAW3RoSQ/8QpAJQkg1GoQ1OoUQr38IObhE05E4yQxcOay/duW1MusklmhvPLyji5nWX42aiqEMNy/UN9zGEYzcM0zETCj6JUfYU1HfHb5dGVbLFwEqz9DS/KyQAkaq6E9RlldoSPupktMDmoEVr+RPA1nZn0EaD9Mtkd3BK3UmUZIg6nkpVjMfXF1RCpIZ3zl2FWqEdd6AvmpoVRqLRHNvsvnr6q5KoDSU4jNnfvK6Xc9Rx7rXq9IjA/F7EIZpzI/m/wY0ZOEMVZUllK6Ru72VAdNC7TzEUYvyd2AlBv4QI7DTWCwIhrrIyVjBG54UjUltxdrOcDlOOAPqzNUstyl4pi0O1UMm18hMCkBQVlxc0lJ+XOnd5XTlQUZQNIJ4+X89hryeujzXYJRn4XK8ePV4/V8o4g4nCjVWLE5Q65rJcHbmplUvfHF3/UjWhRDtP/VsxmbKIqcTgtHcvkhNqMMqLt6PJ/Pff4XgRrE6F+z9TUnJydry+XFbArSIkRreZ7fRX1ZgTAUsE69mQ/ZVTDkZX/tQprj1Yuw0PRpr8kdaM4ehq03v1gAlzWF8OfTjxROQQqYuja1RYyceY6CGChylI+uBTyenYUfXCYinB36gGjzVBdN/pUK0xY+sVB0Hvl/GnEcKMbzNcZcGbyAGtvRYMZLLc3YzD7oMvsmdLbdCUYA76mhNTGNBTUpRGR9Z+RARFRCgfM5er9EcVWD0JA6wsvnrhOMkrSbUBHFwfu+fXdFtrSqtuDdsA7wmChY2cI9Ce3QvZPJoTwVP/4YCfEMTQgYBoWqLDrTL5wEIVaW3ZjbtHHhEufTBnp7B1BDcaUkW7YLAxDkC1QTbnhoMcGE4kCLL2khYHzsNTBEZGR9iVkR0CuycnDyiBGdSJ+QMPCuguujAzFi4NOctHzyvj0BEjQ+gKgvqWTYWSzI2/RCJgWjQbSw9dyFOyGXBtnnWF6/T8EKZKhR2t2uc5pwCphJo+IYDZU7+9KKERtBYQ20iDALAyc3L49ZcFOHLp6jp0SeB12Mb0SoJQUlKRF1ZEWAQHAtfr37NYadT46pmyyVZ",
+    "solution": "WhFFYwCNg5pyZJU5bT24yWMNTQIRBB/UKERSXRDkgM6kr6ZlAS8oAiMDlKCc6OMsj8TfMClipPf6Fc9LrCqDt9IzA/odEPVEoLFaw+g1ZLwoVIcP/0cRpmoYCN5OjHHQPcn4v2A0FuS3ND0TX867lNuEpRKBRkmfdDIApJ8+7iwS9BErpx+/QWtpeHSGPVr2IA/NAF6KTWYrVUUVXLzznGmmFXVaYNtD1o07hq8ee8eEWstoJ/8vxqk4v/eq0w4nRTYPTjJ1mk827m7xlAAxcXEDqjWNc5Wd2BFw/oLFIw/AiYbm9os4dgh3OcMTMTOHdIW+RrcEWbnOTUmVnd0lJpiE0zLPkvVaJGCD2Mg+MIUzFUlYXWZWSTlQDBVWeK+L0aMO1ic5jpNmAcCttOX8TxsflVV81u+7i/aDCfJa/eN1NyE3LkWGXfP3Mf8QAD+iM9eTBxiyFOgDGF3IQs17zUD28eOTGkamy6heloMoMh4p6ZwGbyYav+QRTMHL/OhcQdQ14MKFgF5xZ1Yn685+y7xVBWYRGR9ZNRBaW/edfMU/r52lGTS3DQpkePncq3Nle8SU4jMrfsHrEwpRf7nXtkpjS/Z7CwpLmelmr1FSGedpHwUJp32e/yAQQs5QkGGEFMz0thM4W3bVNH4TU8EFrfTLmE0NClL5dAVzk1qk7Tl+j6EZqbLgDBQsnjvGPVr2IA/NC/6VTVpe0koUQLz58ETkEW/VLNtIO7m/6uieqnCaSZRn4XKRihs4jUj702etEWJRUWdO69iAw7ngkpBbfHE+opfPhAHm0oAWlATY0sAFn+Wp9RdWfJoL2IM0MQTmjvLIAcULRbmyTQHMz1zoPVqVESeQnL5z+njLN2ImUt9qUEFMXQtZT7BEWTdQr0TIQM2NPR/56kda2KiXpPqrPtRhqyc8LruftEXDX0Mtzeh+JB6LL5KBChTvV3jEAGTnOA7VFcCmT0o9Ro+MCsRtu9C0jqiQTo09pSh6jpJlGujk7M6X65sZrfkyTIyL8qRhWg2USMLIwQouL1Yt/GxApShEHpsUGVUI+VpDE6zTpxRbe9FvBnGLXmJhtKmRtuBlnyyVLjNfuP4qXhERumWXoRwLCkE8OvoHmKBaqdFDZLQcDdE06PlrdX9HUZkC8CLCF2WZvZ9AWJ0QNG4TFnBShK7+y/mNDBW9rz2M71rOcHBS//YypwClDDMaozf11FnFI6UZCVczVFpeVkQVXLeCnDqzQXFV01V4PkKHhP7qhjjBZsMfHCG/dPV4/RGaAZ3bDyNWUTBVoQqIxS4snABgjHFO/UbMd5Xa2FV+jBXY2tovzcuclBMWofllNtkPS8XQdI7ERslLT4v9Vk0nsxegIo31Q98CnKUMNnjg2IsrGx5jGUlt1R/4VS6ERVB3ovWN+4lEPR/KjkdfNx3tq0vj3MQdpnl7IrurvHU=",
+    "max-score": 29
+  },
+  null
+]

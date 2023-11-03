@@ -1,0 +1,42 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Gray codes",
+    "stars": 2,
+    "identifier": "5.4",
+    "authors": [
+      [
+        "Gonçalo Domingos",
+        "goncalogdomingos@gmail.com"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "List manipulation",
+      "string manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-holand"
+    ]
+  },
+  {
+    "id": "5-gray-codes",
+    "prelude": "",
+    "template": "let gray_list n = failwith \"Replace with your solution\"\n\nlet gray_code x = failwith \"Replace with your solution\"\n\nlet gray b = failwith \"Replace with your solution\"\n\nlet de_gray n = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Gray codes allow for a good binary codification, in which only one bit changes between two consecutive elements.</p>\n<p>To simplify the problem, let&#39;s only think about integers. In this case, the codification of $0$ is $0$, and $1$ is $1$. The codification of $17$ is $11001$, $18$ is $11011$ and $19$ is $11010$.</p>\n<p>A simple way of generating gray codes from integer values up to length $n$ (for example $19$ has a length of $5$) is the <em>reflex-and-prefix</em> method.</p>\n<p>The definition of the method is as follows:</p>\n<pre class='pseudocode'><code class='pseudocode'>Base     reflex/prefix n.1     reflex/prefix n.2      reflex/prefix n.3       \n0 0      0  *0     0  00       0  *00     0  000      0  *000    0  0000\n1 1      1  *1     1  01       1  *01     1  001      1  *001    1  0001 \n         reflex    prefix      2  *11     2  011      2  *011    2  0011\n         2  *1     2  11       3  *10     3  010      3  *010    3  0010\n         3  *0     3  10       reflex     prefix      4  *110    4  0110\n                               4  *10     4  110      5  *111    5  0111\n                               5  *11     5  111      6  *101    6  0101\n                               6  *01     6  101      7  *100    7  0100\n                               7  *00     7  100      reflex     prefix\n                                                      8  *100    8  1100\n                                                      9  *101    9  1101\n                                                      10 *111    10 1111\n                                                      11 *110    11 1110\n                                                      12 *010    12 1010       \n                                                      13 *011    13 1011\n                                                      14 *001    14 1001 \n                                                      15 *000    15 1000</code></pre>\n\n<h1 id=\"Goals\">Goals</h1>\n\n<ol><li><p>Define the function <code>gray_list int -&gt; string list</code> that given an $n$ value calculates every gray code of length $n$. These codes are returned as a string list. <br />\nIf the argument is invalid, the exception <code>Invalid_argument &quot;gray_list&quot;</code> is thrown. <br />\nFor example <code>gray_list 2 = [&quot;000&quot;;&quot;001&quot;;&quot;011&quot;;&quot;010&quot;;&quot;110&quot;;&quot;111&quot;;&quot;101&quot;;&quot;100&quot;]</code>.</p>\n</li><li><p>Define the function <code>gray_code : int -&gt; string</code> that returns the gray code of a certain $n$ integer parameter as a string.</p>\n</li><li><p>Define the function <code>gray : int -&gt; int</code> that calculates the gray codification of the positive integer passed as a parameter. <br />\nIf the argument is invalid, the exception <code>Invalid_argument &quot;gray&quot;</code> is thrown. <br />\nFor example <code>gray 9 = 13</code> (13 = 1101 in binary).</p>\n</li><li><p>Define the function <code>de_gray : int -&gt; int</code> that does the inverse operation, the decodification. <br />\nIf the argument is invalid, the exception <code>Invalid_argument &quot;de_gray&quot;</code> is thrown. <br />\nFor example, <code>de_gray 13 = de_gray 0b1101 = 9</code> (<code>0b1101</code> is 13 in binary notation).</p>\n</li></ol>\n\n<p><strong>Note</strong>: Feel free to define other functions to solve the problem.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "S70SKWYU4x0LZjNwwXRiqCYPTTgUSVZLPTw3RVXifKRnfRUXG8C3EXMKeOLgsKhKe6eYO82nu4D5BvZ2fi8Dn9IuA7IyUcJCouwag+hAZI9FCdl0p0E/bWdBXgYF9WXWA1K/tZ91QunWYXWQGi5HsPLk7GnBClHtco9mmgeAsj/MO29Y2ocf9sgRYXOmIWr8LoQZBVgXMo/w+oRBS+Px5XXrQTBLYI5LITH8fejivyOQS0gaYiCsdOAGw/iu3MOd+DYCDmFRnkqFtSii6A57wmcOyU0Bq9bd1BBCjEvYIw/AfZrm/AB0txNo2gUp3A+mwI7MThFCWfyWDALN6MPf2Et7yiBq+RHVylZxZ+/EOPkm+lkM+6EUCGALAAULt3XZKeMdNHcK/oxy3OubaKK1YhsplQs80buRgBnNWOk//eZxN5IvF/X3XhyjCf8XVCjdN9eSHYDvLqcmEVPYBMRtooTS/0PSM6vWlDRq/6o/Nen/ot1SnER0kuUnD1fKoewrUQyEKCxk0gmQV5U5gnUcrDw0TQV4TR9U2oBCQULpwxcG9EEcVn3JH7xHerPgqrEKoDTKLCIarre9D1MRvziCdEIbCkFqDxZHmKBagYlA34IDDctL8qg4ei9ZUK1LijqQQJPTaZ9BFtfR3yb1A8dBsKSA/V3UA6nDwElSmxeAe8lUZukyZ6sGiLUnYjWmXybbI65gTApZ+/pvRF6+Xuy5h8rfO99QOIc41QmxabznuW4E1dYbOyKtcbd18V8sZZXDT6pCUTZVkVajt7v8okQsqTdo6DCAcBDk15ZCwoH30sEUlwWmb9dWocV5Yt/P3A+rdIW+Rt6FQ2SOTUnL8NnkZA21/j1hMivYmkRv1qk3MKxjDlkEGB9UBj/1VEEQt3HIJuxm4Bt9/BJcKb85bhSv0xk5/H2v1vPtxSjYXbZ9juAL3FZZ1pWPAvPl4ePDRSux1VbFZ1GmKuQoRBaDUhEg8EjKnqSsR8nWyHFqlpslNej7n2ln5RYVjrEOGMCEpPQkLi+XHBI/YhG4G/s/sAwox7RBCQ/rX9sYMBBXQFefqIFlcENAWUu0Xn1caq8Cq0Zr6jD2MClNbci5GJ6YeH8DpRFgT5QjW1/FxaRa/xFUP36oBct0p0gPqHU0QvVx9SKGBNf/rxIOTeefNDrNHHAFvumNk/nBAkPdf9kE5MrDf8kJMdNy0z9enJcv0zf8EXX7MAQBCzgQVkAcEB91EPCznEyeDi9+L2UWPSn/q+8nf5uENMxhJ8mpxuBPdoG7UJbmUmdZQHIL85+YgH+Q8Sw9d/tClBqBrk7dIXdWjBHU2qtSixzxyBtWqNAlOcNPMU8fdI7ERxEL21zOTUmIzNvL09Qhi8MaHi72j/s9IKQR4K91ABhYEX/gGScFXoUYtO8FJ0wuPVU0yAlnI2L5cK7iVNdllnl7KgX6e6r1Z09ulOpD0iZKY/TD2MfzPuTp4Q==",
+    "solution": "Wy7B88YMpUm/2256+3L9/RpNBBcFGV1Z2DxRFVyafIYew9EsVTSTG8khabilvKYxuXuCP7deusi5DZgEejeZf9IlRQM8S4/HpK1uehl0TqJoAsA0p4kAqCFVWN6J9TOEC2X+kcBPWqzENGzWDDEPvLHRbp8EUlHWfA5+mI3Oqml31wnkN50IZrBj8GxnauTMNp9IA8tZGR/wEBFZV3ixpHimEjhBHgM3Pmf6aa7huGfAScpbLmT8xuokjRG7Kg3bQ8ZrGDFE7EiGrDrSnEU7wyFGlovPtkyc4oYHkAPSYZZJzhLciVEdqNAlOcNPMU8fdI7ETx9JB+q+FUWTl1bi49Nb5Z1lFdxYdTzWOjamgsg8SERMGWJ9FRJsGBV19b8IOewBPRprdVcm3Kjtq0noYZkLj8xeJwXrgAz1X+I8iLVTPpJZD/yVXh3zOuqeQTS7NADRTh4fAbcxK/fZDs17kpXY/0OUMFecyHInbUdoSPvkoN1D5U1av+QEAvPL8uNqEnqblXN3yBy/22w9YuClmB6DXUhKGRtI+jlKD8vThMIevEEiXEvXG72hf3yb6L2qri02MWMvfubLXc/2gibXeA2kA6VpUxZS705trYQ2ZLdpGsYHp3wRfiUBXs6S9Sb+QN3Jv4wPFumQ+DrtTmoWbuS+o9+JU6veuUkE5ZKOrXIW1wOWLBnEN4lgw7Erb3qzYlEJX/MZQR9S0QxOOwO98WbfFyQBKKQRJmDSeaWftSCJNN2a4yLAxvEt8UPuZ2CpDi2SGGIYpFeHcD0so5BweHEHllbItlnd1VVC9A44It2Aiw+r/UcUs1tqE49D2BmfxtiUCtBIUKysTVGJhYel2BRnnJduBs6zaX8J0nfis1s8BAE4VB93CGhLC8dfc+j1Ob5E0R96zBxMNaihq0L8P1Q3/HdrMee6fVbQE4V7paZxN5INYyeJR1ml1qOEBiTkWlfVEdHAHqFgVV4YThd7mQ+0zaiNTp+d6HobyUdjWPipm15VoAtSrKNWVfP6puFwU8XTizcg7nys2YoqLvj/gzNBAQ/FGVsQJkFDTBC9fIobbTgwG6bZF8khhfmls195oH8RKjM6xa89XdQRmzLEf9ofRod/RMhL50YjxdVSP4soBcsPfeNRdH9BFxxHpy4IFJqHaYIKULmYRjbBBydPcLiJmpOBWFmmhUkLz1nHcHQ1WIG439O1ZqskmnFqg4iMK9FQTDtZGR/wWV1VW0yknCrfFXUQLstNN7qhhOyebTiEPMMjNmvVePUXw/Lv+tWbCmYKAn2An9uKtQC7kFR9b6lHo6qPaQXlQowG8ELT+dxBnYPczUY4qNFz4xA+4Rmmjx7ERxFOW4u6TReMzNrh+VJxyJdbUYEnhUaC2W0PgxQ7ElkEWBAZETsVQV/RbviIMeIs2AYlkREyMKircLW71wllyDZrYbOuxROBXqAuycILZVZ4LETOCdrcM+mWWWTfOE31Rt7mUOggB9OUFw5gu9C0jqjZCR0klCxzll27A+Ck7I/G9AIVa3pIAxzCnPRmUzbB8mZS5CPyMIhoLLD55DAETUkDXEwMJUQRUFmvu16feo9cXTOOHDBhgKWctvlKoDTVK8snbuzf24MZvCrEq95aKBlyRIZMjeUze1YA326oTspJp4FRxDoFFxpKkGnEEsvTuwVPHsW3Yyv4ByUirfLPlQqERUGww5x3nJKMaSZh1xH2N9vQK4tp6GMraP+3YkBEZ8tREo/cEBt1OqWsyDqbBEISMwxG1m+stZ4ehjzCNNwa4iLfxqUXyFb7320iEXMCWQs3lEuFqTrSoVI8wmpLjoqBtRXgQoJEzRrTKgcvzcvo/RtWewViOgI++U7vdM+EWftLF+z9BAvJ6YewPUJnk22mSM5j5mCMISekfZdzQQpZSR9RSW/1SVwCr+0BOeIPPR9m7Vc71Y3tq0KsCtQlkSxe1vS7vRHZX4Fg/fcL",
+    "max-score": 49
+  },
+  null
+]

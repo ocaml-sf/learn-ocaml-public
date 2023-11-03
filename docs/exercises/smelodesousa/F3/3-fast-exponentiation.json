@@ -1,0 +1,50 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Fast Exponentiation",
+    "stars": 2,
+    "identifier": "3.12",
+    "authors": [
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ],
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Gonçalo Domingos",
+        "goncalogdomingos@gmail.com"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-tribonacci"
+    ]
+  },
+  {
+    "id": "3-fast-exponentiation",
+    "prelude": "",
+    "template": "let rec fast_exp x n = failwith \"Replace with your solution\"\n\nlet answer = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>This exercise is centered around the integer exponentiation function $x^n$. The natural and direct definition of this operation is $x^n = \\underbrace{x \\times x \\times \\ldots \\times x}_{n\\ ti mes}$ implying $n$ multiplications. However, there is a simple alternative definition that allows us to perform the same operation more efficiently:</p>\n<center>$\nx^n = {\n(1, if n=0),\n(x, if n=1),\n(x^{\\frac{n}{2}} \\times x^{\\frac{n}{2}}, if n\\ is\\ even),\n(x^{\\frac{n-1}{2}}\\times x^{\\frac{n-1}{2}}\\times x, if n\\ is\\ odd\n):}\n$</center>\n\n<p>This method of exponentiation is sometimes called <strong>fast exponentiation</strong>.</p>\n<h1 id=\"Objectives\">Objectives</h1>\n\n<ol><li><p>Propose a recursive function in OCaml that implements this definition.</p>\n</li><li><p>What is the complexity of this algorithm (in terms of the number of multiplications made)?</p>\n<p>A) $\\mathcal{O}(n)$ (linear) <br />\nB) $\\mathcal{O}(n^2)$ (quadratic)<br />\nC) $\\mathcal{O}(n * log_2(n))$ <br />\nD) $\\mathcal{O}(log_2(n))$(logarithmic)<br />\nE) $\\mathcal{O}(1)$ (constant)<br />\nF) $\\mathcal{O}(n * log^2(n))$<br /><br /></p>\n</li></ol>\n\n<p><strong>Note:</strong> If you believe that the correct option is <em><code>A</code></em> then you should answer as follows: *<code>let answer = A</code>.</p>\n"
+      ]
+    ],
+    "prepare": "vAqiWzBt3B3Z7YUsGJbc3GM2TSlRRR/e+UpR26D/fKpeg9FYVTm0OXM9u2ymrvkm9iHGO72nw3S6DIkDfjXQ",
+    "test": "Otv1Yjti0khxMGaycpttxnYPTTgUSVZLPTw3RVXifLwfcAVnGEuoVi/h6fmbtfZ88lqGO7AyrPHxEJ1ReGu+blJkQHsIEIYLieUme1wBK02uTtY09ax4boZaFutKkGHPEgrTrcAJQaKTYHK1ATEGreiN6AaSCl4tgo53jxLYtTNkbZFxKA6VXm9M2qmz+CncYpIFCVJSS6/DEBEVW4axyHPaEi6SMct31mehhqfqvzbKNN1bLmevcrg4/kDq0w4iDGVLFS1Ql9PMcDzhn9MprmhA/QGAa6SnF/d4d5eU2xQDlgbbzmBEbZN6+YAG450fqtyJAhFIVfzgZlnJ6dr5PT8VyX5yB7wxL6ktaLUdYfAiEo5PRR/1QSwVQUFZcv0IS4dC+A1m96AcGbm5d4rz0xAliTFJWOv7go+XV2kwiqAG4lpWY/PJTdnLPueQACvmPArVLfGmFb/nVVOAEtM77VfojqiQTkug6DRhyAF/C0ObjatUoE6Aba1EAd3lm0VoOZuELRtC3FhgGiHudCcusTYPD66YV/1m+RARFRCgsM65f5R/BRb4G7Aeu0Gc7fZh/EqVLmMbtfKwBI/Ubyqxb52/QVFaEPZOl+QAwMBFKvZoF1EX/0NMqHURShVO9VjNHZqXhcB/FumQNDqTTmEBqPCAfAyPTFmshQMY6h4Pwj/klgl9+khvQmlCZve6+S+cYoMMBUJ1GXpeQ/gHHtrs7jexEyQ+Lu53PmSsf4Gxw7CaS0gaYiLvxvEDjWf7JxzbOUtLUSs3uArJcHbgk//OdyFO/UaBd5LxQoZ3yQH+X1EYnh8c85BYpgVt+hEKY6rmqd+3B1gFQ38sAoajz1ri+C4J9GI/PG/MMAM8fbkoM36JQUkMER9ZY5RVQ9ZRaviIMdEk3AlljklHMO7tbffsYgBcjmF6+3uBe6r1E3ovjqsZNyYUO9SGC1jeOufET7rz1Qi+AZXnGPIdFB+KBcJik6PS8L8QDF4pyDZGilcXC0Odi2YD7HYav+RNTNfCjupcEM7LY8/NWE5aGyHcaGhs9CINAUp1Bo/+KoAZHDvTpxRbe9FwEDOPIGJhtKmOqvBl8Xq+2l/nfsyVGxFFx7y8boF7Sod/EwlLfutevIZGJ+E/M2AX90EttBZVFwtKkGHPPdz4qxU2R4W438qRCXA0uxaNiB+DCiXJwAtZodrGaTkh6N/gL6Bb18x+03i6+CncHFMnDVZYUF1fRGgGXaWcyHLkDo2VYNs4CHigc+4evzfQNJ/6Ymr9cvFSooHuZ1PD+DYCUWISpEu+xACxiFBzjHFO/Ub4hBDo0B/T7/7RKtIVk2ukjUd0xsBh4x2POUHfeY8jBdcPWrSvH5yF84Gc1mmOjSV7QjND4E2Reas/LLgsCAMYGQ5JEGUQYkR3a+3FN4MP+VkonkZf1Y3tq4q84xNojzV8YavIxVaZE2/WyugCHC52JlSGXdnyKgKWAHynA5qWGh8dHeQWVR+8NsRflECZq+bRCkan/mRb7pw8CeO8mYRU5iYZ5fRNGMnYjxsuNM7Q0C9P0iIcCGLybiIi8DAOAR/FUFZXQoAR06Xst2IebQ/nHCO3I//hu+eds0Bi5W+W29/Ywr4kXcEYx8+cq9J/RpU2QtNYiL5ueYQAZPJoTwVPp0NRqDoVFu57rnKEA17O5xMOWPWE0USQBiQLt4DLnpLE2FTfdEltf1qIxXNk9sAsZ/lvJioPWPup183M1/wNGFRKTWZe0Q==",
+    "solution": "GvpfznRa7XukEOQFee9GTnUAH66rXEFJ+U5RCBDaqYZhe56nGlu0Xnchq+npg3MooBfU4mcnbfKtQ2/J7CrXh9JhA/odEMwOi4QbeZ9AIuM7GrxKz3NRgDo2WN6N9TCNQNKUkcBPFumQNHuTRTEJbqvI8AaHCkrwfQII72zOfTlCwzeCYTrAQ09QaF0haBkGSWsFR6ELGRN5O/kQRLzw6z8sBGcV42te",
+    "max-score": 11
+  },
+  null
+]

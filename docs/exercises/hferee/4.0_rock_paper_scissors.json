@@ -1,0 +1,31 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Rock-Paper-Scissors",
+    "stars": 1,
+    "focus": [
+      "Record",
+      "variant type"
+    ],
+    "backward_exercises": [
+      "mooc/week2/seq1/ex2"
+    ]
+  },
+  {
+    "id": "4.0_rock_paper_scissors",
+    "prelude": "type move = Rock | Paper | Scissors\n\ntype outcome = Victory | Defeat | Draw\n\ntype scoreboard = { player: int; opponent: int}\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<h1 id=\"Rock-Paper-Scissors\">Rock-Paper-Scissors</h1>\n\n<p>The following sum types describe the three possible moves in the game &quot;Rock-Paper-Scissors&quot; and the three possible outcomes.</p>\n<pre class='ocaml'><code class='ocaml'>type move = Rock | Paper | Scissors\n\ntype outcome = Victory | Defeat | Draw</code></pre>\n\n<p><hr/><strong>Question 1</strong>:</p>\n<p>Define a function <code>round: move -&gt; move -&gt; outcome</code> that, given the move of a player and the move of their opponent, determines the outcome of a round from the player&#39;s perspective.</p>\n<p><hr/>The following type describes the scoreboard for two players, with the number of victories for each.</p>\n<pre class='ocaml'><code class='ocaml'>type scoreboard = { player: int; opponent: int }</code></pre>\n\n<p>In the top-level, verify that you can construct an object of type <code>scoreboard</code> using the following syntax:</p>\n<pre class='ocaml'><code class='ocaml'>{ player = 0; opponent = 0 }</code></pre>\n\n<p><hr/><strong>Question 2</strong>:</p>\n<p>Define a function <code>score: scoreboard -&gt; outcome -&gt; scoreboard</code> that takes a scoreboard as input and returns a new scoreboard with the scores modified based on a round&#39;s outcome (e.g., a victory increments the player&#39;s score).</p>\n<p><hr/><strong>Bonus (untested)</strong>:</p>\n<p>Define a function that plays two players randomly for three rounds and returns the final result. You can use the <code>Random.int</code> function.</p>\n<p><hr/><strong>Bonus (untested)</strong>:</p>\n<p>Adapt this game to the &quot;Rock-Paper-Scissors-Lizard-Spock&quot; version. Think about an approach that does not explode the number of cases in the <code>round</code> function.</p>\n"
+      ]
+    ],
+    "prepare": "i7u85MhzDnJRKy7A99N0gnlIGUpFCmMmJVVFFULhwxolcmgpG8+3Xisou0GcsvJl6inUDSIduritUZB4c7rEq6VaV6/IEIZX73RahJxAFulnB0cPp3cRuToYCN5nlHLBEuH+aYoP+0m2K8r5DH50v0a+kjp=",
+    "test": "I/fXRsqbiIOWH6RVBTDlanYPTTgUSVZLPTxeWVXsfJobfRVlGmT0ETIkfKn5l3M5oE4RPD1ew3n6VfIRpWTTblJhQopyEPtH7+AfqsBaMuM8BcQN84YraXtUXgYRoViXDc3PvZ9AWLnuMWbKTnsItee1bU0PS/8tuW2zoYe+cHA7WJ20jg3ZveArGk21GtqrMpQ4VoFvW/AfQkgHQdTC6HerQXA+Nwh5Imy9areea7Cx411u0TSzhaULyFbvRcesF86PEDIQ89i1rybl6Akfd6lHo6qPa6DtPFkQ8QnR3xRN62v/iEcPs2Bg2IUKY9Hfq14SAcICPhPxCB7JzMbg0SFLuU405wDQijEVXRNZdfdRAAMIX/QXUC2EEQYQevG11gBBPQ/5nkcbZvi+cL7i0gZsqyc8LrvmxVLHE1Zrl4tDY76RY9nGGYygY3i5U7W/WjTZCwWmAqkoBVv2P1I78Ez0oc4QTljd5H6f75w8SO4pn1YV5QNGfO92AMnloewwZQ40EcqFnYCNLokSEovzunIDH9pZS/6UOVoU+/yiqMAntkw5WWCIH8hxh3yCsOtwe6eYO82nuau9DZwYdWfXxj5jA7wIEIYL7Y1fusBJKeooRrht8q1UqDhHWYlMkSDgTLH+a2BPFumQNDqTTmFIuuX0lDyHX/qvdAQDoeS17ipvTgsG7Nez5hlsDU5OV4WqGEQZFREDGVQzR/QVH+4x6XTtBDkY4stQJ7mrhaCby5uENJRaYiLvxvF4jRG7Kg3bQ8YCUWIQ65rJcHas6AB9dyFO/UaBtkGdPFUWjEKR4MMFk1Dsb9dWqNAlOcNPMU8fdI7ERxELF+z9TUnJnhelPWlOl5807wyQpzFYHE1+rfc8QUkOQkZMVnlSEV64efji+atI0pZwpHVZ3KjtqY7zYgBcjmF83wHBe6r1E+BhkPEQ1pAt08vGChyl4bjEAGTn1UfVGhT5B1NfAF70Fs6sn8bJw0nXD/an5jBE5ABcH+fgodwGb5gBdKRXTNvIp+ZhLlGTWwbK/MeCL5kIBFXjfzNMUjYRGR9Z+RARFRCgfM5er9FrF7bJG8EiePeg6t95oDSU4jNnfvK6Xc9Rx7qJbQ2hGFFpAIZVjuUnq16FNr57Dc5484YremoXRZtNpj3GQOCycMtnPPCVYDq0R8FVlPCIkpPV2E4tco5Ai1qr/B2sDwN08aXK9YpxDEUhW4PvIAwNDkg2XGYxQlUV1NyCnDqdFHNV+NJ44z+HuLjbrjWW2cltJ/8A",
+    "solution": "WKKcZspoZ20jS52hlWUYfXgBAAkFW/EZK5E2FVOufJcne59XVWCHXpEier3obgB88W4HMDE6fqf6LJwYdX8YeBEfA7E8QMNZ7+6ay1VQI+BcTr1A5q6RtSJVYJEBoWiWG0H+aYoPZPOT4m4TPXhLt4DU6D0AWkDevEldnJqLw8kIggx/onk8kbAZSGz7ZUOfMAh4HoEUBo9NQ/BCOuyx/DqFQTBLYLd+NTitbJ4RujWQNM1dLCCqxqJ4oBH94sycFycNHl5Q6/3J58+rlEdjviFD7lb+hoicZRBEjFbR1YxQkgr9/RlWscA/INMAYR7kqtiKExEWF4vvA6mZ6MCo1lCfpj+OI8DdcppBKIUzBa28G6lAUEB1Sj9NEUY3f+SJYqdTJ/Uq7pddNr87f4qbIJ1fjndmP+TyepqZGvIfnwRCN/gRB9LHXIygY3iXK9eYPQqBTgHaEOUdXRaYXet76Am38qjDTprd7jRi96ZlGqus7JR25URFb3tDC1348r9cBLuwLdBUMJ8bDoBw57YXfTACA6gUGUxZYUJ3QFecfMBwbpcgG7j9E8prfKnkdrx5mG0VMS1cwcitEIcUx7O3sltjSocIEIZHmKBaqxQ2ZKEnA11Kp3BRsGh+QgYG9SuWA2W3twlpWaOG1Tq0R86IdvLJn5LORzu9fotJ71OHaTQUuv2M8ygdi3ZKFjyMJ/zvLBMITEIZEUtzRVcRELGf7XXbDyAvLZQJNy7/w0TefiKF3sApL5jye41+jRzuIwfbCi5xUWJZpAq+b7b6oV96xHFQ/RmPaAHt1osT/6+R2tpFk2vLzQoCdhJsE2NP2ASwsY8NAIFYGayxDBXMzYewPU4ww803MXe2aBgEPZ/8RO9HEpp0Oo9ZXCVDVBVlaKfN3rgu",
+    "max-score": 29
+  },
+  null
+]

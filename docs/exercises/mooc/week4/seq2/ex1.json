@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Functions Returning Functions",
-    "stars": 2
+    "stars": 2,
+    "backward_exercises": [
+      "mooc/week4/seq1/ex1"
+    ]
   },
   {
     "id": "ex1",

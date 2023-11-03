@@ -3,7 +3,11 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Integer Identifiers",
-    "stars": 1
+    "stars": 1,
+    "focus": [
+      "Variable declaration",
+      "int operators"
+    ]
   },
   {
     "id": "ex1",

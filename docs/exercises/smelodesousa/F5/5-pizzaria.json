@@ -1,0 +1,37 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Luigi’s Pizzeria - From MIUP 2018",
+    "stars": 3,
+    "identifier": "5.23",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-brackets"
+    ]
+  },
+  {
+    "id": "5-pizzaria",
+    "prelude": "",
+    "template": "let score n pizza = failwith \"Unanswered\"\n",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Luigi’s new pizzeria has been the talk of the town in the past few weeks. Not only because it has the best pizzas you can find for miles, but also because of its crazy <em>all you can eat</em> policy.</p>\n<p>You see, Luigi’s pizzas are enormous, and they are cut into very thin slices. And that’s not even the craziest part! Each slice has different ingredients and you can eat as many slices as you want. But there is one small caveat. You can only select adjacent slices and you have to eat them all! It is therefore very tricky for each client to select the best part of the pizza according to his taste.</p>\n<blockquote><p><hr/><img src='https://i.imgur.com/4BJ0iBk.png' alt='' /></p>\n<p>Figure 1: Selected slices must be adjacent. The section in grey has a score of 20.</p>\n<p><hr/></p>\n</blockquote>\n\n<p>You enter the restaurant and see that today’s special pizza has been cut into <em>N</em> slices. After attributing scores $(S_1, \\ldots , S_N)$ to each one of the slices, you must devise an algorithm that selects the section of the pizza that yields the best value according to those scores. The value of a section of pizza is the sum of the scores of its slices. Notice that slice scores can be negative.</p>\n<h1 id=\"Objectives\">Objectives</h1>\n\n<p>Define a function <code>score :int -&gt; int list -&gt; int </code> that takes the number $N$ of slices in the pizza  and a list of $N$ integer that contains the integers ($S_i$) that represent the score you attributed to each slice. These values follow these constraints:</p>\n<table>\n<tbody>\n<tr>\n<td align='center'>$1 \\leq N \\leq 5 000$ </td>\n<td align='center'>    Number of slices.</td>\n</tr>\n<tr>\n<td align='center'>$−100 \\leq S_i \\leq 100$</td>\n<td align='center'>    Value of each slice.</td>\n</tr>\n</tbody>\n</table>\n\n<p>The function returns an integer that is equal to the value of the best possible section of adjacent pizza slices. The smallest possible section would be a single slice.</p>\n<p>For instance,</p>\n<ul><li><code>score 4 [2;-2;3;-1]</code> returns <code>3</code>.</li><li><code>score 16 [-1;1;3;-8;3;-2;5;10;-2;-5;4;1;-7;13;-8;4]</code> returns <code>20</code>.</li><li><code>score 4 [-1;-2;-3;-4]</code> returns <code>-1</code>.</li></ul>"
+      ]
+    ],
+    "prepare": "",
+    "test": "fKWTArMfeBCVOlbjfUZDE7YPTTgUSVZLPTxeWVXsfJsfcoFoEBbNH8dsfKnkdrMce8SUMnYzfvvxXdQRlGuZb5keDAIyXMBlpLxjrYQI04IhALcPp1EQdy5+WcYLii+EUxqLa2kPBfmAH6G4CzVIv0HFkAuE2E0vfodJ71OHcCCNc2YAw6vwDdFZAfmvIVpOJ8hBBUJNGU19WVcvQaCn8SGxVDlLLZxHDCq9cq86cDXEZcUnMmfqi413/UTyKgbiQycM3jIQ8z4Awnq8nEUvsSUG/QPNtojkFyc+yR+R111PnZbOlFIdqNBH4wA03A3ljx7ERxEDF2K9OQyRyhejS3Kz55WsC+9F/AwAvbI8Q9IpA5I3VBtZZGUfERUQr38I0adS+Sxz86EpLOT8dhToXhVmkTYsI0e2d6CVRPZ7jPBCTQ1FOpvGQt354bC+ACjdJUeZBwLyU0E7VVbWFrp766PY/+bVTTndlDQelldoSKS8n19WmUgHta1MA2zHnhsrgLvEC3MQe5+PX6uVvjpMQzNBTUovMo9Z+RARFRCgfM5mvllcLzDWTHMFwL3XbbM5oDSU4jNnfvvkUc/vx8zMq9d9GVFoChYGzPQCgJdvZPJoTwVPp0NRqDREANRCf7KJUYD+eMsPB+4QOSPITnJTbqj+yl+UEBWhsFZM6NzVcDCnesZYbEfhWMFJFOSu4RcZYloVVoENGWR5CmtVELyxnDrfQTkV+McT1pOsx+m5hniWLgRn1GyvueV4wB7gAZ3bQ8YCUWIQbprAi/W6pVR9by6O7EbSc5XD06BF8QeFIrQ5zgrr6DBFaZgc0hxp15CatdOEB1gPUN0/H67Jvbel3aKek9TvTvR2pTdDuO58X51QQTBz",
+    "solution": "lWSFzpcogY2+h21SE/8Aty/BBAJFEB9ROV/LTkGgdt6ncBUcGSzICiwhu0GXbbM57HHA4nEir403DIo1x8+XeA2pA/9OW2V46epee2RJPv5pRgUG8g/RqDpZUhoCly4WEsfUv+d1QaHQKTrBCy2IfqDBnznBCoX/hR/Mjx8Bwy7zLcCPSyi/nTOr6V1SUMiyMRMIA9VzS9p9EAtIEPSw9Dq7QTVUIhhNITi8bMKxsziEPgQy+zyAxvF4jRH50tTvPWVXHGIKzpqEsS4s6UI6xSUoo6vMtkDa+Q2EyQmFX21VksvlyzUWqNBh4x2POUHfeY8xDcJ4GbDpCBfJzMje0gpRoIISJ0W2QaTEVkt3wLJ8QUpOVEwNZ8wFXBU+tML7MeBBXBtq8o1jKviddv7p+YZhlXdpP+0icR+WXfI6ywQO1kZRMVPJW1ml2fOEGzSePov1Tdy8GOZzFB0CQs6tlEDX9ffER6+zlHkk6ldtYqupoMES5V/QfvQAD2Gli+Fpw7aQ8lxssZkDcMRXCFDHaD2BAQVCTRAZYVkQTWadwxoncAZCHSWJGyN7u3XmubxKoDSU4jNnhra5BfZCeVTRaoAjGFEuXsIC73gawMwUZOc0TwVPp4hQfHd2Fx5Lni8FQMnTvZ6/FumQNG4TNEoIcbfInQ4Z2E0zjptNjbGOcDiZMxWPS8aakEHc6VxM3xfnYlFNTBEZVF5o0lJAX1+wyWOfGWgaYNs41i7suLiehn7J21oa1iL7ebAHw/Tt0cepBU/KFDBV65CJuH09u5B9dyFO/UaBtkGl1RROjAaQ3qtTkKWe9RlWsJkkYfpK4pnmqtaeDtRZUKzqTRSApvTlPZA5uc2K+KSMZqiQGzlRjbw8EQQWSk5ZCW9YHAQAvOH7MeBB1Bpr96IzN+ifaL3jZ1RcoicrYavnxVXQOp==",
+    "max-score": 13
+  },
+  null
+]

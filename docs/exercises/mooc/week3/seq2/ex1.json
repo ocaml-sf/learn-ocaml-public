@@ -3,7 +3,14 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Symbolic Manipulation of Arithmetic Expressions",
-    "stars": 2
+    "stars": 2,
+    "focus": [
+      "DSL use-case",
+      "Variant"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-randomness-is-hard"
+    ]
   },
   {
     "id": "ex1",

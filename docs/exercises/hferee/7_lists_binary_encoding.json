@@ -1,0 +1,31 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Binary encoding of integers",
+    "stars": 2,
+    "focus": [
+      "Variant type",
+      "list manipulation"
+    ],
+    "backward_exercises": [
+      "hferee/7_lists"
+    ]
+  },
+  {
+    "id": "7_lists_binary_encoding",
+    "prelude": "type liste_bool = Nothing | OneMore of bool * liste_bool\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<p>We want to represent positive integers using a binary representation.</p>\n<p>This time we will use a type with boolean elements: <code>false</code> represents the bit <code>0</code> and <code>true</code> represents the bit <code>1</code>.</p>\n<pre class='ocaml'><code class='ocaml'>type liste_bool = Nothing | OneMore of bool * liste</code></pre><p>In the following, for simplicity, we will refer to the booleans by their associated bits.</p>\n<p>More formally, an integer is represented by a non-empty list of booleans where the head is the least significant bit.</p>\n<p>For example, the list <code>OneMore(false, OneMore(true, OneMore(true, Nothing)))</code> represents the number <code>0*1 + 1*2 + 1*2² = 6</code>.</p>\n<p><strong>Note</strong>: In order for each number to have a unique binary representation, we disallow any <em>leading zeros</em>. In other words, the most significant bit is always <code>1</code> (<code>true</code>), except for the number <code>0</code>.</p>\n<p><hr/><strong>Question 1</strong>:\nWrite a function <code>is_binary: liste_bool -&gt; bool</code> that determines whether a list represents a number written in base <code>2</code>.</p>\n<p><strong>Question 2</strong>:\nWrite a function <code>encode: int -&gt; liste_bool</code> that calculates the binary representation of a positive integer (the behavior of <code>encode</code> for negative numbers is not specified).</p>\n<p><strong>Question 3</strong>:\nWrite the function <code>decode: liste_bool -&gt; int</code> which, conversely, calculates the integer corresponding to a valid binary representation, taking into account the following note.</p>\n<p>For this, we can observe that</p>\n<pre class='ocaml'><code class='ocaml'>2⁰ * a₀ + 2¹ * a₁ + 2² * a₂ + 2³ * a₃ + 2⁴ * a₄ + 2⁵ * a₅ + 2⁶ * a₆ + 2⁷ * a₇</code></pre><p>can also be written as</p>\n<pre class='ocaml'><code class='ocaml'>a₀ + 2 * (a₁ + 2 * (a₂ + 2 * (a₃ + 2 * (a₄ + 2 * (a₅ + 2 * (a₆ + 2 * a₇))))))</code></pre>\n\n<p><strong>Question 4</strong>:\nDefine the function <code>plus_bin: liste_bool -&gt; liste_bool -&gt; liste_bool</code> that calculates the addition in binary representation.</p>\n<p>We can observe that, similar to decimal addition, binary addition can be done by starting from the least significant bits and potentially propagating a carry.</p>\n<p><strong>Bonus</strong>:\nImplement multiplication, considering its efficiency.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "oMgMllBL4AIFGoup2YaGgmwBUEoXTF2+PV/3WmvgfMAor5cnGjCNF81cu++ll3M5zDTfMD1fxbmzXcQPxziWd6FmKFF7EIYD5aQ/D5kSKaIlGwU+8eM1aWhWXwlMoSKOS0H+aYoP34KVWXSBC89icqDznoLJQ/qruUkB/dq+wz8NxR8TE5hiCEp0IO2pp2kWf6MCTEV1SkQ5X/QVQP7fnGHaEiJV+sJk1i8ouNKkw9jLZsFiHHevm3d+sFep0wahAiwRFGhQfET2qD+8pp/sdyoQ/QzAapLgF/UW6ELb0MEskI7hjA1+qIQcOcgRMQGw8duNCMBZTKypZj0F8sul0diIGJZ1TXBGCU6htyvUn4YiCAICOo9ZRW/3EUJYaK0I20w2PUV5k9FmPrm/d+nv2Ipl/8GAbfi8cR+4Eh5u/bJCJ5J14BDwR1nZMLaBCCKmPRiQQdH2Hr6lHF74Set76Bn0nai2UR0TyyFWyBklQKf7i1FK5WV+a3pEAteCwPQckIsWlodQPjlCDQ8c0xSPbjMMA55RCo9E+QERGRDdwxsla5QcXSe0UHNvwKWXl+c/9DTGO7Bnur47EJkUx8+XbB2hQQUuXd5674Q8e3wPMLxhANJPmKkRuBZVFxRCazmBL2SIrN5HGunEPTq3UTFAte+ImE0VQkDywFoMmI42tTjY568YE6paCEpMIPFm61KkNjsyAFRNGVExXF2vU4jt8WzfGTlMYMZk1i86f3yerjGK1Mka4yKnxv2ZjU77YszUQ8YKCWJMj5qQaXau55BtqDh+/R3AaRX/NV9W5AP4Zskvt2ucyAwCqIBh0xAp1pGldJWrRxFHUPj9HpyKncfh+NqlWgJAXGYCDl5wxmnN/0Vb+lkMER/UWDkTWRVTs37EKuZBPR/njp5fLOWGq4q8IJ5ll8hqI+brxRPVE1o9paYL3EVRP6DAStWyOrGE07rzOQ40CMjmH0poSo+U+JE76EDHjvzCG/OplH5ilnFbHLKgotNGiQsBbaEIQIz/p+Bkp1V4ioJCPpcSSDXb+ZLhc7ITHoURXk6VO/URHXaiu+VlfAQkATKOGychpbPwtfwr5mj24ncYfvK6XhURhS3XlQom0ohpVYgT64QmaIlMZJlaCa5A9aZZgTBVWtwL9Sb++wq+a2BPFqCVYDrRX8kIr3GIzU0JS/yqjppImYe1cHfIlo7+XCQaA9oIZ0Jp6NOkIUkNDpMZBB96UVkT0a7t8HexQXcEYIJ4O8+HuLiehnDEWcxfD8jhgf92kRHnZdLsPXVDAmBJ65PKgXbojAAyhH6OjVeBalOkF/UW9QnR1t5VnKWb9RkEg2Bn3wd12GI=",
+    "max-score": 156
+  },
+  null
+]

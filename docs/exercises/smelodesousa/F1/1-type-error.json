@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Type or error",
+    "stars": 1,
+    "identifier": "1.2",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Type inference"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F1/1-type"
+    ]
+  },
+  {
+    "id": "1-type-error",
+    "prelude": "",
+    "template": "let q1 = Unanswered\nlet q2 = Unanswered\nlet q3 = Unanswered\nlet q4 = Unanswered\nlet q5 = Unanswered\nlet q6 = Unanswered\nlet q7 = Unanswered",
+    "descr": [
+      [
+        "",
+        "<p>For each of the following items, assign which option is the correct one:</p>\n<p><strong>Note:</strong> If you believe that the correct option is <code>A</code> then you should answer as follows: <code>let answer = A</code>.</p>\n<ol><li><p><code>let f1 x g z = if x then g x else g z</code></p>\n<p>A) bool -&gt; (bool -&gt; &#39;a) -&gt; bool -&gt; &#39;a<br />\nB) bool -&gt; (bool -&gt; &#39;a) -&gt; bool -&gt; (bool * bool)<br />\nC) int -&gt; (string -&gt; unit) -&gt; int -&gt; unit<br />\nD) syntax error<br />\nE) This expression has type bool but an expression was expected of type unit<br />\nF) Unbound value g<br /><br /></p>\n</li><li><p><code>let f2 f g x = if f x then g x</code></p>\n<p>A) (&#39;a -&gt; int) -&gt; (&#39;a -&gt; unit) -&gt; &#39;a -&gt; int<br />\nB) (&#39;a -&gt; bool) -&gt; (&#39;a -&gt; unit) -&gt; &#39;a -&gt; unit<br />\nC) int -&gt; (int -&gt; bool) -&gt; float -&gt; unit<br />\nD) This expression has type int but an expression was expected of type unit because it is in the result of a conditional with no else branch<br />\nE) syntax error<br />\nF) Unbound value f2<br /><br /></p>\n</li><li><p><code>let f3 g x y = if g x then g y</code></p>\n<p>A) (&#39;a -&gt; bool) -&gt; &#39;a -&gt; &#39;a -&gt; bool<br />\nB) bool -&gt; int -&gt; int -&gt; bool<br />\nC) (int -&gt; bool) -&gt; int -&gt; float -&gt; bool<br />\nD) This expression has type bool but an expression was expected of type unit because it is in the result of a conditional with no else branch<br />\nE) Stack overflow during evaluation<br />\nF) Segmentation fault<br /><br /></p>\n</li><li><p><code>let rec f4 x y = f4 y ([]::x)</code></p>\n<p>A) &#39;a list list -&gt; &#39;a list list -&gt; &#39;b<br />\nB) &#39;a array array -&gt; &#39;a array array -&gt; &#39;b<br />\nC) &#39;a list -&gt; &#39;a list -&gt; &#39;b<br />\nD) Stack overflow during evaluation<br />\nE) Exception: Invalid_argument<br />\nF) Exception: Not_Found<br /><br /></p>\n</li><li><p><code>let f5 g f x = if x&lt;0 then f (g x) else g (f x)</code></p>\n<p>A) (&#39;a -&gt; &#39;a) -&gt; (&#39;a -&gt; &#39;a) -&gt; &#39;a -&gt; &#39;a<br />\nB) (float -&gt; int) -&gt; (float -&gt; int) -&gt; float -&gt; int<br />\nC) (int -&gt; int) -&gt; (int -&gt; int) -&gt; int -&gt; int<br />\nD) This expression has type bool but an expression was expected of type unit<br />\nE) This expression has type int but an expression was expected of type unit because it is in the result of a conditional with no else branch<br />\nF) Unbound value x<br /><br /></p>\n</li><li><p><code>let f6 g f x y1 = if x&lt;y then  f (g x) else g (f y)</code></p>\n<p>A) (&#39;a -&gt; &#39;a) -&gt; (&#39;a -&gt; &#39;a) -&gt; &#39;a -&gt; &#39;a -&gt; &#39;a<br />\nB) (int -&gt; int) -&gt; (int -&gt; int) -&gt; int -&gt; int -&gt; int<br />\nC) float -&gt; float -&gt; bool -&gt; bool -&gt; float<br />\nD) This expression has type float but an expression was expected of type int<br />\nE) It is applied to too many arguments; maybe you forgot a <code>;</code><br />\nF) Unbound value y<br /><br /></p>\n</li><li><p><code>let f7 x y = if x &gt; 0 || y &lt; 0. then x else y</code></p>\n<p>A) int -&gt; int -&gt; int<br />\nB) float -&gt; float -&gt; float<br />\nC) int -&gt; float -&gt; float<br />\nD) This expression has type float but an expression was expected of type int<br />\nE) This expression has type int but an expression was expected of type float<br />\nF) Stack overflow during evaluation<br /><br /></p>\n</li></ol>"
+      ]
+    ],
+    "prepare": "I++nXvJjQ7Q6Ew3Qq+CpP8cBLloNGXxZNRBkFUng816yr71cCWCrETIjaqqhv+Z9e5==",
+    "test": "SWSgiNpzgt/mnBwA1Hm4m7YPTTgUSVZLPTxeWVXsfIk8vlE54jD0DDYtlqmqsKRn5W4H4jEVrOP/Fw2WxzePboBkSpIyEJ1J9sgae42FJfYhA2s/p0NRqDRV025jkHuQQJzawZU2V4WD1TqCVTFKh4DunpLECo4ffpEZiYLBr8dGS4ChiFK8z73iA9o6AraII6MEDVNVXGYxVkB1Xrvdsj8kDW5BKZQR1pOxbOT6hjOM3cldJ5avxPBOjoGuA0inBjICFDxC66+8cHbbpVQ0x7MBl6jEhAKdP8JEzQ0Y0MNAixKh55o4egUlK2FUGl8f5diHEt6EWhO9TUnJphfPPXJowM01UM0CYrUVQGET9IogQUcXEXwWXSpQElZ4c0j11qUPPkU2kiVm3Kjtq4riZZ25fn97IKP8hoO10rNtkq1MZVYrMVaKXsjcMKOE3jGzKFSVDIydGPcgKB0+EhM56EzodLGVGo0g7C1emzUoSKzkiPtWllRSbbE3HhyJf+ZdQyjnk2pXbcckcBc+2k+DyH6uTUo7XFwNIFc4PoCgfM5mr8xcISWDCiNfnPThv+Bw/iGU0H/nfLz6PJZVgnrVeQkfVpUuXd5J7Y/mohQAZPJoTtEK9r1rfylHXg9AiW4eA2n0sJh1QtOD3i3GGi5HsPDm5RLYERXveAIFnxemcDcXJafSkX7JkzL8V9ovQwCDSUFNHkRNZ99eXkZHV3venDy2EipRKZUY1mikf3bhvyOBNIBc3F8vxsI+z9XuZNzUQ8YCUWxQaQqctS3g6AIBv8Q1k5+Sc/GxJ/UUplLn01AFzc7rypNDfJ/e22FPTETQdI7ERxELQ3miGTP47snc4ERhr3j2F3LT+3QC2zEZiMtiCAICEWI1TTAKEVZYcvGL4t2BPpRljVcfUx45bKa8ZZp6/GJJ1ruogArzQ4B9lOpHZVFRYH4UStjcM+vERTniIpi1HISmRLhy4o0YM2R6lAyU/N4QTo+djDRAlmslEKep7rE3oF/WhP1ITJmR8qYzB/3mkw/Sx1/xbpN23oy3yGMdQWYRGR9Z+RBFUEPs/ggffA6dFnn3IDIaeOXmvL24/iqYK81ew3n6JNoFbmGXaQwgSoIy0YYJjOFceYlvTuhlGwUKz+VRxRZVFxtHoViUEsS2ugU1R0mSUjzSCi5Gq4DNiAPTSFmfhUk+7cC9cDkk10aG/RistC3iV59fVrr3FpQVGBE04EEtQ/J1Qamxi7GfQnZVAgQ0Ny7qaaKisySN3cwcYpaz7KF4jRG7KdPeEWJcBnNCmluLrDvSoU1/rmd2pTCSaBiw+BoZ/9LvJcAZ52vbzAB4agVJOcE3Jlufb+KrCtR4F3mdW9nUhYel09N55dKOH3TIYrQFCTAopsdyCAMLEVoBXDsTWEZVr4aKIJBBPSY/zAtfNbOGq4q8IMpleidXNeLjxVjdS32gkP1R1pJG3BCEEIzXMKyBAG+6P5LAGh8dHehdKBunQwE76EC08u7DGjyv9WZn95kcDYWomdUPmk6Bkq1CANn4oesmB9agoxVIxc/qbBcK2nrQyDJWTlpYMmNVLEQRHRzgc3Ier6JhARbJG7Ash47czhM56W4AADAmwOqkBvZSfzeUcUJkTRUy0d2Yi2gae3R5ZLQ9AJVHnLN1x8prFwl+5DzEB1PIgsAKTvaLNHfLWnwIqf72yl0EUpOnwA5Uytqmi5==",
+    "solution": "frRz8ZDcrsr4KLSj/dIJ1XFBUEomMkV1PRBAB6C9fKpRc5RwVTHPXjghmI0oqu15/SGUYzMRpOe9Cc/AsCrKq7Q1T6QjEN1173/a7Q==",
+    "max-score": 7
+  },
+  null
+]

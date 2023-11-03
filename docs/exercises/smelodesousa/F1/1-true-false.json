@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "True or false?",
+    "stars": 1,
+    "identifier": "1.8",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Type inference"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F1/1-what-type"
+    ]
+  },
+  {
+    "id": "1-true-false",
+    "prelude": "",
+    "template": "let q1 = Unanswered\nlet q2 = Unanswered\nlet q3 = Unanswered\nlet q4 = Unanswered",
+    "descr": [
+      [
+        "",
+        "<p>True or false, the following expressions are well typified.</p>\n<ol><li><p><code>let s1 = &quot;a&quot; + &quot;b&quot;</code></p>\n<p>A) True<br />\nB) False<br /><br /></p>\n</li><li><p><code>let s2 = &quot;a&quot; ^ &quot;b&quot;</code></p>\n<p>A) True<br />\nB) False<br /><br /></p>\n</li><li><p><code>let s3 = &#39;a&#39; ^ &#39;b&#39;</code></p>\n<p>A) True<br />\nB) False<br /><br /></p>\n</li><li><p><code>let s4 = &quot;a&quot; ^ &#39;b&#39;</code></p>\n<p>A) True<br />\nB) False<br /><br /></p>\n</li></ol>\n\n<p><strong>Note:</strong> If you believe that the correct option is <code>A</code> then you should answer as follows: <code>let answer = A</code>.</p>\n"
+      ]
+    ],
+    "prepare": "vDlwm4utTLbiSOWEZqPjsDcBLloNGWoXKFgCQ/XuuYpR",
+    "test": "ogFVlnv7pCRBPbMQXwib6CYPTTgUSVZLPTxeWVXsfIk8vlE54jD0DDYtlqmqsKRn5W4H4jEVrOP/Fw2WxzePboBkSpIyEJ1J9sgae42FJfYhA2s/p0NRqDRV025jkHuQQJzawZU2V4WD1TqCVTFKh4DunpLECo4ffpEZiYLBr8bIqBniKs+F2oVAbooPhdfCI6MEDVNVXGYxVkB1Xrvdsj8kDW5BKZQR1pOxbOT6hjOM3cldJ5avxPBOjoGuA0inBjICFDxC66+8cHbbpVQ0x7MBl6jEhAKdP8JEzQ0Y0MNAixKh55o4egUlK2FUGl8f5diHEt6EWhO9TUnJphfPP4nESM9vkOAqUBLtEEant1ZgQUcXEXwWXSpQElZ4c0j11qUPPkU2kiVm3Kjtq4riZZ25fn97IKP8hoO10rNtkq1MZVYrMVaKXsjcMKOE3jGzKFSVDIydGPcgKB0+EhM56EzodLGVGo0g7C1emzUoSKzkiPtWllRSbbE3HhyJf+ZdmI63j7vTiTJHAbYKW037ky6uTUo7XFwNIFc4PoCgfM5mr8xcISWDCiNfnPThv+Bw/iGU0H/nfLz6PJZVgnrVeQkfVpUuXd5J7Y/mohQAZPJoTtEK9r1rfylHXg9AiW4eA2n0sJh1QtOD3i3GGi5HsPDm5RLYERXveAIFnxemcDaZl6K2IanqOkAUuooExeHJSUFNHkRNZ99eXkZHV3venDy2EipRKZUY1mikf3bhvyOBNIBc3F8vxsI+z9XuZNzUQ8YCUWxQaQqctS3g6AIBv8Q1k5+Sc/GxJ/UUplLn01AFzc7rypNDfJ/e22FPTETQdI7ERxELQ3miGTP47snc4MvNV3Ju91QbWoPeJ9ahaYEiCAICEWI1TTAKEVZYcvGL4t2BPpRljVcfUx45bKa8KMll7VV81uyycSCLVPFbjbwCVzJRIlPS2NvkM+TQWRroOQqWBMHpHq6gK/3LFwFCgED28ePQRobdiSxevEclEOqu7ME39oAVePo3VhzOkrAcc3t=",
+    "solution": "3pZok6/GuFMD6L3Rm1ikeiFBUEopMkV1PRBAB6C9fKxRc5RwVTHPXjghmp==",
+    "max-score": 4
+  },
+  null
+]

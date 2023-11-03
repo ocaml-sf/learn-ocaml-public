@@ -1,0 +1,42 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Run-length encoder",
+    "stars": 2,
+    "identifier": "5.7",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "List manipulation",
+      "types"
+    ],
+    "backward_exercises": [
+      "mooc/week3/seq1/ex2"
+    ]
+  },
+  {
+    "id": "5-rle",
+    "prelude": "",
+    "template": "let p1 = To_Answer \"Replace with your solution\"\n\nlet rle_encode l = \n  failwith \"Replace with your solution\"\n\nlet rle_decode l =\n  failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Let&#39;s implement a classic and simple lossless data compression method known as a <em>run-length encoder</em> (RLE).</p>\n<p>This method allows sequences of elements to be compressed and stored as a single data value and count.</p>\n<p>It is efficient when the considered sequences are known to have multiple repeated occurrences. It is used alongside other compression methods that create such repetitions (such as the <em>Burrows-Wheeler</em> method) to compress images, FAX messages, and more.</p>\n<p>As an example, if we have a list with repeated characters:</p>\n<p><code>aaiojanbeeebbaffssjjjjdreghsrf</code> is compressed to <code>a2iojanbe3b2af2s2j4dreghsrf</code>.</p>\n<p>The general rule applied to any sequence of characters is: character <code>x</code> of length <code>y</code> is substituted by <code>xy</code>, which means &quot;<code>x</code>, <code>y</code> times&quot;. The RLE codification is a simple application of this basic rule. Decodification, which allows for the recreation of the original string, is simply this process reversed.</p>\n<h1 id=\"Goals\">Goals</h1>\n\n<ol><li><p>Given an element <code>x</code> of an uncompressed list, we mean to define its image as per the RLE codification. If there is only one occurrence, then the codification should return <code>One x</code>, if it is the first element of a repetition of length <code>y</code>, it should return <code>Many (x, y)</code>. Which of these options correctly defines the type <code>rle_contents</code>:</p>\n<p>(a) <code>type rle_contents = int * (int*int)</code><br />\n(b) <code>type rle_contents = One of int | Many of (int*int)</code><br />\n(c) <code>type rle_contents = One | Many</code><br />\n(d) <code>type rle_contents = { One : int; Many : int*int }</code><br /><br /></p>\n</li><li><p>Define the function <code>rle_encode : int list -&gt; rle_contents list</code> that calculates the codification of the list passed as a parameter. For example <code>rle_encode [1;1;3;3,3;2;5;5]</code> returns <code>[Many (1,2); Many (3,3); One 2; Many (5,2)]</code>.</p>\n</li><li><p>Define the inverse function <code>rle_decode :  &#39;a rle_contents list -&gt; int list</code>.\nFor example <code>rle_decode [Many (1,2); Many (3,3); One 2; Many (5,2)]</code> returns <code>[1;1;3;3,3;2;5;5]</code>.</p>\n</li></ol>"
+      ]
+    ],
+    "prepare": "0Anlq66o44UtPfRGHLPCRTBBUEpeGR/jJkURW/+gxYZqrztcVTm0M8IjcKmnq3Mx8XuA2SxdqvrL2YkIdzfXaQwgSoIyEJt674Q8e3UAOPITTt/PxuMNqF6VSs5ji/i/Dt7NrIJPW4uQZjbBBydP",
+    "test": "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",
+    "solution": "qgZiOlWqMnDDU1glWTHSBjgMQEE1FBQUZBl1GBjlg1UjslpcMAfhMB12ifnpcrhsnTzZ1zgagfbtUsQ1un++tlIdCitrV2ILjeEde12PM0p/I2YM9eMJqHBVCc6x9SLJA1bZs2ADFrrZYHPgTmEm6aCFz9+RIRWwbElE9cH+cDDsljwcF4YrZ1NyuBt4OdMK+EFFDkgMVllGUkJHEOHxyDKfBHEGJ2sPWVL6f3yetWWHNM1qLmrbxrc4/RGaKejbQycEUSpQzprZiyaslE56qHECqlaBc6iq3VV0zR0S+xQMzhjl6A1WofllNtkPS8XfuI8MXJs4F+SfTRaZ6d35P4r2L7x1qz1XfXb6C/Fw/l/8EpEJ0/oXW7ZUVBV1r4XIE0wB1BQlzB2mNKiecKbuIOhl/AQ31r3dxSS9OfIunehKLB5FY6jYCdWoKbiLQn3yIlfIThLdBPJxO/W0EJFv6An09ePQAkPxlHwb6DBcA+z97J/Gl/sZhPBNAdvIjfYcqcNv2RXm1zzA3bQREy7HWGMWBB6ZGQ5ZZAhRHXaiu16mtktyXTKXG5pchbanqfY57yHDACder4+xXhURiSr+xEIb0oAtSYYDp45put2VNqshVIcH9adUpi90VZ1GkCLKB1n/tZ91QuXfH6H0RTFFcajF7UrMB679vUBB6M+DbTDbi7N41Nk1W+ZBgFN1NsdH09oAQRpUFBR9HRpYH0T/nDGm+iEQNNtNN8rshPSxslKR425eJ7DvbvERjQnIKg4mAjJBGWJ36/mAxD4H6ABldyoQ/TSdzVGdYFVwjEbPIso+52KozRoCixVc2g1KYl77dIDKSgACHIOOAQy2ncno4qOB0igvbyZb8H36X6lemnB8QQANRVwRGSUQR/oEd1LIOdEdPV6bjnQOUvjth4ruOsg5/HJc1v48cRnRE3xupP1W45IbLFWGUhygY3iaWBzS3RmZCueiFPcmEVPYFw57jEDjzeOJToe9iHxnllIqSPKdp21Shkg1g3AIHxzT8uxl9cso2kDB2i7A4KA0UWa0",
+    "max-score": 21
+  },
+  null
+]

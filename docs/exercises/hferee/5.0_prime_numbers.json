@@ -1,0 +1,31 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Prime numbers",
+    "stars": 1,
+    "focus": [
+      "Arithmetic operations",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "mooc/week2/seq4/ex1"
+    ]
+  },
+  {
+    "id": "5.0_prime_numbers",
+    "prelude": "\n",
+    "template": "",
+    "descr": [
+      [
+        "",
+        "<p>Recall that a positive integer is considered <em>prime</em> if it has exactly two positive divisors. Thus, <code>0</code> and <code>1</code> are <em>not</em> prime.</p>\n<p>We are trying to determine whether a number is prime.</p>\n<p><hr/><strong>Question 1:</strong></p>\n<p>Define a function <code>div : int -&gt; int -&gt; bool</code> such that <code>div k n</code> indicates whether k divides n.</p>\n<p><hr/><strong>Question 2:</strong></p>\n<p>Define a recursive function <code>dividers : int -&gt; int -&gt; int</code> such that <code>dividers n k</code> counts the number of divisors between <code>1</code> and <code>k</code> (inclusive).</p>\n<p><hr/><strong>Question 3:</strong></p>\n<p>Use the previous function to define <code>prime : int -&gt; bool</code> that decides whether a number is prime.</p>\n<p><hr/><strong>Bonus:</strong></p>\n<p>Rewrite <code>prime</code> in a more efficient manner. For instance, verify that <code>prime max_int</code> can be computed in less than 10 seconds.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "d8P3f96JqOA+f/9+8jfZY8MEAlo8XE/WOlQePkmdqM6qaoJwHCfPXmlghOzcgt95oDTyO7AzxbiqXcFvx98Yb51jTBAqVYZj64QuvN2UGfQpHNpO5adUpilSVgEMpy0eEcSWvIQGW4LQTmfHF8FSbuyGlDrBRVT9hURzxh4LxDjKO1jqTp31c9ypJ9qGZ4UsLUFRUREJGUl6VVdV+fzVnHejEy6VLssF+X89hrzxhn7KNJ/a1yqA7ItTyEW70taeEHVLA71QznGJcATH6AB9d5ILk6rIaBbdNHdWjEKRIxQezezn/AxWqwRc02FPTETQdI7ERxELQ3miGTPPytCi+ZEmpNAUNxy7CP2xBZJThGIqFB9FX/1ZYzoESBUKr+GG0ewMIkUw/Qsm20OtaeSt0L9l/8tvJO7IxVaZE+Iu/eh11U143AGTCaLd0rGEEGiw1U+EQdG6WK1dXQTUQxAuylCTmqHQXRbylDpwild/Q3Hp5JFX8QtAxN/yTIyL8qQcjHmQaE1EzO9MeDo35HycLWsITUEPGQ5ZY6BQVlOorh/jf5khK7zVCisowKCcrvFmmG4VM8MbucixEYlZvnK3/EIjA/FuCfpL74RaytFDMLtbAJVHfeNRqDoVFvNCdziABZqYrZ9ZXa7VZz8RTloElPCI6E+BClHtco9mmgeAsjzRMdDQFD+Jh58i+AWSUbB7LoQZBVgXGWJtRE5VCuz66zbfTCNVKZUL1iWmuPSkskiENsAjNTrrgaMMjmr7Kg3bQ8YCUToDol0ZrDvay557wmcOyU0Bq9bdLVU2jAPT1YpTjw3syAwwcZg5McwGPU7etsrMF1BGR3X6M5XHyh0cNNFW8vdGS17/S0ghEYN7vTojQTZEABUZCWALERlBs38+MvFBNU2tjlgfYfj9v448Mtlq/H2o4rvjvETmE+Iu/egCN5JRY6CGChyl4bjMFXXb1Vr1VMGeReAdR6aDQw9p9Un0mPTLTofroT5eo9YvSPL7yY6G/QJx5fRNTIyC/2hcjHnOiEMKyOpGdCZ3eCnmLWNBTT1R3/Z2LBATRULpwYlgr8po4jD0XiNhu48hvL245zH+PD1ew3m3TvZQgWu3dBF74QIsXNN4pLtoe4dFMKsoVJUG8b2RtSJVVJ1NiVbEQtrIsJlKFJ0QNDqTTmFIbvePpQ70GoW6eQMYjtr4gCiRVxfqB9yBqzOUJ/+eBw/6J6VNRB5ZBDNwEEJQRM+f8W8qDW/VALsk1i8tabzEtGGK41AzHDG7gbIUjVLs0cLBAjVWUQJpuArJt7v86A6sdyoQqlaBc5yg06Z47p3eCA==",
+    "solution": "5wLoBvSXA6ibeMVQQnXBpGMMA55RVoAZ2BABPmukuZpefARbVSSSCTxdfPerbfl58mSJ4nxlfrz6QdQRt7qDc52hA9FIEIZOo+1fohQAL0RoCspZp46Rd8pBXwlM9TOESgr3sIYGUqzCZmr2Tm9DbqjI/UbuCoXtfBhJ7YaHxySK9q2VhJBUF4qt5kBPLOO6LpQZTEFLUFQtEFdVD0zt5WimBX5HMctR1m+st0iwnQur3NEuYnCqh+EXzEL20cexCiJHAjJ369CJfXb9p5AqdysOi9a4tobd+BkT/9LXYd5TisvhyBoT/sAl1wVP2QGtdMOECIF4X3mvTR80ytq3P1fSfVW/i6o1hgPKGQ6t81hoQQNMGVIZEz9BGDdfc+j1ObxT2B5/joFmZ+i7q3XbINYl9y/8PKXjxV3RUPFUla1U4lYUMBDICgqcV13MCzSbNBvVMMGrU3orHFr2Qso8iDaS/KyQRRbW",
+    "max-score": 147
+  },
+  null
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Sort by insertion",
+    "stars": 2,
+    "focus": [
+      "list manipulation"
+    ],
+    "backward_exercises": [
+      "hferee/8_sieve"
+    ]
+  },
+  {
+    "id": "8_sort",
+    "prelude": "type liste = Nothing | OneMore of (int * liste)\n\nlet rec fold_right f xs acc = match xs with\n  | Nothing -> acc\n  | OneMore (x, xs) -> f x (fold_right f xs acc)\n\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<p>We want to sort a list of integers in ascending order.</p>\n<p><strong>Question 1</strong>:\nDefine a recursive function <code>insert: int -&gt; liste -&gt; liste</code> that inserts an element into a list in such a way that the output list is sorted, assuming the input list was already sorted.</p>\n<p><strong>Question 2</strong>:\nUsing <code>fold_right</code> and <code>insert</code>, define a function <code>sort</code> that sorts a list by successively inserting all its elements.</p>\n<p><strong>Bonus</strong>:\nUsing <code>fold_right</code>, define a function <code>test_sort: liste -&gt; bool</code> that indicates whether a list is sorted or not.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "zuOXGlcMQCWOh5yubM3L58MEAlo8XE/WOlQeW9Ddwt6LboNrEDSJG8ZShqmhs3NM7iuTN71iwP+L2ZVUc7qDboF74RIsXsV4jfEdrYRDZPxlTxcP6OtBey9GRZENinrEXZrXqIQMXunVOzrWFjEiquX0ol0WQ9H686FMbYeWwELmth9NVRg6Ihzj4rek7+Gn+9ERTGF1QU9WWVVQXrixpHLbSDlCKJhR1mHwxrz8snDZNP5jJm39cvE1jRndKdPtFiMxDWJq65+XcDztnFM6jFtClBqBdByg4ohW/5P1ZhQGzgTcmWUWqJoo0cMM46jlwI7ZRsNOUfzlTQXHhYel14WxopoEHHtn73VjruHDfIMyP5dFXkkQVnhQU/wUaJ3J+OgB1oQsy/ceO4ehpu7uZY2afmxeIu77aoCX0r2mobpHZVEYLVf1IYyl4bjMR8Gd1R7VQsbmGPxdAVOLFrg6npeI8vbFDEKd/8RslosgD0Tpp1xFlpsWgqEDGJLLcY9lr20HX95CHzD2amCytM0rzClVTVAPGV1ZPV6UWmvgfM5ec5RwVSjIGHN/u3Xebfl5jTSE4m1fubn6X0k3xzXYf9J8URR7ExZOo+1feYZkNe2oTJUG8g/RqDoV00UHpyHFBce+c+teUbSENDO3HHZI6PDO8TrNCiPxeQEZjhfH7R3paIISU59lGfC1XOqll+GZJ6IZMkkQS9kwDREV4a3swXTxBDVF0NtpPTiAhbbbfmHINPtoJ6b/dORX/F8tVNepF8xCP7oVflT0tX35oV50rmd+zUbraRTR1p2TlFC2IrxPmgKly554s29cMq9D2Bmfxd4WEtRP+rXsH67JkxelUqfgv6FTCTps/P5JeqaRu1lMDp56X9s1EWQBHRVacfj/2O5ENURtjmAcP1D8eeeuNd53/Hc81rv7xVaZE+Iu/egCN5JRY6CGChyl4bjEAGTn1UfVTdGmU0pdVR0YQwE76EC0jqiQTo+dlDQelldoSPup7IRG5QtVv+Q7Atnzp+ZhrLGGByhF38TRs68xg1ix5nRIREUYEDNVLEQRQVXvqM6kbpohVTT0HDpjaq8qrvwr9G3UY9/nfsH9HIkYeWW4oSFgR6R7Xt2GmI/me2AABN6oTwVPp0NRqDoV3wERoSmCDc335wpKUO8QPHjGATEJr0OIp9+MFRXxgpgMf1qNqH8msd1QQAFoYJrjZffoasmNIAhDHlVLWFAyREIaELyxnDrfQTkV+4FkPmiguOzbtHSe1tEoYjavgPQRjUz7JxzbG8ZPH7YQ/ArUcGaHnEUpd8QWlBjCb5LgPE5djELvCIRAzcvw/RoCqNJc2YAKYomhjx7ERxELF+HpCBa2sM761aOx86FPMnY4yPEieqaWc0IpD5EZRVBWVj9Q+6BEhO8SOaMP+VVsoVdaM4ehbPqrPtRhiSpiNg37ao71Xe5eq0gCN5JRY6CGChrcM0eBU8Dp1TWCQdH2Hr6lHF74WZEo7EDI/+bEC/LDyHkx6mIhYqup7IRG5XBxtxgyTIyL8vBhhf8HXFIDZ8T4yH+ytYW6mWtVCBcFZ/cMJkNFXFai/c/EbpZdHCfICppuhrDxufwq78Tq381ufu76EgBCczfXtkpjT65oRMNj7+xhvMx+2PJmH2x2/0FeqDoVFs6C9SKEOaWVvZ5GWPqLNGbWHGUisuy0lDrIIRWwwEkM70CMqXP8rZUKAk1lYwqgOrPOkb7KKoVPMTtZGWRDO/kQRLy5pTry+mkVMghLDCuxab7isnC9VLgaYmOgcshMzFau4deBAXgHE79QoUTNtQCtkkR996F9/UbHg6bdNFpWkVneIxQFpgbq9pZFb4x3",
+    "solution": "1pMbn8Dv6rUEEiT0Iv12hTBBGAJUGVVQO9RUFUTuxSrnalFoVWuS2Tdcb+mqqvA58XuHO8Ezfqv6Qs/XcjXUf5sgTHs7ENxLgetuw1kOIaJdUJU58aYddjhQHxBO9UmLFNOTtg2GPLmQ+DrdAXQ/s+LN8AfNClG5wEBSxdrOcDlnTmeL4vV/NXoW2IM7soTvLUE7A/RlV9ttGF9ZEPCzziexFTlNYIcWWX7suLjbuiOBNPtoJ6b/dORX5Rj7RNyeLi/QFGwY75q2aX0Hu9p6wyE2j6jVtojdIVVQ/peVX2YJiJKwlAZYegVz0cMDMS+kwMDNCMY6PbX6GUm28sj5Q76G0N2bcWVp4FZllGnyVO9tDQ9mQkB3UTlQGVNFcb7NOeIM2F/5y5pyBaybcLfzK1Qg7ycuPfPtxRuZXOty/atRYylFMFyDTxyn33iBAH8q1QP1Rt7mHZYdVR0YQwE76E8WzfWqB/8xiDRq5RwlQ4P+",
+    "max-score": 4
+  },
+  null
+]

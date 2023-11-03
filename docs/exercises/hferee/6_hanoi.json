@@ -1,0 +1,31 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Hanoi tower",
+    "stars": 1,
+    "focus": [
+      "Print functions",
+      "Variant type"
+    ],
+    "backward_exercises": [
+      "hferee/5.1_DNA"
+    ]
+  },
+  {
+    "id": "6_hanoi",
+    "prelude": "type tower = L | M | R\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<p>The game of <em>Tower of Hanoi</em> consists of a stack (on the left) of discs of different sizes, sorted from the largest (at the bottom) to the smallest (at the top), as well as two empty stacks (in the middle and on the right).</p>\n<p>The goal is to move all the discs from the left stack to the right stack, one by one, without ever stacking a larger disc on top of a smaller one.</p>\n<p><img src='images/hanoi.gif' alt='Illustration of the Tower of Hanoi game'  title='Illustration of the Tower of Hanoi game' /></p>\n<p>We define the following sum type representing the three towers (left, middle, and right):</p>\n<pre class='ocaml'><code class='ocaml'>type tower = L | M | R</code></pre>\n\n<p><hr/><strong>Question 1</strong></p>\n<p>Write a function <code>move: tower -&gt; tower -&gt; unit</code> that takes two towers as input and displays the corresponding move on the standard output.\nSpecifically, it should display a line of the form <code>&quot;tower1 -&gt; tower2&quot;</code> where <code>tower1</code> and <code>tower2</code> can be <code>left</code>, <code>middle</code>, or <code>right</code>.</p>\n<p>To do this, you can use the function <code>print_string: string -&gt; unit</code>, which prints a string to the standard output, as well as the function <code>print_newline: unit -&gt; unit</code>, which prints a newline.</p>\n<p><strong>Syntax</strong>:\nYou can use the following syntax. If <code>e1</code> is an expression of type <code>unit</code>, then <code>e1 ; e2</code> is an expression of the same type as <code>e2</code>, equivalent to:</p>\n<pre class='ocaml'><code class='ocaml'>let _ = e1 in e2</code></pre><p><strong>Example</strong>:</p>\n<pre class='ocaml'><code class='ocaml'>print_string &quot;Hello&quot;;\nprint_string &quot; &quot;;\nprint_string &quot;world&quot;</code></pre>\n\n<p><hr/><strong>Question 2</strong>:\nUsing only <code>move</code>, write a function <code>tower3: unit -&gt; unit</code> that displays, line by line, the moves necessary to solve the Tower of Hanoi with three discs.</p>\n<p><hr/><strong>Question 3</strong>:\nWrite a function <code>solve_tower: int -&gt; unit</code> that displays the solution for the Tower of Hanoi problem with <code>n</code> discs, where <code>n</code> is the parameter of the function.</p>\n<p><strong>Note</strong>:\nThere is nothing to do to solve the problem without any discs.</p>\n<p><strong>Hint</strong>: We can observe that to solve the problem with <code>n + 1</code> discs, we must first move the <code>n</code> smallest discs to the middle tower, then move the largest disc to the right tower, and finally move the remaining <code>n</code> discs to the right tower. In this way, the largest disc never obstructs the movement of the other discs.</p>\n<p>You can start by defining a recursive function of type <code>int -&gt; tower -&gt; tower -&gt; tower -&gt; unit</code> that, given the inputs <code>n</code>, <code>t1</code>, <code>t2</code>, and <code>t3</code>, solves the problem with <code>n</code> discs placed on tower <code>t1</code>, to be moved to tower <code>t3</code> using tower <code>t2</code>.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "tkaSLIl9cUqa8ayEcJiOlTMEAlo8XE/WOlQePkmdqM6bh5RqF7zIGyN/6fnc5M95oDSUDCYoqrqrE2Eex7rXq9Ij3TIsVMML7e9prdECG4g0TwVPp0NRqDpBUhtWezTRDs7OsJdB++fq2XnSByd0uxa0npuUXkmzf9li8JaXe8iNXcUt9SSMEKnPn2ah83ST4UEYA/6NZB/uXVgDV0qCnDrfQTkVYNs41n0gf3fqbXSBZdAAK8W9e4M+jUa/0sz9U6pCUWIQ65rJcHasj/Q6xSUoo6rFaATxJ6oZwo0U12AakgOm/RpWoephOegUMSTjdPv4RrpHF2raTSGFnbLqP3t155XYJPMCuL0exui4gJgvWz2MER9Z+7oTRVo4cbD7OewBPVV5xDpdPO7tqfbt2hFz6il34tC7xVaZE+JalrlWSUQELFPSQt+fAPmeQSOmOADGGee5HqBwAVbXDJFZ5RTCpPjFAVaxlD9/lowaA+fN7IYSm/oQbe2PZxyL8qQczRCCNg26l/vj8dP0f+CsjSlOHp9RRkg1JpxBPoCgfM5er9EcCmS3DC1Haq8gsLZliyi0AD1ir403EgB4gi7XoUxa4is7EIYL5OcVeYQAZIElD1EG8qkZ/8oVFs6C9VyyDcb4a2I1W4CG1USHAGYNvPLk7GnBCoWwwElYmJ8+7iqMXtEc7zqP10j9odad/vuNNmh3AkkMTVAzX6FrF3jol8qmDj/V01V4J809bMDehXOL3MIfHC+/c3QNjmr7Kg3bQ8YCUToEpk82e7rxkkQ0rmYAj6jEtpae3RtMnG7RIxRAzcuclBFCbYN5RIA02Q3qwJLNC4g4UPupM5DA61ryP3IAzWySPhE1scrV9eiLaggjPG2MER9ZEHIfERVs9dKE4rgBNVo5oyVm3PewfYSoZZ26jCs8ExvIxVbYQqZUoPdM4kYIHVPOTtva4feLRCGNMBiBTfHT3epdElOWQw9u6EjFdPiQC9eg5y2n5Ax0Y5==",
+    "solution": "Be0o+LGFD6J6pQ/KxC/QV8QEHlpMGVcMJkNFXFaipt5eg9FRVWiFXiElfOuwb195oG7UDWNacKK8DZBWfybV/EIjX/EPEItV74YnwMBEKL2mZLdD6O2RdXMDUc5+9XrEX0H+aYA2XaKESj7HHX5Gq4CAkoLTQ/qrjpIKcwaBxi5ZdakxyNF3WnKY254zKARKNoMEA/ZzV/dWRFgCV3qx9TK6+mkVMI9WPSmShq7tujzK1ZojSV7zgaV48Vek0tWsQ8hLUXdf65qErnzx6Go95Gw9/UbMaA4gPD9WsVzeIxQNkInhlDlWl1t3OcMC46fadOSENJx6F+ywA6uMnbPlUVDZwW7qy5x3Lbsj2akdBB9rD6tJEXUZ+lMfXVBEr0vN3LxS169jy7AyNauwehS72ZpljHdr1u77qFb4ROoxpa1N3C6RY9nGGhygY3jMCUen1RKVA1GbTeoqG/vOBbgjno437IKRG9fdyDRwlpIoQLTp6YRX7BAVgOt0CYzH8vYzSfDvJLSUIpc5lTNXzR2RQWMMTQARSo9RJoA1FQGpprJiaoUcB7bXCTYHb3PvquE5jTTHMCd9ucikEIgUdFTWfoxj0/EPEPQ6xp==",
+    "max-score": 65
+  },
+  null
+]

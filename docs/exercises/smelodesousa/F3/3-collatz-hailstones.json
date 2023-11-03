@@ -1,0 +1,50 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "The Collatz conjecture, or Hailstones, or Syracuse and other cool names...",
+    "stars": 2,
+    "identifier": "3.17",
+    "authors": [
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ],
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Gonçalo Domingos",
+        "goncalogdomingos@gmail.com"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-triangles"
+    ]
+  },
+  {
+    "id": "3-collatz-hailstones",
+    "prelude": "",
+    "template": "let rec collatz n = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>The Collatz conjecture (or Hailstones, or Syracuse) was thought of by the german mathematician Lothar Collatz as a challenge for the scientific community during an event at the University of Syracuse in 1928. The conjecture defines a number sequence (also referred to as trajectory or flight) that, starting on a natural integer, obeys the following principles:</p>\n<ul><li>if <em>n</em> is even, then the successor of <em>n</em> in the sequence is <em>n</em> divided by 2</li><li>if <em>n</em> is odd, then the successor of <em>n</em> in the sequence is multiplied by 3, plus 1.</li><li>if the sequence reaches the number 1, then we stop.</li></ul>\n\n<p>To this day, nobody has found an initial value <em>n</em> such that the trajectory doesn&#39;t finish on the number $1$! (without the stopping condition, we would get an infinite loop starting on 1)</p>\n<p>Examples:</p>\n<center>\n$6 \\to 3 \\to 10 \\to 5 \\to 16 \\to 8 \\to 4 \\to 2 \\to 1$\n</center>\n<center>\n$17 \\to 52 \\to 26 \\to 13 \\to 40 \\to 20 \\to 10 \\to 5 \\to 16 \\to \\cdots  \\to 1$\n</center>\n\n<h1 id=\"Objective\">Objective</h1>\n\n<p>Your challenge is to write a recursive function <code>collatz : int  -&gt; int list</code> in OCaml that, given a parameter <em>n</em>, returns the sequence of integers corresponding to the trajectory calculated from the value <em>n</em>. Obviously, this sequence stops when it reaches the value 1. For example:</p>\n<p><code>collatz 6 = [6; 3; 10; 5; 16; 8; 4; 2; 1]</code></p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "LcMH/+uIpLJSevrjKqSq+CYPTTgUSVZLPTw3RVXifLwfcAVnGEuoVi/h6fmbtfZ88lqGO7AyrPHxEJ1ReGu+blJkQHsIEIYLieUme1wBK02uTtY09ax4boZaFutKkGHPEgrTrcAJQaKTYHK1ATEGreiN6AaSCl4tgo53jxLYtTN5hAv3f44ftlPStvle/fcjYpIFCVJSS6/DEBEVW4axyHPaEi6SMct31mehhqfqvzbKNN1bLmevcrg4/kDq0w4iDGVLFS1Ql9PMcDzhn9MprmhA/QGAa6SnF/d4d5eU2xQDlgbbzmBEbZN6+YAG450fqtyJAhFIVfzgZlnJ6dr5PSiMBxezbYWEVMOxuW8DhGtiEo5PRR/1QSwVQUFZcv0IS4dC+A1m96AcGbm5d4rz0xAliTFJWOv7go+XV2kwiqAG4lpWY/PJTdnLPueQACvmPArVLfGmFb/nVVOAEtM77VfojqiQTkug6DRhyAF/C0ObjatUoE6Aba1EAd3lm0VoLIN4jcuckeJDo0WfL2Dx48YPD66YV/1m+RARFRCgsM65f5R/BRb4G7Aeu0Gc7fZh/EqVLmMbtfKwBI/Ubyqxb52/QVFaEPZOl+QAwMBFKvZoF1EX/0NMqHURShVO9VjNHZqXhcB/FumQNDqTTmEBqPCAfAyPTFmshQMY6h4Pwj/5n50SvvGFul41xqdd/vVjYoMMBUJ1GXpeQ/gHHtrs7jexEyQ+Lu53PmSsf4Gxw7CaS0gaYiLvxvEDjWf7JxzbOUtLUSs3uArJcHbgk//OdyFO/UaBd5LxQoZ3yQH+X1EYnh8c85BYpgVt+hEKY6rmqd+3B1gFQ38sAoajz1ri+DLQCgT9pd+5Ssiyr8COt7NJQUkMER9ZY5RVQ9ZRaviIMdEk3AlljklHMO7tbffsYgBcjmF6+3uBe6r1E3ovjqsZNyYUO9SGC1jeOufET7rz1Qi+AZXnGPIdFB+KBcJik6PS8L8QDF4pyDZGilcXC0Odi2YD7HYav+RNTNfCjupcB2EQ/P7ncfRFoLWtIZGrWnINAUp1Bo/+KoAZHDvTwIkqr6VhB8S9HDplh3iwx3McoE4RPD1ew3nw229RjVaSg6YjACUyQcJCoeNccxR8KeYlTw1M8qd2aW5PFKVO9Q7EQJq+qw5KV43qZyfQGzM0teaG6ETCRFy/gR9W7dqr/Dlzk5m0xuWFeB7Rtexe7wcbN5dOGF6WVjZh0kBSU4CzzjaFEyIZNYdWPD+HuLiehnDETgEuOz8vfbdLjRndKcepF8ZOGDFEbnGJcHas6ABztThCjQfVfVOWPFUWjEKR4N1Bkxvo/RlMqN6n0wkPOUHfaZ+ECtR4F+GsTVGJr1bf3SaOTI8qdMO3Tcbrvj8WfT5vDllbUF22V7Q3WFsEt4qYMuFQNHc5jkcm3KinbufsOtQ/6FV81rv7xVb70KtBq4IHY5JZ+oC0IYylLK8Q4m+iI6qZGdGmU0pdVR0YQwE76EC0jqjpLmndlHVx6mB7C0SgiNlgp9NQfrcNDd+PnhsdMc2CrdvdpeRI93aj+NPbOE/BTT2FXEwNF/N3WVmhqJJG",
+    "solution": "BFdBYkvCCQ0AIlzukr91sXgBCo/4W9kQJ/heFRD/fN9eskdcLyGz2XNhd+mmbeRx5XvUMWMaw3+6T29Mx8rXtkpjTFFhCxYDnutmx1VUPqJgAJVAp+FYsRZVFxRCinKJXwrUa1wVFuST3i34DzUSbq7A/l+LCkr5wEZMzMKH",
+    "max-score": 10
+  },
+  null
+]

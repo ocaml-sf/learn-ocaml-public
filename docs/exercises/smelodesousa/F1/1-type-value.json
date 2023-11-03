@@ -1,0 +1,45 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Type and Value",
+    "stars": 1,
+    "identifier": "1.6",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "Type inference"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F1/1-errors"
+    ]
+  },
+  {
+    "id": "1-type-value",
+    "prelude": "",
+    "template": "let p1 = failwith \"Replace with your solution\"\n\nlet p2 = failwith \"Replace with your solution\"\n\nlet p3 = failwith \"Replace with your solution\"\n\nlet p4 = failwith \"Replace with your solution\"\n\nlet p5 = failwith \"Replace with your solution\"\n\nlet p6 = failwith \"Replace with your solution\"\n\nlet p7 = failwith \"Replace with your solution\"\n\nlet p8 = failwith \"Replace with your solution\"\n\nlet p9 = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<p>For each question, indicate the type and value or error of the following OCaml expressions:</p>\n<p><strong>Note:</strong> If you believe that the correct option is <code>A</code> then you should answer as follows: <code>let answer = A</code>.</p>\n<ol><li><p><code>let r = let x = 7 in 6 * x</code></p>\n<p>A) int, 42<br />\nB) int, 6 * x<br />\nC) int, 7<br />\nD) syntax error<br />\nE) Unbound value x<br />\nF) This expression has type string but an expression was expected of type int<br /><br /></p>\n</li><li><p><code>let a = (r - 6) / 6 - 6</code></p>\n<p>A) int, 1<br />\nB) int, 0<br />\nC) int, -6<br />\nD) This expression has type float but an expression was expected of type int<br />\nE) Exception: Division_by_zero.<br />\nF) Unbound value r<br /><br /></p>\n</li><li><p><code>let o = r * r - x * x - 51</code></p>\n<p>A) int, -51<br />\nB) int, 0<br />\nC) int, r<br />\nD) Unbound value r<br />\nE) Unbound value x<br />\nF) Syntax error: &#39;(&#39; expected<br /><br /></p>\n</li><li><p><code>let u = let x = 9 in if (x&lt;9) then 9 / (x-x) else (x+x) / 9</code></p>\n<p>A) int, 9<br />\nB) int, 2<br />\nC) int, 1<br />\nD) This expression has type unit but an expression was expected of type int because it is in the result of a conditional with no else branch<br />\nE) syntax error<br />\nF) Exception: Division_by_zero.<br /><br /></p>\n</li><li><p><code>let  x = let a = 10 in if a&gt;7 ||  b / (a - a) then &quot;hello&quot; else &quot;how are you&quot;</code></p>\n<p>A) string, &quot;hello&quot;<br />\nB) string, &quot;how are youhello&quot;<br />\nC) string, &quot;how are you&quot;<br />\nD) Unbound value b<br />\nE) This expression has type int but an expression was expected of type string<br />\nF) This expression has type string but an expression was expected of type int<br /><br /></p>\n</li><li><p><code>let  x = let a = 10 and b = 7 in if a&lt;7 ||  b / (a - a) &gt; 0 then &quot;hello&quot; else &quot;how are you&quot;</code></p>\n<p>A) string, &quot;hello&quot;<br />\nB) string, &quot;how are you&quot;<br />\nC) int, 7<br />\nD) Exception: Division_by_zero.<br />\nE) This expression has type int but an expression was expected of type bool<br />\nF) Unbound value b<br /><br /></p>\n</li><li><p><code>let  x = let a = 10 and b = 7 in if a&gt;7 ||  b / (a - a) &gt; 0 then &quot;hello&quot; else &quot;how are you&quot;</code></p>\n<p>A) string, &quot;hello&quot;<br />\nB) string, &quot;how are you&quot;<br />\nC) int, 7<br />\nD) Exception: Division_by_zero.<br />\nE) This expression has type int but an expression was expected of type bool<br />\nF) Unbound value b<br /><br /></p>\n</li><li><p><code>let x = let a = 10 in if a &lt; 7 &amp;&amp; let b = 1 in b / (a - a) then &quot;hello&quot; else &quot;how are you&quot;</code></p>\n<p>A) string, &quot;hello&quot;<br />\nB) string, &quot;how are you&quot;<br />\nC) bool, true<br />\nD) Unbound value b<br />\nE) This expression has type int but an expression was expected of type bool<br />\nF) syntax error<br /><br /></p>\n</li><li><p><code>let x = let a,b = 10,7 in if a &lt; 7 &amp;&amp; a / (b - b) then &quot;hello&quot; else &quot;how are you&quot;</code></p>\n<p>A) string, &quot;hello&quot;<br />\nB) string, &quot;how are you&quot;<br />\nC) bool, true<br />\nD) Exception: Division_by_zero.<br />\nE) syntax error<br />\nF) This expression has type int but an expression was expected of type bool<br /><br /></p>\n</li></ol>"
+      ]
+    ],
+    "prepare": "eoQdvDl1Be4OOYqIu58DUTcBLEoNGXtZNRBnFUng8M6yr7QcCWCcXnchjOLds0Bi5W0ROjMcuKLnChsYeGp=",
+    "test": "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",
+    "solution": "jIkJeWiC4pXGiSGrFLrZm8NTTVER4mMmJVVFFUCvfNUeiztXGSWPXnNtu0Gcz19K7HHA4mNyfub6OaMeezeDq6I5A9o72Kp6o0Eue2QXZOcoLec/84YFqGoNFtVCcA7rDNfOaYBWFvHQU5==",
+    "max-score": 9
+  },
+  null
+]

@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Lists and sub-lists IV",
+    "stars": 2,
+    "identifier": "5.12",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-lists-sublists-3"
+    ]
+  },
+  {
+    "id": "5-lists-sublists-4",
+    "prelude": "",
+    "template": "let subbag l = \n  failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<p>Finally, let&#39;s define <code>subbag l</code>, which calculates the list of all of the permutations of every sublist of <code>l</code>. For example: <br />\n<code>subbag [&#39;a&#39;; &#39;b&#39;; &#39;c&#39;] = [[]; [&#39;a&#39;] ; [&#39;b&#39;]; [&#39;c&#39;] ; [&#39;a&#39;; &#39;b&#39;] ; [&#39;a&#39;; &#39;c&#39;] ; [&#39;b&#39;; &#39;a&#39;] ; [&#39;b&#39;; &#39;c&#39;] ; [&#39;c&#39;; &#39;a&#39;] ; [&#39;c&#39;; &#39;b&#39;] ; [&#39;a&#39;; &#39;b&#39;; &#39;c&#39;]; [&#39;a&#39;; &#39;c&#39;; &#39;b&#39;] ; [&#39;b&#39;; &#39;a&#39;; &#39;c&#39;] ; [&#39;b&#39;; &#39;c&#39;; &#39;a&#39;]; [&#39;c&#39;; &#39;b&#39;; &#39;a&#39;] ; [&#39;c&#39;; &#39;a&#39;; &#39;b&#39;]]</code>.</p>\n<p>This function calculates something more &quot;explosive&quot; than the group of all subsets of a certain set (or list), given that the order is relevant <br />\n(<code>[&#39;a&#39;; &#39;b&#39;]</code> $ne$ <code>[&#39;b&#39;; &#39;a&#39;]</code>).</p>\n<ol><li>Define the function <code>subbag : char list -&gt; char list list</code>, with the functions defined in the previous exercises in mind.</li></ol>\n\n<p>Isn&#39;t there a way of defining the function without using the previous ones? To achieve that, use the incremental methodology previously recommended to extract a programmable pattern. We propose this challenge for your curiosity.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "8SiwMujoGv3fjDLGS7MAT7YPTTgUSVZLPTxeWVXsfJobfRVOACKZH8Rhw+WcgrMKoDTAO8Az/3TlEZwFfjTZpVNJQoY8W16YiYttxt6VMLtbALcPp0NRom9BTdJClzuFEwrWsIM0FuHONH70DzNIsuy0lE0NQ90cjUkz71rOcDbRKOhbaIJ2irfy4xcWW5gTMplIH5tZEUxxXUFZV1+95W8rQWMYKZU5IDHif+4edSC+32UyHCG8bORFjQW73N0mEywHL7FYokzAiyas6AAfsTQA8laQxirdPFUWxmbeCM5FmcukjUdL/sAl+JY0T6vaxciIExELF+z9TUnJnhelP1JcuHm2wXXlerYsji2+D/AvFRQmU/F1W7IQU/wUaJ3J+OgBXTV5yQxc3KW/q40cCtQlpDxpJwyihojYVvI8ywQ=",
+    "solution": "DjJrHZvhwhlPQvrq1xSuejN1TQwEVkwNIFc4FTvgfJQepTpcVWD0XiNktfmG5Jg2e8SUIjMvfu7eXhFCx7+J/EIjA/ErV2ILjvEcxYQ2ZPx7Gc1D7OAFempNR2FCjGnrQJq+a2BPR3zS3DrmTm99tfP175qAWoW6h65C7Y3ObSND4nAH6PT9i5/Vw3xRkabdYlFNTBEZGR/wO/kQRLzf8X7fCHMGJY9LO848aejbhjmEKZQnI7+wfvETjU0u4cbUQ8Z3UR/s65rJcHa5z5A47TQmfGXBtpjdZFUMp9LJ1YRN62uk/UdMwsBhMsNVKl8nyMHXExcGVPz9RQu16Yfh2EMvJBjQa4fXXFr5f8q4sqIpBBdYWFZXSz/VEUkDtOH7OewBPVV5jkcm3Kjtq4q8IMQl/Hc81rvIeRvNE4BrkLhS1kA1NlTHXdCeM0fETGTq1QPUGhLeU4AdA/bMCut76Bn0xYDQTo+diSxevDRMN2Dp7N6GjREPd42NQZ4LhukrFn/gUx+bw2/1HhWv+IPodSIRTURXTF1ZJRA1CoCoxYZxaoNwHCbVDHM5u3CldrMx/HHGM8Yzva0xEJ2CxyPEslt1A/F7EIYL74RaeYQAZPJoTudD6O2Rej9XVJ9F9WfEX0H+a0pGR383ZiSBGmELs0iYoRTEIRWwwEkEgYL2xDMA+HR37+yO8VpXf3Meka4QK6IZQ/oYSR/6QFRHX3nd7WamDyMG+2sXICiqhPSxsiPE3Jkj+zyo7A==",
+    "max-score": 10
+  },
+  null
+]

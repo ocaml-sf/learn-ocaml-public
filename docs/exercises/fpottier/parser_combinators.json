@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Parser Combinators",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "fpottier/nondet_monad_seq"
+    ]
   },
   {
     "id": "parser_combinators",

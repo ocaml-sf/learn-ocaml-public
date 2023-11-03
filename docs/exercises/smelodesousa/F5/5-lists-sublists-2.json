@@ -1,0 +1,37 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Lists and sublists II",
+    "stars": 2,
+    "identifier": "5.10",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-lists-sublists-1"
+    ]
+  },
+  {
+    "id": "5-lists-sublists-2",
+    "prelude": "",
+    "template": "let answer1 = replace_with_your_solution\n\nlet answer2 = replace_with_your_solution\n\nlet answer3 = replace_with_your_solution\n\nlet rec insertion e l =\n  failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<p>We pretend to define the function <code>insertion: &#39;a -&gt; &#39;a list -&gt; &#39;a list list</code> which returns all the possible ways to insert an element <code>e</code> in a list <code>l</code>. Therefore, inserting <code>&#39;e&#39;</code> in the list <code>[&#39;a&#39;; &#39;b&#39;; &#39;c&#39;]</code> may result in the following lists:</p>\n<ul><li><code>[&#39;e&#39;; &#39;a&#39;; &#39;b&#39;; &#39;c&#39;]</code>;</li><li><code>[&#39;a&#39;; &#39;e&#39;; &#39;b&#39;; &#39;c&#39;]</code>;</li><li><code>[&#39;a&#39;; &#39;b&#39;; &#39;e&#39;; &#39;c&#39;]</code>;</li><li><code>[&#39;a&#39;; &#39;b&#39;; &#39;c&#39;; &#39;e&#39;]</code>.</li></ul>\n\n<p>Answer the following questions:</p>\n<ol><li>What is the expected result of <code>insertion &#39;e&#39; []</code>?</li><li>What is the expected result of <code>insertion &#39;e&#39; [c]</code>?</li><li>What is the expected result of <code>insertion &#39;e&#39; [b;c]</code>?</li><li>What recursive pattern can we infer from these previous examples for the <code>insertion</code> function?<br>\nConsidering that pattern, define the function <code>insertion : char -&gt; char list -&gt; char list list</code>.</br></li></ol>"
+      ]
+    ],
+    "prepare": "njSGznkCeN8HKu0tSGqRdRpYA6/DZ9wWJUVFXFaifNUepTxaBnWLEmIefKmvtu2xoGi0K8Fnr3isCxkYeWWVpmd=",
+    "test": "XIeHPcOLUkQFmYD9tttEBnYPTTgUSVZLPTxeWVXsfJobfRV1GmOMG7Fwu0Gcl3M5/iHAADM5w3XmGxwCx7yldRB9RoIjW16M70EyvNZDL+ElTxRNp+6eqDpzUgtWjGiKQJO6a+QKTr8QN/fLCzMLtfPN6F30Co3wqllqoxaLcDdRiqccb4dWBkGnmKiphUsXNpQ3GGgPWEt5UVNZV1+w8iumDjhBHh5QPnigg4KknSDENJRaYiLvxvF4jWvy4df9QyVKEDAQn9L+xHb6mVMp8iF9/UaBtkGdPFUWjEKRIMUOnIjh5/hUs4x32gY0MRnaxcm/CNJ1UPrjTVGJhYel0/+KaSGBtFFVFOG4u4KCBAUoBAhYWF23GSoIVE2TdLrNOf6DPUgKjkdAP3ehcLSsIMoP/AtzKuf7xmvBVPBxirlHN6BLY6KGEIzXMKyBAG0p1TOZZ1GmU0pdVR0YQwE76BT37+zqGV4rzXVgypwOC0jop1xVkXRGgr5YGMCEpNhcEcfC12PaF52RttmWc0USTWMCBQkDGVVQO9QRWVyvqLUe9EEcVWD0XiNhu+ncbbF67z4DO8F5fKrL2ZVUc7qDboF7YodoRdNZzqR7e+hAZKElGrx49apWey9GR26AdziWEsfZvZ9BU0nV0HfBDH50qaC069++IRWwkp5PiYLBr8l0wYIF/v2CBkPX/O77x5IEJ9F3V6E0GQJw1kgRV0yvn8qHTR2VYNs41i7suLiehnCQ111uHCSudO53zkiyVN0gAicMA8ZqkUTFxSr9nlgOdyFO/UaBtkGdPFUWxl4F3ggAjJKd59c+cYN5OgdGY6nHdKKERxELF+z9TUnJnhej4FjNkTSBeBQO3g8zh0WkSpMzE69/Xlw1SmkZX/sDr4XIE0wB06AlwAd6NbubbK7pIMZXjnloNfyjfBG3E32mlrpB4kEUY5SECgL34biiRS3zOAH0TdzZU0pdVR0YQwE76EC0x4j9C9exlDZ37pw8CeO8mYRSzptXv0cNLd+PnaQaE2ea44yaF52RttnsdOFLVjMVCBcFZ/cMJkNFXFai/cwEbpZdHCfICppuhrDxufwq76fU4jNnfvK6Xc9Rx7rXq89mV56hEMVDnKZahJxAJexpHJUD7OAFqDFLFwtKlHCEDNKJv2ADXbbESTqgTmFIbqCI6E+BCoWwwEkOpIX2tWcH/dlal2UWBkGnmKiphUsXYlFNTEcKWFQgXFRHCuy58zelQTV1YNZB1iDbe4CuujWe2cpbMXu8uvFX7/Dq3cqePXwLA8YQjE0Ar5CbmVx6fHF2/RGMd5yD0ooMyV7ROhQTjw3syAwwag6k+2wHOEHmjx7ERxELF+z9TUnJnhelYkS0mGqTfDpHU0LMu4D6Sk28QUkMEWJ9Mj9QERUQr38IOewIFidty5sm1KStxNH8IJ2opAAoNeyieQqZ11IB/ehDZVYrMVHIQsjsAKeMRS3g1Qi+ChTMEOcxVX+hQs2in9CTlai2UTndlEde6pw7HJrbjcMDloxVtvQZC2v4eewrRJqQYcP9F/MUhZ8MquI1E8FSTV1RTVoKPX/4R/XuqIFlcBIcKEx=",
+    "solution": "G04aW8vHsEt4ouoaZRtGFjQES8FtMmNVLEQRVFevqhkwvEE5VRr5WDZasvnfrOR2imTq3CBkd+KzGsgtipGcd527A6AtQcFOjb2adIReHaUlSYgPoqFWwmoSV2da77LaRcy2gsBIUeqLNDnQSEoTbxrPo9G+CoLvxkZM8xfJ7UBajO14LdzkWRzUgDEuX7dhK5hDTFQZVR/lEFoURPv5nH3fFyQBKPF41i7skdDehnDEOYwaGAzqicokjRHbKdb9WGgRUWdO65PMezW68QBbfHFGbQ+Sgkao4QUWlATE0IQMlsupm9cOwtwh1swPOQGlxdiWEt6EWfy6TRT+px43",
+    "max-score": 10
+  },
+  null
+]

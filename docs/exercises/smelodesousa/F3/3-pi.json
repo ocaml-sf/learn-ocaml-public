@@ -1,0 +1,43 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Approximate π",
+    "stars": 1,
+    "identifier": "3.5",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Melo de Sousa",
+        ""
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "floats",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-reach-infinity"
+    ]
+  },
+  {
+    "id": "3-pi",
+    "prelude": "",
+    "template": "let rec approximate_pi k = failwith \"Unanswered\"\n",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p><em>Wallis</em>&#39;s formula provides an approximation of $\\Pi$ defined in the following manner:</p>\n<center>$\\frac{\\Pi}{2} = \\frac{2\\times 2}{1 \\times 3} \\times \\frac{4\\times\n  4}{3 \\times 5} \\times \\frac{6\\times 6}{5 \\times 7} \\cdots$</center>\n\n<ul><li>Provide a recursive definition of this approximation by creating a function $f$ that receives an index $k\\geq 1$ so that if $k=1$, the function calculates the following formula:</li></ul>\n\n<center>$\n2 \\times \\frac {2\\times 2} {1 \\times 3} \n$</center>\n\n<p>&emsp;&emsp;&emsp;, if $k=2$, then $f(2)$ determines</p>\n<center>$\n2 \\times\n\\frac{2\\times 2}{1 \\times 3} \\times \\frac{4\\times\n  4}{3 \\times 5}\n$</center>\n\n<p>&emsp;&emsp;&emsp;, etc.</p>\n<h1 id=\"Objective\">Objective</h1>\n\n<p>Given the definition above, implement this function in OCaml in the form of the function <code>approximate_pi : int -&gt; float</code>, that given the index $k$, returns the result of $f(k)$.</p>\n<p>Consider that $0 &lt; k \\leq 10000$. If it is not possible to determine $f(k)$, <code>approximate_pi</code> throws the exception <code>Failure &quot;approximate_pi&quot;</code>.</p>\n<p>Example:  <code>approximate_pi 5 = 3.00217595455690622</code></p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "UIH+p3PeqT1qvsx3/7fNKCYPTTgUSVZLPTxeWVXsfIgfbRVnBobIH8hxh3yqbbtwoCzb4jMbua+6VcARqnq/aponTRotQdNHmhtjxdkUZPwhTspBfeNRmyl0Uw1PyjqKFJqLe1B4PJ+11WaTDH9Nr0qik5PCX94feQIC7YXPrX549sjPavXhZD3Qp/3ZShYsLpRNKUNLV9swDRFGROrc7jbQQTkVYJhHMDicbPSluSCj121vMSG8e3ddzFirAZ3bBi6GUSs3uArJt8+8pHdzrmdKiAGGtoLm3BBwzRHFItxBkwactCdWbxVfOgYXYRufaZ+rRxFHUPj9D5PHydbc1lnrm1v5jvxiMwuYKJ2F88R8XG2MER9Z+S6CQ/BEffjNN0JuPVV5jkcmPq87avbv0hx3/Hc81rv7aVbCE4Jrmbhc191CIRC0CazoJeieQTS7PR3VRgvmA4/9BWz1BdJ66Fj0vu7IHjyk/HFk6lcvSKfxiIR05UJRv4/NEYXLd4lcQqr48bOPbGRekZsJa5TC3GNBTUpRGR/QLoBcW/ebxYobcBUmGSGICiMof+n5bfk67XGUKntiwKLmHwBCgnqneBBgUFdQV1V3jf1jxtw8J0hcTsAD9qZRolFaFs6C9SKEHJr/a2kRFt3sPRHTTi5GlPCIlBTYIRWwwElNjwaosiV+9sTpws3xNyrLjRzuQZxxMQQ3Hk6WVpMvXkcBU4CzzlTxBHhAMx5WPD0SeaniunCB0MQs3F8vxvF4x8r7Kg3bQ8ZqFDFDolmMiyas6AB9dyFOyUbfzVGdPFUWjEKRIxRAzffh7BtWqvRd4sMJZA+gwMHLCIMQPfz9TUnJnhelPRaRybntnek9NZT0Etdrpy68QUkMER9ZGW9QZVBIe38K4aUE0/Ur/AsmObL7f0vv0tRk/ClzM0apd6+PVKJxkqIONB/eY6CGChyl4bjEABybWlfVTdGmU0pdVR+bAc6rlRL3jqTLZR+dlDRGbUdoHeO9pIQ8lk/+bfxaC1v3iK2lUJadmvaDbG//k2UVkAmLU99NCB5RWE/LJ96YWFHsu0tewjtcVTO3CppxabPfv+Zm/mSWGDEmurqqGN/UbzeFaQs/RkNgOxYLbuEdr1kPKs6oTwVPn0MvqE5QTxoC9k0BEdbTtg2PUOz32jb+AHcKh4DunpLECo4xcBl3owPHrXoL/OD4vxihGX4a//4UBMJhIA9IDkwzSkpvRUNGW4+znDyeEWlHLhMWP8ygf1Kuv7LEVPRaJS39xv/WjRndAZ3bQ8YCUTZVkVajt7v8okQsqTdo6DCAcBDk15ZCwoH30sEUlwWmlDQTfI9rOgxBZU8iex8CCtgKQ2S9TpiZzcneZV+1isrzdK5s34bWVcQEpy68QRM4UFRJVSoCCkNRbunH+1US4B5p/ox63PPubLXgOMRP/HJnYqvgxUaCE0Me6fgTNycR+mvtRdn54bWNAHynI5qBMJPjAr/pAR+hIwF8koT970n3B9L/ui2m/5ofSLzamMEgpF6Bv1QsTMb3pPQkFsGS93PlbCUu6c9PyUzDLCYnTTEe",
+    "solution": "wxUqhztbyCx7eSC+ckIsoSIVCDNBUB/S+QleFRDkuZpecEE5VS+XEDItlrPe6Kwr9DT44nxdpKK6Ew6FhWOXdEJ6SpUvOxYLk4QjxcJBKLtkTtIH6PkRd8oJCc6SynLYHJrUa1gPBfmAJCq2TmoWbvLJmRXECoiPgQQAiJyLcDbu9Crp27OWZnLwN04xQj+BSUFNEBEIFo/9D6ENHuyyo8rwTo2VYI24DH75tw4ehnDENJQbMnKhe49W/FDj0r8rCmYKGzI266vAiyas6AB9dysA/U3PtkrnPE1YjE74IxpOzcDmlFlYs2AeN2NHOUCldIKKRwMFHKzwQlnYoY4lNbTA1bwi3cU9Yfcbp05B+x6nTlRFGDMmEWMQ492ZavGG3qZB+oAn7BYdNu3Gq4q80IF5/ClzM3u8dQbLXqw7jqdW1ilBKoDNCgT34bjEAGSzIo3aTdGmU0pdVVv2FwF96Fj0yLG4D9LDyiJEz5F/SLHpp1wt5QtVv+RNTMCN8udcctBvnD/einw8qXC1dEdv7DEABBcUGRFaKF/2QELdfMwff6FqG87SE8ItfNPstrEwe8SU4jNnfvL9EhwU7CrXq9IjA/F7EMcN70cadIQRTqJoTwVPp0NRqG52UgZC5nnESwX+c26HUL03J8X+RTcAqPvG/97IA6vyuEVEmdGAg8P8mXXmNiLVJGrkNtKjGGvB+Ec1Q65QEDNwEBEVELyxnDqaDWhQYNNX3mfyxvakf7uKPNJk0WD9vf6QkozvIcGlTCQMWGd3/pWAayH/8EZraGNAyETPx/bkNVpWl9nRKtUQnh7n7AZ0aYRoRIMGMUCoaZzNTftLF+z9TRqAyd03P3uA3bIg3fobIqhesa21I2x/DQI0ERQHGTsRWEZVr3Cr3qMN+A1/jklnKPibdvOv0YV5lQAmOb7uxVXQOp==",
+    "max-score": 11
+  },
+  null
+]

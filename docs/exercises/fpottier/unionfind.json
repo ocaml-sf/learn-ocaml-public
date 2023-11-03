@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "The Union-Find data structure",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "fpottier/tree_iterators"
+    ]
   },
   {
     "id": "unionfind",

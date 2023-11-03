@@ -1,0 +1,30 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Encode by range",
+    "stars": 3,
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "mooc/week3/seq2/ex1"
+    ]
+  },
+  {
+    "id": "10_run_length",
+    "prelude": "\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<h1 id=\"Encode-by-Range\">Encode by Range</h1>\n\n<p>Range encoding is a lossless data compression algorithm. It involves indicating the number of times an element should be represented.</p>\n<p>For example, the sequence of letters <code>aabbbabb</code> would be represented as <code>a2b3a1b2</code>.</p>\n<p><strong>Question 1</strong>:\nWrite a function <code>encode</code> that encodes a list (of arbitrary elements) into a list of pairs representing its range encoding.</p>\n<p>For example,</p>\n<pre class='ocaml'><code class='ocaml'>encode [1; 1; 1; 2; 2; 1; 2; 2] = [(1, 3); (2, 2); (1, 1); (2, 2)]</code></pre>\n\n<p><strong>Question 2</strong>:\nDefine the function <code>decode</code> which satisfies the following properties for any lists <code>l</code> and <code>lp</code>:</p>\n<pre class='ocaml'><code class='ocaml'>encode (decode lp) = lp\ndecode(encode l) = l</code></pre>\n\n<p><strong>Question 3</strong>:\nObserve the following sequence:</p>\n<pre><code>1\n1 1\n2 1\n1 2 1 1\n1 1 1 2 2 1\n3 1 2 2 1 1\n1 3 1 1 2 2 2 1\n1 1 1 3 2 1 3 2 1 1\n…</code></pre>\n\n<p>Define the function <code>mystery</code> such that for any positive integer <code>n</code>, <code>mystery(n)</code> calculates the n-th line of this logical sequence, with <code>mystery 0 = [1]</code>.</p>\n<p><strong>Bonus</strong>:\nDefine the function <code>list_mystery</code> which, given a positive integer <code>n</code>, represents the first <code>n + 1</code> lines of the logical sequence.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "GLAVD6WfRFDLzLlAcStDA8MEAlo8XE/WOlQePkmdqM6bh5RqF7zIGyN/6fnc5M95oDSUDCYoqrqrE2Eex7rXq9Ij3TIsVMML7eEoutsEI4AMQucPp0NRqDpBUhtWezTRDs7OsJdB++jq2XnSByd0uxa0npuUXkmzf9li8JaXe8ketRFLFaN8QZ8BiEnlIG1ZYlsNBVcNEB9/WUJB0ZPxnDrfQTkVYIUYN8+iqLigwzfH3cAfYXKRj0BEjQCgKh+/Q7QZUXIL66ul7XbNu5B9dyFO/RrEhAXD35BYzo0Y01xa7vWd/pg4dxN5RIAA4Rjrr14KRqxOQ4CbTQuF6Mb5PXfjF6c0snhV9IvOAalcKU28CAMYGB/VUDwE0DdQr38IOewBPQtyy6Fw+KjrbLW50hBo/ydYCZ44vETmOfIu/eho1lEFKkaIAfPl4bjEAGSJE5HRCtGoF4/aG/K2QOpru9C0jqiQTlLg5jBE/RwaCffgodxg9HRUerUEAsv4d+2n4vxRA6TlMGf2zJsWqGF5Am2BRloYVllQ+VoYR9Sgg2YedpcwVSnSDC1F6fncbbM5oDSUISQiwL7oXcsVgj8Yb51lA7xZAYxLzrcaah5A23/oXZ/PldhtqFoaFs6C9SKEFNfJv+dJQaKTYHK1AUgZ60HPoQaPWEHWcpIAiJaHriMn6EA4AvApH2fA8Qix+SNNK5dZRRFVUExcEBpLEPb96iurQXE1Mhd7WX7suLiehnDE+sMfLW8fxvM0yFLs0cKdQ9kgLBdZySG8cHas6HM6tSUHj5HJzVGdPFUWjDyn01AFzc7p7RoCbYJsO+gDGl8fdI7ERsVORqi0CoyH7Nvc1ynAVDQ+aXF1kwbWMbdzZR5iCAICEWI1TTAKEVo3e38FJ0xI1pF5/oY5LNCGq4q8IMQl/HdcN+atrlmZTaFvjrhO1kBL+/0TRYzt4bC+ACWpI90GDxm8H4/DHF7MSw5u8UCZ/fSDGkPr7TYevFdvSOqu7JVWaAIav+QpZvOHnfAcOqZFVyGfME02zLl3bTwdAT2BLSpeGR/YO9RrR/HixZo7oQJkECOQXmAif3yCruBloFTlVWNnuP4qXcEYx7+J/EIjRp9yQtVCjuFVop==",
+    "solution": "oCUWMUj9/RUZ5zpCb1ILnnZBUEoXTF2+PV/3WmvgfJQepTpcWHe0JAgSu+m6bftfi8TA4jgtfra5CgwZxzeZaQknRkEjENFCi0oVeYQAZKgoN36PmKkRsHRZFt/L9T73QOCykcBPFunMNDO0SDkIsPzIy/nBXoKwvVNz71rOcDirRywcQPCIRoTG0BPaoAvP+p/BTFdZE6/hGREPCuzdmoGfQTkVYNt+PnqxuLimvnmEJZka3W8vvr/YkRHtIw39WDZWV95fuE4MxHbapUN9s8QNj5rEtlnd35BYzo0Y01wvzcv6lDRuqNlvOf5nGl8fuI7MDxlLB+C9Vk+JyhegIbgL3TgHsNBHCOstRbrBTM2qQQNFEQMDGTlQHAtQd38SI0xF3BYqyowm1KX9t4rsIM9l6XZ8+PC7cV0mObgrpehQ1lFRMUDKQsjLLfmNU84n0EeTGxapB4VmGmmYQtl7amj0kbPQNGrWlDRyll2gRPvh8hkGzoEVa+RAUxzD74QycAcl4RLv/RQM8SUTnNEFo8ESTR5eMkV1PRBDUFOgwZFxe5RqDGCVXjgSu+mlq3M578SIYzN7fq0wGw1RjTuv/EIjRoloVYZYj05jr4sQJ0t8HZVH6PlSdi5QFsAPnHHQB1zDa25BFuHQJTL+R6s7lP7C6ATORUDfwE2FxbHCtWyrQiUrXIaYH5bVKRXr5QvSSUFNAFRNGUttUoFUR3Hx5mqjAGhBYJx1MH7p6uiehnCN1wQlYjmixrc48VyyZZ4nAjVWUX5K69uKsibxnFM6jHFO/UaBtoDwZFU39lK+IwVJzcKr5AN4fKc93wx2Y98ns10HC1VOF3X/H67Apxed1+c1+HlSfwUGHhJ/003BD1F8LQQ4RR2LXDdQGVRFh38YOdFQQFU0w/ZZUx1=",
+    "max-score": 10
+  },
+  null
+]

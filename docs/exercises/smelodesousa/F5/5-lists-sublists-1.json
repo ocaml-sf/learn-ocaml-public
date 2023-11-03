@@ -1,0 +1,37 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Lists and sublists I",
+    "stars": 2,
+    "identifier": "5.9",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-seq-true"
+    ]
+  },
+  {
+    "id": "5-lists-sublists-1",
+    "prelude": "",
+    "template": "let answer1 = replace_with_your_solution\n\nlet answer2 = replace_with_your_solution\n\nlet answer3 = replace_with_your_solution\n\nlet rec sublist l = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<p>We pretend to define the function <code>sublist: &#39;a list -&gt; &#39;a list list</code> which returns the list containing all sublists of a list <code>l</code>, with the elements presented in the order of the original list <code>l</code>.</p>\n<p>For example, <code>sublist [&#39;a&#39;; &#39;b&#39;; &#39;c&#39;]</code> = <code>[[];[&#39;c&#39;];[&#39;b&#39;];[&#39;b&#39;; &#39;c&#39;];[&#39;a&#39;];[&#39;a&#39;; &#39;c&#39;];[&#39;a&#39;; &#39;b&#39;];[&#39;a&#39;; &#39;b&#39;; &#39;c&#39;]]</code>. Note that <code>[&#39;a&#39;; &#39;c&#39;]</code> is a sublist of <code>[&#39;a&#39;; &#39;b&#39;; &#39;c&#39;]</code>, but <code>[&#39;c&#39;; &#39;a&#39;]</code> is not.</p>\n<ol><li>What is the expected result of <code>sublist []</code>?</li><li>What is the expected result of <code>sublist [&#39;c&#39;]</code>?</li><li>What is the expected result of <code>sublist [&#39;b&#39;; &#39;c&#39;]</code>?</li><li>What recursive pattern can we infer from these previous examples for the <code>sublist</code> function?<br>\nConsidering that pattern, define the function <code>sublist : char list -&gt; char list list</code>.</br></li></ol>"
+      ]
+    ],
+    "prepare": "/xrt1pC+tsSjm4uYDMVVnopYA6/DZ9wWJUVFXFaifNUepTxaBnWLEmIefKmvtu2xoGi0K8Fnr3isCxkYeWWVpmd=",
+    "test": "V1l41llIRj4Lfk6KrP8XT7YPTTgUSVZLPTxeWVXsfJobfRV1GmOMG7Fwu0Gcl3M5/iHAADM5w3XmGxwCx7yldRB9RoIjW16M70EyvNZDL+ElTxRNp+6eqDpzUgtWjGiKQJO6a+QKTr8QN/fLCzMLtfPN6F30Co3wqllqoxaLcDdYyS1oZipCNJbUFAPflw53NpQ3GGgPWEt5UVNZV1+w8iumDjhBHh5QPnigg4KknSDENJRaYiLvxvF4jWvy4df9Q8FDUSgZkVbJrD+blHk9jHFO/UaBtkGdPFUWjEDQ0N1Xix8tl9Yd/woo0cM02Brr910XE1RZBfzgTW+Jncjo+WXNCHIKL92ymJQWYLWAn/t5FQQCV6/1QSoCU/oDaO8+O0w+FkV5vBxpLOT8daquWdRAlS1i1r8HbRvLUrshlugQLAJTY5rG+M+pOrjGAzSP4WSVTdGmU0pdVR0YQwFjpRPPw+rRHVac9y6buAgjC0ObjcAgl9RZaPAEAd468qQcGwk+PUkdA8S4eoFXxd7YXStAHlo2UEwN+VoYR9TEfOIer9EcVWD0XiNhu+narvkm9iHG0WFepI8sGxlRczeEf7NhUQYyQwUL/PRVeYRTI+YOHt1A6rEUejcVFLtNpiDBAdbTtg2PUbSVZy7+HHRIf4KIyjnBCj0tgo9FoxWOaEY+fRc/GXpAU14RR9Cm52l31FsNT6ECGXxzVFQVEuqxsT3QQTkVYNs41i7suLiesjWXYOtwI7C8hbMTyGe80N0iDGVWL8F4n/e2qTC8u5B9dyFO/UaBtkGdPChT8BrLIt1Ijx8cyAZFfNBh1xA0TE8QdI7ERxELF+z9TUnJn1bf09iYCCgP2S53s26RVavGiUliM65OXVBKTW9NETdQr0rN0dUR0oxy7Rx5KfjriuSo1xFipDYsN3uybRvLUrshlugWNAJKSBCG3MniKfTLTzTfWlfVTdGmU0pdVR0YQrx7dAXD8qiSK9eg5y2n5AxoXODp7xR25W6+e3FNTxqLda5XGwk+PUkdA8S4/BQDuw4LS6pHGAJSTVBWJjdA+/HbvYFkfRVCB7bXC71ohrKXbbM5oDSU4jNnfvK6Xc/vwiaOwEJkS6ApEMwCjvBahJxAJexpHJUD7OAFqHA1RYpa9Q7EQJq+a2BPFumQNDqTTmM0ueLEmRXVCTbwwEkM71rOcDl+yVxcTSJR22LEWE+xnJ5WMAAAHFk1Z/U5QlUVTqS669TwCG1Q3ssM1n05e3WEtGz31Yga1zLvd3AS7ViyVNTjAjQL3jIQ65rJcHas6AB9dyFOnp7EaUrdKidWjEKRIxRAzcuclEdWqKsJE2NPMU8fdI7ERxECPhPxCB7Jph4lIDC2WzhIKHkzjt2BTfeSbHgJQUlNQ9kzS763WEFJovrA4q9KPRYqyoxMO4ehqZrDIIJ6jycu3bvqqiXZE29upatRYzM4MU4DWZ8lZOiQRT3zEADGGIT6QepyVUK2E1VDn6PMyfaDTpjd6HFx6mo9Cu+gjcBGaCE=",
+    "solution": "2Zpl/TdYCBeh5yjtmSFahRhdZjZ2XElZKFgCQ/Xubt5zr8wGKHq0JHQevsHAl1/t5WCUP7l6q34mTN9Mx/Dtpk9j3VY6FatQ7YchuhNc4aIKS22IjuNWamtx+aJxiW4QQMz4qsA1Qaf14W7HTikIgaC76E0MS9HveElA7ZmHxHUTjWDrAkZWVejuFcGsCpS+PlEFV5sNGRRiEFkQRLze6DryQTUGNZ9TO7qguOynhjzKNM1mYoLvxv9m9ELjJ2uaE8YKFm23693JbWHsmBwbqy6Oo5PI",
+    "max-score": 10
+  },
+  null
+]

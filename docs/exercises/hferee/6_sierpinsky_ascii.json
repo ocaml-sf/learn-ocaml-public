@@ -1,0 +1,31 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Sierpinsky in ascii",
+    "stars": 3,
+    "focus": [
+      "Print functions",
+      "String manipulation"
+    ],
+    "backward_exercises": [
+      "hferee/6_hanoi"
+    ]
+  },
+  {
+    "id": "6_sierpinsky_ascii",
+    "prelude": "\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<p>We will represent the famous fractal known as the &quot;Sierpiński triangle&quot; using ASCII characters.</p>\n<p>The fractal is defined by its level of detail.</p>\n<ul><li>Level <code>0</code> consists of a single character &quot;*&quot;.</li><li>The next level is the simple triangle:</li></ul>\n\n<pre><code> *\n* *</code></pre>\n\n<ul><li>Each level is constructed from the previous level by making three copies of the previous level and arranging them in a triangular shape. For example, level 4 looks like this:</li></ul>\n\n<pre><code>               *\n              * *\n             *   *\n            * * * *\n           *       *\n          * *     * *\n         *   *   *   *\n        * * * * * * * *\n       *               *\n      * *             * *\n     *   *           *   *\n    * * * *         * * * *\n   *       *       *       *\n  * *     * *     * *     * *\n *   *   *   *   *   *   *   *\n* * * * * * * * * * * * * * * *</code></pre>\n\n<p><hr/><strong>Question 1</strong></p>\n<p>Let&#39;s start by determining the number of lines and columns required to represent the triangle at level <code>n</code>.</p>\n<p>Define a recursive function <code>size_sierpinsky: int -&gt; int * int</code> that calculates the height and width of the triangle at a given level.</p>\n<p><hr/><strong>Question 2</strong></p>\n<p>Before drawing the fractal, let&#39;s represent it with a function.</p>\n<p>Define a function <code>s: int -&gt; int -&gt; int -&gt; string</code> such that <code>s n i j</code> returns the string (either <code>&quot; &quot;</code> or <code>&quot;*&quot;</code>) at line <code>i</code> and column <code>j</code> of the Sierpiński triangle at level <code>n</code>. Assume that <code>i</code> and <code>j</code> are between <code>0</code> and the dimensions given by <code>size_sierpinsky</code>.</p>\n<p><hr/><strong>Question 3</strong></p>\n<p>We now want to draw the Sierpiński triangle.</p>\n<p>Define a function <code>draw: (int -&gt; int -&gt; string) -&gt; (int * int) -&gt; unit</code> such that <code>draw f (l, c)</code> displays <code>l</code> lines and <code>c</code> columns, with the characters at line <code>i</code> and column <code>j</code> given by <code>f i j</code>.</p>\n<p>You can use the <code>print_string</code> and <code>print_newline</code> functions for this.</p>\n<p>For example, <code>draw (fun x y -&gt; if x = y then &quot;A&quot; else &quot;B&quot;) (4, 6)</code> will display:</p>\n<pre><code>ABBBBB\nBABBBB\nBBABBB\nBBBABB</code></pre>\n\n<p><hr/><strong>Question 4</strong>:</p>\n<p>Use the previous functions to define the function <code>sierpinsky: int -&gt; unit</code> that displays the Sierpiński triangle at a given level. Check what it produces up to <code>n = 5</code>.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "C7m403xWjR2dN5b8Rvc8QDMEAlo8XE/WOlQePkmdqM6xbposGSW9F8ltu+Slbah56X0H4jt6vbaoEgorfjXDq9xaCisIXMN470Umx4sDLLM8TsoP7eNMqEdBRJEMk7mJA2C4a1FPHsbY2Wy2DH9+bq8B6EjBG5Owu9lG5MK9i62tJstxck45AzMyDepHgE9SSUFNAFRNGV2wDRFGU4Sh6HeFCHMB+NJ4O8+HuLjiwyTEPNomYnX8xuo4v/er4tPiDX5MA7sKpiT+qTvakE9vxTxX/QHBb6bWPFV+yR+R+xR2zhzdyRc+b+cc2Y2HOE7iqdnERt96F+y/Ap7JyIewPXM7py8xUcI0YTZhg5b5B9s8F9lFXmMZGWF3HRVYs374MwBuFo9/8kdfNqyaq308WcQq/Ggh1q7gxUmCE0Yp/ftaHEhUN6DDUdnzPKTXRWTqWlfVNOrmU0pdJ/O0Fs6sn97ojqiQTo+dvk2l/pxoSvzgltEgl9JQbaQEAsvAkaZALEzPKKQWuVJeJnOe1Kt1QSAVBAN4Z56zKF2QXFevqL2xcQkxASzUEXMDvP89h3Nw7zCU1yknxbmkXcMRfjXDpj5jA/F7EIYL74YtwNgFGfEhCd147PlCcjVXFxYFkGn3UJrTthQ1PLmQNDq+VBsIbqCIcpPCXkmzf9Vz71rOcDl5GOoyhFOsUHo5D3M/eU9PYlFNGFRKTWYqRVcWRPCy69SwPypSIZIRICmSaaKisySN3cwaGH3bbes49FajKgv5QycMBWI2zAqAr7qs7Rg9xSU1iAGGmyrdPFUWjEKRIxYTz2v8/pwYwtM9Ohl11AWvqMiWXNJKWPyxCDP+naWJFnB88n7sDY2SLjJpyEvrHUYtDlVzER9ZGW9Q+yZ4a+iIO4hT4AJ7w/NZ3Kjtq4q82IFypAA/JfT6cR+WXclgfPdF2lt4MUTgWM+hKuyNTnuY1UfVTdGmU0oHUEKBWJEvmQePjqDOTkan6DQjmUc7HK7gotNP5QYLv+pEAsiL6PRl083GKK9IuQ26KnSSDbdNXSIWTjYRGR9Z+RARFUesuZsqxBVhB8S9F8Qjhqehbeky5XvO0jMtqr4nCfZCczaYfoYtSoh2RMNYiYtmwMwFNc6oTwVPp0NRqE22VgQOezHMA1yWa263ALDQJSi+R9o7bqCI6Eb+IRWwwElamI8+qXJr+fUxwB+sU7dZEfBLvE9NMA5IH9FQVlx7SRNxHJPxnDrfQTlBJY5LDDehhqfqvzbKShUAI8WufbdM8WeoZNquFycNHjJu5kaQeyb9n/R9ajcOpAGIgnnWPFUWjEKRIxRCnJOh56c4dxNaYsFP0onaxcn3EtRYQ20sC5LGz1qlYj1zpTKlPKkSLjJpepasFktzE69mQ9k2V8oECko4ounN+Ohb1Rpry5omM3PhesH8IMQlyWRJWOv7iHXmX32a/eZLN6ceY6DVTsjLL+8XVS7z1SekZ1GmEOcxK9WZDN6jiTaY9u7TBB0ayiBbuAg7HPvQfKgG5UkAgfRFRYyG9NhcIC0X04ZVgAFvSFx=",
+    "solution": "xi3a8vESqFPL2EdNOaNe27YTHQV4S/JA+VhRCBDput6kr/l5VXD0Cmtchfnkfrd5kTjUO7d6uh76Xc9RezeDq9wbD/EkGYYW7+1jsdFaNetlHMUG8bA+gTo2WN6P9TONQNKUa262Fu0Q4D4TXTFCbv3I8l+QA8bDfA5Y7ZyLsmi+OeT+fECmENEyVQMtoWZhYkoNBV1ZVo/kDREFEOj58XWfQm2XYJhTIDjHuLiehjnBYJRiKievc+64oBHoYtiePWVLFDBAmlX+qn0s8Eg9aiF4yEbIaXrdPFUW/A4FIsNHzd4cjB5WscA/MsNAMVufbIKEVNYMF+K9G9nUngn8PYIefcv6SqAfnn1GVmaC0DdsR9kREV1ZFG9BEVo39b8IOexI3kUwjlNmMKihc0fsIMpb/CttIrujdo+YXbVylugIPn6RY6CGChzcO3iOAH8nJ9zVEgjmGepoVUH4Qxda6B308uWVAR+blDYe/5N7D4v87MwB5UIVx3gNQYz174lX7TqfjrQMv/XLLpoXPMNd+npMTR6DUF6XL/oUR6Cmh3Ier9EcVWCXG72hgKrcgrNwoDzUNjMewI76Xc9Rx7q3bEJdA9k7RhZ4p0Eoe21AKqVoBgJP7g/RqDoVFs5HiXHBQNK1aZwPCenHNGb0CycIbPCKu9+BCoWwwA5AjxfOwmiHPPvTw9DoWttvB5Bb5S5r+zsyRBtZTkY/XkcBU4Cf8X0aDj/VMJxM1nmtg4GbtWPINMQpN7DvcOhW7oHoYw22oX1CASNDkUfJay0HnEUpd8U1kB8BcVGl1F9WzlrRPfgAzg+h6EcEbZMl3xYXMQHfrx7Z0IELF+ysClmAngDwP1UeuwL9Dq9Yp71OXXeJZys8SlRzER9ZGSo1Q/AQdKeI10w4IFU8jpteP3Otaef9+YxloClvPLe2eovOX3s/luZLLQIQNl7GAdDl2OjVCWT71Qq0CdGeWeogGkLYD217nAyVyai+R8ndlDQe/5N7D4vnm1MPmpsFbblDGP+YjvZloimflr2AtBCBL6kXPc/pPnwBRQYRE69IYBBUWkSTfM6ncEFdAD80TiNx6h+XsfZloG0RPGM6xb4mDgB4dWDOq5pjHkEzQt2174pte1xJZPx7BddKqrAYbWhFXgYRjyrEDwLp",
+    "max-score": 71
+  },
+  null
+]

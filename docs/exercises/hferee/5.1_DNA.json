@@ -1,0 +1,30 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "DNA sequences",
+    "stars": 2,
+    "focus": [
+      "String manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-burrows-wheeler"
+    ]
+  },
+  {
+    "id": "5.1_DNA",
+    "prelude": "\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<p>A strand of DNA is composed of a sequence of bases, which come in four types: <code>A</code>, <code>C</code>, <code>G</code>, and <code>T</code>.</p>\n<p>One way to represent a DNA strand in OCaml is to use a string that contains only these four letters. This is certainly not the best representation of DNA strands in OCaml, but the goal here is to practice manipulating strings.</p>\n<p><hr/><strong>Note:</strong></p>\n<p>The string functions we will need here are as follows:</p>\n<ul><li>The concatenation operator: <code>^</code> (infix)</li><li>The function <code>String.length: string -&gt; int</code> that calculates the length of a string.</li><li>The function <code>String.get: string -&gt; int -&gt; char</code> that allows us to obtain the n-th character (e.g., <code>&#39;A&#39;</code>) of a string. Be careful to only call it with an integer between <code>0</code> and the length of the string (exclusive) to avoid getting an exception.</li></ul>\n\n<p><hr/><strong>Question 1:</strong></p>\n<p>Write a function <code>is_dna: string -&gt; bool</code> that determines whether a string represents a DNA strand. We can start by defining a recursive auxiliary function that takes a parameter representing a position <code>p</code> in the string and indicates whether the characters up to position <code>p</code> are correct.</p>\n<p><hr/>From now on, we assume that the strings passed as arguments to functions are valid DNA strands.</p>\n<p>Each DNA double helix is composed of two strands, with their bases paired: each <code>A</code> base is facing a <code>T</code> base, and each <code>G</code> base is facing a <code>C</code> base.</p>\n<p><strong>Question 2:</strong></p>\n<p>Write a function <code>complement</code> that, given a DNA strand, constructs the complementary strand.</p>\n<p><hr/><strong>Question 3:</strong></p>\n<p>In a simplified manner, a DNA strand encodes a list of proteins delimited by &quot;stop codons,&quot; which are one of the three sequences: <code>&quot;TAA&quot;</code>, <code>&quot;TAG&quot;</code>, and <code>&quot;TGA&quot;</code>. Write a function <code>first_stop: string -&gt; int</code> that returns the position of the first stop codon. For example, <code>first_stop &quot;ACGTAGCT&quot;</code> returns <code>3</code>. In the case where there is no stop codon, we will return the length of the string instead.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "j63AmbV2bA8zu1byNzPVUTMEAlo8XE/WOlQePkmdqM6xbposGSW9HTIufKnkdrMce8SUM7Izv3v6LZ64gzT+tAshV/FjENFCi0oVeYR1ZOJoQhsPpcJT/8oVSs6T9Sb+QJzgaawPFrDQJ8q3UTFKy4K76E02CjvwvVNM7ebMi63dHYSKbBmBH4zdmfdoYPdW+9FQZ6EZVVpcEENQUezwyWOfDmkIYJIZ1m+stKDednCQ4NEoYiDxxrQT7/SIKg3bQzVDHDJ1piTLsSnx8A/98HEPpB4BrobdMVUHlULY0KgAzgrx7Ed3mwFf4gpCPpGlwI7RVx56PbX6GUm28sj5QuQW9YvjX42PsbKpfRh8gBg6I9cXERsbGiIQEjESxr8KWs9zSV2ejkln3u+tqaa6OdQjcRpE2wf5r/a0Z1NK/+VxN5JRY6CGChyl4bjEAGTn1UmlOfDSUf1dVi37JbVDgTTfrhySM8mp/WAe6pw7HIWlotVB5RYVlvZPVhyJeaYzdFvm7LB287vihuDwCnP9HzE5L7s/GpIZ+jRp2BK7fMw+m7B1Virz2V/Sh3ywbfZh5W0XN8AifubLXc/v7CrXq9JFRoIjW1/F52gaeYQAZPIKL2xL6LNTcWdvUwYD9kbI+wq+a2BPFr7VZjbtCWQGr+TBnp8bGzuxhppFog8+7jfaFIX3h6LCT1edgLJ/I+oKMQ5DCoEUBo9uXkgZ00zj8ielWncFYN9WIA4whqmgnSDENJRaYiLvcrQM8WezZ2+UQ8YCUWtLuArJcHb3pUMprmhAyWXBtkGdPFVsrpiVZhRCjJWp5ANTdZVf0cEnPWLfdI7ERxF4UPupM5u161j52LdWugqUHMtMaL48qpBntFIjFQQDXo/7HDkJCoVDe0vB24kBMEs57At6M3PupPrcZhFf8zkmWOv7xVaZE+Iun3lD3kI2JlK1WM7gLfHB4nCdMGSVTdGmU0pdVRS0D2onnAXWyeOETR0x/W2quAsaC4i+7IRG5QIO5fRNTIzhne2wrR335xF28Ejkb0CQHGfeWjNDCpVDS9kzO9R3RRLEgOIer9EcVWCPG7Atlruxs+Bl8Xq+AHINvbX5Fw2Cc/TEdQg8V65sXxZp8KAzchRTMKAhANJPmKkRcXIB+c51kz4KWxyKa2IJXbfDYESAGihYbNvI6E+BCoWwwBM4nI03rH77QxPLg5iACMvcavwVI4d3YlFNTBFNXExc0kV0U0eCnDrfQTROSss4D/KHhP7qhn8NNI/VYiKggaU57kTo4sqvQ/Z73jIQok827nntn99pvphNiQvCbFHa1oFTwpPC2xQ5baDclA/DdsAdMsNCLjLfdMi1AcNIXPu6ZjY=",
+    "solution": "U8dTdW9nVfp/Z8t9izalIE9NCB5RUEwzKkFCUBC9fIgrcAJwHCbV2XNhd+nfzrQ5zDSTHGRnsvKzONhRa7rQn9UjDlc7RNR3mNgae25AGaJdUJUJ5PdCbRZaWwlW9WqXPcbUqNBHR0mKNG7HHX5Gq4zIy90DRFu/wFBz71qCtW/+Zk0DPDZRxGoy2Ty/0ahwYp5LTFdZBpRwYlVHW43qoy4aDixBKNtM1nm/f4PesiKR10gaYiLvgblMyBHu3O8dAjVHUWw8l/yAr888plUpd7JOjl0BsV3d4QBOjEu4IxcA7sPXlEc4dqxlOgI++U8vjvKrTxtLZPm6H68A6MDlLkxaGvxWOlGt0Gxf+xVqhn9/FAMPRVBWVlMQEU9QqxyPOe24PV1UjXVm3PGtrw89IM9v/HlE1MC7xQPZFtUt/eN1N5AnYDvGCcXlAOjJHzTpEEnaZYijB0oaG/rIDsRqpQePjveQU8ndlH6b6lc8D0ypn2E35UUVsKQECxzF8r9cKWFBnXIpCuQwZmJp6jbsKT1JCAIRGotm+RARFVXkrhlebQgmHjDTLC1vgOLfc+R/9DTH4nkefsn6HxoJx7PZq99jEk67W15674QbrNpA2N60RwcPtOYUej51WZZC57KOS0HptZU0FqvZZz7HMGI1s+CIkl+1IRWwfA5Y7ZyLsml0YErA1y1Zlzpw2SSGK4gyYlwNXoEHGWxcQ/60Ve398XXcFXVVMctLOmi8uMfqtWzK1gxmJ8nscr/476HyZdTe+DYCUWIQ690IxDn/6HMpxD5Al9GGc5Wd0kVYkEL72sYJkZim/pwCqIMlMgkPO98ubYSEN2VZXO48QpqMyhfyPVJeEhtdZQihOjA60OVqa7/8QUlQERgsHzUQFyIXs38PWukBYVVyuk6a3KuNrq48JfUm/CN82Zf/uVa31KUy/e9/MQJ14BDIIYyl4bjEAD8nD9fYU1HnBOQdXV8YSZEm8Wv0juS3Tk4w7DQubWU=",
+    "max-score": 88
+  },
+  null
+]

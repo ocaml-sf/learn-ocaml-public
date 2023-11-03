@@ -1,0 +1,45 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Dichotomy",
+    "stars": 2,
+    "identifier": "3.14",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Gonçalo Domingos",
+        "goncalogdomingos@gmail.com"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Array manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-how-many-mountains"
+    ]
+  },
+  {
+    "id": "3-dichotomy",
+    "prelude": "",
+    "template": "let rec binsearch_aux x v low high = failwith \"Unanswered\"\nlet binsearch x v = failwith \"Unanswered\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Let <code>v</code> be an <em>ascending-ordered</em> vector of integers of size <code>n</code>, and <code>x</code> an integer.</p>\n<p>We will define an <em>efficient</em> search function that takes advantage of vector sorting.</p>\n<p>Consider two indices <code>i</code>, <code>j</code> of vector <code>v</code> such that $i\\leq j$. We will look for x in the vector <code>v</code> between the indices i and j, (notation $v[i \\ldots j]$)</p>\n<ul><li><p>If $i=j$ then $x\\in v[i\\ldots j]$ if and only if $x = v[i]$.\nOtherwise:</p>\n</li><li><p>If $v[i] &gt; x$ then we know that $x$ is not in the $[i,j]$ segment of the vector $v$. In the best case, it is somewhere in the $[0,i[$ segment of the $v$ vector.</p>\n</li><li><p>If $x &lt; v[j]$ then we know that $x$ is not in the $[i,j]$ segment of the vector $v$. In the best case, it is somewhere in the $]j,n[$ segment of the $v$ vector.</p>\n</li><li><p>If $v[i] \\leq x \\leq v[j]$ then we know that $x$ is possibly in the segment $[i,j]$ of the vector $v$. What we know for sure is that x is neither in $v[0 \\ldots i-1]$ nor $v[j \\ldots n]$. Consequently, the search must be focused on the segment $[i,j]$.</p>\n</li></ul>\n\n<p> We have $i&lt;j$, so let $m$ be the index &quot;in the middle&quot;, in other words, the largest integer that is less than or equal to the mean of i and j.</p>\n<ul><li>If $x = v[m]$, we find $x$.</li><li>If $x &gt; v[m]$, then the segment $v[i\\ldots m]$ of the vector $v$ does not contain x. Possibly it will be in $v[m+1\\ldots j]$.</li><li>If $x &lt; v[m]$, then the segment $v[m \\ldots j]$ of the vector $v$ does not contain x. Possibly it will be in $v[i\\ldots m-1]$.</li></ul>\n\n<p> This method is called <em>binary search</em> or <em>dichotomous search</em>.</p>\n<h1 id=\"Objectives\">Objectives</h1>\n\n<ol><li><p>Define a recursive binary search function <code>binsearch_aux : &#39;a -&gt; &#39;a array -&gt; int -&gt; int -&gt; int</code> . <code>binsearch_aux x v low high</code> search for the value <code>x</code> in the ordered vector <code>v</code> between indexes <code>low</code> and <code>high</code>. This function returns the index where the <code>x</code> value lies in <code>v</code> (in the <code>low..high</code> range), or else the exception <code>Not_found</code> is thrown in any other situation.</p>\n<p>For instance, <code>binsearch_aux 12 [|1;2;5;7;12;16;23;33;78|] 2 6</code> returns <code>4</code>.</p>\n</li><li><p>Define a <code>binsearch function: &#39;a -&gt; &#39;a array -&gt; int</code> that searches for the value <code>x</code> in the entire sorted array <code>v</code>. This function returns the index where the value <code>x</code> is in <code>v</code> or the exception <code>Not_found</code> is thrown. It is recommended to use the function from the previous exercise.</p>\n<p>Note that this search divides the search space by two each time the search is refined. This feature greatly improves response times. The worst case is when the element to be searched is not present in the vector. Nevertheless, the number of comparisons performed by the algorithm never exceeds the order of $log_2(n)$ where $n$ is the size of the vector.</p>\n</li></ol>"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "c7EcYM7MquWC+yK/r99E/nEIAocUWEs+IWcQQE7ghJAexEFlGmTSXnVhh3Pvbfsw5inUY9/nfrqyXgV3cSrJq5waRR/7RMgOoaQsuMkTI4I4A1Ep6apEdy6aFs5HiXHBQNK1aYZBHqC4YmLTU8EQbvTApQ7BRkub89kMmI42tTjdYyM7814/iIZQZaCpDBbXNUFFAFgOGRJwAR5VWPCq5BGQST2V1ssV3/L6f3yexWzKZcEbMTG7xq/48oGaKcXiDGVHEDBTmyTIxS4siAAndzFOySfThRD/M6/T/5XF+xQWzc4cpUYd",
+    "max-score": 24
+  },
+  null
+]

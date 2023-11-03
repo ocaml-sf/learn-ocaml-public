@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "An Implementation of List with an Efficient Concatenation",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "mooc/week3/seq4/ex1"
+    ]
   },
   {
     "id": "ex3",

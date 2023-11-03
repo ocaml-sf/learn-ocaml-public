@@ -1,0 +1,38 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Shine in society",
+    "stars": 1,
+    "identifier": "5.2",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "List manipulation",
+      "String manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-lists"
+    ]
+  },
+  {
+    "id": "5-shine-in-society",
+    "prelude": "let v1 = [| \n  \"The excellence\"; \"The intervention\"; \"The goal\"; \"The diagnosis\";\n  \"The experimentation\"; \"The formation\"; \"The evaluation\"; \"The purpose\";      \n  \"The expression\"; \"The management\"; \"The method\"; \"The experience\";   \n  \"The reframing\"    \n|]\n\nlet v2 = [|\n  \"reinforces\"; \"mobilizes\"; \"reveals\"; \"stimulates\";\n  \"modifies\"; \"clarifies\"; \"renews\"; \"identifies\"; \n  \"perfects\"; \"develops\"; \"dynamizes\"; \"programs\";  \n  \"scores\"    \n|]\n\nlet v3 = [| \n  \"the institutional\"; \"the organizational\"; \"the qualitative\"; \"the analytical\";    \n  \"the characteristic\"; \"the motivational\"; \"the pedagogical\"; \"the representative\"; \n  \"the contributory\"; \"the cumulative\"; \"the strategic\"; \"the neuro-linguistic\";  \n  \"the systemic\"\n|]\n\nlet v4 = [| \n  \"factors\"; \"processes\"; \"parameters\"; \"progresses\";     \n  \"concepts\"; \"different know-hows\"; \"problems\"; \"indicators\";     \n  \"results\"; \"effects\"; \"blocks\"; \"prerequisites\";   \n  \"paradoxes\" \n|]\n\nlet v5 = [| \n  \"of performance\"; \"of the device\"; \"of the company\"; \"of the group\";     \n  \"of the beneficiaries\"; \"of the hierarchy\"; \"of common practice\"; \"of the procedures\";  \n  \"of the actors\"; \"of the problems\"; \"of the structures\"; \"of the meta-context\";\n  \"of the organization\"\n|]\n\n",
+    "template": "let speak_vacantly () = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>After all, shining at a dinner party is easy, being the star of a <em>vernissage</em> is as easy as eating a <em>canapé</em>. Simply apply this foolproof recipe. Randomly select one element from each column listed here and join them in the order of the sets to form a sentence... <em>et voilá</em>.</p>\n<p>For example, <strong>&quot;The diagnosis identifies the institutional blocks of common practice&quot;</strong>.</p>\n<pre class='ocaml'><code class='ocaml'>|         Set 1         |     Set 2     |          Set 3           |         Set 4         |          Set 5          |\n| :-------------------: | :-----------: | :----------------------: |  :------------------: |  :-------------------:  |\n|   &quot;The excellence&quot;    |  &quot;reinforces&quot; |    &quot;the institutional&quot;   |       &quot;factors&quot;       |     &quot;of performance&quot;    |\n|   &quot;The intervention&quot;  |  &quot;mobilizes&quot;  |   &quot;the organizational&quot;   |      &quot;processes&quot;      |     &quot;of the device&quot;     |\n|     &quot;The goal&quot;        |   &quot;reveals&quot;   |     &quot;the qualitative&quot;    |     &quot;parameters&quot;      |     &quot;of the company&quot;    |\n|   &quot;The diagnosis&quot;     |  &quot;stimulates&quot; |     &quot;the analytical&quot;     |     &quot;progresses&quot;      |      &quot;of the group&quot;     |\n| &quot;The experimentation&quot; |  &quot;modifies&quot;   |   &quot;the characteristic&quot;   |      &quot;concepts&quot;       |  &quot;of the beneficiaries&quot; |\n|    &quot;The formation&quot;    |  &quot;clarifies&quot;  |    &quot;the motivational&quot;    | &quot;different know-hows&quot; |     &quot;of the hierarchy&quot;  |\n|   &quot;The evaluation&quot;    |   &quot;renews&quot;    |    &quot;the pedagogical&quot;     |      &quot;problems&quot;       |   &quot;of common practice&quot;  |\n|   &quot;The purpose&quot;       | &quot;identifies&quot;  |    &quot;the representative&quot;  |     &quot;indicators&quot;      |   &quot;of the procedures&quot;   |\n|    &quot;The expression&quot;   |  &quot;perfects&quot;   |    &quot;the contributory&quot;    |       &quot;results&quot;       |      &quot;of the actors&quot;    |\n|   &quot;The management&quot;    |  &quot;develops&quot;   |    &quot;the cumulative&quot;;     |      &quot;effects&quot;;       |   &quot;of the problems&quot;  |\n|    &quot;The method&quot;       |  &quot;dynamizes&quot;  |      &quot;the strategic&quot;     |       &quot;blocks&quot;        |    &quot;of the structures&quot;  |\n|   &quot;The experience&quot;    |  &quot;programs&quot;   |  &quot;the neuro-linguistic&quot;  |    &quot;prerequisites&quot;    |   &quot;of the meta-context&quot; |\n|   &quot;The reframing&quot;     |   &quot;scores&quot;    |      &quot;the systemic&quot;      |      &quot;paradoxes&quot;      |   &quot;of the organization&quot; |</code></pre>\n\n<p>Assume that each set is organized in the form of an already declared vector, in the prelude, with the corresponding names: <code>v1</code>, <code>v2</code>, <code>v3</code>, <code>v4</code> and <code>v5</code>.</p>\n<h1 id=\"Goal\">Goal</h1>\n\n<p>The purpose of this exercise is to implement a function <code>speak_vacantly : unit -&gt; string</code> that randomly produces a sentence, using the contents of the previously mentioned vectors. For example: <code>speak_vacantly () -&gt; &quot;The excellence perfects the cumulative different know-hows of the device&quot;</code>.</p>\n<p>For this purpose, you can use the function <code>Random.int</code> from the OCaml module <code>Random</code> (see https://caml.inria.fr/pub/docs/manual-ocaml/libref/Random.html)</p>\n<blockquote><p>Random.int : int -&gt; int</p>\n<p>Random.int bound returns a random integer between $0$ (inclusive) \n and <code>bound</code> (exclusive). <code>bound</code> must be greater than $0$ and less than $2^30$.</p>\n</blockquote>\n\n<p>Using this function, you can obtain integers belonging to the range ${0...12}$. Please note that <em>it is not expected</em> that you use functions such as <code>Random.init</code> or <code>Random.self_init</code>.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "gjj0I+TiBvmF3bqgRTpjRCYPTTgUSVZLPTxeWVXsfJwfcAVnGBbICmItfKn5beF/58S1DSIduritUZgUc/TEf5N7RkFvGYd674RVx1FUZKYlH1Ep/qxFcEMGWZQXoWqLDwqHa4wPFtbV2jb+AHcA5YTNiBKBCWHtco947e+Ci8jxP2gqwINDagFQhrNT+TcBLQIZBVgXZ55WUVZUW43eyETwDyEANJIQPVKsuLiehnDENJRaGH3bbes48Fau4g3mXDZRBTBZnEmlcFXs6AB9dyFO/UaBtQLt3RR2woTQY1UOmg+9lzUWqNAlOcNPMU8futuBAMgZUN0jCAuMz1rf4rlyiz47k5iae5Svu52EOFxyD5AmQ9kYTSpQCp5QnfzG4aUMMoI/8nA5LOmhbPquK1l3/Hc81rv7xVaZE4owlq5NZE1rNlPDWZPl2fqRTzSN1UOLTdHBEPJhG/qWE2RjboPPzfzVTo4r9XwayAJOGffoiMFPvptVv+RNTIyL8qR8ei7Q20+T+4bRBK3pBoZgFGM4H5k1SVV1OpxRHV0twt5mtlEpSjDTVywSu+ncbbM5oDSU4o5PpKK6Xc9Y7CrXq9I1T6QjEIhC73/VeYRTI+YOHNA1/PdFqFpkPN6ClHHQPd70tg90TdOT4HfQBDELs0TNbp4SXoXJoElKiIWOaDSxMMBFwIMhvcRXddcQXnk1HBICAERNUFYy0Tt=",
+    "solution": "m4GTVVilmJofXTx4jmW2mSdYTUQYGQQm+RBHBBfozx/ka5gpWnzVCiNwqvXDb3M7rzKG1WtAvbm/EJQ4fjXDq/M/Cnc5EIRkib2og4ZBKuYbAgtG8b2RuSc1+NwC9kmSVJXS8gEBUqO2OyK2GmFZf4yj69+D2UOdv9UbnIXKriCPaY9BDuW+kA==",
+    "max-score": 20
+  },
+  null
+]

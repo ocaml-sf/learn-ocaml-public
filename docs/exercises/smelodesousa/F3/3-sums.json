@@ -1,0 +1,42 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Sums",
+    "stars": 2,
+    "identifier": "3.9",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Melo de Sousa",
+        ""
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-hofstadter"
+    ]
+  },
+  {
+    "id": "3-sums",
+    "prelude": "",
+    "template": "let sum3 n =\n  failwith \"Replace with your solution\"\n\nlet rec sum3_tr n aux =\n  failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<p>Consider the following mathematical expression:</p>\n<center>$underset(i=0)(sum^n) 3^i$</center>\n\n<ol type='1'>\n  <li>Define the function <code>sum3 : int -> int</code> such that <code>sum3 n</code> returns the value $underset(i=0)(sum^n) 3^i$.</li>\n  <li>Provide a tail recursive version <code>sum3_tr : int -> int -> int</code>.</li>\n</ol>"
+      ]
+    ],
+    "prepare": "",
+    "test": "6jmrcnb/izPMQUv+tM38pSYPTTgUSVZLPTxeUE8fuZ6qdpgmVRO3G8lUhrPsvM9K7HHA4nUmxbeWFxkZxz0EbUIuKFF7+bsOjv1bvtEA0I9FCdl0p4hCblFZFuhDjGeREseT5Pw/WqzENH70CyIDyLa+fAyOWl+wgpcM/OGOcHrB1raG0Z8V2NFpQ2Ooxv8UHAA3GBE0S9p9AjgBQuqxvFrfBj50YJhHInvsx+PRnSDE3NEuYmG/ePU39FaoVNqoDWZRUXdQc9u0wmvgk9U6aH9IpAGCgo8m1ydWjEKR4xQ0zhvh7BcwbJVy3NNSMT7avN8eAMgZF2+9EEmVncXl0Yk9bdZu/M6mzCMGxe3kqOhlCQQAVB/zGTQQHAtQffzB+PcBT6A//TMdNaia/aq8IMRx/AB84aS7j7LQOfIuiqBxN5IFMEztChyl4fmXVBroOQqWBLejC3orVU7XDOgyiBDJyffDB/ynny2lyRspA0S8cd5Jm/sGv3EVHNqQwPQcnDmxbnaZ96vYP/G+wvXth7YEAnB3V9/K+RlPPoCgux/nc8ZlAS80XRdihqmrbfJn5TT+MD2nvbesEIgUg7q3dEJ7S65oEMNTmKYdwN2FZ4IBHNx48rAUqHkVQxwCpj4HF1zJsIYKFrvVZz7+AHcKlNuEpRKBQ/qcjohNoJqCtWaINKKgMsGoMJ6nQh4ng3WR49EaDVc2V/RyQkRZVt+66yLrQTV1YJIRWX7suLim9WGK1Ntn0Tr9cvFOno7IA2qeF8ZLHmZql/yjwmf5kEp6xHFGyEa1tirdPB/T8EKZKhR2zf7dy5sZd2gy4wdJT5Glr2nETx5LXO3OTUnJnh+G4IZhgPQ6zNV9zCdUiaLcg0sJDQ5YEUwMVHw8EQ5Q9b8I+PdVQ5Un/B56P4eaq4zA0gZzlTpiOfT/xQfMVPFaiqEMN6NTY5rtChzHOveQSSrd1U0rTeXjC35dViOABdN6mRP3jrmKToSdnmRYyAslSP78i1/V5psxwYgNTNjOi+BC8zy/byrYkHeyLizSs+n/imAVM6c3VUoNIFc4PoCgfM6AqoV9TjCSES2hxLKctvkloEzb4jNnfvDnCwQCxAGXq9IjXAI8X2ZHmKZ/e1kOMIl7Dc5484YD/8oVFs51kz4KWwqDkcBPFunuNCqTM867lLmNlE0SX/7fjo93btrTcB4IPP8d3feLYs2gVJ+6qrnTAAh4H/R+TVAyVoFER4neyHLkDmkHYssEWX7sia7hsjzL3wRiGHK3ga9LjRPH1cLtAXcRFGICyArLcGTsgld5siFMo6vMxCex0/1WwUfeIxRAzcuclEdWqNAl3JtK15O1qcuxC1g0RvyELUmPytDlN1Edwv1q62g8mEFA6unrrN5tDmJ30/63WCB3Q9Fqfv3E0rhI16sKjkcm3Kjtq4q8IMQl/HdY2eeerkbQXaYuzvBC4lpFY6jYCdCfKbigKzTn1UfVTdGmU0pdVR0YQMJinVP98vaSZR+dlDQelldoSPup7IRGik6UgPQBC2qR8ukmyEPafkCCjyiI19OBjOit9WNBTUpRGR9Z+RARSk4dwsIexjtcVWD0XiNhu+ncbbM5oEbU2iNbfuKxXfQY7AGc/AgmV/FvGYYWxaRaqtFUGfAlH1AD/0NRqDoVFs6C9SKEQJq+a2Aq2w0QNHvAGlh0reeBlBabSFitgpZMnxTKtUKJ0abgTeG02tkpBsqee3GPSUFNNoFKTFRfYpxVQbn/jlTrElhxS5==",
+    "solution": "00xTenhsQwSk7gA9begI69/BTQVXGV1Z2BABPoCgqIBbcEEt4jD0G8dufI+cbbM5kmS34jt7w4WnXcF4umv3sj51T6QjENROnqQtrM9TZLooUecPp4xXqHJVCc6SrnKEFNO4tawPFumQZHSEXDEGlPCIpQuST8bwwEkM51P3rjxnapyz4GMByL+R77TebA+W196ERTtmVVpcEENQUezeyX+wPz9HYJV4M7ikuKDRhnCN1wQoYjavtxs4jUXv0szUQ8YCUSNFi5rCcH3cnk2id8cHqlaBc6iq3XdWjEKR12EN7KWw59d3dsl/MsNH1Bj7dIOETsFEQuv9AlWAhYelPSHV0Q==",
+    "max-score": 20
+  },
+  null
+]

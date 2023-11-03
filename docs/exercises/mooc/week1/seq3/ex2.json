@@ -3,7 +3,14 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "String Identifiers",
-    "stars": 1
+    "stars": 1,
+    "focus": [
+      "Variable declaration",
+      "string operators"
+    ],
+    "backward_exercises": [
+      "mooc/week1/seq4/ex1"
+    ]
   },
   {
     "id": "ex2",

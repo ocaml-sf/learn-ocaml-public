@@ -1,0 +1,43 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "A historic algorithm",
+    "stars": 1,
+    "identifier": "3.3",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "exceptions",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-manhattan-distance"
+    ]
+  },
+  {
+    "id": "3-a-historic-algorithm",
+    "prelude": "",
+    "template": "let rec euclid a b = failwith \"Unanswered\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>In this exercise, we will implement a historic algorithm formulated by Euclid himself in 300 BC.\nIn particular, we will work with the recursive version:</p>\n<center>\n$gcd(a, b) ={(a,if\\ b=0), (gcd(b,mod(a,b)), otherwise\\):}$\n</center>\n\n<h1 id=\"Objectives\">Objectives</h1>\n\n<p>Define a function <code>euclid : int -&gt; int -&gt; int</code> that, given two non-negative integers, determines their greatest common divisor based on the algorithm above. Thus, <code>euclid 36 45 = 9</code>. In case of an invalid argument, the exception <code>Invalid_argument &quot;euclid&quot;</code> is thrown.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "IjRYrzVoTJ5wq1QehqOrsGMDTVEeGR/UKERSXRCov1QebE5cA7zPFk/hu4Cctvkj6X82OopmgvLxEYcQezLTpQAjVR9yXxZK736aaYR1OPImTx/Pl0N1x6ZVFs6C9SLWA2KJrNBH4aKG2X3+ClhJvL42nQPPXoWuhR5PoYLKc8RFIQmzNltDzHmx7zzucxTkYokNMoEUBo9tRVJZW4ix78rnADlYLgc4MXGH6uXohlbW42MjLTOzxq1+7lLuZNz9+DYCUSgVl5q0tTmspVUyq85K/QeBdVG6F/UWjEKR+dJAjsu6lFdWhIpl32NTMV8fwMDBCIFZVODiCEnBxtC74CNxSMVjZ98NI+iJIfrkffA5DQQIEoACMj9QERUQdKeI30w1PUV58o1jNvis/aq8IMQllTMpNbuycBnVWOYuk0gK2pI1LVSGSYDl23Sr",
+    "max-score": 20
+  },
+  null
+]

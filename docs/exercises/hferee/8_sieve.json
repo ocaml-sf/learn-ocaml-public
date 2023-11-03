@@ -1,0 +1,30 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Sieve of Eratosthenes",
+    "stars": 2,
+    "focus": [
+      "list manipulation"
+    ],
+    "backward_exercises": [
+      "hferee/8_fold"
+    ]
+  },
+  {
+    "id": "8_sieve",
+    "prelude": "type liste = Nothing | OneMore of (int * liste)\n\n\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<p>The Sieve of Eratosthenes is an algorithm that efficiently calculates all prime numbers smaller than a given number <code>n</code>.</p>\n<p>The algorithm works as follows:</p>\n<ol><li>We build a list of numbers from 2 to <code>n</code>.</li><li>If <code>k</code> is the next number in the list, then it is prime, and we remove all multiples of <code>k</code> (except <code>k</code>) from the rest of the list.</li><li>We repeat step 2 as long as there are numbers remaining to be processed.</li></ol>\n\n<p><strong>Question 1</strong>:\nWrite a function <code>range: int -&gt; liste</code> that, given an integer <code>n</code>, constructs the ordered list of numbers from <code>2</code> to <code>n</code>.</p>\n<p><strong>Question 2</strong>:\nDefine the function <code>filter: (int -&gt; bool) -&gt; liste -&gt; liste</code> that filters the elements of a list based on a function with a boolean output.</p>\n<p><strong>Question 3</strong>:\nImplement the sieve algorithm in a recursive function <code>sieve</code>.</p>\n<details>\n    <summary>Hint</summary>\n    Use the `filter` function.\n</details>\n\n<p><strong>Bonus</strong>:\nCalculate <code>sieve 100000</code> in less than 20 seconds.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "8FoMKH0W9erzeCMVItxPbTMEAlo8XE/WOlQePkmdqM6bh5RqF7zIGyN/6fnc5M95oDSUDCYoqrqrE2Eex7rXq9Ij3TIsVMML7fYbxdNFZxccZJVPp0NRqG5QRYpcki4KAdbTtwhpBdOR1iv+AWI16+PHnBPVQ/uywDZJiZKOe8iqXU6sN18ytumuCBpW7HqoJ5cXXBE0Sk5yVkQXEMLhloGfQTkVYNs41i7suLiehnDENJRaYiLvxvF4jRG7Kg3bQ8YCUWIQ65rJcHas6AB9dyFO/UaBtkGdPFUWjEKRIxRAzcuclEdWqNAlOcNPIFPQdI7ERxELF+z9TUnJnhelP+YTHGlhkr4bc061WWrIJ0Z8QUkMER9ZGW9QERUQr38IOewBPVV5jkcm3Kjtq4q8IMQl/Hc81rv7xVaZE0Apq0gCN5JRY6CGChyl4bjEAGTn1UfVTdGmU0pdVR0YQwE76EC0jqiQTo+dlDQelldoSPup7IRG5QtVv+RNTIyL8qQcw6M10T8WgaekrFoBFvI/szNBRF1eGR9Z+WNUV9TpwhYm9EEcVWD0Xp50hr8hbbFz8X8AO8Fp/ffLXc9Rx7rXf52/V7h9R16Ii0lpxatSGeMjDcpB9r1reiMZQhpLiznEOgfOwNBVFuSZ3zaTQ7cIrLaHnEbBB5rwfAQ4iYfObSOzXkUb0JO+kPWhXF/u7CWjYQ1EAEV1SoswT/ZQXvPhnECnBj50YIN44z+scLjjuGTEJwR84XLfvfk4skejYcepBSlCWSRFnAqRcHLm6F69qmhK/ViBulbWPFUWjEKRIxRAzcuclEdWqNAlOcNPMU8fdI7ERxELF+z9TUnJnhelP+YTHGlhkr4bc061WWrIJ0Z8QUkMER9ZGW9QEQUZs37e2PYU+Rpq/VE6O3PubPqnN093/Hc81rOg7kaZE+JYlqlW4ll4+8vGChyl4biaYnrjNEfXHI8jBa9bKBunQwE76EC08u7DGjyf6Xwh6pZbBxX6cdUBpEJ0bqAnHd+HjfBlfVl1F8jCqrTkdRIN+hUes7dIH66UZB90O//UQkWefJZdapdyRWC5Tj6hqL3cf455lSbb4jNnfvK6Xc9Rx7rXq9IjA/F7EIYL74RaeYQAZPJoTwVPp0NRqDoVFs6C9SKEQJq+a2BPFumQNDqTTmFIbqCI6E+BCpSgsDBz71rHi8jz08ZH2JOmaqjoXERB7CX/J6UnH/RKTFUcEHFkOuyx7W8rPzhULwILK54rgP7hvCCH3cAfHDOgcvEarTr7KcHuDDYKWGI2zCGJcDvkpVIyrnILqjU=",
+    "solution": "Kne9V9fa+pK7kVew2uwQ0zMNCB5RSko++VFETRDnfI/hbUE54jD0XiMoffmjbad5k8TANnYdfrP7HPMRx7rXbpg/RkE8R2hL50cahIQR04JgI2tKuPpDbTQ3Gs5DlzGNS0H+aZ9BFqjF0Dr2TkdHuu8Bn5GuITa/hR/MjheYcCAuYvFOCe9vHvDTXrY8aixqIAJNURF4TF1vRF6+XwPxnDrfHTleLhdXO80vuLD/hjGH2egaYiLvavEp/kTPZMXeSyhOUTYZ65+XcDfhiABtyTdLbACTc/ylMFVXzpGYKhQUt2uczQEWaYVtOelAZQCmqtbr0I9BF34uAlm27t3h0lQ6xVQBxWUCt2EXcTPvPnAiQU2FOkV1TW/WWF/EaLuI40w1FkV5/oxy3Pawaqr72ZplkTp51q37gpvXUqZ7jPBxN5JRY9nGZ1+5NfTKRjTa0leHCw3mEPca4o0YQwFb6CaVygC4HVOlzD5e6lYoR3Tpp1JGops2v4AFC14LmfF/AWuOTArAZRf5zB+u2rYgLWwITR5eGR9Z+RARFRDdwJsbr5BxDWC+HDBhbY+cbfwroHXBJjM1w40wFw2W7AH0boYjUR5yRtMLoaR7ohQAKL1/TstA8dpVcWwVTs509TbEGZrXtwRPTumMK8qDTi5GlPCInAPVCl4tgllNiJOOfTkHNbcBGvR/AtbQXv2jbixALBUFBVc3GRRiEHc+RPG66ynQQTkVYI24HD0xp4Kww77MOJQu+yLyqKEp/kTPZMXeSyhOUSRZn/aMwya/n9dv8TUHplbJr/HxNXdWjAq4ItUVpcuk55gYbgUl22w/GpSawI8XDdR2UKyvTVG8nhfh3FV7ellA9zhFtgAGwnbyZjhfQQADVR/BGXUOEQUQdK07OexN3AF57Rxp3Omgg4r7Yh1l7Xd/JfT6cR+WXh5u/egC+5IaLUTOQt3m4bC+ACWoMzSVTdGmD0oTGkOkD1Ny8A7XjvyZTor7lHVr7ldgJeSkg1tUoAN2w+QMDduC6aQkRnqsV5raK9SuioDYMrht07sITR5YMo9ZIFhRRkXqhI/rh9FTG8STF8lau+Tqrvky5TT+2zwYpA==",
+    "max-score": 11
+  },
+  null
+]

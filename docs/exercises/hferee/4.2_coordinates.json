@@ -1,0 +1,31 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Change of coordinates",
+    "stars": 1,
+    "focus": [
+      "Record",
+      "variant type"
+    ],
+    "backward_exercises": [
+      "hferee/4.0_rock_paper_scissors"
+    ]
+  },
+  {
+    "id": "4.2_coordinates",
+    "prelude": "type cartesian = { x: float; y: float; }\ntype polar = { r: float; angle: float; }\n\n\ntype point = Cartesian of cartesian | Polar of polar\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<h1 id=\"It-39-s-time-to-coordinate-point\">It&#39;s time to coordinate, point!</h1>\n\n<p>The following record types represent two ways of representing points in the plane.</p>\n<pre class='ocaml'><code class='ocaml'>type cartesian = { x: float; y: float; }\ntype polar = { r: float; angle: float; }</code></pre>\n\n<p><strong>Question 1:</strong></p>\n<p>Write a function <code>cartesian_of_polar</code> that converts a point in polar coordinates to cartesian coordinates.</p>\n<p><strong>Question 2:</strong></p>\n<p>Define the function <code>middle_cart: cartesian -&gt; cartesian -&gt; cartesian</code> that calculates the midpoint of two points.</p>\n<p>We now define the type <code>point</code> that can represent points in the plane using either of the representations.</p>\n<pre class='ocaml'><code class='ocaml'>type point = Cartesian of cartesian | Polar of polar</code></pre>\n\n<p><strong>Question 3:</strong></p>\n<p>Define a function <code>middle: point -&gt; point -&gt; point</code> that calculates the midpoint of two points, regardless of their representation.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "vOMBFC3sPu6ML0HR+WquUmMEAlo8XE/WOlQePkmdqM6bh5RqF7zIGyN/6fnc5JhKey8RKjNfhfKd229RdWeDpRBmUQQrRIZuf2gae1VTMIl7DctG/3xraiQQVZNClziAB3S0uxRP2smfNDrVGycIdqzI7V7uCoXtaA53nxL2tR3x",
+    "solution": "drQKp85Rpqj6oOshST1OoopRA5BQSo/COptRVFebwIkzr/pXVWCAXnshtKmqbb9roH40LGtmwOXsGsAKxyKXxlJ9A/stENVCoapbxdNMI4svTt6/fg92bW6VWgEGkWeBPc70uhRPVenSNC0TFDEQbrjI8A3BBUjwulNMndXWaTjoukeQ2UrQdOSKx8FGR67B+EcND6cAEB/zH6EHHvLx/RGQDX5BYJhRICiaf1KhxyKQNI/aJS39h4UW//bIKg47Q9ZNHSNC6/rJbWHsolEjw8Q2iAfPmBefQpVZ/APDIsRvzcv6lCoXexRo+JxO4l7dqd3ESgdLUb0uZj0F8sul1P4/GxhbUNGwww3aOWQJEcUzE5QNXo9RVCBUVV/VovrJ+3gBNRAr7Ax6P2LqaKziIIUc/H1zPLyidovzUrNgpehAPpse",
+    "max-score": 0
+  },
+  null
+]

@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Implementing Nondeterminism with Continuations",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "fpottier/merge_sort"
+    ]
   },
   {
     "id": "nondet_monad_cont",

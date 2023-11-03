@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Tuples manipulation",
+    "stars": 1,
+    "identifier": "1.11",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "tuple manipulations"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F1/1-type2"
+    ]
+  },
+  {
+    "id": "1-tuples",
+    "prelude": "",
+    "template": "let answer = Unanswered",
+    "descr": [
+      [
+        "",
+        "<p>Consider the following definition: <code>let n1 = (1,2,3,4,5)</code></p>\n<p>How to access exclusively to the fourth element of <code>n1</code>?</p>\n<p>A) <code>n1[3]</code><br />\nB) <code>n1[4]</code><br />\nC) <code>let a,b,c,d,e = n1</code><br />\nD) <code>let a,b,c,_,e = n1</code><br />\nE) <code>let _,_,_,a,_ = n1</code><br /></p>\n<p><strong>Note:</strong> If you believe that the correct option is <code>A</code> then you should answer as follows: <code>let answer = A</code>.</p>\n"
+      ]
+    ],
+    "prepare": "g1LzEqye1MbmaAryJD2lpDcBLloNGXxZNRBkFUng816yr8RmFCfICDYvfO7X",
+    "test": "Oqht2JEO1KHfv8LJCjpTfSYPTTgUSVZLPTxeWVXsfIk8vlE54jD0DDYtlqmqsKRn5W4H4jEVrOP/Fw2WxzePboBkSpIyEwl674QuvN2UGfQpHNpO5adUpilSVgEMpy0eEcSWvIQGW4LQTmfHF7sIr08HmQXE26WugQM4ixe1c624h7or9XIdduPVL1U2OQedMBQBGBFg3R9xQlVvQa7z5Wa8Pyh2JZ5U1mq7fP7ExyOQNPQ4YmSaeKFXlBGqNZ4eG71x",
+    "solution": "0uQvyMHcXHyPc3Zd0Ad=",
+    "max-score": 1
+  },
+  null
+]

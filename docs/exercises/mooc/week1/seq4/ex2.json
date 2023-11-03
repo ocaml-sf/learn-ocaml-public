@@ -3,7 +3,13 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Simple Functions over Strings",
-    "stars": 1
+    "stars": 1,
+    "focus": [
+      "String functions"
+    ],
+    "backward_exercises": [
+      "mooc/week1/seq3/ex2"
+    ]
   },
   {
     "id": "ex2",

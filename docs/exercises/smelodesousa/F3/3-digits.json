@@ -1,0 +1,42 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Digits",
+    "stars": 1,
+    "identifier": "3.6",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-pi"
+    ]
+  },
+  {
+    "id": "3-digits",
+    "prelude": "",
+    "template": "let rec digits n i = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<p>Implement a function <code>digits : int -&gt; int -&gt; int*int*int</code> which receives an integer $n$ and a digit $i$, and returns the number of times the digit $i$ appears in $n$, the sum of the digits of $n$ and finally the number of digits of $n$.</p>\n<p>For example, <code>digits 1073741823 3</code> would return the tuple <code>(2,36,10)</code>.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "2DEP6S5EI5GyhbT+N3wsiSYPTTgUSVZLPTxePkmdqM6qaoJwK83SCmtHarPouu2w7ivUYzNYfvLSGwwFfjTZs8/CRp9jEIRamK1uqxZc+N6oTwVPp0NRqDoVQwlRoViCF2WZvZ9AWMPCSivUDy5Gv+TikpyNX9H5fpNz71rOcDleYUuLKAs7BvvGvNxg/CKA4UEEA9UZFA2wWVcBGqCzyDHmDj9xYPF41i7suLiehnDENsAjJDrbd+NkjRG7Kg3bQ8YCUToDol0ZrDvay5BtsCQA/U4Itkn7PFk9zQmV01/OlwSwlFYPw19sItwWKEHjdIDjBdcPWrSvBAL2nga9NDJLSttx1G2Sdgnx9nzHZdNgUFRzER9ZGW9QERUQrZPAKeZBLVp2dVcm3Kj//aq8IMQ3jDxi1rKuxULmE+JhlrxcZE1CNkmSCbzUV3jEQT3zD6iUAY8yCMNaHVO0CZF6npT3w0nDGo01tDRc65EoQPPp6Zwt5Qsra3E3GP+1ofBkRDIF6il9L6jchQ==",
+    "solution": "tmVKWpH4t27YJr/1utgvdHJITURJCoVA3ooLBozgc15mh/AcXzCDTXchcLjcdONgk87UJXJnh+LeT2Ae7G4Sf9JaUShyQ2NKo4Qoe1lA34IhCJVH8eM1di6VBd6L9TbECZrOsZUBFviQ1X3AC8FYlNuEpRKBWVDvwA9FmxL+wmjo1F20FPfhjNpeuFC/z7WvJp5KBUVKZ/5dSBF0EPDxkTrQQTkVYJIZ1m+st0iuhiSM12wa+jLztvkPlDr7Kg3bBiwRFGIY89L+7mvdlUExd8cOiE0Ntobd1RwSjFOBLxRR9sujlE2ScZ2c0hAp1Bj7dIDKRxhLBLzsTQWAhYel2LF+H/sA9u8QjSjHF++KJbZ8DllFGB9EGX5QFoMQt+0IJuwRNFUl9oxc3KWct3qqM1lllTMpNbuzfB7QR4FUkrt+N9oRKmx=",
+    "max-score": 20
+  },
+  null
+]

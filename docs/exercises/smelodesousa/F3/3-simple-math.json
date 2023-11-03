@@ -1,0 +1,42 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Simple math",
+    "stars": 1,
+    "identifier": "3.1",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Melo de Sousa",
+        ""
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "floats"
+    ],
+    "backward_exercises": [
+      "mooc/week2/seq1/ex1"
+    ]
+  },
+  {
+    "id": "3-simple-math",
+    "prelude": "let pi = acos (-1.0)\u000D\n\u000D\n(* equivalente a Float.pi *)",
+    "template": "let distance p1 p2 = failwith \"Unanswered\"\nlet area r = failwith \"Unanswered\"\nlet sin2x x = failwith \"Unanswered\"\n",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<ol><li><p>Define a function <code>distance : (float * float) -&gt; (float * float) -&gt; float</code> that calculates the distance between two given points in parameters.</p>\n</li><li><p>Define a function <code>area: float -&gt; float</code> that calculates the area of a circle whose radius is given as a parameter.</p>\n</li><li><p>Define a function <code>sin2x : float -&gt; float</code> that, given a floating parameter x, calculates the following expression:</p>\n</li></ol>\n\n<center>\n$\\frac{2 \\times tanx}{1+tan^2x}$\n</center>"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "nH13Ax78PAT2jcAw5CoklzNLQloJMmNVLEQRUVyvqI/kbQQcBXH0DjFhtI+cbfc/9DTM0zcnteO6Qs/BtnqWdAYjW9NrENdZ73/aqZYAL0o0TwU19OEFqDQGRhlDpj3ESMPIa2kBFrTBPTqYQTE0vfXJk5OBAlnewEBC7ZK4aTSrGAZH8aIxFdu4lCOALHX+K9FHQ6FLGRNyEEMaGLPxzHKfSmNVMhxKM7uxuOaefSyrHs5fNiKgfbcN5RHfKhvbUD5SUW536/aIrybk6Acvdy/4zkaBrFbd0pRDzRDUIxpUjwTc7EY4/5==",
+    "max-score": 30
+  },
+  null
+]

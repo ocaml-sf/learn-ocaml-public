@@ -1,0 +1,42 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Function Calls",
+    "stars": 1,
+    "identifier": "1.12",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "function call",
+      "types"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F1/1-tuples"
+    ]
+  },
+  {
+    "id": "1-fun-calls",
+    "prelude": "",
+    "template": "let answer = To_Answer \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<p>Let <code>f</code> be a function of type <code>(string * string) -&gt; string</code>.</p>\n<p>Which of the following expressions is a correct call of <code>f</code>?</p>\n<p>A) <code>f a b c</code><br />\nB) <code>f (a,2)</code><br />\nC) <code>f &quot;hello&quot; &quot;world&quot;</code><br />\nD) <code>f (&quot;hello&quot;,&quot;world&quot;)</code><br /><br /></p>\n<p>**Note:*** If you believe that the correct option is <em><code>A</code></em> then you should answer as follows: *<code>let answer = A</code>.</p>\n"
+      ]
+    ],
+    "prepare": "WYbup6Pt6kfDXLDzbhEj2DcBLEoNGXtZNRBnFUng8M6yr8VnK5GVDCQcafmnq3Nm9G02MSQ=",
+    "test": "0ZzG0lg08Maz6EpWFMctEnYPTTgUSVZLPTxeWVXsfIk8vlE54jD0CmYub2PuruFw6X0YO6pmu3PxEYwFiX8Yd627SohtOxYL74QEfNBZ4qInBsxG5qZRpToaFs6C9SDFDt7NrIJNPJ+11WaTRm6IgcvI6BXEXjuehRhZoZbOcDl7n1M6T7aJyLLeAFcW6UNwYlEMHlVzS/5yWUVM0av58X8oQXh+JJh5M7qguNj0hj+R3wRi+yLyqIs4jVTfOul=",
+    "solution": "Pi1zxn71Y5kjvnWsxpU=",
+    "max-score": 1
+  },
+  null
+]

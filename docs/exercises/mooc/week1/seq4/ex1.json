@@ -3,7 +3,13 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Simple Functions over Integers",
-    "stars": 1
+    "stars": 1,
+    "focus": [
+      "Numeric operators"
+    ],
+    "backward_exercises": [
+      "hferee/1.2_declarations"
+    ]
   },
   {
     "id": "ex1",

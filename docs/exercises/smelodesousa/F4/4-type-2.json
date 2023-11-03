@@ -1,0 +1,45 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Verify the type II",
+    "stars": 1,
+    "identifier": "4.2",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "types"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F1/1-fun-calls"
+    ]
+  },
+  {
+    "id": "4-type-2",
+    "prelude": "",
+    "template": "let p1 = failwith \"Replace with your solution\"\n\nlet p2 = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<p>Consider the following code:</p>\n<pre class='ocaml'><code class='ocaml'>let rec f x =\n  match x with\n  | 0 -&gt; 1\n  | 1 -&gt; 1\n  | n -&gt; f(n-1) + f(n-2)</code></pre>\n\n<ol><li><p>Does the function always terminate?</p>\n<p>A) True<br /><br/>B) False<br /><br /></p>\n</li><li><p>What is the type of the function?</p>\n<p>A) <code>int -&gt; int</code><br /><br/>B) <code>int -&gt; int -&gt; int</code><br /><br/>C) <code>int</code><br /><br/>D) <code>ERROR</code><br /></p>\n</li></ol>\n\n<p><strong>Note:</strong> If you believe that the correct option is <code>A</code> then you should answer as follows: <code>let answer = A</code>.</p>\n"
+      ]
+    ],
+    "prepare": "oha9lk87wZKBPs0wSk2fvDcBLEoNGXtZNRBnFUng8M6yr8RmFCfICDYvfO7csKU5/jDGN7lk",
+    "test": "m/HYfXaBal6rLoH1hxVQs7YPTTgUSVZLPTxeWVXsfIk8vlE54jD0DDYtlqmqsKRn5W4H4jEVrOP/Fw2WxzePboBkSpIyEJ1J73cVeYRmI0E/BcxBp0tvqE5QTxoC9l41B1zZsIMKFviKNDyTVDEus0TN6ETSRFyddAQDodzO7TGuAZjy4eWfGmwQXZW5bkvkNmh0DUNQWFt/VWgUVa766z8rPzh+LIhLO8486uiehnDENJRaYiLvxvE9iEXeMZ4cCy/LE71Qbpr8cHas6AB9dyFO/UaBtkPtLV14dz82ZcBAixLqlFIdqNBy4x1pYRvkscuBF2ILFdejDA8A61yl3N/EmbQjgqd0KFJ28xvqHgUzA69FX/1ZERIQZVBIe38KXrIE0oYw7Bwm+u3tqaqhIK2elDw81LyseQvNWOk//0haO76RY6CGChyl4bjEAGSzNBiBMJ4nAaVcFkv2P2B/oQyV7+zqHFyp6WBnyAE0SPup7IRG5QtVv+RNTPLOjvly5ULVfD0jaosHUH3VxKd4gzNBTUpRGR9Z+lADFozTpxRbe9EkXGDG2XNharyw6LF//jHYKjNnfvK6Xc9Rx7rXq9IjA/EC1KpL70Utr4sTJ0phGtpp5qtUai2VVZ1GkFiFEda+y0BPUOz3NDP+TmoWlPCIal0EUpSnwA5Uze+9",
+    "solution": "Bu6v5IfcWHDXvEOyrLQPSDNTTVER3A==",
+    "max-score": 2
+  },
+  null
+]

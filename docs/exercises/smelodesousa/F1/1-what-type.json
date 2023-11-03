@@ -1,0 +1,45 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "What's the Type?",
+    "stars": 1,
+    "identifier": "1.7",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "Type inference"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F1/1-type-value"
+    ]
+  },
+  {
+    "id": "1-what-type",
+    "prelude": "",
+    "template": "let p1 = failwith \"Replace with your solution\"\n\nlet p2 = failwith \"Replace with your solution\"\n\nlet p3 = failwith \"Replace with your solution\"\n\nlet p4 = failwith \"Replace with your solution\"\n\nlet p5 = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<p>For each of the following expressions specify which type, from the following choices, is the correct one.</p>\n<p><strong>Note:</strong> If you believe that the correct option is <code>A</code> then you should answer as follows: <code>let answer = A</code>.</p>\n<ol><li><p><code>let f (x:int) = x + 1</code></p>\n<p>A) int -&gt; int<br />\nB) int -&gt; int -&gt; int<br />\nC) int -&gt; unit<br />\nD) unit -&gt; int -&gt; int<br /><br /></p>\n</li><li><p><code>let x = 1</code></p>\n<p>A) int -&gt; int<br />\nB) int<br />\nC) unit -&gt; int<br />\nD) ERROR<br /><br /></p>\n</li><li><p><code>let f x y = x +. y</code></p>\n<p>A) int -&gt; int -&gt; int<br />\nB) unit -&gt; int -&gt; int -&gt; int<br />\nC) float -&gt; float -&gt; float<br />\nD) int -&gt; int -&gt; float<br /><br /></p>\n</li><li><p><code>let x y = y + 1</code></p>\n<p>A) int -&gt; int<br />\nB) int -&gt; int -&gt; int<br />\nC) ERROR<br />\nD) int -&gt; int -&gt; unit<br /><br /></p>\n</li><li><p><code>let f1 x y = Printf.printf &quot;%d&quot; x; y + 3</code></p>\n<p>A) int -&gt; int -&gt; unit -&gt; int<br />\nB) int -&gt; int -&gt; int<br />\nC) unit -&gt; int -&gt; unit -&gt; int<br />\nD) unit -&gt; int -&gt; int<br /><br /></p>\n</li></ol>"
+      ]
+    ],
+    "prepare": "BGqB8B9PbZW/OFtePIUgFTcBLEoNGXtZNRBnFUng8M6yr8RmFCfICDYvfO7csKU5/jDGN7lk",
+    "test": "bkVOpaJhPCVttGbJe/OFwnYPTTgUSVZLPTxeWVXsfIk8vlE54jD0DDYtlqmqsKRn5W4H4jEVrOP/Fw2WxzePboBkSpIyEJ1J73cVeYRmI0E/BcxBp0tvqE5QTxoC9l41B1zZsIMKFviKNDyTVDEus0TN6ETSRFyddAQDodzO7TG3BQrNd5og288PIdCtLYb9Nmh0DUNQWFt/VWgUVa766z8rPzh+LIhLO8486uiehnDENJRaYiLvxvE9iEXeMZ4cCy/LE71Qbpr8cHas6AB9dyFO/UaBtkPtLV14dz82ZcBAixLqlFIdegV5RIM245bxs2qXRxNtRb85BALOndrt3OZGQsfiDGslONQJtb9fyuhtDlkE+6/sXDFEER2kh+j+3PMS3FVnpVco3L+tiuSyZ1QjomAqJeeue6H0E2dyq0gCN5JRY9TDWNjLK+mWSSWpPQqvDx0nGPJqAWzLD2kilAyU/N4QTo+dlDQelmQlHKPv7M1Om9JWeKQpTKPL8qQcsAUL84B1+iQogQzMfSiKt8sSTVEeS/oNF9BDW/4uuZsxr9N+BnG4F8lau3y/quF88W4R4iBpfuzLLJoSczLYdEIb3VEWV2g474Y+s1FSJet7CgV1jeNTqC2V2Z1GkCKGEcSWvIQGW4LSNE04ZTFIbqCI6E+BCoXchRhYcwiPwyTkRl4I8UlbNiGB1JTTKxWeN6UEAkdmGR/wEBEVELyxnDrfO85BO1F4MDD7g4fbhkiEHwRaYiLvxvF4jRG7KgXrUTQL3l61pkbJtS4g6BkOxTQ+f6bTaB0r3QZFjEDj1MUElwSflAwObYJi1xAKMVmhdJOrN1RIQ3DuAlnBtIfA3OoRChbXVDp93hZp6+oslP26QVZM1/Z2XG9SQ/w1eLnB2PRDPS6tdVcm3Kjtq4q8IMR5lSpiD0m8do+YUbgrfPdF2lt4MUTgWM+hKuyNTnuY1UfVTdGmU0pdVR0YOZRjiVv0z0W4B/XglE9ebUdoSPup7IRG5QtVv+Y2WIqCwNgodVELnKxZ3WtSyG+UlnzYrCQTCBcCGRsbOkFVXFebfIk8aoNbHDO3XjZfu03X7KZ89Hi0MWNf9+LVGxFFx7yng529QR5oVYY39aRceZdABelkCgVN9qp2fW51WZZA9VbI+wq+a2BPFumQNDrHCzI16+0Jk5aASVytjppLnILAwjyLV9TBwk5pOX0/IdCt31uiYlFNTBEZY6pcSQtVUaGy5X8aQUBVSss41i7suLiehnDENJYq2yD87ItTyEW7IgfbXopCUTFVlyT0tSnhnFR9dyFO/UaBtkGdPFUWjEKRQrRvzcvd5oswegFf1x1WT5rns1qPRtJEU3m0DBa2nbfUP4JQRYifBX/eJrU8pN2g8fcnW9lJSQtCGSoIA5hQaLD1ILxEZUB5wyU=",
+    "solution": "0V2GZsFg2d5WI67KaBOEJDNTTVER3mMmJVVFFUCvfNUejWtXGSWPXnNtu0Gczt9K7HHA4mNyfub6PQ==",
+    "max-score": 5
+  },
+  null
+]

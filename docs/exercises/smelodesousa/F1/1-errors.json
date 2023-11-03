@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Errors",
+    "stars": 1,
+    "identifier": "1.5",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Errors"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F1/1-future"
+    ]
+  },
+  {
+    "id": "1-errors",
+    "prelude": "",
+    "template": "let quarter_pi = \"Replace with your solution\"\n\nlet in_order = \"Replace with your solution\"\n\nlet positive = \"Replace with your solution\"\n\nlet double_positive = \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<p>Evaluate the following expressions, observe the resultant error messages and propose a correction, i.e., a correct expression that solves the detected problems.</p>\n<ul><li><code>let quarter_pi = 3.14 / 4.</code></li><li><code>let in_order = 1 &lt; 2 &lt; 3</code> </li><li><code>let positive = let a = 42 in if a &gt;= 0 then true</code></li><li><code>let double_positive = let x = cos 5. in (if (x &lt; 0) then x else -x) *. 2</code></li></ul>"
+      ]
+    ],
+    "prepare": "",
+    "test": "EKP/WSGws7dqs4zonwTiFSYPTTgUSVZLPTxeWVXsfIk8vlE54jD0DDYtlqmqsKRn5W4H4jERw4DmGwwFfjXQq6N8RpIjW1/F73VceZdvZPICCcY07Pp4qDQrFvpHnX+EQtvPqII0UbfqZHLJTmNIh4DunpLECo4ffpEZiYLBr8c48vpcI2im4HqKs47Iqu6FNpQ3GGgPWEt5UVNZV1+w8iumDjhBHh5QPnigg4KknSDENJRaYiLvxvF4jRHZLtPyWDZEHSkRl5qlcFXs6AB9dyFO/UaBtkGdP5RDzRDFZcYangPajWUddJV5OgYXIl8yjx7EF1R4+qyjA5q08sjyPVjQelVmzLAxMxTnbNyuaRYiCAICEQt0GXIfERV8aKr11qUPPVl0jntjIPztqeKsXhszlDxo+Ov5xUTZ1rkqlugAZUl2NlTPRM4j4gCIKzTn1UfVTdGmU0pdVUK2E1V2l5HJ9enSAkPD9XNfz5F7HIW8od5TkUJ+ghgNTIyL8qQcXaO5FnH27H9q9fahnqHiCWMdTWYRGR9Z+RARFRCgfM5erA6mK7bJGmYvufWXl+c/9DTRJiBnch76XhwUc/THeAkoUBQoQhYJfutsqdFDMLtaCZU3/PYCfHU+WN6R9nK4+wq+8wUMQqW438q0NDEdqf816ETRRE05dAQ+mNGOc8kEddNYZZ8m477Fb+i1ca1LYUEpQDtZGR/wEBEVELyxnDqrBGhBHhl3ITHteqGbyGGD22loMC+Vd3hT8EXuZNzUQ8YCUWIQ65rJcHas6Hs6w76U/QjOaBjdQVUdjEKRIxRAzcuclEdWqNJ92IAGZQGtsYvN0KsHUPj9CBS2ngP3PVb5gUN38+EmPJ8pvcrbr7YtEodJU9kQVnhQQEBVfunB2PRBKV25pHVm3Newavbv0hxlyAR8BvafcVa0V3kbk4IHSVI3MVySQsboZ3jGAHanE5HRCtGoAqNpAEKRD2d56DjXdPiQTo+dlDQelldoSKfkjcAgklwHhOUPAMnlmeNdFuimQkfOqDAryqniowShRWNBTUpRGR9Z+RAR06Xst2IeaAknFDT0IyNSu+ncbbM5oDSU4jNnfvD/EIoTezexe5k/SpUuRtMJ5NgVx1FUZPwhTx6/p0MCbW5vRJlRoGeQQJq+a2BPFumQNDqTTmFIbwDxu9+BS90cjohNohL+uUI1rbVU+sjpMmbPnuy0fu5/AlELGVdZERBwHQdaELzTnHe7UCZVJYNN+H8xcKe5hjW1IJQCSQ==",
+    "solution": "mOgU1el9ouj8wk6iNh3gKWNSQklFGRYX+QQ4PmukuZpedpcCG8K4G7FhtKnkfrMdoC+24jVlfvvmXdURtSKc/AgmV/EnXcVCi0lwvIQ2ZLhlGwUOp+gRvCgVXgZClCK+XZqKkaxDUb8Q1HSGDXlN6+DHkpaVQ9PtwFBMoYe+cGWAs5ApxnKHbqy7QlZyoqBnYl9VTAlZCR2gGRFBWPnznGOfBHEGJ2sS4SC9uL4khmLK",
+    "max-score": 4
+  },
+  null
+]

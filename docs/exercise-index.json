@@ -11,7 +11,11 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Integer Identifiers",
-              "stars": 1
+              "stars": 1,
+              "focus": [
+                "Variable declaration",
+                "int operators"
+              ]
             }
           ],
           [
@@ -20,7 +24,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "String Identifiers",
-              "stars": 1
+              "stars": 1,
+              "focus": [
+                "Variable declaration",
+                "string operators"
+              ],
+              "backward_exercises": [
+                "mooc/week1/seq4/ex1"
+              ]
             }
           ],
           [
@@ -29,7 +40,13 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Simple Functions over Integers",
-              "stars": 1
+              "stars": 1,
+              "focus": [
+                "Numeric operators"
+              ],
+              "backward_exercises": [
+                "hferee/1.2_declarations"
+              ]
             }
           ],
           [
@@ -38,7 +55,13 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Simple Functions over Strings",
-              "stars": 1
+              "stars": 1,
+              "focus": [
+                "String functions"
+              ],
+              "backward_exercises": [
+                "mooc/week1/seq3/ex2"
+              ]
             }
           ],
           [
@@ -47,7 +70,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Tetragon",
-              "stars": 2.5
+              "stars": 2.5,
+              "focus": [
+                "Logical operations",
+                "tuple manipulations"
+              ],
+              "backward_exercises": [
+                "smelodesousa/F4/4-type-4"
+              ]
             }
           ],
           [
@@ -56,7 +86,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Enigma",
-              "stars": 2.5
+              "stars": 2.5,
+              "focus": [
+                "Arithmetic operations",
+                "recursive functions"
+              ],
+              "backward_exercises": [
+                "smelodesousa/F3/3-catalan"
+              ]
             }
           ],
           [
@@ -65,7 +102,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Time on Planet Shadokus",
-              "stars": 2
+              "stars": 2,
+              "focus": [
+                "Record manipulation",
+                "recursive functions"
+              ],
+              "backward_exercises": [
+                "hferee/4.2_coordinates"
+              ]
             }
           ],
           [
@@ -74,7 +118,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Points and vectors",
-              "stars": 1.5
+              "stars": 1.5,
+              "focus": [
+                "Arithmetic operations",
+                "Record manipulation"
+              ],
+              "backward_exercises": [
+                "hferee/5.2_sierpinski_vg"
+              ]
             }
           ],
           [
@@ -83,7 +134,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Searching for Strings in Arrays",
-              "stars": 2
+              "stars": 2,
+              "focus": [
+                "Array manipulation",
+                "recursive functions"
+              ],
+              "backward_exercises": [
+                "smelodesousa/F3/3-dichotomy"
+              ]
             }
           ],
           [
@@ -92,7 +150,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Finding the Minimum",
-              "stars": 1
+              "stars": 1,
+              "focus": [
+                "Array manipulation",
+                "recursive functions"
+              ],
+              "backward_exercises": [
+                "mooc/week2/seq3/ex1"
+              ]
             }
           ],
           [
@@ -101,7 +166,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "A Small Typed Database",
-              "stars": 3
+              "stars": 3,
+              "focus": [
+                "Record manipulation",
+                "recursive functions"
+              ],
+              "backward_exercises": [
+                "mooc/week2/seq2/ex1"
+              ]
             }
           ],
           [
@@ -110,7 +182,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "First In First Out",
-              "stars": 2
+              "stars": 2,
+              "focus": [
+                "List manipulation",
+                "pattern matching"
+              ],
+              "backward_exercises": [
+                "hferee/8_sort"
+              ]
             }
           ],
           [
@@ -119,7 +198,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Classic Functions Over Lists",
-              "stars": 2
+              "stars": 2,
+              "focus": [
+                "List manipulation",
+                "pattern matching"
+              ],
+              "backward_exercises": [
+                "smelodesousa/F5/5-horner"
+              ]
             }
           ],
           [
@@ -128,7 +214,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Symbolic Manipulation of Arithmetic Expressions",
-              "stars": 2
+              "stars": 2,
+              "focus": [
+                "DSL use-case",
+                "Variant"
+              ],
+              "backward_exercises": [
+                "smelodesousa/F5/5-randomness-is-hard"
+              ]
             }
           ],
           [
@@ -137,7 +230,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Tries",
-              "stars": 3
+              "stars": 3,
+              "focus": [
+                "Option type",
+                "char and string manipulations"
+              ],
+              "backward_exercises": [
+                "smelodesousa/F5/5-pizzaria"
+              ]
             }
           ],
           [
@@ -146,7 +246,14 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Type Directed Programming",
-              "stars": 1
+              "stars": 1,
+              "focus": [
+                "Code comprehension and update",
+                "fixing warnings"
+              ],
+              "backward_exercises": [
+                "mooc/week3/seq2/ex2"
+              ]
             }
           ],
           [
@@ -155,7 +262,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "An Implementation of List with an Efficient Concatenation",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "mooc/week3/seq4/ex1"
+              ]
             }
           ],
           [
@@ -164,7 +274,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Balanced Binary Trees",
-              "stars": 1
+              "stars": 1,
+              "backward_exercises": [
+                "smelodesousa/F4/4-fun-2"
+              ]
             }
           ],
           [
@@ -173,7 +286,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Using First Class Functions",
-              "stars": 1
+              "stars": 1,
+              "backward_exercises": [
+                "mooc/week3/seq4/ex3"
+              ]
             }
           ],
           [
@@ -182,7 +298,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Functions Returning Functions",
-              "stars": 2
+              "stars": 2,
+              "backward_exercises": [
+                "mooc/week4/seq1/ex1"
+              ]
             }
           ],
           [
@@ -191,7 +310,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Optimizing Partial Applications",
-              "stars": 2.5
+              "stars": 2.5,
+              "backward_exercises": [
+                "mooc/week4/seq2/ex1"
+              ]
             }
           ],
           [
@@ -200,7 +322,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "A Small Arithmetic Interpreter",
-              "stars": 2
+              "stars": 2,
+              "backward_exercises": [
+                "mooc/week4/seq3/ex1"
+              ]
             }
           ],
           [
@@ -209,7 +334,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Using and Writing the Map Function",
-              "stars": 1
+              "stars": 1,
+              "backward_exercises": [
+                "mooc/week4/seq3/ex2"
+              ]
             }
           ],
           [
@@ -218,7 +346,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Optimising a Tree Traversal using Exceptions",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "mooc/week4/seq4/ex1"
+              ]
             }
           ],
           [
@@ -227,7 +358,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Unraveling the Automatic Grader",
-              "stars": 2
+              "stars": 2,
+              "backward_exercises": [
+                "mooc/week5/seq1/ex1"
+              ]
             }
           ],
           [
@@ -236,7 +370,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Printing Lists",
-              "stars": 1
+              "stars": 1,
+              "backward_exercises": [
+                "mooc/week5/seq1/ex2"
+              ]
             }
           ],
           [
@@ -245,7 +382,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Displaying a Filesystem Hierarchy",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "mooc/week5/seq2/ex1"
+              ]
             }
           ],
           [
@@ -254,7 +394,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Printing with Loops",
-              "stars": 1
+              "stars": 1,
+              "backward_exercises": [
+                "mooc/week5/seq2/ex2"
+              ]
             }
           ],
           [
@@ -263,7 +406,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Producing Fine ASCII Art",
-              "stars": 2
+              "stars": 2,
+              "backward_exercises": [
+                "mooc/week5/seq3/ex1"
+              ]
             }
           ],
           [
@@ -272,7 +418,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Rotating the Contents of an Array",
-              "stars": 1.5
+              "stars": 1.5,
+              "backward_exercises": [
+                "mooc/week5/seq3/ex2"
+              ]
             }
           ],
           [
@@ -281,7 +430,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Implementing a Stack with an Array",
-              "stars": 1.5
+              "stars": 1.5,
+              "backward_exercises": [
+                "mooc/week5/seq4/ex1"
+              ]
             }
           ],
           [
@@ -290,7 +442,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Type Abstraction Using a Signature",
-              "stars": 1.5
+              "stars": 1.5,
+              "backward_exercises": [
+                "mooc/week5/seq4/ex2"
+              ]
             }
           ],
           [
@@ -299,7 +454,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Multisets",
-              "stars": 2
+              "stars": 2,
+              "backward_exercises": [
+                "mooc/week6/seq1/ex1"
+              ]
             }
           ],
           [
@@ -308,7 +466,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Fixing a module signature",
-              "stars": 2
+              "stars": 2,
+              "backward_exercises": [
+                "mooc/week6/seq1/ex2"
+              ]
             }
           ],
           [
@@ -317,7 +478,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Char Indexed Hashtables",
-              "stars": 2
+              "stars": 2,
+              "backward_exercises": [
+                "mooc/week6/seq2/ex1"
+              ]
             }
           ],
           [
@@ -349,7 +513,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Alpha-Beta Search",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "mooc/week6/seq3/ex1"
+              ]
             }
           ],
           [
@@ -358,7 +525,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Recognizing Anagrams",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/alpha_beta"
+              ]
             }
           ],
           [
@@ -367,7 +537,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Breaking a Sort",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/anagrams"
+              ]
             }
           ],
           [
@@ -376,7 +549,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Counting trees",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/breaking_sort"
+              ]
             }
           ],
           [
@@ -385,7 +561,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Enumerating Trees",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/counting_trees"
+              ]
             }
           ],
           [
@@ -394,7 +573,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Generic Sorting",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/enumerating_trees"
+              ]
             }
           ],
           [
@@ -403,7 +585,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Huffman Compression",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/generic_sorting"
+              ]
             }
           ],
           [
@@ -412,7 +597,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Infinite Arrays",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/huffman"
+              ]
             }
           ],
           [
@@ -421,7 +609,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Leftist heaps",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/infinite_arrays"
+              ]
             }
           ],
           [
@@ -430,7 +621,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Merge Sort",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/leftist_heaps"
+              ]
             }
           ],
           [
@@ -439,7 +633,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Implementing Nondeterminism with Continuations",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/merge_sort"
+              ]
             }
           ],
           [
@@ -448,7 +645,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Implementing Nondeterminism as an Abstract Machine",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/nondet_monad_cont"
+              ]
             }
           ],
           [
@@ -457,7 +657,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Implementing Nondeterminism with Sequences",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/nondet_monad_defun"
+              ]
             }
           ],
           [
@@ -466,7 +669,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Parser Combinators",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/nondet_monad_seq"
+              ]
             }
           ],
           [
@@ -475,7 +681,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Persistent arrays",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/parser_combinators"
+              ]
             }
           ],
           [
@@ -484,7 +693,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "A pretty-printer",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/persistent_arrays"
+              ]
             }
           ],
           [
@@ -493,7 +705,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Random access lists",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/pprint"
+              ]
             }
           ],
           [
@@ -502,7 +717,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "A SAT solver",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/random_access_lists"
+              ]
             }
           ],
           [
@@ -511,7 +729,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "From a Spectre to a Tree",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/sat"
+              ]
             }
           ],
           [
@@ -520,7 +741,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Trees in Stereo Vision",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/spectre"
+              ]
             }
           ],
           [
@@ -529,7 +753,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Symbolic Sequences as Data",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/stereo"
+              ]
             }
           ],
           [
@@ -538,7 +765,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Symbolic Sequences as Objects",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/symbolic_sequences_data"
+              ]
             }
           ],
           [
@@ -547,7 +777,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Building a Game Tree",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/symbolic_sequences_objects"
+              ]
             }
           ],
           [
@@ -556,7 +789,10 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "Tree Iterators",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/tictactoe"
+              ]
             }
           ],
           [
@@ -565,7 +801,1942 @@
               "learnocaml_version": "2",
               "kind": "exercise",
               "title": "The Union-Find data structure",
-              "stars": 3
+              "stars": 3,
+              "backward_exercises": [
+                "fpottier/tree_iterators"
+              ]
+            }
+          ]
+        ]
+      },
+      "practical_smelodesousa": {
+        "title": "Exercises by Simão Melo de Sousa",
+        "groups": {
+          "types1": {
+            "title": "Types, assessments and errors",
+            "exercises": [
+              [
+                "smelodesousa/F1/1-type",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Types",
+                  "stars": 1,
+                  "identifier": "1.1",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Types"
+                  ],
+                  "backward_exercises": [
+                    "hferee/1.4_conditionals"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-type-error",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Type or error",
+                  "stars": 1,
+                  "identifier": "1.2",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Type inference"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-type"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-mistery",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Mistery",
+                  "stars": 1,
+                  "identifier": "1.3",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Fonctions recursives",
+                    "Types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-type-error"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-future",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Future",
+                  "stars": 1,
+                  "identifier": "1.4",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Errors",
+                    "Fonctions recursives",
+                    "Types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-mistery"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-errors",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Errors",
+                  "stars": 1,
+                  "identifier": "1.5",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Errors"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-future"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-type-value",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Type and Value",
+                  "stars": 1,
+                  "identifier": "1.6",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Type inference"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-errors"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-what-type",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "What's the Type?",
+                  "stars": 1,
+                  "identifier": "1.7",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Type inference"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-type-value"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-true-false",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "True or false?",
+                  "stars": 1,
+                  "identifier": "1.8",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Type inference"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-what-type"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-what-type2",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "What is the type? 2",
+                  "stars": 1,
+                  "identifier": "1.9",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Type inference"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-true-false"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-type2",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Types 2",
+                  "stars": 1,
+                  "identifier": "1.10",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-what-type2"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-tuples",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Tuples manipulation",
+                  "stars": 1,
+                  "identifier": "1.11",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "tuple manipulations"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-type2"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F1/1-fun-calls",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Function Calls",
+                  "stars": 1,
+                  "identifier": "1.12",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "function call",
+                    "types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-tuples"
+                  ]
+                }
+              ]
+            ]
+          },
+          "calculations": {
+            "title": "Calculations and recursion",
+            "exercises": [
+              [
+                "smelodesousa/F3/3-simple-math",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Simple math",
+                  "stars": 1,
+                  "identifier": "3.1",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Melo de Sousa",
+                      ""
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "floats"
+                  ],
+                  "backward_exercises": [
+                    "mooc/week2/seq1/ex1"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-manhattan-distance",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Manhattan distance",
+                  "stars": 1,
+                  "identifier": "3.2",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-simple-math"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-a-historic-algorithm",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "A historic algorithm",
+                  "stars": 1,
+                  "identifier": "3.3",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "exceptions",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-manhattan-distance"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-reach-infinity",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Reach infinity",
+                  "stars": 1,
+                  "identifier": "3.4",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-a-historic-algorithm"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-pi",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Approximate π",
+                  "stars": 1,
+                  "identifier": "3.5",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Melo de Sousa",
+                      ""
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "floats",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-reach-infinity"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-digits",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Digits",
+                  "stars": 1,
+                  "identifier": "3.6",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-pi"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-seq-hofstadter",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "The Hofstadter-Huber Qr,s(n) sequences",
+                  "stars": 1,
+                  "identifier": "3.7",
+                  "authors": [
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "exceptions",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-digits"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-hofstadter",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Hofstadter's female and male number sequences",
+                  "stars": 1,
+                  "identifier": "3.8",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Melo de Sousa",
+                      ""
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "exceptions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-seq-hofstadter"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-sums",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Sums",
+                  "stars": 2,
+                  "identifier": "3.9",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Melo de Sousa",
+                      ""
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-hofstadter"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-tribonacci",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Tribonacci",
+                  "stars": 2,
+                  "identifier": "3.10",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "exceptions",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-sums"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-fast-exponentiation",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Fast Exponentiation",
+                  "stars": 2,
+                  "identifier": "3.12",
+                  "authors": [
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ],
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-tribonacci"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-catalan",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Catalan: a language, a desert and some numbers",
+                  "stars": 2,
+                  "identifier": "3.13",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Melo de Sousa",
+                      ""
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "exceptions",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-fast-exponentiation"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-dichotomy",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Dichotomy",
+                  "stars": 2,
+                  "identifier": "3.14",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Array manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-how-many-mountains"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-mccarthy-91-function",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "McCarthy 91 function",
+                  "stars": 2,
+                  "identifier": "3.15",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "mooc/week2/seq2/ex2"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-triangles",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Triangles",
+                  "stars": 2,
+                  "identifier": "3.16",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Melo de Sousa",
+                      ""
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-mccarthy-91-function"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-collatz-hailstones",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "The Collatz conjecture, or Hailstones, or Syracuse and other cool names...",
+                  "stars": 2,
+                  "identifier": "3.17",
+                  "authors": [
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ],
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations",
+                    "recursive functions"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-triangles"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-stars-in-the-form-of-textual-fractals",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Stars in the form of textual fractals",
+                  "stars": 2,
+                  "identifier": "3.18",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Print functions"
+                  ],
+                  "backward_exercises": [
+                    "hferee/6_sierpinsky_ascii"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-how-many-mountains",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "How many mountains?",
+                  "stars": 3,
+                  "identifier": "3.20",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Arithmetic operations"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-collatz-hailstones"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F3/3-dragon-greatness",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "The dragon's greatness",
+                  "stars": 3,
+                  "identifier": "3.21",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Array manipulation",
+                    "list manipulation"
+                  ],
+                  "backward_exercises": [
+                    "hferee/10_assoc"
+                  ]
+                }
+              ]
+            ]
+          },
+          "types2": {
+            "title": "Types, assessments and errors - part 2",
+            "exercises": [
+              [
+                "smelodesousa/F4/4-type-1",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Verify the type I",
+                  "stars": 1,
+                  "identifier": "4.1",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Polymorphic types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F3/3-stars-in-the-form-of-textual-fractals"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F4/4-type-2",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Verify the type II",
+                  "stars": 1,
+                  "identifier": "4.2",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F1/1-fun-calls"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F4/4-type-3",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Check type III",
+                  "stars": 1,
+                  "identifier": "4.3",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F4/4-type-2"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F4/4-type-4",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Check type IV",
+                  "stars": 1,
+                  "identifier": "4.4",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F4/4-type-3"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F4/4-fun-1",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Functions I",
+                  "stars": 1,
+                  "identifier": "4.7",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "polymorphic types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F4/4-type-1"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F4/4-fun-2",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Functions II",
+                  "stars": 1,
+                  "identifier": "4.7",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Simão Sousa",
+                      "desousa@di.ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "polymorphic types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F4/4-fun-1"
+                  ]
+                }
+              ]
+            ]
+          },
+          "lists_vectors": {
+            "title": "Lists and vectors",
+            "exercises": [
+              [
+                "smelodesousa/F5/5-lists",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Utilities about Lists",
+                  "stars": 1,
+                  "identifier": "5.1",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "mooc/week3/seq1/ex1"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-shine-in-society",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Shine in society",
+                  "stars": 1,
+                  "identifier": "5.2",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation",
+                    "String manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-lists"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-lotto",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Lotto",
+                  "stars": 1,
+                  "identifier": "5.3",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation",
+                    "types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-shine-in-society"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-salc",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Sorting arrays and lists according to certain criteria",
+                  "stars": 1,
+                  "identifier": "5.4",
+                  "authors": [
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Array manipulation",
+                    "list manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-lotto"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-half",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "In case of litigation, split it in half",
+                  "stars": 1,
+                  "identifier": "5.5",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-salc"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-horner",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Operations on single variable Polynomials - Horner's method and derivation",
+                  "stars": 2,
+                  "identifier": "5.6",
+                  "authors": [
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-half"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-rle",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Run-length encoder",
+                  "stars": 2,
+                  "identifier": "5.7",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation",
+                    "types"
+                  ],
+                  "backward_exercises": [
+                    "mooc/week3/seq1/ex2"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-seq-true",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Maximum sequence of true",
+                  "stars": 2,
+                  "identifier": "5.8",
+                  "authors": [
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-rle"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-lists-sublists-1",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Lists and sublists I",
+                  "stars": 2,
+                  "identifier": "5.9",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-seq-true"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-lists-sublists-2",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Lists and sublists II",
+                  "stars": 2,
+                  "identifier": "5.10",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-lists-sublists-1"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-lists-sublists-3",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Lists and sub-lists III",
+                  "stars": 2,
+                  "identifier": "5.11",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-lists-sublists-2"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-lists-sublists-4",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Lists and sub-lists IV",
+                  "stars": 2,
+                  "identifier": "5.12",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-lists-sublists-3"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-randomness-is-hard",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Randomness is hard",
+                  "stars": 2,
+                  "identifier": "5.10",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Array manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-lists-sublists-4"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-zombie-attack",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Zombie attack!",
+                  "stars": 2,
+                  "identifier": "5.11",
+                  "authors": [
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Array manipulation",
+                    "char manipulation"
+                  ],
+                  "backward_exercises": [
+                    "hferee/11_printable"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-absolute-majority",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Absolute majority!",
+                  "stars": 2,
+                  "identifier": "5.12",
+                  "authors": [
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "Array manipulation",
+                    "list manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-zombie-attack"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-holand",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "The dutch flag problem",
+                  "stars": 2,
+                  "identifier": "5.16",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "Array manipulation",
+                    "Variant types"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-absolute-majority"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-gray-codes",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Gray codes",
+                  "stars": 2,
+                  "identifier": "5.4",
+                  "authors": [
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ],
+                    [
+                      "Leonardo Santos",
+                      "leomendesantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation",
+                    "string manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-holand"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-max-sub-list",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "The maximum sublist problem",
+                  "stars": 2,
+                  "identifier": "5.15",
+                  "authors": [
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-gray-codes"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-subsequence-of-lists",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Subsequence of lists",
+                  "stars": 3,
+                  "identifier": "5.5",
+                  "authors": [
+                    [
+                      "Dário Santos",
+                      "dariovfsantos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-max-sub-list"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-brackets",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Correctly using parentheses",
+                  "stars": 3,
+                  "identifier": "5.20",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-subsequence-of-lists"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-burrows-wheeler",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Burrows-Wheeler transform",
+                  "stars": 3,
+                  "identifier": "5.18",
+                  "authors": [
+                    [
+                      "Gonçalo Domingos",
+                      "goncalogdomingos@gmail.com"
+                    ]
+                  ],
+                  "focus": [
+                    "String manipulation"
+                  ],
+                  "backward_exercises": [
+                    "mooc/week3/seq3/ex1"
+                  ]
+                }
+              ],
+              [
+                "smelodesousa/F5/5-pizzaria",
+                {
+                  "learnocaml_version": "2",
+                  "kind": "exercise",
+                  "title": "Luigi’s Pizzeria - From MIUP 2018",
+                  "stars": 3,
+                  "identifier": "5.23",
+                  "authors": [
+                    [
+                      "Rui Barata",
+                      "rui.barata@ubi.pt"
+                    ]
+                  ],
+                  "focus": [
+                    "List manipulation"
+                  ],
+                  "backward_exercises": [
+                    "smelodesousa/F5/5-brackets"
+                  ]
+                }
+              ]
+            ]
+          }
+        }
+      },
+      "practical_hferee": {
+        "title": "Functional Programming by Hugo Ferée",
+        "exercises": [
+          [
+            "hferee/1.2_declarations",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Local declarations",
+              "stars": 1,
+              "focus": [
+                "Variable declaration",
+                "int operators"
+              ],
+              "backward_exercises": [
+                "mooc/week1/seq3/ex1"
+              ]
+            }
+          ],
+          [
+            "hferee/1.3_bool",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Booleans",
+              "stars": 1,
+              "focus": [
+                "Booleans",
+                "bool operators"
+              ],
+              "backward_exercises": [
+                "mooc/week1/seq4/ex2"
+              ]
+            }
+          ],
+          [
+            "hferee/1.4_conditionals",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Conditional expressions",
+              "stars": 2,
+              "focus": [
+                "Booleans",
+                "conditional"
+              ],
+              "backward_exercises": [
+                "hferee/1.3_bool"
+              ]
+            }
+          ],
+          [
+            "hferee/4.0_rock_paper_scissors",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Rock-Paper-Scissors",
+              "stars": 1,
+              "focus": [
+                "Record",
+                "variant type"
+              ],
+              "backward_exercises": [
+                "mooc/week2/seq1/ex2"
+              ]
+            }
+          ],
+          [
+            "hferee/4.2_coordinates",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Change of coordinates",
+              "stars": 1,
+              "focus": [
+                "Record",
+                "variant type"
+              ],
+              "backward_exercises": [
+                "hferee/4.0_rock_paper_scissors"
+              ]
+            }
+          ],
+          [
+            "hferee/5.0_prime_numbers",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Prime numbers",
+              "stars": 1,
+              "focus": [
+                "Arithmetic operations",
+                "recursive functions"
+              ],
+              "backward_exercises": [
+                "mooc/week2/seq4/ex1"
+              ]
+            }
+          ],
+          [
+            "hferee/5.1_DNA",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "DNA sequences",
+              "stars": 2,
+              "focus": [
+                "String manipulation"
+              ],
+              "backward_exercises": [
+                "smelodesousa/F5/5-burrows-wheeler"
+              ]
+            }
+          ],
+          [
+            "hferee/5.2_sierpinski_vg",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Sierpiński triangle",
+              "stars": 3,
+              "focus": [
+                "Arithmetic operations",
+                "floats"
+              ],
+              "backward_exercises": [
+                "hferee/5.0_prime_numbers"
+              ]
+            }
+          ],
+          [
+            "hferee/6_hanoi",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Hanoi tower",
+              "stars": 1,
+              "focus": [
+                "Print functions",
+                "Variant type"
+              ],
+              "backward_exercises": [
+                "hferee/5.1_DNA"
+              ]
+            }
+          ],
+          [
+            "hferee/6_sierpinsky_ascii",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Sierpinsky in ascii",
+              "stars": 3,
+              "focus": [
+                "Print functions",
+                "String manipulation"
+              ],
+              "backward_exercises": [
+                "hferee/6_hanoi"
+              ]
+            }
+          ],
+          [
+            "hferee/7_lists",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Lists",
+              "stars": 2,
+              "focus": [
+                "Variant type",
+                "list manipulation"
+              ],
+              "backward_exercises": [
+                "smelodesousa/F3/3-dragon-greatness"
+              ]
+            }
+          ],
+          [
+            "hferee/7_lists_binary_encoding",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Binary encoding of integers",
+              "stars": 2,
+              "focus": [
+                "Variant type",
+                "list manipulation"
+              ],
+              "backward_exercises": [
+                "hferee/7_lists"
+              ]
+            }
+          ],
+          [
+            "hferee/8_sieve",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Sieve of Eratosthenes",
+              "stars": 2,
+              "focus": [
+                "list manipulation"
+              ],
+              "backward_exercises": [
+                "hferee/8_fold"
+              ]
+            }
+          ],
+          [
+            "hferee/8_fold",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Applications of the fold_right function",
+              "stars": 2,
+              "focus": [
+                "list manipulation"
+              ],
+              "backward_exercises": [
+                "hferee/7_lists_binary_encoding"
+              ]
+            }
+          ],
+          [
+            "hferee/8_sort",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Sort by insertion",
+              "stars": 2,
+              "focus": [
+                "list manipulation"
+              ],
+              "backward_exercises": [
+                "hferee/8_sieve"
+              ]
+            }
+          ],
+          [
+            "hferee/10_assoc",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Option type and association lists",
+              "stars": 2,
+              "focus": [
+                "List manipulation",
+                "option type",
+                "polymorphic types"
+              ],
+              "backward_exercises": [
+                "hferee/10_parameterized_lists"
+              ]
+            }
+          ],
+          [
+            "hferee/10_parameterized_lists",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Parameterized lists",
+              "stars": 1,
+              "focus": [
+                "List manipulation",
+                "polymorphic types"
+              ],
+              "backward_exercises": [
+                "mooc/week2/seq3/ex2"
+              ]
+            }
+          ],
+          [
+            "hferee/10_run_length",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Encode by range",
+              "stars": 3,
+              "focus": [
+                "List manipulation"
+              ],
+              "backward_exercises": [
+                "mooc/week3/seq2/ex1"
+              ]
+            }
+          ],
+          [
+            "hferee/11_lists_lists",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Lists of lists",
+              "stars": 2,
+              "focus": [
+                "List manipulation"
+              ],
+              "backward_exercises": [
+                "hferee/10_run_length"
+              ]
+            }
+          ],
+          [
+            "hferee/11_printable",
+            {
+              "learnocaml_version": "2",
+              "kind": "exercise",
+              "title": "Display",
+              "stars": 2,
+              "focus": [
+                "List manipulation",
+                "Print functions",
+                "polymorphic types"
+              ],
+              "backward_exercises": [
+                "hferee/11_lists_lists"
+              ]
             }
           ]
         ]

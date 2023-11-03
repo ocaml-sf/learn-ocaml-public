@@ -1,0 +1,31 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Sierpiński triangle",
+    "stars": 3,
+    "focus": [
+      "Arithmetic operations",
+      "floats"
+    ],
+    "backward_exercises": [
+      "hferee/5.0_prime_numbers"
+    ]
+  },
+  {
+    "id": "5.2_sierpinski_vg",
+    "prelude": "\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<p>Now we are going to draw the fractal known as the &quot;Sierpiński triangle&quot; to create a vector image.</p>\n<p>In the following, all the images will have a size of <code>1.0 x 1.0</code>, with the origin (i.e., the point with coordinates <code>(0., 0.)</code>) at the bottom-left.</p>\n<p>To do this, we will define paths, represented by the type <code>path</code>. The act of drawing will then be a function that modifies a path, so it will have the type <code>path -&gt; path</code>.</p>\n<p>To draw, we will only need the following primitives:</p>\n<ul><li><code>triangle: float -&gt; path -&gt; path</code>, where <code>triangle size p</code> extends the path <code>p</code> by adding an isosceles triangle of side length <code>size</code> to the end of it.</li><li><code>move_by: float -&gt; float -&gt; path -&gt; path</code>, where <code>move_by x y p</code> extends the drawing <code>p</code> without drawing anything, by moving horizontally a distance of <code>x</code> and vertically a distance of <code>y</code> from the end of the path <code>p</code>.</li></ul>\n\n<p>Once a drawing <code>d: path -&gt; path</code> is defined, we can transform it into an image using the function <code>draw: (path -&gt; path) -&gt; image</code>. The global declarations of type <code>image</code> will then be displayed in the OCaml toplevel. Remember to use the &quot;Eval code&quot; button to visualize your drawing.</p>\n<p><hr/><strong>Question 1</strong>:\nDefine the image <code>one_triangle: image</code> that contains a triangle of size <code>1.</code>.</p>\n<p><strong>Question 2</strong>:\nDefine the image <code>two_triangles: image</code> that contains two triangles, each half the size of the other, placed next to each other.</p>\n<p>Note: The <code>triangle</code> function starts and ends the drawing at the bottom-left.</p>\n<p><hr/>The Sierpiński triangle of depth <code>0</code> is the triangle of size <code>1.</code>, and the Sierpiński triangle of depth <code>n + 1</code> is composed of three Sierpiński triangles of size <code>n</code>, each half the size, arranged in a triangle shape.</p>\n<p><img src='/exercises/5.2_sierpinski_vg/images/sierpinski6.png' alt='The Sierpiński triangle of depth 6'  title='The Sierpiński triangle of depth 6' /></p>\n<p><hr/><strong>Question 3</strong>:\nDefine the function <code>sierpinski: int -&gt; image</code> that draws the Sierpiński triangle at a given depth.</p>\n<p>We can start by writing a recursive function <code>draw_sierpinski: float -&gt; int -&gt; path -&gt; path</code> such that <code>draw_sierpinski s n</code> draws the Sierpiński triangle of size <code>s</code> and depth <code>n</code>.</p>\n<p><strong>Remarks</strong>:</p>\n<ul><li>We can observe that the height of a Sierpiński triangle is equal to <script type='math/asciimath'>sqrt(3/4)</script> times its width.</li><li>The drawing of the simple triangle starts and ends at the bottom-left corner. The same applies to the triangle at any level.</li><li>To pass the test, the drawing must be done in a specific order: First, the triangle at the bottom-left, then the one at the bottom-right, and finally the one at the top.</li></ul>\n\n<p><strong>Note</strong>: We can test <code>draw_sierpinski 8</code>, but we may not notice any significant difference with larger depths.</p>\n"
+      ]
+    ],
+    "prepare": "3r86yYtjVKA6fRPM8f2Da99VFBoUGU/YPV5RCBDPudZuboVk4mSCDmZhgOHdqKY5jTT7OGlewbPzGqMeezeDq5N9RoB7DYZLgqQ9e4QOKaIzBdEHp1N4fiURQwBC8CKUTxqKfYk/PPCVYDrUAEh1s4DQ6BbBF6XZv5EFohfOvzcpcLfHjRVW7z0PRImZpFmUO96yZ/k1TR9cQ/6UXqf98TqwCG1QYNMP1jKsaPnqvnyELwQqI7+7xuokjRHnKdr5Q9YMHSs3ppqXw8v6y/QjwmROyTaTqQ3d0ooMyUKBLIkvzcv6m9cztwoc2ZZP0ovaqJLQFNROF2bjQlTZ6MKk0mXueYyOQBrYYL/18IbzSJt7FUM1WB9WFj9DHopZ9b8IZfRBTVtt96Ej3PPbbL4g2JZ6lXdVYOSvdRCVUPAuoP1Y1pJZ0oCUBYyb13i7TCrmJUDFBtGdXepqWoaR+LsrpRS0/eKGCzyb7TR8loYoUqv5n2AO5QYLv4QMGMHL9aRNObqo9Yt3Q1d7xpLQjxUEiBVTQoxRQR/AYDxeWVXsfIowboYcXTD0RXMxeP8kbbhboGTVKnsefu76FwRQgWfXxlJ4DBIiRIZVnKYfuIQINPIBQNAC931IsTo24cYBizmXFJrgtwpARLKS3HvQBD67",
+    "test": "Xnvz65TFStpWJRHejZWFGmMEAlo8XE/WOlQePkmdqM6bh5RqF7zIGyN/6fnc5M95oDSUDCYoqrqrE2Eex7rXq9Ij3TIsVMML7etovPsUNutpANID6LEttBZVFs6C9SLQB17O5xYORPWR2y3WMHAPreyGkoLbWFu/dR9FoxWO8m56POmDAh6am5AM0uX4z3xuNoMEDVc3VVouGQxaELyxnE8aAz91LgVXWX7suLiehkry3cAfYiCbc3h58UPu+sygDyNRUod1uArJcHas6FQ6xSUoppfTb6Db1BBwzQXQ+dxTmfWrypNDfJ/e22MlNBn8fx8NCdBMUNS9To836PG50mp9rIQG5GjLTGwEsgDXun1zA69FX/1RMj9QERUQrZOu2PhEPV1m96x6KOT7euCfIu9hqyc81rv7xQr1QqZUl3tM2VYYLVegGq+kOKmNT83zD6i+AgTyGPNnVWi2Ft5h6AyV8qi2UR0kyXVd/8IoSvzgm2YWnEVGhqkPTN3MnexyZUajpluFPx/F1RWy7c3bTjNTV9pEZDMZ+RARHArTfM6G9GsoEDT0ViwhtI+cbeB/9EqGO8Aywq+6Pe9ex7qWeRZJURAtW2JScu1ivM2LZLEbCsAp5OAFqFpkPN6Cki4KQJPTa2kRPLmQ1WOWHXIBv0W7u5==",
+    "solution": "jzH2uttw9MY4lqi8smRHzzN1TQ6DWEhZYURDXFHiuhRbr/AmXEuoEmYtu48vsJol/yiVMSQbuaG6QqMRxzaFaoUjC61iXxZ074/6e2BSL0MaC29Kp+N4vTo2Wg1UkFiGGZqKddVPBuLANDOHHX5JsL4EpU+RBQCwcERF5OG9rH8CJNquoj3RfpuXnaGpN/zPK5d3Bl5ZS/AmVRF0EKTx5XjfDmkIYMs4JmDxhujqtWzF3sMmJyKgfat+jVTr3NKUQ8YCUSgVl5q+qSWx5pBgdy92iBWEtkfnPE1YlULY0KgAzcucyAwCqJQlJsMLYpzs8cqNAcN0XO4iB6WJzM3r3JE953CJ2sngAtf3xq/mCg9jDll1ERQHGT9QTQtQa1LIOewBPVV5jkcm3Kjth3X80Ys7lQA6KbuofAW1FvIez0h3KAIVSBCGChyl4bjEAGTn1UeJU1HbHrwgK/SBQw9q6FCVmai+QR0qzWgbkEYoQKzgltFG7pUVx411HsiLy4xl/7rHuwBwiJNL5LS7bXMLijNBTUpRRQ1ZLRBNCoDlwggboQN9VW8WTiksu++mbeBwyyGT2zNfgfnwDJBLgnr2tEIbUQApRIYY6akahxxA1PohRec/fadUfDpGXglQpWqKEcCDaZgPCenUZyvETm9MvLH4boXIT94geQM4pwKOgTOW+xCE",
+    "max-score": 6
+  },
+  null
+]

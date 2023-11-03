@@ -1,0 +1,31 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Parameterized lists",
+    "stars": 1,
+    "focus": [
+      "List manipulation",
+      "polymorphic types"
+    ],
+    "backward_exercises": [
+      "mooc/week2/seq3/ex2"
+    ]
+  },
+  {
+    "id": "10_parameterized_lists",
+    "prelude": "let empty = []\n",
+    "template": "\n",
+    "descr": [
+      [
+        "",
+        "<p>In the standard library of OCaml, lists are defined as follows:</p>\n<pre class='ocaml'><code class='ocaml'>type &#39;a t = &#39;a list =\n  | []\n  | (::) of &#39;a * &#39;a list</code></pre>\n\n<p>This means that for every type <code>t</code>, we can define and manipulate lists whose elements have the type <code>t</code>.</p>\n<p><strong>Question 1</strong></p>\n<p>Define lists <code>l3_int</code>, <code>l3_float</code>, <code>l3_bool</code>, <code>l3_int_int</code>, each containing three elements and respectively containing integers, floats, booleans, and pairs of integers.</p>\n<p><strong>Question 2</strong> <em>(no automatic validation)</em></p>\n<p>Observe the type of the list <code>empty</code>:</p>\n<pre class='ocaml'><code class='ocaml'>let empty = []</code></pre>\n\n<p>What types of elements can be added to this list? Test it in the toplevel.</p>\n<p>Define a variable that represents an empty list to which only booleans can be added. Check its type and test in the toplevel that nothing else can be added to it.</p>\n<p><hr/>This parameterized definition of the list type allows us to define polymorphic functions that work on all lists, regardless of the type of their elements.</p>\n<p><strong>Question 3</strong></p>\n<p>Define the polymorphic functions <code>length</code>, <code>map</code>, <code>fold_left</code>, and <code>fold_right</code>. Observe their types.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "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",
+    "solution": "Me0twUSxRgrhpG1PABXgVH/BXlpLAo9K+QxLFWqEpxRbe9FoR6b2Empgb+n5baIroCfO4iFdfu7eXdx4x8GNq8/LKBlyRIZHzxtcxtsMZOcoGt1+6LNLw8pTVgQRkCK3Wwr1qJp1UemKL8rxM6tEqfSInFXbQ/qcjpQCi1rTcDVraf7tCKE7lqfG+pMJBONUYl/3QAIQGQNmEGwxOwO98WbfDX50JhdX1jWspPSxsnfI12xhNmuA7Ol+8RHq+t3bXmZrGDFE7E0IwFXHnEUpd81BjQrbaoTf+FULjCeY12BOiZWo/DB+bZZ5E49D2Bmfst4IAqgZXOetGUnUnbKc07qcarwEal3AqcMqR7x=",
+    "max-score": 13
+  },
+  null
+]

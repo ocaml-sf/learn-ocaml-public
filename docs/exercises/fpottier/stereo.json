@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Trees in Stereo Vision",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "fpottier/spectre"
+    ]
   },
   {
     "id": "stereo",

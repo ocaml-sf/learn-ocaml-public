@@ -1,0 +1,43 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Tribonacci",
+    "stars": 2,
+    "identifier": "3.10",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "exceptions",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-sums"
+    ]
+  },
+  {
+    "id": "3-tribonacci",
+    "prelude": "",
+    "template": "let rec tribonacci n = failwith \"Unanswered\"\nlet tribonacci_iter n = failwith \"Unanswered\"\nlet rec tribonacci_tail n a b c = failwith \"Unanswered\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Consider the following <em>tribonacci</em> function over natural integers:</p>\n<center>$\"tribonacci\"(n) = {\n(1, if\\ n=0),\n(1, if\\ n=1),\n(1, if\\ n=2),\n(\\Sigma_{i=1}^3 \"tribonacci\"\\ (n-i), if\\ n>2)\n:}$</center>\n\n<h1 id=\"Objectives\">Objectives</h1>\n\n<ol><li><p>Implement the recursive function <code>tribonacci : int -&gt; int</code> that determines the tribonacci value for any given number based on the definition above. In the case of an invalid argument, the exception <code>Invalid_argument &quot;tribonacci&quot;</code> is thrown.</p>\n</li><li><p>Implement the iterative version <code>tribonacci_iter : int -&gt; int</code> with loops and references to determine the tribonacci value for any given number.</p>\n</li><li><p>Implement the tail recursive function <code>tribonacci_tail : int -&gt; int -&gt; int -&gt; int</code>. Assume that when <code>tribonacci_tail n a b c</code> is called, the values of a, b and c are 1.</p>\n</li></ol>\n\n<p>Example:  <code>tribonacci_tail 6 1 1 1 = 17</code></p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "xnH7n60kHYUWDduOzQLukSYPTTgUSVZLPTxeWVXsfIsmapJjK8K3HCYvarXns3Nr6XyR4nApfubLXc/2gibXdpknVolyEONZjetseZ9ANfY8GcY0feNRqDpQTwtHpX0NDcX+8gUMQbfD4XS2LHAEssvI6APPToX5fz2M7YiHryzTMbeKUt5W9UImn1O3VbXWNlEDDVo1GX9JEF2AXuzs9GqxQTBLSss4PmiguPfluXSF42xtHCCqh4QN7/8sZ38cAiwOUXdf65rJcAbtk/M6w7MLlEHJzVGdPFUWjATE0M1UlwWmb9dWqNAlOhcP+97vs2DUO1VORrv9UEmg8s+9Qvl6cd6P5VCNQ7DDihsXhMApA9kREW/1QT/qWFFVcemIYLxVZQF5o/dfPKioq+0qILtc/CJJ1rv7xVaZE+Iz7ZRCN5JRY6CGChylNvrE0CrdN54RCxayXaBcB9LYCcU7zUDVzeCVTlLl/Xxe5QghGeape2YUm/90jbEOG2rYoesm8mDunB0EFIUH1PifdS796WNBTRARZ69U2oBv+BzTfM6ncGtcVTSJB//hu+ncruBlri41O7Ag/34gDhtRaGTZpQ2rU5MyQcVCouw/utsOMLMhAMYp9aYSfWhGXg1MezHFDN4+rI54RK4fNDqTTlw7bqCI6E+BZ/DfcppLmOGOcDit1+3EFx/YuW6p6x40KKSFYlFNTBFsXEEcEBN6WPmx8zelAz91LgV2+FKsuLiehnDENJRaYiKJe3U+jVa8ZsK/+DYCUWIQ65rJcHas6HQ6v7VO/prOc5Kd16wCjAH30NABlwTc9UcEbZN6+YAGZpiftdyICxMQPfz9TUnJnhelP3pMvfhW5V8WQyCG6ctxptQvDR53VB9QA9MQERUQoMLIOblI+Rk5q5l6Nab7mef52ZZyiTAsE+qreVaUDfJxk0gKPn6eL/XSCcjoLLyeQRr/OBu2MJLdH3/xHFzWQxpI6EDIyfzqHlTm/jZb5BpoSwj7n1APmlpVePpIHtvCi0EcaXOdu6+BKgMBJMaI/QK96WNBRUovGWk1MUQRFiX6uZwhdoJhVXHBXiF8u1anqfY5ozDGN7EcwOP7HJATx/+0/EIjA/F7EMVDmL1l9sZFJf18H2pA8eNTfGh1VJ1MlGHHCZy+y0BPUOz3NDP+TmoWlPCI6E+BClHtco9mmgeAsjz/PryeBahZ9QMgnNSPVa4KLoQZBVgXGWJtRE5PEPCzyDriXml1Lxd71iugaqSguGfF2c1jYV8vxvF4jRG7KdysAisSHS2CyAPPxTHs8A/9ajcOgpfPcoeoM6oY8EKDNhkvzcuclEdWqNBv4JYBKkq8dPOEVwxLGL7lTTGJpvT31+9/wcBTl5nwAAaRmxc5jcYtDR5YWFZXGXQfERVDaLni+b5O351/7Aom3tubaLbv0xMllS1zIKyud6uZAfApq0gCRU1SN/yJR+Pl4bjECGSJ1TuQFgWmUc/9EES0CdJy6FKBjqaLTiXm/HEelRs8A07aotUFp9JvhPAIHxqLda5XeHGy6B+BDJMRJPyB8z0ylSxOAmMAZ/63KF/4R9TGrh2ieoVlG7e0JHYtcL+ctvkloDzK4nxdqsb6XYkDfjyYdANkQR52W2JOjaZVeYQAZPJoTwUR9qI1eHAQRMJKki4KQJPTa2kRFtfR3yb1A8dBsKSI9V+IIRWwwEkM71rOvyvwPejXDhE8k/Ju6xuKOKThYl6yZ/k1TR9cVUJB0avXyiLrCUIGLg1KJmH7huiznSDEZcEuHCKhe3YNyELoKgXZEH2GGCoX69eRtSjrmVM6dzJM8zXBtnLg4pF4/pneIxRAzcLcvlc7bY65OcEv+QjxtdHXAhEYDfzzV9mv6MvoP3h/c1kUm6+XATPPbIcwe1/6QTBAOo9ZGW9QEVZYaKrDRO5E45An7BYdNvjrf+zvYxsfkTp5OgXjhB+VEfJLcehEYloR+6zGBw434bjEAGTnJQqGGeekBPJaAVbXDOhjbpH1zeS3HELD5isi66shBeTpdhESjBEVhOxZTITV8ukmrHGvz60IFxJC4Z7H9z0p6Wg4TQV4TWQm+RARFRCgfM5ge6NlFnbVH8AegNPwrvwto6fU4jNnfvK6Xh2Chj0Hd529GF99R15L54kahJxA0IApANEA8LlYdz6VAd6S5SfEUZ4+eNoPBeXZH8qTTmFIbqCIj5HERQbfqW2M71rOcDit12nEHwFUk/Nd6w0XKLWM3EFFWQEJCRVwARlVA0XxjTK6QTVY11sT1jz6uKmihmHNLgRi2Xevtfk4nBj7OwfbPmYL3l61pkbJaH0szSw9d7ILpTCTc5Lw1AEWrCKRYc1UgIzdy5ZCg+ci1gYM397gqdmBO1BYQYO9TSmwnd761boguxQ0yiLWQ5rGlggedPx7P6xFRVFzS7Z1REFZcv0TObhE05E4zSA9M4y9pv7t0JF5iTAs+3ujgAnN0rFUpP1W4ylCLVmTXdCeM3igK5==",
+    "solution": "U1dWhucX6jbITy4aMqyhISAITQIRBDMZ+VkQQVPofIYeeQ6wHUu0XnchgOLurvcw5DTDNnYdfrn6Qc9Bx7+Jq6BiSpIyEIg7ofIbx1kEGeM8C1AC6PlFqDhBRJEAizmFAc7Tac//FunMNCqTQ7cIfcvI6BvBG6W9r9k2xdrOvDlP79adeQPr0coAPqNcrv27NoMED/gXWFxvWRE2Xuy/nCvmQTZVNI9WMT48e4fhv7DM3wRnYjD8xvw48UPu+28pAiVBGGIYnArEcGm9u7xxsnVOpRjIdRen4RZV9TiY2tESzgTcmWUWqJkk0gAHMQ0fwdHQDvtLF4W9BAL47tKc3Ri2Cv38ExwqpBprqXCwrTA7CBhJERFpVmcRXVoUovz+4OdM3BtljklyKrTrduW7Yh2c/yZJ1rubxUaZT+If/bJCJAJ14BCXIYylIbieAGytWlfVTdGmU4BgAR+ZQxp7k5X2jrmQB/7WlDQelldoBLb97MZGyAsHeOJNXYzCpNhcHYwChrk35Tq1Xmf543XdJGNQTQV4Mo9Z+RARFV0jrt6nr/pcRzCPEHMju38nl3M5oDSU4jNnwr4kXg6Eb7rKq9NiA/w7E1QL5qRbuxRJKs6oTwVPp0NRqHkVDMVC9GC4+wq+a2BPFumQ28qJU8FJr3r76E+BCoWwwElP72GTcHoIlz87eRLE0coY14MhuJN7YlFNTBEYW8NDXFRBEOrs7mqrEiQXLgU3MDq9lbzfvzmE3wQbYmDvh+FCdoG7Zs0vAXhCHjJHmkaBiyasjAAsqC1PjQ+Ftp0l3RtW/9KNIwRA/tTc55g4egUlMexBZpzjr1meBcNMQOT6Ao7Jn2vz2FaFDKOrUYkskTYbqSGivWIaQVoMTR9LGWQOEVYfr37UOdVBMEs58plfOrL7aL75+0s5kTYq1rLtxVLZAKtuk0hBN5xQY6rGSYya4ffNK9ef3lefHY8lGPJcGR+OBdNomQaVpN4QTo0p/WAe5QwnSKf7p1YJmlwWfrkNAxyWwPQcHYwCvftS7zaAATfq43PoJnkBXGYRGR9Z+VV2R/WghJowdpNnGnGYHDwhw3KpfrxwoDbU2m15xbDrEZ6ShWKXs5peEF6uEIlL5+AswMZPKuMnD2oPn4k1umV1PPJC9SLIB1a+vYIGVPO32X7QB9hBuuX+6A7BF8bwwEkM7Y4LxDkTzlLaeUCBK2pNPqQmy0/7YlFNAFRNGV2eEApVQqnrnCvfCHNaYNs41i86f3yeuTPEKZQsJ8TvtfEW/mrIKg3bQ8ZEH8AQmo++cCr76Eg9s8g9/UaBtkGdPB/T8ELF0cRA6sudy/pWcZh3OcNPMU8fdM+XRwtWF+8vXEnCnhbfLojBQrO8A2cFiBpbqXjirSonQV2RER6XCiIfERUQr38IOaRTPUccjptbKL+Gq4q8IMRpjmEz+1C7xVaZE+N/6JRxN5JRL/XSCcroPOiQU7jpP5DUDILfLr6cHFuYDJF86AK0z4iNZR+dlDQez59oBqut/YRU5Vc2eOwNDfPL8qQcH1dOt+5SmDrOVXmnMa0fISxbGQkYVWJgPVFYWVPhwIRGtlEkGjiKVyMfu3bcdfIu68aX2zNhhh5=",
+    "max-score": 125
+  },
+  null
+]

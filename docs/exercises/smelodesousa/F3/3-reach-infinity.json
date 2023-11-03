@@ -1,0 +1,46 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Reach infinity",
+    "stars": 1,
+    "identifier": "3.4",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Gonçalo Domingos",
+        "goncalogdomingos@gmail.com"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-a-historic-algorithm"
+    ]
+  },
+  {
+    "id": "3-reach-infinity",
+    "prelude": "",
+    "template": "let rec ackermann m n = failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Wilhelm Friedrich Ackermann, a German mathematician, contributed to the study of computable functions by presenting a function with unique properties: a total computable function that escaped, in the time of its discovery, the classification that was thought to be that of functions with these characteristics.</p>\n<p>Partly because the function... has an explosive behavior!</p>\n<p>The initially proposed function had 3 parameters, but the one that was recorded for history includes two parameters and is defined as follows:</p>\n<center>\n$A(0,n) = n + 1$ <br />\n$A(m+1,0) = A(m,1)$ <br />\n$A(m+1,n+1) = A(m,A(m+1,n))$\n</center>\n\n<p>With paper and pencil, determine the result of A(4,4).</p>\n<p>If you read this sentence, know that A(4,2) results in a number with more than 19,000 digits ($2^{2^{2^{2^{2}}}}-3$) and that the previous paragraph is the result of a bad joke. It is not expected that you solve it!</p>\n<h1 id=\"Goal\">Goal</h1>\n\n<p>Define the recursive function <code>ackermann int -&gt; int -&gt; int</code>, which replicates this function.</p>\n<p>For example, <code>ackermann 3 4 = 125</code>.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "J+PcfJCPQpYCNpNRLXskqnYPTTgUSVZLPTw3RVXifLwfcAVnGEuoVi/Su3akqvBurj0RPDY5r3qrE2/4hj0Sq5FlKHs7EIZ2nL6axdVNI36oH1E27PlW/6ZV2ZAHlzyXQNK1aZY+WPbE4XS2TidJseWImRWBWVDvdRd4pJiLb8lJrai/jhRUEBU2HUtzHyTqIA9IDkwKGTNwEBF1Vuzd5HexBDxGYJw4NSi8ebznuGeE2cUmLiKbe+ERzFmyKcepEXcGFGJEm9fJt7v8okQsqTcOjpfMc/bWN/pd/A4FIt1IiwzjuokTahVz+JxA4l7lt1XBRtJJF0SOTUmF8sul1CWie3uVbjMHBA12GHJR+0toFAhYEVoBW7oARVo4cb7f4q9U0pYw/BEQO3H5q0fsZMRcj/VJ1ru9fBG20rB7j4xL3EVRIVaCTq+kLLzET7WaNEekLdHkBPIdEEfIEJEqzzv0jqiQAkPxlH2lyRspA0S8ccYDp/gHbrlCAq+Ime6o+rfhksGwVRACG5w2YV/dr7lCGQV3VmMZ+RARFRD/fJNuao/sK7S3DDBhtKmNquspriXELndufvufDgoJd/TTboFkA9o7YMNTjYtjv1FOMPIvGtl0p+gRcX5IScRCe7qZQJ0Ea4wPFumQNDqTTi5Obq89np8GQ/Htf6/CoYu2xDl8seGz84sIFBtNTlpyFHTqMQAEHkQZ4EteXlM0YqnuyWywCHI0AgxTPi8xhOfbhkrgHwRaYiLvxqk4w6GqNZ4FPmdCGCpf65rJcCraiSw9dyFO/UbAhAXD4okTzpyrZcpQn2v8ypFwbY69+ZY1Y5GkqwLHC1c4VODvH8P08tj60mzfcb8qrE1ZG95KQDdDI1V8QUkMER/72CoDQ/RXaO8AQMhEZQF5jSteP+ivfLW52Ikejykh1xysgRuZXbNzlvVCQ91JN6CETd+oLOiKTmDnM5H0GhDfHeocVUS2A1RpkpyNyajTD/upl99iln/pA0+/jtFPaCEVv+RNGdC4oqRYOKHicJfJQoYDG6oRIBcZu7dNTUEPGVw0+R5YPmvTwIkqr6VhB8S9H8AmfPeprvkroCzUDCYoqrqrE29Z7CrXoTZmW5V7EqJOjvAjxdMAIv1aD1EG8qkTwmpjWZpH9SDFAcC4uglOWPLSST4gTmFIr08NopibWVDvdRd4pITAcDdutPP8puZHGo6KTi5PUXnfLUFFRREUBo9cVUJB0abc6y8rCHI0Hd95M8atg4OxskbX3c5vNmr/eIs4jRG7UJLvGnpCGCoE65+XcD+8lABweHEHjordzVGdPFUUzQH+ZcYNjwSmlzUWqNAlZYAO4B7js2v3Rx/NQO39RUWEkYed1SbyrKfZbosVJA9BXCA1NLpzDQtmWF2QTW9YGBVZcb8AS4tP3RxskRYcLKWasP3RYYwpjmJsOfTjvUeJGKt7ywRCN5JRPF4DRZPl0qjrAGTn1TXxRrrZH4/xVReRQxpI6EDIyfzqHVPq6X6qlldoSPup7IRG5QtVv+RNTOzuwPQcKfDtj1OfSBpCETB0JoRgwGMCA56UZ/6KPRBo2RDaqYYet95cWHe02XNhkq8hvL246X44O8EavbmqI5==",
+    "solution": "b8EIHeQD9RH1ZHAvG5NOI7kBAEo4GQQm+RBYUoDifNQev9F6CWCWXjchq+mwtfZroBfU4jNnrOPxDJpZnjXBapgaR7h8QtF3oLEorYQCKv1dDNA29uMSaXI0WYoClj3EDsf2qIQGQPySPRHTTiQEv0W76E+BCkmqwABRz1q+qH8h2FRReV40E01yOjcIClMaJ9EEC6FXBA/wRF/QXuyCnDrfQTkV+Jx1ODiah4nkuSDM3Z/r+yLevfFkjRG7KcLnEXMxUWIQ65rJaDfrmlUjqmAAjlaJa/nsNVU3zQH+ZcYNjwSmlAIWsJhgKswGOGLQ",
+    "max-score": 10
+  },
+  null
+]

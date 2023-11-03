@@ -1,0 +1,49 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Verify the type I",
+    "stars": 1,
+    "identifier": "4.1",
+    "authors": [
+      [
+        "Dário Santos",
+        "dariovfsantos@gmail.com"
+      ],
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "Polymorphic types"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-stars-in-the-form-of-textual-fractals"
+    ]
+  },
+  {
+    "id": "4-type-1",
+    "prelude": "",
+    "template": "type 'a p1 = Replace_with_your_solution\n\ntype 'a p2 = Replace_with_your_solution\n\ntype 'a p3 = Replace_with_your_solution",
+    "descr": [
+      [
+        "",
+        "<p>For each expression, specify their type:</p>\n<ol><li><code>let f1 x = !x</code> </li><li><code>let f2 g x y = if g x then y x else g</code> </li><li><code>let f3 h = let x = ref true in if h x then x:= false; !x</code></li></ol>"
+      ]
+    ],
+    "prepare": "",
+    "test": "p4dT56ZK3UPl1bxbftwR27YPTTgUSVZLPTxeWVXsfIslfBNhF8S9H8lubryqbfw9oHuVM7Znch76LJoSczLYdEIb3VEWV2g470leeZdABelkCgVN9qp2fW51WZZA9VbI+wq+6ulKR3bR1ieTRlwI8uXQlE+D+FitgpYFohnOxHXPbk0OF7Ud1bcIhi4zxVN8YkwNOFRBTR/uWUIVUa+fzyegFTkXH224G80uhbbjxySNYsFjYjyAxvF4jXmy3MTaBXMCWR9Qd9eRxHaqgldjxDQNpUbAaQLu3Q1UjDb2IxQmmwzb/RoFqMUcRsw/GpSawI8TFMgFUs0/Aoa38sml2MvqGIk03mpN75mVMrrlVj9sQUUiEWk1QTlQWFEQxr7u2PhEPV1m/BMzLOT8day8X153/HdYHfaod6f3VKI8eLhj1kxFY6L/QdniNKTKRjSzOQaBTdOmSuo4G/K2Qsc8nQW0p4j9C9exlDZn5EcnBf77m11S5Q/xw+Q9AtbEiL/djrYA7RdbJmv5DKZio+VN2SIGCEpZY6/sLE6FFRLOrx2kaUFdGmOMG7Ffu2GobbNG6XiYK8Eihcbx24N2gibXaQkeU6AjW1RHmItusNRFZKplFtUK5r1UbCYQTx6CkziQQI0pa2ACVb7T4DrfAWU+s+PYpQXVQ/uyv5hDoJqPxHTMhoOmQz2tV+BJa73xfBoFLAUIQ6MZZo9rXlU1EOf6yHOQQTlJYLIRJnu7abjbxHSN3cwoA8CggbdLjRG7Kg3mXDZEECgDpnGJcCPseUhpxDh2oQvCgo8m1/sa/5H30cQBmgOayAxWpcAgJ2MJ1ASws+KERslL4O4pHpP+zdri+145GMJz0H/DgULn2fDwH7scQR93RFpmMjE+EQQQtbH70bMR3FVyz/dpNaabbL7iM0s96Xcb1ri8xQj1VfIz70gF2n5FOlDDChfk4feLU8+iM6vHMJG7U+EdHF7MQtNyp9CWoPjZAUKW6Gku/9djC4vmocYUoE6Brst2XYyW8uJop3hCmERe36CsEvYogKc4199VFBoUGRgY+U2DW/ebb02uvlE5VSzVCiNktfnfrt9K7HHA4nYvbfKd229RezeDq5ggTBY2Xt2GmP6aqtoPNvYOANQC6LNMqDhpTwlQlzqXBZqLa2JDFufAJTyTByc7bqDEpRKBWQSwrUlPox03sWyHeRvJ+Ww/QOUMuyXuulolJ5IZXWh0Zlx6XlNB0a3w6XfmQWh2Lh9LDD0th48evzerNJQmJ70vdLN4oBH6ZNurAjJLEngVbVaQwDus8AIyqSM1lAnVxSfbQ5Z3/oDFX1xBkwallBo3dhJ5RJlO4Aifr1+rRxFHUPj9HkbJkxfi1tPaFg644HBVik8aJbi5F7Q5D6d3VFwNC6YS0lZYcuv1RPQA1BBwjppeNaahpuW70YEliTFJ1rurgAqZQeYu7uhB3UdBIlTPS1WoALy2UCHn3UmCHYecFvkDVj7LCsgplDaVzeCVR60qzHsw6mBaC03k7MlIvnEVv39MGMvD8vYt5qkEpEQsMEKlDPEbaK5lJzNBTRARTUsMLBoFRlXdgJowepQoEnGXDDZhxLKcrKon/yHXKopmwPHjGxtRezTZbTkhQopyENVDovYu9twBK020TwVPp3cRpmoVGdZCoyDLDsn/qJh1Q4zCNH31AXYisLHFpU0SQkuedDICnI0Li63GwV03F8QkOqRVc8KxgkdzIAh4H/R+TQ5WQAMVD0y5mivfTCNVIwQQPiGsx+PegGHEOYwa+iWuxvoBjR08Kgv5QyRNH7hZ65+XcH7t6Akfd8MBj5Pugp8t3VURzULS02YSiwzwp8BGusAwOctG4omfaZ+EBMgEW+C9QFKJ5tC5PYOoVtR41G5QuRKzPr+lH7scQQdDX/UQGWQOEVo3e38FJ0xD16xtdQtvKO7truu8Yhszo8x5Jqy2dUiZDKI8l4IN2kZR0pfGS1+eMbSEDXunNpL+DwWmXKIdXVCUD2Bj6EjFjur1AF4xlD9/lpkbBe0g7I/Y5UkZgrUZTITV8uZnp3NdzEcr3RCyT+Y5bvcQYXIbHVhRBB9R0/ERGAfgxYZqtlEpSjD1HyNktfnkaKI5nSvU3CJngen6HZZ3e7KXtkpjBRB7HZ5Lnetpx+gUP+IlTwIOp3QDdiISBK1S5nKZQJP2qNBCCLnS3iS4R8FFgPCPoU+MFRW6xpoM6NWOdinOx98MXiBxG+ABrH3qxRhu4UEPAkgVMllpQFQVFa8xyjykDiwGHhsN1jWswLvfhni+NNYpLDe8xvoBjR08Kgv5Q8hFEGI2zArOsXa5z5AzqThCyEaMuVGe4VU0o9LY0NBvtZ+h6EcTgMIlJq/PMQSawI8IC1cM+r4/AAzFncjd1smeKYJX1i9QqQn9EqC/TGUvE56MAo90FW9SQQ1Sr+GGE0wB1RAljpk73LCtauSr1IV5iTlqNgXjbAb1E+xwkPEQZE1SN5HgC43yNfLWVBrdMAPQRtH5G4NrAWzWAcoy6AyVdPiQAkPxlGYwlkIoCeWcjMUSnE/ZeNtZF2zO8qpam3AEy/Nc+AL4Ds59hKcM16pPDAFUEB/KIVcDQWaivYVbr56m4jD0EmYtu4frbah56iqZLnIzxbDsGvZFbiqSq9xlQRhpQtNIi31AeawTLLl8GrxB5PhUsTpGXw1QoViKA2+4aZ9BPLmQ3HfHTjN1brjIopyMWkTceQdAmLT+uWiLukeOQWomXr12jXXWtkZwMRUnA/BUXBBwQk/+QrjX6yuiBDl1LqF41mTxbLjwc7DZNN1pL7Kucr52/VT24derBmYKUmVCnUXOg5Dqb/MtqSM+f5GAa6SkPAZ3/oDFX1xBkwaczQEdqNBh4x2PYkefeY8HC1o0VPisDpDMsNvs01rqXtgB0HN3goaZ22+mVz9oFTICUFR1EG/DWVwCeZ3G3q1EPRprdXVm3ODsf07uIJY/zCko4u7ouQiNH4AbzboUN/UYN/7tChyl4eGEVD+yNELBHZTjX36rAFPUBNBrkpWXyLn1HFOp/yVi5AxoR3TpndtUllgWa2tMAsv1nfYcprAY7j/p4Vi/DPUageJKWSlAAA9eGR9Z+UpR+6Cgg2YeeRNnGn39H8lubryqbfcq7yPuMSIaufLnFgZDc/TZapcmKHsvGxYY74gjocBZNL2oS2RP5qpDey9WQt9cpTGEXZqSqgdAWunC1XiTQ7cIrLaHnEbBB5rwg5IDo3H+uWiLukGNFz/rXbgLsp8hdoheYl9EA9UZSkpqEBpLEPry6i3mQTBLYJ9QPDSHbOSuw7DD2ZQxMTj9g0M57QK7Nw3jAH/NHWJCpljJbWHsmUhpbiFD7lbDaBepF5FP7A3RJ1VAmI7ny55FphAyOdgPOQvkqdSEFMRNF+SfTQeG6MLcPYOoVxVY+6ZEbVm82fb6HyEoD5MLBWZJCz9NERkWc+3J0ewMIkU7/BAa1+j6xar60hshq/UqNef7gA4KE0dB/ehO1kZRL/aITP+fPvDBDGS6OQHHGeecEPFgVQqYQPRfpRLY9ffVTpWdl85elRd7SqvgovgG5U2Qa+Q4XYyW8u2npadXzFcd1FX4WPdye3AWJCAOHogUW9lIF6JqR/8jrwoEcABpEGy0DDtiaa8Cs+Js5TT2MU/nfre9Cc/DtCrKq5FgTpE8RMcJo0EAr2kQI4JgTMI28qlWuUNX+ItKiyDQPcW0tJVGFrbY3jzHMHdJseWImQ7uCoX/hR/Mjc7OfTiNhBr1VjwkUroJjSPotFtz+lM+H/gXX5tWEzcGWP+fyETlAHAQ+2tMOm4abMKkxzjBNNloSXLverQLjUOjKhvbAX/PASNEmlyFtQCgiVA6dy/Mp6jOaR+qQk2x7pu31NAakZrp/UYWeg6e+Y1p4pzisY8NCKtLF3X6GUm0ixewP1i5GgoX+yVSeEyZIaGpWnZuQox3X/23DRYS0lZYcuv1RPQA1BBwjppeNaahpuW70YEliTFJWOv7eBfNUrxuo+cOZBB2MAOKWZihL47EVnjzOWSVTdGmD0oxBlO2Ts28nBP3kurRAlXgiHJfyoolRLnooN1D5QYLv31CHsrOm+BCmbEFzkNtPFmqQrEIgvFTYjMSBQNDTWZXKFkUPoCgfM6yr8hcVWiFXnQvhrLf6KJr/jPRLWMbw3mzIJ2QejfXeQwgUAU2Xt2GmNgVx1FUZPwhTx6/p0MCbW5vRJlRoGeQQJq+a2BPFumQNDqTTmFIbwDxu9+BS90cjohNohL+uULNgoOPXTgaXbRJjT0esBgGAlELGVdZERBwHQdaELzTnHe7UCZVJYNN+H8xcKfGnQ==",
+    "solution": "bxpsgnEGLaf6ZK/NSxGuO8EEClp1Bo93KDxeQUywu15dblFsRjDGXisaeKnpg3N77iqY2zNacKKzHs91qCr4rQMjDlc7Fd1L6OwaudsPKPsoQhsPoqJRtSJVVJ1NiQ7rFMKKrNBIVenAJmqOTm9Ks0aE6BTETRW9r9lOoxTCaTj8nii509h7",
+    "max-score": 15
+  },
+  null
+]

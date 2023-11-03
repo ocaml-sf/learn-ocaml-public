@@ -1,0 +1,42 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Triangles",
+    "stars": 2,
+    "identifier": "3.16",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Melo de Sousa",
+        ""
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-mccarthy-91-function"
+    ]
+  },
+  {
+    "id": "3-triangles",
+    "prelude": "",
+    "template": "let rec triangles n =\n  failwith \"Replace with your solution\"\n",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Consider the following sequence of equilateral triangles:</p>\n<p><img src='https://t1.daumcdn.net/cfile/tistory/2272113A566FC05815' alt='' /></p>\n<p>If we list the length of the sides of the triangles in this sequence, we have:</p>\n<center>$1, 1, 1, 2, 2, 3, 4, 5, 7, 9, 12, 16, \\cdots$</center>\n\n<h1 id=\"Goal\">Goal</h1>\n\n<p>Define a function <code>triangles  : int -&gt; int</code> which returns the nth element of this sequence (starting at index 0).</p>\n<p>For example, <code>triangles 0 = 1</code>, <code>triangles 3 = 2</code> and <code>triangles 9 = 9</code> .</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "kGl2xSoJ7K7lOtzC+NbfVSYPTTgUSVZLPTxeWVXsfJsfcoFoEDKnES1uu+Slbah5e8SUMnYzfvvxXdQRlGuZb5keDAIyXMBlpLxjrYQI04IhALcPp1EQdy5+WcYLii+EVYupkgpKQunEZyKSAXYEqfPe6EfICp7w89kMiYe2xEL2+B+t3HSCsZcUbxwssLoLMBUnHkgVTEl5XkdaELyxnECaFWRPYJIRJi75tujnuXTES0gaYiLvxPUN9FDt0NqeETQxUWIQ6/X+sTKcnEUjfHE2kAKRaoTrVRsC7j7RIxRAoZjhy/UWw4xlOcNPS/7HjvLIAcULH+C9UG+Jncjo+3RqH0og1ZyehEWFnnukcQV8QUkMER9Z3Q9fERVRfuni+PtP2AEgwBpeP3eyq07tZIFLkSpi1xuCxRzMXfI8yugPKC6RY9TUQt7fOKHBUo4n3U3a",
+    "solution": "bfcrAiCUUFTs5PNwfWewomBBAlpMGTMZ+V/XFVfgcM5xr91eVSe0QWghqY+cbe2x5XvU09/nfr4sDJpRvyaFcpNhRRlyQhYDoa/sgIQLZKY8BcQB6qdUemo2WNVRzCt=",
+    "max-score": 10
+  },
+  null
+]

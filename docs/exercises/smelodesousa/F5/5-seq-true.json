@@ -1,0 +1,37 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Maximum sequence of true",
+    "stars": 2,
+    "identifier": "5.8",
+    "authors": [
+      [
+        "Gonçalo Domingos",
+        "goncalogdomingos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "List manipulation"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F5/5-rle"
+    ]
+  },
+  {
+    "id": "5-seq-true",
+    "prelude": "",
+    "template": "let max_seq lista_bool = failwith \"Unanswered\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<p>Using an iterator (e.g. <code>fold_left</code>, <code>map</code>, <code>for_all</code>, <code>iter</code>, <code>exists</code>, <code>filter</code>,  etc.) define a function <code>max_seq : bool list -&gt; int</code> which returns the length of the longest sequence of <code>true</code> from a list of booleans given in parameter.</p>\n<p>For example, <code>max_seq [true; true; false ; true; false; true ; true; true; true; false; false; true]</code> returns $4$.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "p7SOS+EdDZf6E/EgAMKqVSYPTTgUSVZLPTw3RVXifKRnfRUXG8C3EXMKeOLgsKhKey8RKjMavau3DJoAlnrK/EIjURQj0cZZouMsvN2TZPAWHNQL7PlWqH9NUhxBjHHBQxDpa2AdUabE4XS2ZTFIbqCA6DjB4kDodEkOaYe2xHTDMdsBcAYLz0p7UiJZfINKJpRNT/oYQWYfVUAXEMT9h8rfQTkVYId+ICmSfr7kxHSN3cxA15jug3AW/lLjVMToDzNWGCk36yCMxC0i6EIuqTkOjQ+SgkGoI/V4/60tIxYNjxKC5pwHqqxlOcNPMU8fdN0XBdo0W3mjVj+JnhelPYklnp36QBrMrDkRNTj9vVYiQRMBWF2zS7BKVAdFr0+F3rIb06pfy9V6+Kinb+fm1cg5o7xz1rL9cBHZG+tuzvBxN5JRY6CGChyl4bjEAGTnPQqBTdzfU+EdJk3WBsgq76P3/urqB/8k6DQmj9chBsDp7IRG5QtVv+RNTIyL8qRPmDvPSOoGCxKfIRkhSbHwLjNBTUpRGR9ZNk2UWpvxbOIer9EcVWD0Xp6Su+ncbbM5oDSU4o6YfvK6Xc9Rx7rXq9IjV5MiVZl674RaeYQAZPJoTwVP/3EEbS2aFs6C9SKEQJq+a2BPUPj1ZieIZTFIbqCI6E+BCoWwwB93iIfVi8jN2MtHxU6Im4VsHTYDwLNA3GsNTBEZGR/wEBEVELzdzzeaW62VYNs41i7suLiehnCQZtEf3F8vxvF4jRG7Kg3bQ8ZWAm2VySGJcHas6AB9dyFO/UbVhQTgJidWjEKRIxRAzcuclEcQaZoy4t6/MU8fdI7ERxELF+z9CpiFzMqqFhklnp36SE8NcWl21B+fsUBh+lkMER9ZGW9QERVsxtLIOewBPVV5jnJm1Y3Gd0fiIMpc/GJ8I+aji5j1Qq2ypeh7V5IQMUTgWM7fNuy24n3fNAi3ThLdF4/DFEWMQqFC6A0O/PiYR6+om8RAlpJpEIW8m2Ui5XYa",
+    "solution": "x36YtgmLD9vEMb5m5xzjQ7xSGQkrWkZWJRAMPoCgfM6iaoUcGCGDICAcaNPuruE5jTTGO7Vfbvr6Hw2VxzuCg9IuA5MyVxh05PQjxfhAZPJoDNAI7PkeqDoVFs6C9SLxC17Odg90UbeQPHjGATERbqjW6AaHClnwdAUJodqPxWWwbEXajNg0XdV5/iHHy4w2J9FFTF64GR5xRU9VDuyw6Xu7PzhQM+QJM7vsbPWbuSDM32UyHCGqdchJzEO7MYvbQi2XCWtL69u1uHaizQBlbi6OjQ+SgoDD46wZ/FzeIxRAzcuclEdXdZFtRIAKYD3tt2vrRxELF3mvCUnDpvT3N+P7O0GWnlZC/jqELhrNh91tDlkGGDNVXDlQXFRIourN+uwJ1VVfjoldNbGtd0Kp2Mll7VV81v0ycVbUUPxu7uhQ1lRR16DPR+Pl4fHBVGSoJBmHCxayU+EdBkO3QxE7mQfojqjdB9Xxiykq/6l0SPup7IpAkEUVd+RAUvPL8qQcv3IRr2yHD/ONLs/5maKjDzNBTUpRGVwMOlJUWlSgdsUerpJxBmK3ES2hwvnthM95oDSU4jNnfrqyXc6SciyFbpo7A9c7E1sKl4Quw1FOZLdpFwVViLNQaj9HRJlMoSrrQJq+a2BPUaCD1TrQGzM+qee16Fn1CpW589kM71qCeo3wh/znzM19",
+    "max-score": 11
+  },
+  null
+]

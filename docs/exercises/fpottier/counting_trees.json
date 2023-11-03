@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Counting trees",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "fpottier/breaking_sort"
+    ]
   },
   {
     "id": "counting_trees",

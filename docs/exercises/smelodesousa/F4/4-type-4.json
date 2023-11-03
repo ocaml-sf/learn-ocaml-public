@@ -1,0 +1,41 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Check type IV",
+    "stars": 1,
+    "identifier": "4.4",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Sousa",
+        "desousa@di.ubi.pt"
+      ]
+    ],
+    "focus": [
+      "types"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F4/4-type-3"
+    ]
+  },
+  {
+    "id": "4-type-4",
+    "prelude": "",
+    "template": "let q1 = Unanswered\nlet q2 = Unanswered",
+    "descr": [
+      [
+        "",
+        "<p>Consider the following piece of code:</p>\n<pre class='ocaml'><code class='ocaml'>let rec f x =\n    match x with\n       | 0 -&gt; 0\n       | 1 -&gt; f 0\n       | 2 -&gt; f (x+1)\n       | 3 -&gt; (f 1)+2\n       | n -&gt; n+1</code></pre>\n\n<ol><li><p>Does the function always terminate?</p>\n<p>A) True<br />\nB) False<br /><br /></p>\n</li><li><p>The function is properly typified with which of the types?</p>\n<p>A) <code>int</code><br />\nB) <code>int -&gt; int</code><br />\nC) <code>ERROR</code><br /></p>\n</li></ol>"
+      ]
+    ],
+    "prepare": "is/PD6bfx9kBmyc1B3oofTcBLloNGXxZNRBkFUngyYZfcBJvEDK3Gk9=",
+    "test": "Roi0/rAXHDwjHbP8oUYuoCYPTTgUSVZLPTxeWVXsfIk8vlE54jD0DDYtlqmqsKRn5W4H4jEVrOP/Fw2WxzePboBkSpIyEJ1J9sgae42FJfYhA2s/p0NRqDRV025jkHuQQJzawZU2V4WD1TqCVTFKh4DunpLECo4ffpEZiYLBr8dIMJLnhGNZ+SJ5bbaUOBqCI6MEDVNVXGYxVkB1Xrvdsj8kDW5BKZQR1pOxbOT6hjOM3cldJ5avxPBOjoGuA0inBjICFDxC66+8cHbbpVQ0x7MBl6jEhAKdP8JEzQ0Y0MNAixKh55o4egUlK2FUGl8f5diHEt6EWhO9TUnJphfPPXpIoxm5YTpoZmLthcQwZIZgQUcXEXwWXSpQElZ4c0j11qUPPkU2kiVm3Kjtq4riZZ25fn97IKP8hoO10rNtkq1MZVYrMVaKXsjcMKOE3jGzKFSVDIydGPcgKB0+EhM56EzodLGVGo+ljTQzloolHIW7m21TmVdVn1RND2v4d+2dR5TK5Zd5ESo6KfawnC56fnISGUoo3R/4PFhRHRzgg2YepUFhDXHAXmY5qfmAlQ==",
+    "solution": "3/7iV13uqXiLn10VvS1HMyFBUEom",
+    "max-score": 2
+  },
+  null
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Hofstadter's female and male number sequences",
+    "stars": 1,
+    "identifier": "3.8",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Melo de Sousa",
+        ""
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "exceptions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-seq-hofstadter"
+    ]
+  },
+  {
+    "id": "3-hofstadter",
+    "prelude": "",
+    "template": "let hfm n =\n  failwith \"Replace with your solution\"\n",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>In &quot;Hofstadter, D. R. <em><a href=\"https://wikipedia.org/wiki/G%C3%B6del,_Escher,_Bach\" target=\"_blank\" rel=\"noopener noreferrer\">Gödel, Escher, Bach: An Eternal Golden Braid.</a></em> New York: Vintage Books, p. 137, 1989.&quot;,  Hofstadter defined various numerical sequences, two of which are the female and male sequences shown:</p>\n<center>$F(n) = {(1, if n=0), (n - M(F(n-1)),if n>0):}$</center>\n\n<p><br /></p>\n<center>$M(n) = {(0, if n=0), (n - F(M(n-1)),if n>0):}$</center>\n\n<h1 id=\"Objective\">Objective</h1>\n\n<p>Define the function <code>hfm : int  -&gt; int*int</code> that, for a positive <code>int</code> parameter, returns the pair $(f(n), m(n))$.</p>\n<p>In the case of an invalid argument or any error occurring, the exception <code>Failure &quot;hfm&quot;</code> is thrown.</p>\n<p>As an example, <code>hfm 7 = (5,4)</code>.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "DsM86xZqr5JfzxMBOuv9rSYPTTgUSVZLPTxeWVXsfIgfbRVnBobIH8hxh3yqbbtwoCzUVWNnwr4kXcEYx8+XmANhR6hqHsVOo0IAwMwJMPJgRgUG8g/RqDoVHsAplGmADc0UsJh0FvyAPTq3TnRBlNuEpRKBQkP9klkR708Lsj9ImC8I88HaUVWR76At9Oz2J6IZBVc3GVEqXRFTR43uyHLkDmdx0Nsk1i8gf3fqyG+R3s1uK8j9i0A5zF08YsysF9/RH7gFl9LGr/Xs6AB97XQ+mFXBb6axPF5IjEuY0NBA92vly6t4qKl3OcNPMUvnstWG0IELF+yfH5iEzdKo0krDIIyFTeADU0+OBS81uusJQUkMEU23XC1KEQlfr38IOdFJMERpnkZx3LiRq4LJCx6opHcu3bva7kaZQr2afOpHZV12N6CGChyl4bjEAGTn1UfVTdHTMZYdVV3LFrgooQeS8vSqDFeg9ide9ABkDYWojcBGhWtVeaEDTIHC8q98+hNztdg2t7JTmp==",
+    "solution": "lV/Ip/UIJdH11my5URFk9T2BHp/SGVdZJoAMFVyafIYew/pcRWCPFmYju0jcqvcm5TS1MWNafrbwG2F4x7+XultaCkF7OxYLnLxee19AKqJtTspJp4kRxCFVBs5WjW4KQIq+rJp1UemY38q3Ti2Asa8G6ErBG6n5uUlFobGOcHT0HBSMHVJvlZsmDtwRRXGRLUE4DV6KXB/62/B1XOnf8TrhCXtYYsJk1i8xhOfbnSDENJRiJXK9uvESjVbu",
+    "max-score": 10
+  },
+  null
+]

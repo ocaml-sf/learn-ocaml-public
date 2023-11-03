@@ -3,7 +3,10 @@
     "learnocaml_version": "2",
     "kind": "exercise",
     "title": "Tree Iterators",
-    "stars": 3
+    "stars": 3,
+    "backward_exercises": [
+      "fpottier/tictactoe"
+    ]
   },
   {
     "id": "tree_iterators",

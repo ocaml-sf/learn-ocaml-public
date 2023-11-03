@@ -1,0 +1,39 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "The Hofstadter-Huber Qr,s(n) sequences",
+    "stars": 1,
+    "identifier": "3.7",
+    "authors": [
+      [
+        "Gonçalo Domingos",
+        "goncalogdomingos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "exceptions",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-digits"
+    ]
+  },
+  {
+    "id": "3-seq-hofstadter",
+    "prelude": "",
+    "template": "let rec hhq r s n = failwith \"Unanswered\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>Consider $r$ and $s$ to be two natural positive integers, where $s\\geq 2$ and $r&lt;s$. The Hofstadter-Huber sequence of family $(r,s)$ is the sequence determined by the following formula:</p>\n<center>$Q_{r,s}(n) = \n{(1, if\\ 1 \\leq n \\leq s),\n(Q_{r,s} (n - Q_{r,s} (n-r)) + Q_{r,s} (n - Q_{r,s} (n - s)), if\\ n>s\n):}$</center>\n\n<p>where $n$ is a positive integer.</p>\n<p>Although, this family of values suffers from some irregularities. In particular, when the values $Q_{r,s}(n)$ are not defined (i.e. when $n -  Q_{r,s}(n-r) < 1$  or  $n -  Q_{r,s}(n-s) < 1$) or whenever any other established condition about $r$ and $s$ isn't respected, we say that the sequence <emph>dies</emph>.</p>\n\n<h1 id=\"Objective\">Objective</h1>\n\n<p>Implement the function <code>hhq : int -> int -> int -> int</code> so that <code>hhq r s n</code> determines the value of $Q_{r,s}(n)$.</p>\n\n<p>In case of an invalid argument or an irregular situation, the exception <code>Failure &quot;hhq&quot;</code> is thrown.\nThus, <code>hhq 1 4 12 = 7</code>.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "iSm3h1X747rST+OHi3JcMnYPTTgUSVZLPTw3RVXifKRnfRUXG8C3EXMKeOLgsKhKey8RKjMfxqPTXdQex7qEboZJU5MsVcROjv2aebNSJ0YhANJP6OtUeyd1RZkA757EQO74qxQGW4LfNDqTTm/I54DdpReVCo42hRhYpIXJcHqHMs8e8N/k3sln8IH08TJ6Kp91T6F9FTNwEBEVELzd8W8rPytALw5LO848lffExz3F42xtNpjge3lK8V8sZZ4FRjJ0SjJZnFbJbWHsmUhpdyoQ/Q+PgkGoI/V4/60tIxYIlhqab9dWqNAlOcNP0oreq28IAcMRH3aoAlnBpxegIe6dzfaF/8sho8Lq5sv1MzsvQVBMYk6XXSZ2HlZVc+fi1qQI+VVxl/dfNx3tq4q8IMQl/Hc83w88eorWXKo7j3wCJQJ+Y5GKCarkM+yLTWvePovVWMGhU+lpVWSZDNVsnUeS/KyQX5KdjmQvj9Y0SPup7IRG5QsLerEDVw80wPQc9yn0udWWQFLGMraOyd5nYjNBRVh2GQpV+QEBHArTfM5er9EcVWD0Xiswx+nwcbMok8jPVWNnfvK6Xc9Rx7r4uEhjEFk7AwYC9sgaeYQAZPJoTwVPn+J2qC6ZFt/XzDzrQJq+a2BPFumQNDPBQmF1cqCZ9lb+IRWwwEkM71rOcDj+0J3qkJxe+2YecOS4nDJ8YlFNTBEZEQo/EAMZEK8hpSCQQTkVYNs41i8QuLTRnWnBYJRi+yLixqI+8Wep0tTuDzICMQIQok827nntn99pvphNiQvCbFHa1oFTwpPC2xQ5bcve6QEWsN9lNtkPS97nrNyjRqp6",
+    "solution": "4LDHUfp9b3zonNVvTCdZfCkBUGYRGVB4+UMRCRCufJRyr6McSii0DHMtg3ymbeF68W4R4jtUvbqsCxsUx7y4c6MlCis7EMNHjuFawMIA24JsUgUBp0VXqHJVCtVCp7LQCNfUa1F/FunV3G7WTi5ObufIz90SClH6hQNz71rOcHVhwJMBa8Kfh03A7WwWZoqxMUE3TB/XGRRwQ651ELLx5HPuQWcVMcsXPX75uPWmt7CWNM2a+mmvufEMlB7IKg4eDzVHUTBRmk8McH3LoU9xwnML/UjJbpCbNXddlE7RT2YJiJOm9QMWfwVz+JxA4kLQdI7ECtR4F4q6D9mB5cal0mCz9oib4JDwbYCE+/ovD+Es+lkMER9ZGW/ZVoV3r4TVOfwBYQ/57UFrKfiph4rpPNYlpD1zPOuphB+KVKwNkq1OYkAUY6LOQc8j2q+rAGTn1UfVTh8kU4IdSQqYEZE959DVjrPNTp3d6HobyUd5Yqup7IRG5QsQg41ITIGDovUcYqXAUaYqrrTg7Mp7TndYfDBBRQI1SoAQYB9RH6CoxIBvr6McBzDTEXNku+TkteI5/8TH4jtdgaGxVsAY7CrXq9IjRodzEIpCxp==",
+    "max-score": 17
+  },
+  null
+]

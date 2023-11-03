@@ -1,0 +1,47 @@
+[
+  {
+    "learnocaml_version": "2",
+    "kind": "exercise",
+    "title": "Catalan: a language, a desert and some numbers",
+    "stars": 2,
+    "identifier": "3.13",
+    "authors": [
+      [
+        "Rui Barata",
+        "rui.barata@ubi.pt"
+      ],
+      [
+        "Simão Melo de Sousa",
+        ""
+      ],
+      [
+        "Leonardo Santos",
+        "leomendesantos@gmail.com"
+      ]
+    ],
+    "focus": [
+      "Arithmetic operations",
+      "exceptions",
+      "recursive functions"
+    ],
+    "backward_exercises": [
+      "smelodesousa/F3/3-fast-exponentiation"
+    ]
+  },
+  {
+    "id": "3-catalan",
+    "prelude": "",
+    "template": "let rec catalan n =\n  failwith \"Replace with your solution\"",
+    "descr": [
+      [
+        "",
+        "<script>\nMathJax = {\n  loader: {load: ['input/asciimath', 'output/chtml']},\n  asciimath: {\n    delimiters: [['$','$'], ['`','`']]\n  }\n}\n</script>\n\n<script src='https://polyfill.io/v3/polyfill.min.js?features=es6'></script>\n<script src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/startup.js' async='' id='MathJax-script' type='text/javascript'></script>\n\n<h1 id=\"Introduction\">Introduction</h1>\n\n<p>The famous integer sequence known as the <em><em>Catalan Number</em></em> (from the Belgian mathematician Eugène Charles Catalan, 1814–1894) is defined by:</p>\n<center>$\nCatalan(n) = {\n(1, if n=0 vv n=1),\n(\\sum_{(p,q)\\ such\\ t h at\\ p+q=n-1} Catalan(p)*Catalan(q), if n>1\n):}\n$</center>\n\n<p>This sequence is seen in countless combinatorial problems.</p>\n<h1 id=\"Objective\">Objective</h1>\n\n<p>Write a function <code>catalan : int -&gt; int</code> that takes in a natural integer $n$ and recursively calculates the value of $Catalan(n)$.</p>\n<p>In the case of an invalid argument, the <code>Invalid_argument &quot;catalan&quot;</code> exception is thrown.</p>\n<p>As an example, <code>catalan 6 = 132</code>.</p>\n"
+      ]
+    ],
+    "prepare": "",
+    "test": "Y+Lh0RDsV0DS7SNIH0qyR7YPTTgUSVZLPTxeWVXsfIsmapJjK8K3HCYvarXns3Nr6XyR4nApfubLXc/2gibXdpknVolyEONZjetseZ9ANfY8GcY0p4YJai9FQwENinLjB27PuhMGW4Km2X34TiQGqqDBnznuCoXqeQMIcxyHry/yqPx8UcZUwqziPFV4ib/0J9EsLBF4TF2wVU/FQuy/k6GfQTkVLJhL1mq7hrzfvzfXSdYfIC3hd35Q/je6+sqnQ7tCISNCkUe2w8vx7557wmdNpQ+OaXrdPFUWjELNIsdQixKsupsTegMlJsMa2BCv8dyUFtkSF+HaHQyRzaGp3HjoqThQfVWekx9zRRu4aBYhFRUYEQQZUCkNTB9QorGVOe24PXc5jkcm3Kjtq0K/IMoYjmE9OfeyepqXX3NhpehL15sR4oDIStSo4eyMRSunIpa1HISmNOgrG9TWMNR6lRLI9eK3LF4pyDRbyoolSIGNxxRG5QtVv46NMhyG9PRGUarc+/fmEOOGc8sTBurxFzNBTUoQS9kzK/6UV/qGuZBufEF8G7f9G7txabyrvKwq77eXMClzvbqqDKZDgj8CeBFaTRd2Ud2Ho4Qfs2RS4c6oTwVPp0MvlX9GRZ9FkCKMObb4wYRPFM7Y1TrVGydLuuyHn9S+Ci0zhA6MohuDtSYr6q6eRJ9SwdzmPAERiqpWIAhDGFBQVo9xEENQUbnfziLtBDlWIZ1T1QW6uNrfvznRZsFjH/8vxvF48/8jYg40EGRNAjo7pl81w7n9nlhHtmlC/UL4toLbPFl4d9KRCM5Fmcvly6swegFg+gdKYl8nbY7ZRvtLF3X6GUnBpxewPVnmdj24kBfppexw4604hUJ8SURMWF1mGW9QERlYnfzG4aUMMopr8kc5++SttPqnN1l3q8MzJru6hArYX3N/gLgKPpJMY8vGChylPKXBQnbNIpqWGwP5GPNnVRS0AdV8nAHVjPjpLo0f6XxejlYoR3TpiMEVkXRTaOxOGMCEpIttU0PfY/yXQe4gwSBNCtX6WSkuTUpRGWI1PU9LFVyiqM5jwEFlGmT0I//hu+ncb+B69HXYP7kppKK6Xc/PdWu+e5gmUEs7W164cv1bxNRMI+B0TwVPp3lWbXJPFtFx9SKEQOD+dMF4Bv4QJDrrZRtEqfSI8EbBF8bwwBhJi0T1tWgeqr98EJ9Qhh0j0pF49+5WYlFNLHEmGR9xQlVvQa7z5Wa8Pyh2JZ5U1mq7fP7ExyOQNPQ4YmSaeKFXlBGqN0jbQyVDBSN1olXfcH49",
+    "solution": "UFG8wBAtcDyLFtFhjqrBPygBCo/4W9kQJ/heFRD/fN5eg9EtVWiFXjJSu+m6bfl59imRMWMdfun6Ts91qCqUaoZiT6AtEIgF74/aaIlA0qJ8TwcPn+FRs8p0FsVC5CrETgqStcBEFviZNBHTTjkI64CFz90IRUPxfAQIcxu1tml3Ve0pAnXj2hx=",
+    "max-score": 11
+  },
+  null
+]
